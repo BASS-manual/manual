@@ -1,1 +1,69 @@
 # Assessments
+Assessments are accessed from the “Assessments” option in the main menu. Note that you first have to choose a project in the dropdown in the main menu to make the Assessments option for that project visible. When you press “Assessments” you will see a view showing the existing assessments of the chosen project. All assessments that are listed in this view can be manually sorted with the upwards pointing arrow symbols to the right of each assessment name. 
+
+//Bild
+
+You can show or hide the expanded overview by pressing the Show assessments overview-button. Here you can get a quick review of all the included assessments and their corresponding attributes. 
+
+**Hint:** Among other things, the assessment overview shows the order of each instrument in all assessments. This is a good place to ensure that the instrument order is kept from one assessment to another throughout the project. It also enables you to easily see if you somewhere have missed to include an instrument that should appear in several, similar assessments.
+
+## Create or edit assessments
+Add a new assessment to your project by pressing “Create new assessment” at the bottom of the Assessment view. To instead edit an existing assessment, press the pencil symbol to the right of the name of the assessment you want to edit. This opens up the assessment panel where you can set a number of variables that define the assessment: 
+
+### Name 
+Here you can fill in a name for your assessment, for example ***Screening***. 
+
+### Label/Custom label 
+You can either select one of the predefined labels in the drop-down, or write your own label in the Custom label textbox. Adding a custom label will surpass any predefined label that is selected from the drop-down. Note that the assessment label will be visible in reports when you export your data.
+
+**Hint:** By selecting Weekly-assessment or Point-assessment some stats for Repetition (below) are preset. 
+
+### Managed 
+This option sets whether data-gathering is managed individually or in groups. 
+
+**Hint:** If you have different cohorts, you may want to choose In group. Screening assessments are usually managed In group and these can be activated or deactivated for a certain group and date under Participants -> Groups -> screening group name -> Show -> Assessments. 
+
+**Hint:** If your participants start their treatments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
+
+### Repitition 
+The Repetition option sets if the assessment is to be done once or repeatedly, and if so at what intervals and for how many times. 
+
+Assessments with the predefined label “Weekly” have repetition set to Weekly and the interval to 7 days. 
+
+Assessments with the label “Point-assessment” have repetition set to Manual. This means that the next assessment can be set manually to occur at an arbitrary date, independent of the time of the previous assessment. This is useful for assessments that are triggered by irregular events, for example a major flair of symptoms. 
+
+### Time limit 
+Here you can set if participants have to fill out the assessment within a certain time limit. 
+
+**Important note:** Setting a time limit for an assessment is extremely important to prevent the results being mixed up with those from similar, subsequent assessments. For example, if an ongoing POST assessment is still accessible when the FOLLOW UP assessment is activated, the results of any of them is duplicated to the other. This results in data reports where no change seems to have occurred between the assessments.
+
+An assessment with the time limit of 7 days that starts on a Monday will be available for the rest of that week but not for the next. 
+
+**Hint:** Keeping the time limit short, or shorter than the repetition interval, has the effect that participants fill in correct data corresponding to the set time-frame, but sometimes will miss the window when they can report. This is useful in assessments where accurate and time-dependent data is more important than full attendance.
+
+###	Dependence
+The Dependence option sets when the assessment is to be activated, in relation to the date of a previous assessment. The relationship is kept even if you change the date of the previous assessment. 
+
+Date offset from is where you select the previous assessment from which the date/delay is to be calculated. 
+
+**Note:** Setting Date offset from a reoccurring assessment (i.e. WEEKLY) will count the delay from the date of the last assessment and not the first. If this is not what you want, consider creating a dummy assessment without instruments to hold the start/dependence date.
+
+Checking Dynamic means that the delay is calculated from the time when the previous assessment was filled out instead of the time when it was scheduled. Note that this setting only can be done on individually managed assessments.
+
+Delay is the number of days to wait before activation. 
+
+**Hint:** If you can’t see the calculated date of your assessment in the view under Participants -> Groups -> group name -> Show -> Assessments, try to set the date of the previous interrelated assessment again and press the Save button.
+
+### Clinician rated
+
+This option hides all instruments in the assessment for participants and instead enable clinicians to fill in the associated ‘clinician rated’ instruments via the administration interface.
+
+This setting allows a clinician to fill in the instrument(s) for a specific patient via Main menu -> Participants -> Groups -> specific group -> specific participant -> Assessments -> specific assessment -> specific instrument -> pen on document symbol
+
+**Note:** Clinician rated instruments should not be added to self-assessments. Clinician-rated instruments are hidden for participants which makes it impossible for the participant to complete an assessment containing such an instrument.
+
+**Hint:** Clinician rated assessments won’t send automatic reminders. An option is to use flags instead to mark undone tasks.
+
+
+
+

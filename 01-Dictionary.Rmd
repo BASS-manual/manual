@@ -1,10 +1,10 @@
-# DICTIONARY
+# Dictionary
 These are recurrent concepts in the manual:
 
-**Instrument (Formulär, mätning)** <br>
+**Instrument** <br>
 An instrument is an electronic version of a paper form used during psychological assessment. Some examples of digitalized instruments are VAS (visual analogue scale), MADRS (Montgomery Åsberg Depression Rating Scale), SWLS (Satisfaction With Life Scale) and LSAS (Liebowitz Social Anxiety Scale).
 
-**Assessment (Skattning)** <br>
+**Assessment** <br>
 An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.
 
 **Type** <br>
