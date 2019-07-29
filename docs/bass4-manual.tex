@@ -1,0 +1,170 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={BASS4 - ADMINISTRATOR'S MANUAL},
+            pdfauthor={Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{BASS4 - ADMINISTRATOR'S MANUAL}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{Last updated 2019-07-29}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+BASS is a flexible tool for creating online psychological treatment programs.
+In this manual you will learn how to manage participants, combine self-help material into treatments, keep track on events during an ongoing study/program, manage security and privacy settings, collect and export data and communicate with participants through the administration interface of BASS.
+
+\hypertarget{dictionary}{%
+\chapter{DICTIONARY}\label{dictionary}}
+
+These are recurrent concepts in the manual:
+
+\textbf{Instrument (Formulär, mätning)}
+An instrument is an electronic version of a paper form used during psychological assessment. Some examples of digitalized instruments are VAS (visual analogue scale), MADRS (Montgomery Åsberg Depression Rating Scale), SWLS (Satisfaction With Life Scale) and LSAS (Liebowitz Social Anxiety Scale).
+
+\textbf{Assessment (Skattning)}
+An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.
+
+\textbf{Type}
+A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.
+
+\textbf{Project}
+A project is the administrative concept that connects a set of assessments to a set of participants.
+
+\textbf{Participants}
+A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.
+
+\textbf{Group}
+A project can be divided into groups, and participants of the same group in a project can be managed collectively.
+
+\hypertarget{login}{%
+\chapter{LOGIN}\label{login}}
+
+\hypertarget{the-main-menu}{%
+\chapter{THE MAIN MENU}\label{the-main-menu}}
+
+\hypertarget{search-participants}{%
+\chapter{SEARCH PARTICIPANTS}\label{search-participants}}
+
+\hypertarget{selectionfilter}{%
+\section{Selection/filter}\label{selectionfilter}}
+
+\hypertarget{search}{%
+\section{Search}\label{search}}
+
+\hypertarget{hide-show-and-sort-columns}{%
+\section{Hide, show and sort columns}\label{hide-show-and-sort-columns}}
+
+\hypertarget{column-explanations}{%
+\section{Column explanations}\label{column-explanations}}
+
+\hypertarget{saveload-search-settings}{%
+\section{Save/load search settings}\label{saveload-search-settings}}
+
+\hypertarget{assessments}{%
+\chapter{Assessments}\label{assessments}}
+
+\hypertarget{participants}{%
+\chapter{Participants}\label{participants}}
+
+\hypertarget{references}{%
+\chapter{References}\label{references}}
+
+\bibliography{bibliography.bib,packages.bib}
+
+
+\end{document}
