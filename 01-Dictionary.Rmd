@@ -1,0 +1,21 @@
+# DICTIONARY
+These are recurrent concepts in the manual:
+
+**Instrument (Formulär, mätning)**
+An instrument is an electronic version of a paper form used during psychological assessment. Some examples of digitalized instruments are VAS (visual analogue scale), MADRS (Montgomery Åsberg Depression Rating Scale), SWLS (Satisfaction With Life Scale) and LSAS (Liebowitz Social Anxiety Scale).
+
+**Assessment (Skattning)**
+An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.
+
+**Type**
+A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.
+
+**Project**
+A project is the administrative concept that connects a set of assessments to a set of participants.
+
+**Participants**
+A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.
+
+**Group**
+A project can be divided into groups, and participants of the same group in a project can be managed collectively.
+
