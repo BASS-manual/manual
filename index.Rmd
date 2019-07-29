@@ -1,0 +1,32 @@
+---
+title: "OCD-NET & BDD-NET therapist resources"
+author: "Oskar Flygare, Christian Rück, Brjánn Ljótsson, Jesper Enander & Erik Andersson"
+date: "Last updated `r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [bibliography.bib, packages.bib]
+biblio-style: apalike
+linkcitations: yes
+github-repo: oskarflygare/webcbt-therapist
+description: "Online resources for therapists."
+---
+
+# Introduction TEST
+
+Welcome to our online therapist resource for *OCD-NET* and *BDD-NET*. This website contains resources to support therapists in their work, both technical and clinical aspects of doing internet-based cognitive behaviour therapy.
+
+We strive to continuously update and improve this material and would appreciate any feedback. You can reach us at <ocdnet.support@webcbt.se> or talk to us in person at a training session.
+
+## Description of OCD-NET and BDD-NET
+
+OCD-NET and BDD-NET are therapist-guided internet-based cognitive behaviour (ICBT) therapies for OCD and BDD, respectively. In ICBT, patients have an identified therapist providing support and feedback throughout treatment. All contact with the therapist occurs through the treatment platform as asynchronous text messages (like e-mail or SMS).
+
+## Type of treatment
+
+The intended use of OCD-NET and BDD-NET are within a stepped care model as an alternative to brief individual CBT, group CBT, serotonin reuptake inhibitors (SSRIs), or higher-intensity CBT for adults with mild to moderate symptoms. The treatments are expected to be cost-saving compared to individual CBT (10 hours or more intensive treatment) but not compared to group CBT. Crucially, ICBT therapies typically require less therapist time per patient (10-20 minutes per patient each week) and could therefore release therapist time compared to individual CBT or group CBT.
+
+## Background
+
+OCD-NET and BDD-NET were initially developed by researchers at Karolinska Institutet in Stockholm, Sweden. OCD-NET has been evaluated in six clinical trials to date with results indicating that it is as effective as regular face-to-face CBT, while requiring less therapist time per patient and with the advantage of being accessible from any device connected to the internet [@andersson2011; @andersson2012; @andersson2014; @andersson2015; @ruck2018]. Similarly, BDD-NET has been evaluated in two clinical trials with comparable results [@enander2014; @enander2016; @enander2019]. Both treatments were initially developed in Swedish but have been translated to English and evaluated in pilot studies in New York (OCD-NET; @patel2017) and an international pilot study (BDD-NET; @gentile2019).
+

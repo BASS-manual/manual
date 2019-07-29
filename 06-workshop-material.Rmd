@@ -1,0 +1,182 @@
+# Workshop material
+
+Use this page to complete the workshop for OCD-NET and BDD-NET. In the workshop, you will use the platform as both therapist and patient in order to familiarise yourself with the platform. If you get stuck anywhere along the way, ask one of the trainers or look for help material on this site!
+
+Our support email is <ocdnet.support@webcbt.se>.
+
+## Quick links
+
+- [Therapist-login](https://webcbt.se/ocdnet)  
+- [Patient-login OCD-NET](https://ocdnet.webcbt.se)  
+- [Patient-login BDD-NET](https://bddnet.webcbt.se)  
+
+## Workshop overview
+
+We will begin by introducing the technology and the treatments. You will find written information regarding OCD-NET and BDD-NET in their respective treatment manuals on this site.
+
+After the introduction, it's time to practice using the treatments as both therapist and patient. You will practice in pairs, where one is a patient and the other is a therapist. You will use your real therapist account and create test patient accounts to use in the workshop.
+
+You will work through common scenarios together, one acting as patient and the other acting as therapist. When you have completed the scenarios you change roles.
+
+## Preparations
+
+### Create patient account
+
+Navigate to the **Participant search** tab on your left. At the bottom of the participant list, there is a button to create a participant, select **ocdnet** as the project.
+
+You will now be taken to another page where you are asked to provide basic information about the participant. You will need the following:
+
+- Login: This is the username. Use your own name followed by "TEST", for example janedoeTEST
+- First name: Enter a first name, anything goes
+- Last name: Enter a last name, anything goes
+- Group: Select **Test patients**
+- Password: Click "Change password", then **copy the generated password**, click "Change password in the pop-up window
+- Temporary flag text: **Paste the password** and click "Save" at the bottom of the page.
+- Assign your colleague as the therapist, click "Save" again
+
+### Activate the first module and measurements
+
+- Click on the **Treatments** tab and choose OCD-NET at the "Connect treatment" button. The page will now load the options for treatment access.
+- Select today's date at "Treatment start" and click **Save**. The checkbox under "Accessible" should now indicate that Module 1 is accessible from today's date.
+- Click on the **Assessments** tab and select today's date on the first row for "Weekly-phq9-gad7", then **Save**.
+- The status for the first weekly assessment should now be "Ongoing" and the status for the other measurements should be "Waiting".
+
+All set! You can now swap login credentials for your patient account with your colleague. If you need a reminder of the username and password, navigate to the **Participant stats** tab.
+
+## Scenario 1 - first day in therapy
+
+In this scenario you'll practice several of the core tools in therapy: sending messages, homework assignments, and worksheets.
+
+<details>
+<summary> Scenario 1 for therapist </summary>
+
+- The patient is supposed to fill out the homework assignment and the OCD diary
+- Write a first message to the patient where you welcome them to the treatment. **Go to Treatments -> Participant messages to write your message**
+- Navigate to **Treatments -> Treatment access** and wait for module 1 homework. You will need to refresh the page when your partner has answered the homework.
+- Click *Show*, look at the answers, and close the window. Click *Mark as reviewed*.
+- The patient has some questions regarding the OCD diary. Navigate back to **Treatments -> Participant messages** to read their questions and answer.
+- The patient will now fill in the OCD diary. Worksheets work the same way as homework assignments, so repeat the above procedure.
+
+**Scenario 1 is complete!**
+
+</details>
+
+<br>
+
+<details>
+<summary> Scenario 1 for patient </summary>
+
+- Log onto the platform using your patient credentials.
+- You will see two questionnaires. Fill them in, and make sure to indicate **more than half the days OR nearly every day on item 9 ("Thoughts that you would be better off dead...") on the PHQ-9**.
+- Once you have completed the questionnaires you will enter the treatment platform. Navigate to module 1 and scroll through (just to get a sense of what the platform looks like)
+- Give answers to the module's homework questions. You can write anything here.
+- You are instructed to fill out the OCD diary, but you have some questions... Write a message to your therapist and ask for clarification.
+- When you receive an answer from your therapist, write something in the OCD diary and save.
+
+**Scenario 1 is complete!**
+
+</details>
+
+## Scenario 2 - progressing in therapy
+
+When the patient has completed a module, we give access to the next module and write a short message to encourage further progress through the treatment.
+
+<details>
+<summary> Scenario 2 for therapist </summary>
+
+- Your patient has now completed module 1. Let's give them access to the next module!
+- Go to **Treatments -> treatment access** and click the checkbox on the row for Module 2. Click **Save**.
+- Navigate to **Treatments -> participant messages**, write a short message to the patient. We typically give positive feedback on the previous module and introduce the next module. We also indicate the expected time to complete the module.
+- Review homework assignments and worksheets for modules 1 & 2, navigate to **Treatments -> treatment access** to view them.
+
+**Scenario 2 is complete!**
+
+</details>
+
+<br>
+
+<details>
+<summary> Scenario 2 for patient </summary>
+
+- The therapist will give you access to module 2, check it out!
+- Answer the homework questions for module 2
+- Fill out something in the OCD diary and CBT model
+- Write an answer to the message from the therapist
+- You have noticed that something is not working properly on the platform! **Click the "Problems?"** button and write something.
+
+**Scenario 2 is complete!**
+
+</details>
+
+## Scenario 3 - managing flags
+
+You have now tried the basic functions of the platform. For some patients, this will be everything you need to use. One of the more advanced features of the platform is a flagging system, which will react to certain events by displaying a symbol next to the patient in the participant list.
+
+<details>
+<summary> Scenario 3 for therapist </summary>
+
+- Open up the remaining modules so that your colleague can view the full treatment. Navigate to **Treatments -> treatment access** and click the checkbox for all remaining modules.
+- Close the patient and navigate to **Participant search** in the left-hand menu on the screen. This is a list of all the participants registered in the OCD-NET/BDD-NET project.
+- If you prefer, you can filter out your own patients by clicking **Selection -> My participants** at the top of the screen.
+- You will see that your patient has two flags next to the "last login" column. Hover over the flags to learn more about them.
+- Now it's time to manage them. **Click on the pencil** at the far left of the table display to edit that specific participant.
+- Navigate to the **Flags** tab to view the flags. Select the error report flag by **clicking the pencil** to the right
+- When patients report errors, you will need to review them in order to determine whether there is a misunderstanding or easy fix that you can help them with, or something more complex that you need to escalate to <ocdnet.support@webcbt.se>. See more information regarding common technical issues at the *Technical support* chapter on this site.
+- Let's now pretend that it was a simple problem about navigating the site. You'll then create a note where you comment on actions taken (in this case, sending a message to the patient where you clarify how they can navigate the site). Select **close flag with this note** to remove the flag, then **click save**.
+- (In a real treatment, you would now send a message to the patient with your answer to the error report)
+- Close the participant to go back to the Participant search overview. The flag should no longer display.
+- Let's now manage the other flag regarding suicidality. Go back to the **Flags** tab for that patient.
+- You see another symbol (a warning triangle with an exclamation mark) that indicates that the patient has answered item 9 on the PHQ-9 with "more than half the days / nearly every day".
+- Open the flag by **clicking the pencil**, write a note about actions taken, and select **close flag with this note**, then save.
+- Perhaps you need to do a follow-up with the patient a few days later? A good way to display such information is to create a temporary note that "stars" the patient. Navigate to the **Participant stats** tab.
+- Below the User Information there's a text box that says "Temporary flag text ("stars" the participant)". Write a note about actions to be taken, e.g. *telephone assessment for suicidality on March 31st, follow-up by April 3rd*,
+- Click **save** on the bottom of the page. Close the participant and go back to the **Participant search** overview.
+- There's now a star next to the "Last login" column, if you hover over it you can read your comment. This will give you an easy overview of actions to be taken for different patients. Once you remove the text in the **Participant stats** tab the star will disappear.
+
+**Scenario 3 is complete!**
+
+</details>
+
+<br>
+
+<details>
+<summary> Scenario 3 for patient </summary>
+
+- You are given access to all the remaining modules so that you can look through the content and familiarise yourself with the OCD-NET/BDD-NET treatment. Feel free to fill out a few worksheets and homework assignments as well.
+
+**Scenario 3 is complete!**
+
+</details>
+
+---
+
+**Now switch roles and complete the scenarios from the other perspective.**
+
+## Additional functionality
+
+Good job! You have now completed the basic walkthrough and have seen the functions that will be used in most treatments. Now let's look at some additional things that are useful to know as a therapist.
+
+### Questionnaires
+
+Throughout treatment, your patients will be assigned questionnaires. You can view them at the **Assessments** tab. If you would like to see detailed information regarding a particular assessment, click the icon that looks like documents on that row. You'll see the total score for common instruments like the PHQ-9 and GAD-7. You can also see the responses to each question. Responses over time are presented as line graphs in the **Graphs** tab.
+
+You might have to adjust the dates for assessments if, for example, a patient is delayed in the start of treatment. If you do, note that the weekly assessments are linked so that later assessments will also be adjusted if you change one of them.
+
+### My settings
+
+You can change your own settings at the **My settings** tab in the left-hand menu.
+
+- Email: Add or change the email address associated with your account. You may choose to receive notifications this way.
+- SMS number: This is the number that receives a temporary login code for the two-factor authentication. Choose a telephone that you have nearby whenever you want to access the platform.
+
+You can also choose to have SMS/email sent to you when one of your participants write a message.
+
+## I'm done. What now?
+
+- Read the chapters on OCD-NET and/or BDD-NET therapist manual to get an in-depth take on how we use the technology in treating OCD and BDD. In particular, the sections on modules will be informative for new users.
+- Read the chapter *Being an effective ICBT therapist* for best-practice guides in internet-delivered therapy and our thoughts on common clinical issues.
+- Read through the modules from a patient perspective in order to get a good grasp of the treatment content.
+
+---
+
+Do you have suggestions for how to make this workshop better? Please send us an e-mail at <ocdnet.support@webcbt.se> or talk to us in person! We are training therapists at several locations and want to improve the workshop along the way.
