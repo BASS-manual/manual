@@ -64,6 +64,20 @@ This setting allows a clinician to fill in the instrument(s) for a specific pati
 
 **Hint:** Clinician rated assessments won’t send automatic reminders. An option is to use flags instead to mark undone tasks.
 
+### Randomize instrument order
+With this option you set the order of the included instruments to be randomized. If not set, the order in which the instruments appear in the assessment will be the same as the order they are presented in the box Assessment Instruments shown to the right.
+
+### Welcome/Thank you text 
+Here you write messages formatted in either Markdown or HTML that you want to show to participants before (welcome) and after (thank you) they fill in the assessment.
+
+### Concurrent and merged assessments 
+With this option you can set the order in which coinciding assessments appear to participants.
+
+If two or more assessments can coincide, you may want to set in which order they appear to participants. This also affects the order of the Welcome/Thank you-messages. The assessment with the lowest number has the highest priority and is shown first. The other assessments and their Welcome/Thank you-messages will follow corresponding to their respective priority order.
+
+The ***Merge assessment…*** box sets if an assessment is to be integrated as a part of (after the Welcome text and before the Thank you text) a coinciding, higher-prioritized assessment. Setting this option means that the current Welcome/Thank You-messages are not shown at all on coincidence, but only when the assessment occurs alone or simultaneously as lower-prioritized assessments. 
+
+The ***If merged*** – Show… box sets if Welcome/Thank you-messages are to be shown even on coincidence as per the Merge assessment setting above. Note that it can be tricky to write messages that work both standalone and together with/as part of other assessment messages.
 
 
 

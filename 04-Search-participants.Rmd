@@ -78,7 +78,7 @@ The dropdown “Saved settings” is where you access all your previously saved 
 
 **Hint:** If you make a new search, the “Currently loaded settings” box may no longer reflect the content of the search result list below. To be sure that the list matches the settings you want to load, first select “Choose” in the dropdown menu and then reselect the settings you want.
 
-### 5.5.1	ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP
+###	ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP
 
 It is possible to directly create a new participant within a specific project. This function is found below the table of participants. Just choose which project you want to add the new participant to, and you will be redirected to the “New participant”-view with this project pre-filled.
 
