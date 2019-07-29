@@ -1,0 +1,11 @@
+# SEARCH PARTICIPANTS
+
+## Selection/filter
+
+## Search
+
+## Hide, show and sort columns
+
+## Column explanations
+
+## Save/load search settings
