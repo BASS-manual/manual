@@ -23,8 +23,8 @@
 }{}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={OCD-NET \& BDD-NET therapist resources},
-            pdfauthor={Oskar Flygare, Christian Rück, Brjánn Ljótsson, Jesper Enander \& Erik Andersson},
+            pdftitle={BASS4 - ADMINISTRATOR'S MANUAL},
+            pdfauthor={Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -76,10 +76,10 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{OCD-NET \& BDD-NET therapist resources}
+  \title{BASS4 - ADMINISTRATOR'S MANUAL}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
-    \author{Oskar Flygare, Christian Rück, Brjánn Ljótsson, Jesper Enander \& Erik Andersson}
+    \author{Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson}
     \preauthor{\centering\large\emph}
   \postauthor{\par}
       \predate{\centering\large\emph}
@@ -102,286 +102,34 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{introduction-test}{%
-\chapter{Introduction TEST}\label{introduction-test}}
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
 
-Welcome to our online therapist resource for \emph{OCD-NET} and \emph{BDD-NET}. This website contains resources to support therapists in their work, both technical and clinical aspects of doing internet-based cognitive behaviour therapy.
+BASS is a flexible tool for creating online psychological treatment programs.
+In this manual you will learn how to manage participants, combine self-help material into treatments, keep track on events during an ongoing study/program, manage security and privacy settings, collect and export data and communicate with participants through the administration interface of BASS.
 
-We strive to continuously update and improve this material and would appreciate any feedback. You can reach us at \href{mailto:ocdnet.support@webcbt.se}{\nolinkurl{ocdnet.support@webcbt.se}} or talk to us in person at a training session.
+\hypertarget{dictionary}{%
+\chapter{DICTIONARY}\label{dictionary}}
 
-\hypertarget{description-of-ocd-net-and-bdd-net}{%
-\section{Description of OCD-NET and BDD-NET}\label{description-of-ocd-net-and-bdd-net}}
+These are recurrent concepts in the manual:
 
-OCD-NET and BDD-NET are therapist-guided internet-based cognitive behaviour (ICBT) therapies for OCD and BDD, respectively. In ICBT, patients have an identified therapist providing support and feedback throughout treatment. All contact with the therapist occurs through the treatment platform as asynchronous text messages (like e-mail or SMS).
+\textbf{Instrument (Formulär, mätning)}
+An instrument is an electronic version of a paper form used during psychological assessment. Some examples of digitalized instruments are VAS (visual analogue scale), MADRS (Montgomery Åsberg Depression Rating Scale), SWLS (Satisfaction With Life Scale) and LSAS (Liebowitz Social Anxiety Scale).
 
-\hypertarget{type-of-treatment}{%
-\section{Type of treatment}\label{type-of-treatment}}
+\textbf{Assessment (Skattning)}
+An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.
 
-The intended use of OCD-NET and BDD-NET are within a stepped care model as an alternative to brief individual CBT, group CBT, serotonin reuptake inhibitors (SSRIs), or higher-intensity CBT for adults with mild to moderate symptoms. The treatments are expected to be cost-saving compared to individual CBT (10 hours or more intensive treatment) but not compared to group CBT. Crucially, ICBT therapies typically require less therapist time per patient (10-20 minutes per patient each week) and could therefore release therapist time compared to individual CBT or group CBT.
+\textbf{Type}
+A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.
 
-\hypertarget{background}{%
-\section{Background}\label{background}}
+\textbf{Project}
+A project is the administrative concept that connects a set of assessments to a set of participants.
 
-OCD-NET and BDD-NET were initially developed by researchers at Karolinska Institutet in Stockholm, Sweden. OCD-NET has been evaluated in six clinical trials to date with results indicating that it is as effective as regular face-to-face CBT, while requiring less therapist time per patient and with the advantage of being accessible from any device connected to the internet \citep{andersson2011, andersson2012, andersson2014, andersson2015, ruck2018}. Similarly, BDD-NET has been evaluated in two clinical trials with comparable results \citep{enander2014, enander2016, enander2019}. Both treatments were initially developed in Swedish but have been translated to English and evaluated in pilot studies in New York (OCD-NET; \citet{patel2017}) and an international pilot study (BDD-NET; \citet{gentile2019}).
+\textbf{Participants}
+A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.
 
-\hypertarget{using-the-technology-test}{%
-\chapter{Using the technology TEST}\label{using-the-technology-test}}
-
-\hypertarget{quick-start}{%
-\section{Quick start}\label{quick-start}}
-
-If you want to explore the platform yourself, you can use test therapist and test patient logins provided to try out the features. We generally recommend that you use the platform while reading this manual, to test features as you go along.
-
-\textbf{Therapists access the platform via this URL: \url{https://webcbt.se/ocdnet}}. This is where therapists enter their username and password to enter the treatment platform. This URL can be used for both OCD-NET and BDD-NET.
-
-\hypertarget{platform-use-overview}{%
-\section{Platform use overview}\label{platform-use-overview}}
-
-There are five common scenarios during the course of treatment:
-
-\begin{itemize}
-\tightlist
-\item
-  Responding to messages
-\item
-  Reviewing homework
-\item
-  Opening new treatment modules
-\item
-  Reviewing questionnaires
-\item
-  Responding to warning flags
-\end{itemize}
-
-These actions can all be accessed in the participant overview, shown below:
-\includegraphics{images/participant-overview.png}
-
-A typical day as a therapist includes responding to one or more messages, reviewing homework and opening up a new module. Once in a while therapists contact inactive patients or assess a warning flag.
-
-The majority of day to day tasks are accessed via the \emph{Participant search} menu. The menu is located at the left-hand side of the browser window. Closing the current participant and clicking \emph{Participant search} will get you back to the participant overview. To access individual participants, click the pencil next to their name.
-
-\includegraphics{images/pencil.png}
-
-\hypertarget{navigation}{%
-\section{Navigation}\label{navigation}}
-
-The menu bar on the left may expand depending on administrative rights. Other parts of the menu include administrative settings such as editing treatment content, editing assessments, editing conditions for when participant assessments are flagged, and changing settings to the site itself. These will not be relevant to most therapists and we do not cover them in detail here. Just remember that you can always go back to the default view by closing the current participant and navigating to \emph{Participant search} in the left-hand menu.
-
-\includegraphics{images/therapist-menu.png}
-
-\hypertarget{filtering-the-participant-overview}{%
-\section{Filtering the participant overview}\label{filtering-the-participant-overview}}
-
-To get a quick overview of a long participant list, filter patients that meet certain criteria, for example belonging to certain groups in treatment of certain treatments. There is a button called \emph{Selection} above the participant list. We recommend that therapists use the ``My participants'' filter to show only patients assigned to them.
-
-\includegraphics{images/filter-participants.png}
-
-\hypertarget{writing-and-responding-to-messages}{%
-\section{Writing and responding to messages}\label{writing-and-responding-to-messages}}
-
-A new message from a patient will be indicated by this icon \includegraphics{images/message-icon.png} in the participant overview. Click the pencil next to the participant's name to access that patient. Navigate to \emph{Treatments -\textgreater{} participant messages} to view the message and write a response. See the chapter \protect\hyperlink{being-an-effective-icbt-therapist}{Being an effective ICBT therapist} for guidelines on how to write messages.
-
-\includegraphics{images/therapist-messages.png}
-
-\hypertarget{homework-review}{%
-\section{Homework review}\label{homework-review}}
-
-A completed homework assignment is shown in the \textbf{Homework} column in the participant overview. Click the pencil next to the participant and navigate to \emph{Treatments -\textgreater{} Treatment access} to review the homework and mark it as completed.
-
-\begin{figure}
-\centering
-\includegraphics{images/homework-complete.png}
-\caption{Completed homework assignments will show up for review in the treatment overview, click the checkmark or red button to mark it as completed or send back to the participant.}
-\end{figure}
-
-Please note that patients are not notified if you mark the homework as incomplete. Write a message to explain what additional information you need from the patient when they send it in again.
-
-Internet-based CBT relies heavily on self-directed activities and homework review is a good time to check whether the patient has grasped important concepts and are able to apply them to their own situation.
-
-\hypertarget{treatment-modules}{%
-\section{Treatment modules}\label{treatment-modules}}
-
-When a patient has read a module and completed the corresponding homework assignment(s), they are ready for the next module. To grant access to a new module, navigate to \emph{Treatments -\textgreater{} Treatment access} and check the box next to the next module. A date will appear next to the module indicating when the module was activated.
-
-\begin{figure}
-\centering
-\includegraphics{images/module-access.png}
-\caption{Check the box to the left to open a new module}
-\end{figure}
-
-The number of modules and weeks in treatment varies between treatment protocols but a rough guideline is that patients should progress through one module per week. Some treatment techniques, like exposure with response prevention, are spread out across several modules to emphasise their importance and give participants sufficient time to get started on the technique.
-
-\hypertarget{questionnaires}{%
-\section{Questionnaires}\label{questionnaires}}
-
-Before, during, and after treatment, patients are asked to fill out questionnaires. When new questionnaires are activated they appear as the patient logs onto the platform. Therapists can review and change which questionnaires should appear at which day in \emph{Assessments} but we recommend that therapists stick to the standard schedule whenever possible. Questionnaires for each patient are listed in this view, click the paper icon to view responses.
-
-\begin{figure}
-\centering
-\includegraphics{images/assessments-list.png}
-\caption{Click the paper icon to view responses}
-\end{figure}
-
-\hypertarget{warning-flags}{%
-\section{Warning flags}\label{warning-flags}}
-
-The ICBT platform will display a \emph{warning flag} next to a patient's name for certain events. The most common flags are due to non-response to questionnaires. These serve as prompts to therapists to take further action, for example reaching out by phone to a patient or sending them another text message reminder.
-
-Once a warning flag has been noticed and dealt with, indicate the action taken in the \emph{temporary flag text} box in the \emph{Participant stats} tab (shown below).
-\includegraphics{images/temporary-flag-text.png}
-
-\begin{itemize}
-\tightlist
-\item
-  Patient has not responded to measurement in time: \includegraphics{images/measurement-delay-flag.png}
-\end{itemize}
-
-\hypertarget{suicidality-warning-flags}{%
-\subsection{Suicidality warning flags}\label{suicidality-warning-flags}}
-
-The most important type of warning flag is due to heightened suicidality. The platform is configured to display this flag if a patient responds 2 or 3 on the suicidality question in PHQ-9.
-
-\begin{itemize}
-\tightlist
-\item
-  Warning flag to indicate suicidal ideation: \includegraphics{images/suicidality-warning.png}
-\end{itemize}
-
-Therapists should refer to local clinical guidelines when performing suicidality assessments and taking action. We recommend that therapists ask for guidance of their supervisors if there are any uncertainties.
-
-Once the level of suicidality is deemed to be low enough to not require further attention, therapists can remove the warning flag under the \emph{Flags} tab for the participant. Flags are listed under the Flags tab, click on the pencil to edit a flag.
-
-\begin{figure}
-\centering
-\includegraphics{images/flags-tab.png}
-\caption{Click on the pencil to edit a flag.}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{images/remove-flag.png}
-\caption{Once you have managed a flag, you can make a note that lists actions taken, and remove the flag.}
-\end{figure}
-
-\hypertarget{supervision}{%
-\section{Supervision}\label{supervision}}
-
-Supervision through the platform makes it easy to connect feedback from the supervisor to specific therapist messages and actions. The supervision page is found at \emph{Treatment -\textgreater{} Supervision messages} for each participant. It will look different for the therapist that is supervised and the supervisor.
-
-\begin{figure}
-\centering
-\includegraphics{images/supervision-therapist.png}
-\caption{Therapists have a simple interface to write and receive messages from their supervisor}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{images/supervisor-view.png}
-\caption{Messages between therapist and supervisor to the left, participant messages to the right for reference}
-\end{figure}
-
-The notes are only visible to the supervisor, so that he/she can write comments about the supervision for future reference. If you are a supervisor, new messages to review are indicated by an icon for messages. \includegraphics{images/supervision-message.png}
-
-\hypertarget{assign-new-therapist}{%
-\section{Assign new therapist}\label{assign-new-therapist}}
-
-The most typical scenario is that each patient is treated by one therapist throughout treatment, but it is not uncommon for a second therapist to act as backup if the primary therapist is not available.
-
-To assign another therapist or change therapist, navigate to the patient in question and click the \emph{Participant stats} tab. At the bottom of that page, there is a list of therapists and those assigned to the patient will have a checkmark next to them. Simply un-check whoever is to be removed and check whoever is to be assigned the patient.
-
-\begin{figure}
-\centering
-\includegraphics{images/assign-therapist.png}
-\caption{The numbers next to therapists indicate how many patients they are assigned to}
-\end{figure}
-
-\hypertarget{create-new-patient-login}{%
-\section{Create new patient login}\label{create-new-patient-login}}
-
-To create a new patient login on the platform, go to the participant overview by selecting \emph{Participant search} in the left-hand menu. Select \emph{Create new participant} at the bottom of the participant list. Therapists can use the ``change password'' button to generate secure passwords for patients.
-
-\begin{figure}
-\centering
-\includegraphics{images/new-participant.png}
-\caption{Therapists can generate secure passwords for patients using the ``change password'' button}
-\end{figure}
-
-Fields not needed are:
-
-\begin{itemize}
-\tightlist
-\item
-  Temporary flag text: Usually not needed at creation but might come in handy later for communicating between therapists
-\item
-  Temporary notes: Usually not needed but can be used to store information
-\end{itemize}
-
-\hypertarget{ocd-net-and-bdd-net-for-patients}{%
-\section{OCD-NET and BDD-NET for patients}\label{ocd-net-and-bdd-net-for-patients}}
-
-We encourage therapists using OCD-NET and BDD-NET to login with one of the test patient accounts to see what the platform looks like for patients. See below for a quick overview of the patient platform.
-
-\hypertarget{access}{%
-\subsection{Access}\label{access}}
-
-Patients access the platform from the patient-URL, which is different from the therapist URL.
-
-\begin{itemize}
-\tightlist
-\item
-  \href{https://ocdnet.webcbt.se}{OCD-NET}\\
-\item
-  \href{https://bddnet.webcbt.se}{BDD-NET}
-\end{itemize}
-
-\begin{figure}
-\centering
-\includegraphics{images/patient-login.png}
-\caption{Patients can click the ``I lost my password'' text to receive a new password.}
-\end{figure}
-
-\hypertarget{using-the-technology-as-a-patient}{%
-\subsection{Using the technology as a patient}\label{using-the-technology-as-a-patient}}
-
-\begin{figure}
-\centering
-\includegraphics{images/patient-overview.png}
-\caption{Landing page for patients}
-\end{figure}
-
-The landing page for patients includes basic information about the treatment, whether they have been granted access to new modules or have received new messages.
-
-In the menu bar at the top of the page, patients can easily navigate the platform, view treatment content, report problems, and see the \emph{Privacy Notice}.
-
-\begin{figure}
-\centering
-\includegraphics{images/patient-messages.png}
-\caption{Messages in the patient platform}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{images/patient-moduletext.png}
-\caption{Module text}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{images/patient-homework.png}
-\caption{Homework assignments}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{images/patient-worksheet.png}
-\caption{Worksheets, patients click the + sign to add new tabs with information}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{images/patient-problems.png}
-\caption{Patients can report problems, which will display as a flag in the therapist view}
-\end{figure}
+\textbf{Group}
+A project can be divided into groups, and participants of the same group in a project can be managed collectively.
 
 \hypertarget{ocd-net-therapist-manual}{%
 \chapter{OCD-NET therapist manual}\label{ocd-net-therapist-manual}}
@@ -1340,8 +1088,8 @@ You have now tried the basic functions of the platform. For some patients, this 
 
 Good job! You have now completed the basic walkthrough and have seen the functions that will be used in most treatments. Now let's look at some additional things that are useful to know as a therapist.
 
-\hypertarget{questionnaires-1}{%
-\subsection{Questionnaires}\label{questionnaires-1}}
+\hypertarget{questionnaires}{%
+\subsection{Questionnaires}\label{questionnaires}}
 
 Throughout treatment, your patients will be assigned questionnaires. You can view them at the \textbf{Assessments} tab. If you would like to see detailed information regarding a particular assessment, click the icon that looks like documents on that row. You'll see the total score for common instruments like the PHQ-9 and GAD-7. You can also see the responses to each question. Responses over time are presented as line graphs in the \textbf{Graphs} tab.
 
