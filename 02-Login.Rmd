@@ -1,4 +1,6 @@
 # Login
 
 As soon as your database setup is ready, you can login to the administrator’s interface. The interface is found at an URL of the format “https://webcbt.se/NameOfYourDatabase”. Enter your credentials in the login box and press the Login button.
+<br>
 
+![](images/login.png)

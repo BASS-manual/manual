@@ -4,4 +4,4 @@ All functionality in the BASS administration interface can be accessed from the 
 
 Which options are visible in the main menu depends on your authorization level. A usual setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments.
 
-//Bild 
+![](images/main-menu.png)

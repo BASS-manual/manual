@@ -136,6 +136,8 @@ A project can be divided into groups, and participants of the same group in a pr
 
 As soon as your database setup is ready, you can login to the administrator's interface. The interface is found at an URL of the format ``\url{https://webcbt.se/NameOfYourDatabase}''. Enter your credentials in the login box and press the Login button.
 
+\includegraphics{images/login.png}
+
 \hypertarget{the-main-menu}{%
 \chapter{The main menu}\label{the-main-menu}}
 
@@ -143,18 +145,18 @@ All functionality in the BASS administration interface can be accessed from the 
 
 Which options are visible in the main menu depends on your authorization level. A usual setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments.
 
-//Bild
+\includegraphics{images/main-menu.png}
 
 \hypertarget{search-participants}{%
 \chapter{Search participants}\label{search-participants}}
 
 The ``Participant search'' is located at the top of the main menu. This is where you can search for and list participants by specific variables such as groups or projects.
 
-//Bild
+\includegraphics{images/search-participants-menu.png}
 
 When you press ``Participant search'' you will see a view with four tabs:
 
-//Bild
+\includegraphics{images/search-participants-tab.png}
 
 \begin{itemize}
 \tightlist
@@ -173,7 +175,7 @@ When you press ``Participant search'' you will see a view with four tabs:
 
 If you press Selection, you can add a filter to your participant search.
 
-//Bild
+\includegraphics{images/selection:filter.png}
 
 Here you can choose if you want to search all participants, your own participants (that you treat) or participants whose treatments you supervise.
 
@@ -188,7 +190,7 @@ Your chosen selection of participants is shown in the participant list below the
 
 The actual search is done in the \textbf{Search} tab. If you previously added search filters in the Selection tab they will now be active and delimit your search.
 
-//Bild
+\includegraphics{images/search.png}
 
 Here you can use many different variables to search for one or several participants. The search is executed either automatically when you leave a filled-in search box or when you hit the Enter-key on your keyboard. Your search results are shown in the participant list below the tab.
 
@@ -210,11 +212,11 @@ To search for several participants at the same time, you add a space between eac
 
 If you want to hide a column, you hover the mouse over the column header until a red X shows up. By pressing the X, the column will be hidden.
 
-//Bild
+\includegraphics{images/hide-show-sort.png}
 
 To show/unhide a column, press the ``Hidden columns'' tab. This tab shows all hidden columns as buttons. Press the button with the column you want back and it will show up in the search results again.
 
-//Bild
+\includegraphics{images/hidden-columns.png}
 
 Most columns can be sorted alphabetically or by number. To sort a column, press the small up/down arrows that show when you hover over the column header.
 
@@ -232,11 +234,11 @@ To save your current search settings, including both filters and search paramete
 
 \textbf{Hint:} Be careful to not use the ``Save'' button instead, because this will overwrite any currently loaded settings including its name.
 
-//Bild
+\includegraphics{images/save-load1.png}
 
 The text ``saved!'' appears to the right of the buttons and your search is now saved and available in the dropdown below.
 
-//Bild
+\includegraphics{images/save-load2.png}
 
 The dropdown ``Saved settings'' is where you access all your previously saved search settings.
 
@@ -247,7 +249,7 @@ The dropdown ``Saved settings'' is where you access all your previously saved se
 
 It is possible to directly create a new participant within a specific project. This function is found below the table of participants. Just choose which project you want to add the new participant to, and you will be redirected to the ``New participant''-view with this project pre-filled.
 
-//Bild
+\includegraphics{images/add-new-participants.png}
 
 It is also easy to change which group a participant belongs to. For each participant in the table, you can choose a project in the dropdown in the Group column. Don't forget to save all changes by pressing the ``Save'' button below the table afterwards.
 
@@ -256,7 +258,7 @@ It is also easy to change which group a participant belongs to. For each partici
 
 Assessments are accessed from the ``Assessments'' option in the main menu. Note that you first have to choose a project in the dropdown in the main menu to make the Assessments option for that project visible. When you press ``Assessments'' you will see a view showing the existing assessments of the chosen project. All assessments that are listed in this view can be manually sorted with the upwards pointing arrow symbols to the right of each assessment name.
 
-//Bild
+\includegraphics{images/assessement.png}
 
 You can show or hide the expanded overview by pressing the Show assessments overview-button. Here you can get a quick review of all the included assessments and their corresponding attributes.
 
@@ -354,6 +356,74 @@ If two or more assessments can coincide, you may want to set in which order they
 The \textbf{\emph{Merge assessment\ldots{}}} box sets if an assessment is to be integrated as a part of (after the Welcome text and before the Thank you text) a coinciding, higher-prioritized assessment. Setting this option means that the current Welcome/Thank You-messages are not shown at all on coincidence, but only when the assessment occurs alone or simultaneously as lower-prioritized assessments.
 
 The \textbf{\emph{If merged}} -- Show\ldots{} box sets if Welcome/Thank you-messages are to be shown even on coincidence as per the Merge assessment setting above. Note that it can be tricky to write messages that work both standalone and together with/as part of other assessment messages.
+
+\hypertarget{automatic-reminders}{%
+\subsection{Automatic reminders}\label{automatic-reminders}}
+
+This option sets notes or reminders to automatically be sent to participants on certain events. The basic functionality is that a note is sent the same day as an assessment becomes available. With the check boxes you can choose which media to use, mobile text messages (SMS) and/or email.
+
+\emph{Create new quick login} needs to be checked if quick logins are to be sent with the reminders.
+
+\textbf{Hint:} Remember that you also need to activate quick login under Security Settings in the Main menu to enable this function.
+You can also add reminders to participants who are late with filling in their assessments.
+
+\textbf{Note:} It is not possible to only send remainders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
+
+\emph{Remind interval} is the delay upon which reminders are sent to late participants, counted as days after the assessment became available.
+
+Max number of reminders sets how many reminders can be sent out to the participant, with the previously mentioned time interval. This setting needs to be at least 1 for any reminder to be sent.
+
+\textbf{Hint:} If you want additional reminders to be sent, increase the number in this box instead of rescheduling the assessment (see below)
+
+\textbf{Note:} Postponing an assessment that has automatic reminders to the future will neither make any new availability notes to be sent out, nor make any additional reminders to be sent out (because BASS counts the number of sent reminders independently of assessment date). Rescheduling an assessment that has automatic reminders to the past will disable the availability note (because the first day of availability has passed) and eventually disable reminders if the remind interval for them has passed.
+
+\emph{Use standard text for e-mail/SMS} -- Sets the content of reminders/notes to be sent to a predefined standard text. The current standard texts are shown below the checkbox.
+
+\textbf{Hint:} The standard texts for reminders and notifications can be edited via Main menu -\textgreater{} External messages.
+
+It is also possible to set a \emph{Custom notifications/reminders} text in the corresponding textbox. This text is shared between emails and SMS. The \emph{Subject for activation} emails and SMS can however differ and are set in the two bottom textboxes. Custom notifications/reminders can be up to around 150 characters long.
+
+\hypertarget{participant-flagging}{%
+\subsection{Participant flagging}\label{participant-flagging}}
+
+This option sets flags to be shown for therapists on certain, participant-specific events.
+
+\emph{Flag participant when assessment becomes activated} raises a flag for participants at the activation of the assessment.
+
+\emph{Flag late participants} raises a flag for participants that haven't filled in an assessment within a certain number of days after it became available. You can set the number of days to wait before flagging in the box labeled \emph{Days until participant is flagged late.}
+
+\hypertarget{copy-assessment}{%
+\section{Copy assessment}\label{copy-assessment}}
+
+You can create a copy of an assessment and save it to the same project before editing it. This functionality makes it quick and easy to create several similar assessments that occur at different time points within your project.
+
+It is also possible to mark several or even all assessments of a project and copy them to another project, thus creating two similar projects.
+
+To copy assessments in the Assessment view, check the boxes of the assessments you want to duplicate. This makes the dropdown menu Copy selected assessments to\ldots{} appear below the assessment list. From the dropdown you can select the project where you want to paste the assessment. If it is the current project, the copy-pasted assessments will appear at the bottom of the list with the prefix COPY.
+
+\includegraphics{images/copy-assessment.png}
+
+\hypertarget{dummy-assessments---some-scheduling-tricks}{%
+\section{Dummy assessments - some scheduling tricks}\label{dummy-assessments---some-scheduling-tricks}}
+
+Empty assessments that doesn't contain any instruments can be used as timers to schedule administrative activities.
+
+\textbf{Example 1, Scheduling automatic events:} A single, empty assessment can be created to hold the time point from which other assessments are scheduled to automatically become available. This circumvents the issue when a ``real'' but reoccurring assessment can't be used as starting date for a timetable.
+
+\textbf{Example 2, Scheduling manual actions:} An empty assessment can also be used together with flagging to prompt a certain action from the therapist. This is useful when something needs to be manually sent or done by the therapist a certain number of days into treatment while participants have individual treatment start dates. The trick is achieved by creating an empty assessment (i.e.~FLAG FOR SENDING DEVICE) that is dependent on a previous assessment (i.e.~FIRST ASSESSMENT) and activated with a chosen delay (i.e.~63 days after). By checking the box Flag participant when assessment becomes activated, the therapist will see individually occurring flags on participants whenever it is time for them to receive the attention/service from the therapist. Since the assessment doesn't contain any instruments, only the therapist will get a notice (flag).
+
+\textbf{Example 3, Scheduling text messages (SMS):} An empty assessment that is managed In group and linked to a text message can be used to schedule an independent reminder to all participants (i.e. ``Happy New Year! If you find it hard to keep to your new lifestyle during events like this, log in and re-read the advice in module 3''). An empty assessment can also be created to remind a single individual that hasn't done so for a while to log in.
+
+\hypertarget{assessment-instruments}{%
+\section{Assessment instruments}\label{assessment-instruments}}
+
+All available instruments are listed in the right panel of the Assessment view. To include an instrument, check the box to the left of its name and then press the \emph{Save} button. The number shown between the brackets to the right of each instrument name shows how many questions the instrument contains. The \emph{Total number of items} top row shows the current total sum of questions in the assessment.
+
+The order in which the instruments appear in the assessment will be the same as the order they are presented in the box Assessment Instruments shown to the right. You can change the order of an instrument listed in the box by pressing the upward arrow to the left of the instrument name.
+
+//Bild
+
+\textbf{Hint:} If you can't see any/all arrows, first select the instruments you want to include and press Save. Then change the order of the instruments and press Save again
 
 \hypertarget{participants}{%
 \chapter{Participants}\label{participants}}
