@@ -134,6 +134,6 @@ All available instruments are listed in the right panel of the Assessment view. 
 
 The order in which the instruments appear in the assessment will be the same as the order they are presented in the box Assessment Instruments shown to the right. You can change the order of an instrument listed in the box by pressing the upward arrow to the left of the instrument name. 
 
-//Bild 
+![](images/assessment-instrument.png)
 
 **Hint:** If you can’t see any/all arrows, first select the instruments you want to include and press Save. Then change the order of the instruments and press Save again
