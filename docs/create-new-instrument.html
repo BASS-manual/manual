@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Search participants | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 8 Create new instrument | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator`s manual for BASS4." />
   <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Search participants | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 8 Create new instrument | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="LouiseSerenhov/BASS-bookdown-test" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Search participants | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 8 Create new instrument | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-main-menu.html">
-<link rel="next" href="assessments.html">
+<link rel="prev" href="participants.html">
+<link rel="next" href="create-new-treatment.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -121,78 +121,17 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="search-participants" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Search participants</h1>
-<p>The “Participant search” is located at the top of the main menu. This is where you can search for and list participants by specific variables such as groups or projects.</p>
-<p><img src="images/search-participants-menu.png" /></p>
-<p>When you press “Participant search” you will see a view with four tabs:</p>
-<p><img src="images/search-participants-tab.png" /></p>
-<ul>
-<li>Selection – Add a filter to your search</li>
-<li>Search – Perform your search using text strings or other identifiers</li>
-<li>Hidden columns – View and show columns that are hidden</li>
-<li>Save/load settings – Save your recurrent searches for convenience</li>
-</ul>
-<div id="selectionfilter" class="section level2">
-<h2><span class="header-section-number">5.1</span> Selection/filter</h2>
-<p>If you press Selection, you can add a filter to your participant search.</p>
-<p><img src="images/selection:filter.png" /></p>
-<p>Here you can choose if you want to search all participants, your own participants (that you treat) or participants whose treatments you supervise.</p>
-<p>You can also choose which project(s) or group(s) to search. The top two checkboxes can be used to quickly either mark or unmark all the below listed projects or groups. If no specific project or group is checked, all of them will be included in the search. This also means that unchecking all projects/groups won’t return participants without a project/group.</p>
-<p><strong>Hint:</strong> If you want to search a specific group you should only mark that group, and not the corresponding project, as this will return all the participants belonging to the project and not only those in the group.</p>
-<p>Your chosen selection of participants is shown in the participant list below the tab.</p>
-</div>
-<div id="search" class="section level2">
-<h2><span class="header-section-number">5.2</span> Search</h2>
-<p>The actual search is done in the <strong>Search</strong> tab. If you previously added search filters in the Selection tab they will now be active and delimit your search.</p>
-<p><img src="images/search.png" /></p>
-<p>Here you can use many different variables to search for one or several participants. The search is executed either automatically when you leave a filled-in search box or when you hit the Enter-key on your keyboard. Your search results are shown in the participant list below the tab.</p>
-<p>Note that there is a discrepancy when searching by numbers or by text strings:</p>
-<ul>
-<li><p>Searching for the number “12” will only show the exact hit, while adding a % sign to the search as in “12%” will return both “12”, “123” and “012”.</p></li>
-<li><p>Searching for the text string “my” will return both “My”, “Myra” and “Amy”. You don’t need to add any % sign for text string searches.</p></li>
-</ul>
-<p>To search for several participants at the same time, you add a space between each corresponding search term in the search box.</p>
-<p><strong>Hint:</strong> This is useful if you want to search for participants whose IDs are listed on different rows in an Excel-file. Just copy the ID containing rows in Excel and directly paste them into the search box in BASS and they automatically receive a space between them.</p>
-</div>
-<div id="hide-show-and-sort-columns" class="section level2">
-<h2><span class="header-section-number">5.3</span> Hide, show and sort columns</h2>
-<p>If you want to hide a column, you hover the mouse over the column header until a red X shows up. By pressing the X, the column will be hidden.</p>
-<p><img src="images/hide-show-sort.png" /></p>
-<p>To show/unhide a column, press the “Hidden columns” tab. This tab shows all hidden columns as buttons. Press the button with the column you want back and it will show up in the search results again.</p>
-<p><img src="images/hidden-columns.png" /></p>
-<p>Most columns can be sorted alphabetically or by number. To sort a column, press the small up/down arrows that show when you hover over the column header.</p>
-</div>
-<div id="column-explanations" class="section level2">
-<h2><span class="header-section-number">5.4</span> Column explanations</h2>
-<p>There are a number of columns showing information, status or possible actions for a participant. Some are explained in the table below.</p>
-<p>//Tabell</p>
-</div>
-<div id="saveload-search-settings" class="section level2">
-<h2><span class="header-section-number">5.5</span> Save/load search settings</h2>
-<p>To save your current search settings, including both filters and search parameters, press the Save/load settings-tab. First ensure that the current search result for the settings you want to save are shown in the table below. Then write a name for your settings in the Currently loaded settings box and press “Save as new”.</p>
-<p><strong>Hint:</strong> Be careful to not use the “Save” button instead, because this will overwrite any currently loaded settings including its name.</p>
-<p><img src="images/save-load1.png" /></p>
-<p>The text “saved!” appears to the right of the buttons and your search is now saved and available in the dropdown below.</p>
-<p><img src="images/save-load2.png" /></p>
-<p>The dropdown “Saved settings” is where you access all your previously saved search settings.</p>
-<p><strong>Hint:</strong> If you make a new search, the “Currently loaded settings” box may no longer reflect the content of the search result list below. To be sure that the list matches the settings you want to load, first select “Choose” in the dropdown menu and then reselect the settings you want.</p>
-<div id="add-new-participant-to-group-and-change-group" class="section level3">
-<h3><span class="header-section-number">5.5.1</span> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP</h3>
-<p>It is possible to directly create a new participant within a specific project. This function is found below the table of participants. Just choose which project you want to add the new participant to, and you will be redirected to the “New participant”-view with this project pre-filled.</p>
-<p><img src="images/add-new-participants.png" /></p>
-<p>It is also easy to change which group a participant belongs to. For each participant in the table, you can choose a project in the dropdown in the Group column. Don’t forget to save all changes by pressing the “Save” button below the table afterwards.</p>
+<div id="create-new-instrument" class="section level1">
+<h1><span class="header-section-number">Chapter 8</span> Create new instrument</h1>
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-main-menu.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="assessments.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="participants.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="create-new-treatment.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -222,7 +161,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/04-Search-participants.Rmd",
+"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/07-Create-instrument.Rmd",
 "text": "Edit"
 },
 "history": {
