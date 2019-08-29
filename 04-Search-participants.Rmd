@@ -60,7 +60,89 @@ Most columns can be sorted alphabetically or by number. To sort a column, press 
 
 There are a number of columns showing information, status or possible actions for a participant. Some are explained in the table below.
 
-//Tabell
+<style>
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+
+<table>
+  <tr>
+    <th>Column</th>
+    <th>Description</th>
+  </tr>
+  
+  <tr>
+    <td>Pen symbol</td>
+    <td>Edit the participant</td>
+  </tr>
+  
+  <tr>
+    <td>Participant Id</td>
+    <td>A unique identifier for a participant within the study/project. “ANX-001”</td>
+  </tr>
+  
+  <tr>
+    <td>Internal Id</td>
+    <td>A unique and technical identifier for a participant within the database.</td>
+  </tr>
+  
+  <tr>
+    <td>Flag symbol</td>
+    <td>Shows if the participant is flagged for something.</td>
+  </tr>
+  
+  <tr>
+    <td>Message symbol</td>
+    <td>Shows if there are unread messages from the participant.</td>
+  </tr>
+  
+  <tr>
+    <td>Chat symbol</td>
+    <td>(For supervised therapists) 
+Shows if there are unread messages from the supervisor.
+</td>
+  </tr>
+  
+   <tr>
+    <td>Approval symbol</td>
+    <td>(For supervisors) 
+Shows if there are messages sent from a supervised therapist to a participant that might need approval.
+</td>
+  </tr>
+  
+   <tr>
+    <td>Superv Mess</td>
+    <td>(For supervisors)
+Total number of messages in supervisory correspondence. This is a useful way to see how much guidance was needed from the supervisor.
+</td>
+  </tr>
+  
+<tr>
+  <td>Last message</td>
+  <td>Last date when a participant sent a message (was active). Sort on this column and you’ll find participants that are lagging behind.
+</td>
+</tr>
+  
+<tr>
+  <td>Weeks</td>
+  <td>The number of weeks left of the treatment. 
+Treatments without end date are marked with the eternity symbol.
+</td>
+</tr>  
+
+<tr>
+  <td>Module</td>
+  <td>The latest module the participant got access to. This column also shows for how many days the participant has had access to the module.
+</td>
+</tr>  
+
+</table>
+
 
 ## Save/load search settings
 
