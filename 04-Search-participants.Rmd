@@ -15,7 +15,7 @@ When you press “Participant search” you will see a view with four tabs:
 ## Selection/filter
 If you press Selection, you can add a filter to your participant search. 
 
-![](images/selection:filter.png) 
+![](images/selection-filter.png) 
 
 Here you can choose if you want to search all participants, your own participants (that you treat) or participants whose treatments you supervise. 
 
