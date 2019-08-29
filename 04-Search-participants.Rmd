@@ -141,6 +141,30 @@ Treatments without end date are marked with the eternity symbol.
 </td>
 </tr>  
 
+<tr>
+  <td>Homework</td>
+  <td>Shows if there is an unread homework sent in by the participant.
+</td>
+</tr>  
+
+<tr>
+  <td>Group</td>
+  <td>Shows which group a participant belongs to. You can change the group here, but you need to save the update with the Save button below the list.
+</td>
+</tr>  
+
+<tr>
+  <td>Heart symbol</td>
+  <td>By pressing the heart, you add the participant to your participants.
+</td>
+</tr>  
+
+<tr>
+  <td>Trash symbol</td>
+  <td>By pressing the trash symbol, you delete the participant. Be careful as the participant and all its corresponding data then will be lost.
+</td>
+</tr>  
+
 </table>
 
 
