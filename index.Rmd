@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [bibliography.bib, packages.bib]
 biblio-style: apalike
 linkcitations: yes
-github-repo: LouiseSerenhov/BASS-bookdown-test
+github-repo: BASS-manual/manual
 description: "Adminstrator`s manual for BASS4."
 ---
 
