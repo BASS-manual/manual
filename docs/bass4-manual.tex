@@ -1,3 +1,6 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
 \documentclass[]{book}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
@@ -6,31 +9,34 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
 \else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
+  \usepackage{unicode-math}
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{%
-\usepackage{microtype}
+\usepackage[]{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
 \usepackage{hyperref}
-\hypersetup{unicode=true,
+\hypersetup{
             pdftitle={BASS4 - ADMINISTRATOR'S MANUAL},
             pdfauthor={Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage{natbib}
-\bibliographystyle{apalike}
 \usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -40,12 +46,6 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -60,31 +60,10 @@
 \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 
-%%% Use protect on footnotes to avoid problems with footnotes in titles
-\let\rmarkdownfootnote\footnote%
-\def\footnote{\protect\rmarkdownfootnote}
-
-%%% Change title format to be more compact
-\usepackage{titling}
-
-% Create subtitle command for use in maketitle
-\providecommand{\subtitle}[1]{
-  \posttitle{
-    \begin{center}\large#1\end{center}
-    }
-}
-
-\setlength{\droptitle}{-2em}
-
-  \title{BASS4 - ADMINISTRATOR'S MANUAL}
-    \pretitle{\vspace{\droptitle}\centering\huge}
-  \posttitle{\par}
-    \author{Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson}
-    \preauthor{\centering\large\emph}
-  \postauthor{\par}
-      \predate{\centering\large\emph}
-  \postdate{\par}
-    \date{Last updated 2019-10-10}
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -94,6 +73,12 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{BASS4 - ADMINISTRATOR'S MANUAL}
+\author{Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson}
+\date{Last updated 2020-01-09}
 
 \begin{document}
 \maketitle
@@ -131,8 +116,8 @@ A participant need to be assigned to a project to be able to fill in instruments
 \textbf{Group}
 A project can be divided into groups, and participants of the same group in a project can be managed collectively.
 
-\hypertarget{login1}{%
-\chapter{Login1}\label{login1}}
+\hypertarget{login}{%
+\chapter{Login}\label{login}}
 
 As soon as your database setup is ready, you can login to the administrator's interface. The interface is found at an URL of the format ``\url{https://webcbt.se/NameOfYourDatabase}''. Enter your credentials in the login box and press the Login button.
 
@@ -478,7 +463,7 @@ Empty assessments that doesn't contain any instruments can be used as timers to 
 
 \textbf{Example 2, Scheduling manual actions:} An empty assessment can also be used together with flagging to prompt a certain action from the therapist. This is useful when something needs to be manually sent or done by the therapist a certain number of days into treatment while participants have individual treatment start dates. The trick is achieved by creating an empty assessment (i.e.~FLAG FOR SENDING DEVICE) that is dependent on a previous assessment (i.e.~FIRST ASSESSMENT) and activated with a chosen delay (i.e.~63 days after). By checking the box Flag participant when assessment becomes activated, the therapist will see individually occurring flags on participants whenever it is time for them to receive the attention/service from the therapist. Since the assessment doesn't contain any instruments, only the therapist will get a notice (flag).
 
-\textbf{Example 3, Scheduling text messages (SMS):} An empty assessment that is managed In group and linked to a text message can be used to schedule an independent reminder to all participants (i.e.~``Happy New Year! If you find it hard to keep to your new lifestyle during events like this, log in and re-read the advice in module 3''). An empty assessment can also be created to remind a single individual that hasn't done so for a while to log in.
+\textbf{Example 3, Scheduling text messages (SMS):} An empty assessment that is managed In group and linked to a text message can be used to schedule an independent reminder to all participants (i.e. ``Happy New Year! If you find it hard to keep to your new lifestyle during events like this, log in and re-read the advice in module 3''). An empty assessment can also be created to remind a single individual that hasn't done so for a while to log in.
 
 \hypertarget{assessment-instruments}{%
 \section{Assessment instruments}\label{assessment-instruments}}
@@ -504,6 +489,5 @@ The order in which the instruments appear in the assessment will be the same as 
 \chapter{References}\label{references}}
 
 \bibliography{bibliography.bib,packages.bib}
-
 
 \end{document}
