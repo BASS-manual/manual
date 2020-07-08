@@ -165,3 +165,7 @@ You can also calculate the mean of a score, by dividing the number of questions 
 Just as you can calculate several sums and products, you can also calculate several means.
 
 >**Calculating several means:**<br> `mean1 = (@1 + @2 + @3) / 3`<br> `mean2 = (@4 + @5) / 2`<br> `mean3 = (@6 + @7 + @8 + @9) / 4`<br> `#sums mean1, mean2, mean3`
+
+
+## Export
+The export tab lets you copy the XML code of an instrument, to enable exporting to another database or another program that can accept instruments/forms in XML format.
