@@ -1,5 +1,4 @@
 # Create new treatment 
 
-## Treatments in BASS
-BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.<b>
+BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.<br>
 A treatment is built by combining *treatment modules* into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization's needs and wishes.
