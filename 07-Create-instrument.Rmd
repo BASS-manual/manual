@@ -12,8 +12,8 @@ There are two ways to create a new instrument in BASS4. Either you can copy an e
 ## Copy an instrument
 To copy an instrument, follow these steps:<br>
 1) Navigate to **Instruments** in the main menu to the left. Here you can view all instruments currently available in your database.<br>
-2) On the far right of the instrument you wish to copy, next to the trash can icon, is an icon resembling two documents. If you hover with the mouse pointer over this icon, it will say "Copy instrument". Clicking on this icon will create a copy of the instrument, called "Copy of [Instrument]".
-3) Open the instrument you just created by clicking the pencil icon to the right on the instrument row. If you hover the mouse pointer over the pencil icon, it will display the tooltip "Edit instrument". Clicking the pencil icon will show the instrument editor. The "Creating a new instrument" section explains how this editor works.
+2) On the far right of the instrument you wish to copy, next to the trash can icon, is an icon resembling two documents. If you hover with the mouse pointer over this icon, it will say "Copy instrument". Clicking on this icon will create a copy of the instrument, called "Copy of [Instrument]".<br>
+3) Open the instrument you just created by clicking the pencil icon to the right on the instrument row. If you hover the mouse pointer over the pencil icon, it will display the tooltip "Edit instrument". Clicking the pencil icon will show the instrument editor. The "Creating a new instrument" section explains how this editor works.<br>
 4) Prior to editing the instrument, it's good practice to open a separate window or browser tab by using the **Preview-function**. This function is located under the Preview-tab, and opened by clicking the "Open preview in Clojure app" hyperlink. By default, a new tab will open where the instrument will be displayed in its formatted layout. It's a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.
 
 ## Creating a new instrument
@@ -29,11 +29,11 @@ For example, this could be **Audit** in all three cases, as show in picture 1 be
 If the instrument you are creating is supposed to be filled out by a clinician, you check the box called **Clinician assessment**.
 
 #### The BASS4 Table
-This table contains three options that influence the presentation of your instrument.
-**Classic presentation in BASS4** governs whether your instrument is shown in a classic layout, i.e somewhat smaller font size, or a more modern layout with a somewhat larger font size (16 pixels).
+This table contains three options that influence the presentation of your instrument.<br>
+**Classic presentation in BASS4** governs whether your instrument is shown in a classic layout, i.e somewhat smaller font size, or a more modern layout with a somewhat larger font size (16 pixels).<br>
 **Responsive presentation** governs whether or not your instrument is adjusted automatically according to the size of the screen it is viewed on (i.e mobile or PC/Mac). This mainly affects *Question* items, where answers ordered by cell will require additional steps be taken in order to display correctly.Instructions on how to do this are found under the "Edit" section. 
 Answers ordered by line break will automatically display correctly both on mobile and PC/Mac with this option checked. 
-Leaving this box unchecked will cause the instrument to display its PC/Mac layout regardless of which screen it is viewed on. It will not adjust to mobile screens.
+Leaving this box unchecked will cause the instrument to display its PC/Mac layout regardless of which screen it is viewed on. It will not adjust to mobile screens.<br>
 **Number column** governs whether or not the first column of the instrument is assigned to the display of question numbers in responsive presentation.
 
 When you've entered the information, click **save**.
