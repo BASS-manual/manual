@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
   
 
-<meta name="author" content="Louise Serenhov, Jenny-Li Örsell &amp; Brjánn Ljótsson" />
+<meta name="author" content="Louise Serenhov, Erik Sjöstrand, Jenny-Li Örsell &amp; Brjánn Ljótsson" />
 
 
 
@@ -100,7 +100,10 @@
 <li class="chapter" data-level="6.3" data-path="assessments.html"><a href="assessments.html#dummy-assessments---some-scheduling-tricks"><i class="fa fa-check"></i><b>6.3</b> Dummy assessments - some scheduling tricks</a></li>
 <li class="chapter" data-level="6.4" data-path="assessments.html"><a href="assessments.html#assessment-instruments"><i class="fa fa-check"></i><b>6.4</b> Assessment instruments</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>7</b> Participants</a></li>
+<li class="chapter" data-level="7" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>7</b> Participants</a><ul>
+<li class="chapter" data-level="7.1" data-path="participants.html"><a href="participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>7.1</b> Creating, deleting and editing participants</a></li>
+<li class="chapter" data-level="7.2" data-path="participants.html"><a href="participants.html#the-participant-view"><i class="fa fa-check"></i><b>7.2</b> The participant view</a></li>
+</ul></li>
 <li class="chapter" data-level="8" data-path="instruments.html"><a href="instruments.html"><i class="fa fa-check"></i><b>8</b> Instruments</a><ul>
 <li class="chapter" data-level="8.1" data-path="instruments.html"><a href="instruments.html#copy-an-instrument"><i class="fa fa-check"></i><b>8.1</b> Copy an instrument</a></li>
 <li class="chapter" data-level="8.2" data-path="instruments.html"><a href="instruments.html#creating-a-new-instrument"><i class="fa fa-check"></i><b>8.2</b> Creating a new instrument</a><ul>
@@ -111,7 +114,9 @@
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="instruments.html"><a href="instruments.html#scoring-formula"><i class="fa fa-check"></i><b>8.3</b> Scoring formula</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="create-new-treatment.html"><a href="create-new-treatment.html"><i class="fa fa-check"></i><b>9</b> Create new treatment</a></li>
+<li class="chapter" data-level="9" data-path="create-new-treatment.html"><a href="create-new-treatment.html"><i class="fa fa-check"></i><b>9</b> Create new treatment</a><ul>
+<li class="chapter" data-level="9.1" data-path="create-new-treatment.html"><a href="create-new-treatment.html#treatments-in-bass"><i class="fa fa-check"></i><b>9.1</b> Treatments in BASS</a></li>
+</ul></li>
 <li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -140,8 +145,8 @@
 <h2><span class="header-section-number">8.1</span> Copy an instrument</h2>
 <p>To copy an instrument, follow these steps:<br>
 1) Navigate to <strong>Instruments</strong> in the main menu to the left. Here you can view all instruments currently available in your database.<br>
-2) On the far right of the instrument you wish to copy, next to the trash can icon, is an icon resembling two documents. If you hover with the mouse pointer over this icon, it will say “Copy instrument”. Clicking on this icon will create a copy of the instrument, called “Copy of [Instrument]”.
-3) Open the instrument you just created by clicking the pencil icon to the right on the instrument row. If you hover the mouse pointer over the pencil icon, it will display the tooltip “Edit instrument”. Clicking the pencil icon will show the instrument editor. The “Creating a new instrument” section explains how this editor works.
+2) On the far right of the instrument you wish to copy, next to the trash can icon, is an icon resembling two documents. If you hover with the mouse pointer over this icon, it will say “Copy instrument”. Clicking on this icon will create a copy of the instrument, called “Copy of [Instrument]”.<br>
+3) Open the instrument you just created by clicking the pencil icon to the right on the instrument row. If you hover the mouse pointer over the pencil icon, it will display the tooltip “Edit instrument”. Clicking the pencil icon will show the instrument editor. The “Creating a new instrument” section explains how this editor works.<br>
 4) Prior to editing the instrument, it’s good practice to open a separate window or browser tab by using the <strong>Preview-function</strong>. This function is located under the Preview-tab, and opened by clicking the “Open preview in Clojure app” hyperlink. By default, a new tab will open where the instrument will be displayed in its formatted layout. It’s a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.</p>
 </div>
 <div id="creating-a-new-instrument" class="section level2">
@@ -156,11 +161,11 @@ For example, this could be <strong>Audit</strong> in all three cases, as show in
 <p>If the instrument you are creating is supposed to be filled out by a clinician, you check the box called <strong>Clinician assessment</strong>.</p>
 <div id="the-bass4-table" class="section level4">
 <h4><span class="header-section-number">8.2.1.1</span> The BASS4 Table</h4>
-<p>This table contains three options that influence the presentation of your instrument.
-<strong>Classic presentation in BASS4</strong> governs whether your instrument is shown in a classic layout, i.e somewhat smaller font size, or a more modern layout with a somewhat larger font size (16 pixels).
+<p>This table contains three options that influence the presentation of your instrument.<br>
+<strong>Classic presentation in BASS4</strong> governs whether your instrument is shown in a classic layout, i.e somewhat smaller font size, or a more modern layout with a somewhat larger font size (16 pixels).<br>
 <strong>Responsive presentation</strong> governs whether or not your instrument is adjusted automatically according to the size of the screen it is viewed on (i.e mobile or PC/Mac). This mainly affects <em>Question</em> items, where answers ordered by cell will require additional steps be taken in order to display correctly.Instructions on how to do this are found under the “Edit” section.
 Answers ordered by line break will automatically display correctly both on mobile and PC/Mac with this option checked.
-Leaving this box unchecked will cause the instrument to display its PC/Mac layout regardless of which screen it is viewed on. It will not adjust to mobile screens.
+Leaving this box unchecked will cause the instrument to display its PC/Mac layout regardless of which screen it is viewed on. It will not adjust to mobile screens.<br>
 <strong>Number column</strong> governs whether or not the first column of the instrument is assigned to the display of question numbers in responsive presentation.</p>
 <p>When you’ve entered the information, click <strong>save</strong>.</p>
 </div>
@@ -282,7 +287,7 @@ Should you leave the scoring formula blank, you will still get all value readout
 </blockquote>
 <p>Just as you can calculate several sums and products, you can also calculate several means.</p>
 <blockquote>
-<p><strong>Calculating several means:</strong><br> <code>mean1 = (@1 + @2 + @3) / 3</code><br> <code>mean2 = (@4 + @5) / 2</code><br> <code>mean3 = (@6 + @7 + @8) / 3</code><br> <code>#sums mean1, mean2, mean3</code></p>
+<p><strong>Calculating several means:</strong><br> <code>mean1 = (@1 + @2 + @3) / 3</code><br> <code>mean2 = (@4 + @5) / 2</code><br> <code>mean3 = (@6 + @7 + @8 + @9) / 4</code><br> <code>#sums mean1, mean2, mean3</code></p>
 </blockquote>
 
 </div>

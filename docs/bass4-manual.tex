@@ -30,7 +30,7 @@
 \usepackage{hyperref}
 \hypersetup{
             pdftitle={BASS4 - ADMINISTRATOR'S MANUAL},
-            pdfauthor={Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson},
+            pdfauthor={Louise Serenhov, Erik Sjöstrand, Jenny-Li Örsell \& Brjánn Ljótsson},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -77,7 +77,7 @@
 \bibliographystyle{apalike}
 
 \title{BASS4 - ADMINISTRATOR'S MANUAL}
-\author{Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson}
+\author{Louise Serenhov, Erik Sjöstrand, Jenny-Li Örsell \& Brjánn Ljótsson}
 \date{Last updated 2020-07-08}
 
 \begin{document}
@@ -452,7 +452,7 @@ You can also add reminders to participants who are late with filling in their as
 
 \emph{Remind interval} is the delay upon which reminders are sent to late participants, counted as days after the assessment became available.
 
-Max number of reminders sets how many reminders can be sent out to the participant, with the previously mentioned time interval. This setting needs to be at least 1 for any reminder to be sent.
+\emph{Max number of reminders} sets how many reminders can be sent out to the participant, with the previously mentioned time interval. This setting needs to be at least 1 for any reminder to be sent.
 
 \begin{quote}
 \textbf{Hint:} If you want additional reminders to be sent, increase the number in this box instead of rescheduling the assessment (see below)
@@ -516,6 +516,40 @@ The order in which the instruments appear in the assessment will be the same as 
 
 \hypertarget{participants}{%
 \chapter{Participants}\label{participants}}
+
+The ``Participants'' view is one way to access participant information. It is very similar to the ``Participant search'' view, and it is mostly down to personal preference on which to use. You can customize ``Participant search'' to show exactly the data you want to see, while ``Participants'' is predefined and more simplistic. One important difference remains, however: the \textbf{``Groups''} tab, which only exists under ``Participants''.
+
+Depending on which project is selected in the dropdown in the main menu, the result in the ``Participants'' view will differ. If a specific project is selected, only participants in that project wil be shown under each tab.
+
+In ``Participants'', there are four tabs:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{My participants}, which shows you any participants assigned to you (as a therapist)
+\item
+  \emph{Supervisions}, which is similiar to ``Supervised participants''
+\item
+  \emph{All participants}, which shows you all participants in a project. If no project is selected, it will show all participants in the database.
+\item
+  \emph{Groups}, which shows you the groups created in a project, and gives you the tools to manage them.
+\end{itemize}
+
+\includegraphics{images/new-images/participantsTabs.png}
+
+\hypertarget{creating-deleting-and-editing-participants}{%
+\section{Creating, deleting and editing participants}\label{creating-deleting-and-editing-participants}}
+
+You can create new participants in two of the tabs in the Participants view; \emph{My participants} and \emph{All participants}. Participants that are created in the \emph{My participants} tab will be tagged as your participants automatically, while participants created in the \emph{All participants} tab won't be tagged.
+To create a new participant, click \emph{Create participant within project {[}Project Name{]}}. Newly created participants are added at the bottom of each view.
+
+Te delete at participant, click the trash bin icon to the far right of the corresponding participant's row.
+
+To edit a participant, click the pencil icon in the table, on the corresponding participant's row. This will take you to the ``Participant stats'' view.
+If you only wish to change, or add, what group a participant belongs to, you can do so directly in the \emph{Group} column of the participant table by using the dropdown. When you've assigned a participant to a group this way, don't forget to click the ``Save'' button at the bottom of the table.
+
+\hypertarget{the-participant-view}{%
+\section{The participant view}\label{the-participant-view}}
 
 \hypertarget{instruments}{%
 \chapter{Instruments}\label{instruments}}
@@ -724,11 +758,17 @@ You can also calculate the mean of a score, by dividing the number of questions 
 Just as you can calculate several sums and products, you can also calculate several means.
 
 \begin{quote}
-\textbf{Calculating several means:} \texttt{mean1\ =\ (@1\ +\ @2\ +\ @3)\ /\ 3} \texttt{mean2\ =\ (@4\ +\ @5)\ /\ 2} \texttt{mean3\ =\ (@6\ +\ @7\ +\ @8)\ /\ 3} \texttt{\#sums\ mean1,\ mean2,\ mean3}
+\textbf{Calculating several means:} \texttt{mean1\ =\ (@1\ +\ @2\ +\ @3)\ /\ 3} \texttt{mean2\ =\ (@4\ +\ @5)\ /\ 2} \texttt{mean3\ =\ (@6\ +\ @7\ +\ @8\ +\ @9)\ /\ 4} \texttt{\#sums\ mean1,\ mean2,\ mean3}
 \end{quote}
 
 \hypertarget{create-new-treatment}{%
 \chapter{Create new treatment}\label{create-new-treatment}}
+
+\hypertarget{treatments-in-bass}{%
+\section{Treatments in BASS}\label{treatments-in-bass}}
+
+BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.
+A treatment is built by combining \emph{treatment modules} into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization's needs and wishes.
 
 \hypertarget{references}{%
 \chapter{References}\label{references}}
