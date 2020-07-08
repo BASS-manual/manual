@@ -16,14 +16,14 @@ Here you can fill in a name for your assessment, for example ***Screening***.
 ### Label/Custom label 
 You can either select one of the predefined labels in the drop-down, or write your own label in the Custom label textbox. Adding a custom label will surpass any predefined label that is selected from the drop-down. Note that the assessment label will be visible in reports when you export your data.
 
-**Hint:** By selecting Weekly-assessment or Point-assessment some stats for Repetition (below) are preset. 
+>**Hint:** By selecting Weekly-assessment or Point-assessment some stats for Repetition (below) are preset. 
 
 ### Managed 
 This option sets whether data-gathering is managed individually or in groups. 
 
-**Hint:** If you have different cohorts, you may want to choose In group. Screening assessments are usually managed In group and these can be activated or deactivated for a certain group and date under Participants -> Groups -> screening group name -> Show -> Assessments. 
+>**Hint:** If you have different cohorts, you may want to choose In group. Screening assessments are usually managed In group and these can be activated or deactivated for a certain group and date under Participants -> Groups -> screening group name -> Show -> Assessments. 
 
-**Hint:** If your participants start their treatments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
+>**Hint:** If your participants start their treatments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
 
 ### Repitition 
 The Repetition option sets if the assessment is to be done once or repeatedly, and if so at what intervals and for how many times. 
@@ -35,24 +35,24 @@ Assessments with the label “Point-assessment” have repetition set to Manual.
 ### Time limit 
 Here you can set if participants have to fill out the assessment within a certain time limit. 
 
-**Important note:** Setting a time limit for an assessment is extremely important to prevent the results being mixed up with those from similar, subsequent assessments. For example, if an ongoing POST assessment is still accessible when the FOLLOW UP assessment is activated, the results of any of them is duplicated to the other. This results in data reports where no change seems to have occurred between the assessments.
+>**Important note:** Setting a time limit for an assessment is extremely important to prevent the results being mixed up with those from similar, subsequent assessments. For example, if an ongoing POST assessment is still accessible when the FOLLOW UP assessment is activated, the results of any of them is duplicated to the other. This results in data reports where no change seems to have occurred between the assessments.
 
 An assessment with the time limit of 7 days that starts on a Monday will be available for the rest of that week but not for the next. 
 
-**Hint:** Keeping the time limit short, or shorter than the repetition interval, has the effect that participants fill in correct data corresponding to the set time-frame, but sometimes will miss the window when they can report. This is useful in assessments where accurate and time-dependent data is more important than full attendance.
+>**Hint:** Keeping the time limit short, or shorter than the repetition interval, has the effect that participants fill in correct data corresponding to the set time-frame, but sometimes will miss the window when they can report. This is useful in assessments where accurate and time-dependent data is more important than full attendance.
 
 ###	Dependence
 The Dependence option sets when the assessment is to be activated, in relation to the date of a previous assessment. The relationship is kept even if you change the date of the previous assessment. 
 
 Date offset from is where you select the previous assessment from which the date/delay is to be calculated. 
 
-**Note:** Setting Date offset from a reoccurring assessment (i.e. WEEKLY) will count the delay from the date of the last assessment and not the first. If this is not what you want, consider creating a dummy assessment without instruments to hold the start/dependence date.
+>**Note:** Setting Date offset from a reoccurring assessment (i.e. WEEKLY) will count the delay from the date of the last assessment and not the first. If this is not what you want, consider creating a dummy assessment without instruments to hold the start/dependence date.
 
 Checking Dynamic means that the delay is calculated from the time when the previous assessment was filled out instead of the time when it was scheduled. Note that this setting only can be done on individually managed assessments.
 
 Delay is the number of days to wait before activation. 
 
-**Hint:** If you can’t see the calculated date of your assessment in the view under Participants -> Groups -> group name -> Show -> Assessments, try to set the date of the previous interrelated assessment again and press the Save button.
+>**Hint:** If you can’t see the calculated date of your assessment in the view under Participants -> Groups -> group name -> Show -> Assessments, try to set the date of the previous interrelated assessment again and press the Save button.
 
 ### Clinician rated
 
@@ -60,9 +60,9 @@ This option hides all instruments in the assessment for participants and instead
 
 This setting allows a clinician to fill in the instrument(s) for a specific patient via Main menu -> Participants -> Groups -> specific group -> specific participant -> Assessments -> specific assessment -> specific instrument -> pen on document symbol
 
-**Note:** Clinician rated instruments should not be added to self-assessments. Clinician-rated instruments are hidden for participants which makes it impossible for the participant to complete an assessment containing such an instrument.
+>**Note:** Clinician rated instruments should not be added to self-assessments. Clinician-rated instruments are hidden for participants which makes it impossible for the participant to complete an assessment containing such an instrument.
 
-**Hint:** Clinician rated assessments won’t send automatic reminders. An option is to use flags instead to mark undone tasks.
+>**Hint:** Clinician rated assessments won’t send automatic reminders. An option is to use flags instead to mark undone tasks.
 
 ### Randomize instrument order
 With this option you set the order of the included instruments to be randomized. If not set, the order in which the instruments appear in the assessment will be the same as the order they are presented in the box Assessment Instruments shown to the right.
@@ -84,22 +84,22 @@ This option sets notes or reminders to automatically be sent to participants on 
 
 *Create new quick login* needs to be checked if quick logins are to be sent with the reminders. 
 
-**Hint:** Remember that you also need to activate quick login under Security Settings in the Main menu to enable this function.
+>**Hint:** Remember that you also need to activate quick login under Security Settings in the Main menu to enable this function.
 You can also add reminders to participants who are late with filling in their assessments.
 
-**Note:** It is not possible to only send remainders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
+>**Note:** It is not possible to only send remainders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
 
 *Remind interval* is the delay upon which reminders are sent to late participants, counted as days after the assessment became available. 
 
 Max number of reminders sets how many reminders can be sent out to the participant, with the previously mentioned time interval. This setting needs to be at least 1 for any reminder to be sent.
 
-**Hint:** If you want additional reminders to be sent, increase the number in this box instead of rescheduling the assessment (see below)
+>**Hint:** If you want additional reminders to be sent, increase the number in this box instead of rescheduling the assessment (see below)
 
-**Note:** Postponing an assessment that has automatic reminders to the future will neither make any new availability notes to be sent out, nor make any additional reminders to be sent out (because BASS counts the number of sent reminders independently of assessment date). Rescheduling an assessment that has automatic reminders to the past will disable the availability note (because the first day of availability has passed) and eventually disable reminders if the remind interval for them has passed.
+>**Note:** Postponing an assessment that has automatic reminders to the future will neither make any new availability notes to be sent out, nor make any additional reminders to be sent out (because BASS counts the number of sent reminders independently of assessment date). Rescheduling an assessment that has automatic reminders to the past will disable the availability note (because the first day of availability has passed) and eventually disable reminders if the remind interval for them has passed.
 
 *Use standard text for e-mail/SMS* – Sets the content of reminders/notes to be sent to a predefined standard text. The current standard texts are shown below the checkbox.
 
-**Hint:** The standard texts for reminders and notifications can be edited via Main menu -> External messages. 
+>**Hint:** The standard texts for reminders and notifications can be edited via Main menu -> External messages. 
 
 It is also possible to set a *Custom notifications/reminders* text in the corresponding textbox. This text is shared between emails and SMS. The *Subject for activation* emails and SMS can however differ and are set in the two bottom textboxes. Custom notifications/reminders can be up to around 150 characters long. 
 
@@ -136,4 +136,4 @@ The order in which the instruments appear in the assessment will be the same as 
 
 ![](images/assessment-instrument.png)
 
-**Hint:** If you can’t see any/all arrows, first select the instruments you want to include and press Save. Then change the order of the instruments and press Save again
+>**Hint:** If you can’t see any/all arrows, first select the instruments you want to include and press Save. Then change the order of the instruments and press Save again

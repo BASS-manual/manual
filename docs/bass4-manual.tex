@@ -78,7 +78,7 @@
 
 \title{BASS4 - ADMINISTRATOR'S MANUAL}
 \author{Louise Serenhov, Jenny-Li Örsell \& Brjánn Ljótsson}
-\date{Last updated 2020-01-09}
+\date{Last updated 2020-07-08}
 
 \begin{document}
 \maketitle
@@ -166,7 +166,9 @@ Here you can choose if you want to search all participants, your own participant
 
 You can also choose which project(s) or group(s) to search. The top two checkboxes can be used to quickly either mark or unmark all the below listed projects or groups. If no specific project or group is checked, all of them will be included in the search. This also means that unchecking all projects/groups won't return participants without a project/group.
 
+\begin{quote}
 \textbf{Hint:} If you want to search a specific group you should only mark that group, and not the corresponding project, as this will return all the participants belonging to the project and not only those in the group.
+\end{quote}
 
 Your chosen selection of participants is shown in the participant list below the tab.
 
@@ -190,7 +192,9 @@ Note that there is a discrepancy when searching by numbers or by text strings:
 
 To search for several participants at the same time, you add a space between each corresponding search term in the search box.
 
+\begin{quote}
 \textbf{Hint:} This is useful if you want to search for participants whose IDs are listed on different rows in an Excel-file. Just copy the ID containing rows in Excel and directly paste them into the search box in BASS and they automatically receive a space between them.
+\end{quote}
 
 \hypertarget{hide-show-and-sort-columns}{%
 \section{Hide, show and sort columns}\label{hide-show-and-sort-columns}}
@@ -283,7 +287,9 @@ By pressing the trash symbol, you delete the participant. Be careful as the part
 
 To save your current search settings, including both filters and search parameters, press the Save/load settings-tab. First ensure that the current search result for the settings you want to save are shown in the table below. Then write a name for your settings in the Currently loaded settings box and press ``Save as new''.
 
+\begin{quote}
 \textbf{Hint:} Be careful to not use the ``Save'' button instead, because this will overwrite any currently loaded settings including its name.
+\end{quote}
 
 \includegraphics{images/save-load1.png}
 
@@ -293,7 +299,9 @@ The text ``saved!'' appears to the right of the buttons and your search is now s
 
 The dropdown ``Saved settings'' is where you access all your previously saved search settings.
 
+\begin{quote}
 \textbf{Hint:} If you make a new search, the ``Currently loaded settings'' box may no longer reflect the content of the search result list below. To be sure that the list matches the settings you want to load, first select ``Choose'' in the dropdown menu and then reselect the settings you want.
+\end{quote}
 
 \hypertarget{add-new-participant-to-group-and-change-group}{%
 \subsection{ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP}\label{add-new-participant-to-group-and-change-group}}
@@ -330,16 +338,22 @@ Here you can fill in a name for your assessment, for example \textbf{\emph{Scree
 
 You can either select one of the predefined labels in the drop-down, or write your own label in the Custom label textbox. Adding a custom label will surpass any predefined label that is selected from the drop-down. Note that the assessment label will be visible in reports when you export your data.
 
+\begin{quote}
 \textbf{Hint:} By selecting Weekly-assessment or Point-assessment some stats for Repetition (below) are preset.
+\end{quote}
 
 \hypertarget{managed}{%
 \subsection{Managed}\label{managed}}
 
 This option sets whether data-gathering is managed individually or in groups.
 
+\begin{quote}
 \textbf{Hint:} If you have different cohorts, you may want to choose In group. Screening assessments are usually managed In group and these can be activated or deactivated for a certain group and date under Participants -\textgreater{} Groups -\textgreater{} screening group name -\textgreater{} Show -\textgreater{} Assessments.
+\end{quote}
 
+\begin{quote}
 \textbf{Hint:} If your participants start their treatments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
+\end{quote}
 
 \hypertarget{repitition}{%
 \subsection{Repitition}\label{repitition}}
@@ -355,11 +369,15 @@ Assessments with the label ``Point-assessment'' have repetition set to Manual. T
 
 Here you can set if participants have to fill out the assessment within a certain time limit.
 
+\begin{quote}
 \textbf{Important note:} Setting a time limit for an assessment is extremely important to prevent the results being mixed up with those from similar, subsequent assessments. For example, if an ongoing POST assessment is still accessible when the FOLLOW UP assessment is activated, the results of any of them is duplicated to the other. This results in data reports where no change seems to have occurred between the assessments.
+\end{quote}
 
 An assessment with the time limit of 7 days that starts on a Monday will be available for the rest of that week but not for the next.
 
+\begin{quote}
 \textbf{Hint:} Keeping the time limit short, or shorter than the repetition interval, has the effect that participants fill in correct data corresponding to the set time-frame, but sometimes will miss the window when they can report. This is useful in assessments where accurate and time-dependent data is more important than full attendance.
+\end{quote}
 
 \hypertarget{dependence}{%
 \subsection{Dependence}\label{dependence}}
@@ -368,13 +386,17 @@ The Dependence option sets when the assessment is to be activated, in relation t
 
 Date offset from is where you select the previous assessment from which the date/delay is to be calculated.
 
+\begin{quote}
 \textbf{Note:} Setting Date offset from a reoccurring assessment (i.e.~WEEKLY) will count the delay from the date of the last assessment and not the first. If this is not what you want, consider creating a dummy assessment without instruments to hold the start/dependence date.
+\end{quote}
 
 Checking Dynamic means that the delay is calculated from the time when the previous assessment was filled out instead of the time when it was scheduled. Note that this setting only can be done on individually managed assessments.
 
 Delay is the number of days to wait before activation.
 
+\begin{quote}
 \textbf{Hint:} If you can't see the calculated date of your assessment in the view under Participants -\textgreater{} Groups -\textgreater{} group name -\textgreater{} Show -\textgreater{} Assessments, try to set the date of the previous interrelated assessment again and press the Save button.
+\end{quote}
 
 \hypertarget{clinician-rated}{%
 \subsection{Clinician rated}\label{clinician-rated}}
@@ -383,9 +405,13 @@ This option hides all instruments in the assessment for participants and instead
 
 This setting allows a clinician to fill in the instrument(s) for a specific patient via Main menu -\textgreater{} Participants -\textgreater{} Groups -\textgreater{} specific group -\textgreater{} specific participant -\textgreater{} Assessments -\textgreater{} specific assessment -\textgreater{} specific instrument -\textgreater{} pen on document symbol
 
+\begin{quote}
 \textbf{Note:} Clinician rated instruments should not be added to self-assessments. Clinician-rated instruments are hidden for participants which makes it impossible for the participant to complete an assessment containing such an instrument.
+\end{quote}
 
+\begin{quote}
 \textbf{Hint:} Clinician rated assessments won't send automatic reminders. An option is to use flags instead to mark undone tasks.
+\end{quote}
 
 \hypertarget{randomize-instrument-order}{%
 \subsection{Randomize instrument order}\label{randomize-instrument-order}}
@@ -415,22 +441,32 @@ This option sets notes or reminders to automatically be sent to participants on 
 
 \emph{Create new quick login} needs to be checked if quick logins are to be sent with the reminders.
 
+\begin{quote}
 \textbf{Hint:} Remember that you also need to activate quick login under Security Settings in the Main menu to enable this function.
 You can also add reminders to participants who are late with filling in their assessments.
+\end{quote}
 
+\begin{quote}
 \textbf{Note:} It is not possible to only send remainders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
+\end{quote}
 
 \emph{Remind interval} is the delay upon which reminders are sent to late participants, counted as days after the assessment became available.
 
 Max number of reminders sets how many reminders can be sent out to the participant, with the previously mentioned time interval. This setting needs to be at least 1 for any reminder to be sent.
 
+\begin{quote}
 \textbf{Hint:} If you want additional reminders to be sent, increase the number in this box instead of rescheduling the assessment (see below)
+\end{quote}
 
+\begin{quote}
 \textbf{Note:} Postponing an assessment that has automatic reminders to the future will neither make any new availability notes to be sent out, nor make any additional reminders to be sent out (because BASS counts the number of sent reminders independently of assessment date). Rescheduling an assessment that has automatic reminders to the past will disable the availability note (because the first day of availability has passed) and eventually disable reminders if the remind interval for them has passed.
+\end{quote}
 
 \emph{Use standard text for e-mail/SMS} -- Sets the content of reminders/notes to be sent to a predefined standard text. The current standard texts are shown below the checkbox.
 
+\begin{quote}
 \textbf{Hint:} The standard texts for reminders and notifications can be edited via Main menu -\textgreater{} External messages.
+\end{quote}
 
 It is also possible to set a \emph{Custom notifications/reminders} text in the corresponding textbox. This text is shared between emails and SMS. The \emph{Subject for activation} emails and SMS can however differ and are set in the two bottom textboxes. Custom notifications/reminders can be up to around 150 characters long.
 
@@ -474,13 +510,150 @@ The order in which the instruments appear in the assessment will be the same as 
 
 \includegraphics{images/assessment-instrument.png}
 
+\begin{quote}
 \textbf{Hint:} If you can't see any/all arrows, first select the instruments you want to include and press Save. Then change the order of the instruments and press Save again
+\end{quote}
 
 \hypertarget{participants}{%
 \chapter{Participants}\label{participants}}
 
-\hypertarget{create-new-instrument}{%
-\chapter{Create new instrument}\label{create-new-instrument}}
+\hypertarget{instruments}{%
+\chapter{Instruments}\label{instruments}}
+
+There are two ways to create a new instrument in BASS4. Either you can copy an existing instrument, that is similar to the one you wish to create and adjust that instrument. You can also create a new instrument from scratch, using the built in tool in BASS4.
+
+\hypertarget{copy-an-instrument}{%
+\section{Copy an instrument}\label{copy-an-instrument}}
+
+To copy an instrument, follow these steps:
+1) Navigate to \textbf{Instruments} in the main menu to the left. Here you can view all instruments currently available in your database.
+2) On the far right of the instrument you wish to copy, next to the trash can icon, is an icon resembling two documents. If you hover with the mouse pointer over this icon, it will say ``Copy instrument''. Clicking on this icon will create a copy of the instrument, called ``Copy of {[}Instrument{]}''.
+3) Open the instrument you just created by clicking the pencil icon to the right on the instrument row. If you hover the mouse pointer over the pencil icon, it will display the tooltip ``Edit instrument''. Clicking the pencil icon will show the instrument editor. The ``Creating a new instrument'' section explains how this editor works.
+4) Prior to editing the instrument, it's good practice to open a separate window or browser tab by using the \textbf{Preview-function}. This function is located under the Preview-tab, and opened by clicking the ``Open preview in Clojure app'' hyperlink. By default, a new tab will open where the instrument will be displayed in its formatted layout. It's a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.
+
+\hypertarget{creating-a-new-instrument}{%
+\section{Creating a new instrument}\label{creating-a-new-instrument}}
+
+To begin creating a new instrument, navigate to \textbf{Instruments} in the main menu on the left. This will open up a table view showing you all the instruments currently available in your database. On the bottom of the table, there is a hyperlink with the text ``Create new instrument''. Clicking this hyperlink will take you to the \textbf{General} view of the instrument editor, as shown in picture 1 below. The tabs named \textbf{Edit}, \textbf{Preview}, \textbf{Scoring Formula} and \textbf{Export} are also displayed.
+
+\hypertarget{the-general-tab}{%
+\subsection{The General Tab}\label{the-general-tab}}
+
+This tab is where you can change the \textbf{Name} of the instrument, its \textbf{Abbreviation} (both of which are only show in the administrator's view), as well as the \textbf{Title name} (which is the title presented to the participants).
+For example, this could be \textbf{Audit} in all three cases, as show in picture 1 below.
+
+\includegraphics{images/new-images/InstrumentsGeneral1.png}
+\textbf{Picture 1}
+
+If the instrument you are creating is supposed to be filled out by a clinician, you check the box called \textbf{Clinician assessment}.
+
+\hypertarget{the-bass4-table}{%
+\subsubsection{The BASS4 Table}\label{the-bass4-table}}
+
+This table contains three options that influence the presentation of your instrument.
+\textbf{Classic presentation in BASS4} governs whether your instrument is shown in a classic layout, i.e somewhat smaller font size, or a more modern layout with a somewhat larger font size (16 pixels).
+\textbf{Responsive presentation} governs whether or not your instrument is adjusted automatically according to the size of the screen it is viewed on (i.e mobile or PC/Mac). This mainly affects \emph{Question} items, where answers ordered by cell will require additional steps be taken in order to display correctly.Instructions on how to do this are found under the ``Edit'' section.
+Answers ordered by line break will automatically display correctly both on mobile and PC/Mac with this option checked.
+Leaving this box unchecked will cause the instrument to display its PC/Mac layout regardless of which screen it is viewed on. It will not adjust to mobile screens.
+\textbf{Number column} governs whether or not the first column of the instrument is assigned to the display of question numbers in responsive presentation.
+
+When you've entered the information, click \textbf{save}.
+
+\hypertarget{the-preview-tab}{%
+\subsection{The Preview Tab}\label{the-preview-tab}}
+
+In this tab, you can view the instrument with it's final visual design applied (the final visual design is applied automatically by BASS) by clicking the hyperlink named ``Open preview in Clojure app''.
+By default, a new tab will open, in which the instrument will be displayed with its final visual design applied. It's a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.
+
+\hypertarget{the-edit-tab}{%
+\subsection{The Edit Tab}\label{the-edit-tab}}
+
+This tab is where you create, or build, your new instrument. This is also where you adjust any instrument you've copied or want to edit. This is mainly done through adding, editing or deleting content in the form.
+To begin, start by creating and defining a \textbf{table definition}
+
+\textbf{Add table definition}
+By default, the first table definition is already created. However, it has not been defined, and thus you need to define it before proceeding to adding additional items and elements to your instrument. To do this, click the ``Edit'' text in the \textbf{Table definition} box. This opens up the editor for this specific item (in this case a table definition).
+One thing to note before starting to assign \textbf{Cell width} is that the total width of your instrument is fixed to 700 pixels on PC/Mac. As such, you will have to stay within those confines when defining your table definition.
+If responsive presentation is used, the instrument width will adapt to a mobile screen size where applicable.
+
+A table definition provides a layout framework for every item below it, up until the next table definition (if there is one).
+
+A good practice is to allow the first column to take up 30 pixels of screen space. This is done by typing 30 into the first box of the \textbf{Cell width} column. If you so wish, you can justify the text of a box to be either left aligned, centered, or right aligned by choosing the corresponding option in the box's dropdown menu in the \textbf{Justify} column.
+The second cell is most often reserved to the text of a question, and can be set to the desired width by typing it into the box.
+Typing a * into the box makes its cell flexible, causing it to fill any left over width not claimed by the other cells in the table definition. If multiple cells are given a flexible width by typing * in their cell width boxes, they will share the left over width evenly.
+The third through 16th cell is usually utlized for answers to a question item, when ordered by \textbf{Cell} (horizontally) and can be given any desired width. However, remember that width is limited if you are ordering answers by \textbf{cell}, and that long words in an answer may clip into eachother if the allocated space is too small.
+Ordering answers by \textbf{line break} organizes them in a vertical structure, and as such they do not suffer this limitation. If you plan to order your answers by \textbf{line break} you only need to fill in the boxes for cell 1 and 2 in your table definition that governs the layout for the question items that utilizes \textbf{line break}
+
+\textbf{Add information}
+Usually a form starts with information on how to fill it out, and as such you want to add that information before you add your questions. To do this, click ``Add new {[}Free text{]}'' and type the information ionto the ``Free text'' box.
+
+In ``Free text'' you type regular HTML or regular text input. You can find some basic HTML tags in the appendix of this manual, with links to more thorough resources listed as well.
+In ``Layout-string'', you type {[}T{]}, which instructs BASS to render the text in the ``Free text'' box. Then press save.
+
+\begin{quote}
+\textbf{Hint:} If you want to have a line above or below your text, to act as a separator, you can type in 1 in the ``Border-width upper'' or ``Border-width lower'', respectively.
+\end{quote}
+
+\textbf{Adding questions}
+Depending on what questions you would like to add, you go about adding them in different ways. We will adress the most common type of question below.
+
+\textbf{Adding multiple-choice questions}
+By follow the instructions below, your end result will look similar to this:
+\includegraphics{images/new-images/multiplechoiceQ.png}
+
+First, you will need to add a new ``free text''. To do this, click ``\textbf{Add new {[}Free text{]}}''. Then type in the options that are needed for the questions you want to add. For example, if you have five options to your question, you type it in like in picture 4 picture below.
+\includegraphics{images/new-images/multiplechoiceFreeText.png}
+\textbf{Picture 4}
+
+If you have more options, you add them by typing ``{[}TD{]} option 6'', before the HTML tag \texttt{\textless{}!-\/-desktop-\/-\textgreater{}}. If you have less options, you delete the superfluous {[}TD{]} with accompanying text. The reason for the twin {[}TD{]}{[}TD{]} in the beginning is to make empty space for the question you're adding later. The reason for the single {[}TD{]} between the options is to separate the options.
+
+\begin{quote}
+\textbf{Hint:} \texttt{\textless{}br\textgreater{}} is HTML and means that the rest of the text starts on a new row, i.e it implements a line break. If you want to have numbers on one row and the text under, you can add two tags in between. If it's all supposed to be on the same row, you can omit including any \texttt{\textless{}br\textgreater{}} tags.
+\end{quote}
+
+Like in the ``Free text'' example, you type {[}T{]} in ``Layout-string'' to instruct BASS to render the text. Then decide whether or not you want borders above or below the text by typing in a numerical value in ``Border-width upper'' or ``Border-width lower'', respectively. Then click ``Save''.
+
+Below the created ``free text'', you now click ``\textbf{Add new {[}question{]}}''. In the number box, you type in the number you want to assign to the question. In the ``Question''-box you type in the question or statement.
+
+By using the tools in the ``Answer definition'' section, you can define what type of answer you want. By default, ``\textbf{Radio buttons}'' is selected as the ``Answer type''. If you want multiple choice, you change the ``Answer type'' to ``\textbf{Checkboxes}''.
+You can then fill out the different options under ``label'' (in this example you would use the same options you typed in ``free text'') and give them unique values under ``value'', see picture 5 below. The values are used to calculate the result with a scoring formula later on.
+
+\begin{quote}
+\textbf{Important note:} The values for each answer option in a question \emph{have} to be unique. If to answer options are supposed to have the same value, this is corrected for later on in the scoring formula.
+\end{quote}
+
+When you've filled in your answer options and their unique values, you can choose ``Cell'' under the ``Separator''-dropdown. In ``Layout definition'' you type in the following: \textbf{{[}N{]}.{[}TD{]}{[}Q{]}{[}TD{]}{[}X{]}}. This defines the layout for the question within the framework provided by your table definition. When this is done, click ``Save''.
+
+\begin{quote}
+\textbf{HELP! What does {[}N{]}.{[}TD{]}{[}Q{]}{[}TD{]}{[}X{]} mean?}
+\end{quote}
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  {[}N{]} Renders the number of the question in a cell. The period simply puts a period after the rendered number.
+\item
+  {[}TD{]} Creates and empty cell
+\item
+  {[}Q{]} Renders the text of the ``Question'' box in a cell
+\item
+  {[}X{]} Renders the answer options in a cell
+\end{itemize}
+\end{quote}
+
+The input in the ``layout definition'' box is read from left to right, and is applied in the same order. In the layout above {[}N{]} is rendered in the first cell, {[}TD{]} creates a space, {[}Q{]} is rendered in the second cell and {[}X{]} is rendered in the third through seventh cell.
+
+\begin{quote}
+\textbf{Hint:} Make a habit of going back to your Preview page to see what your form looks like. This lets you correct mistakes and make adjustments as you go along.
+\end{quote}
+
+\begin{quote}
+\textbf{Hint:} You can read about ``optional'', ``inheritable'', ``jump'', and ``specification text'' under ``Extra information''.
+\end{quote}
+
+\includegraphics{images/new-images/multiplechoiceQuestion.png}
+\textbf{Picture 5}
 
 \hypertarget{create-new-treatment}{%
 \chapter{Create new treatment}\label{create-new-treatment}}
