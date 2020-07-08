@@ -634,7 +634,7 @@ When you've filled in your answer options and their unique values, you can choos
 \item
   {[}N{]} Renders the number of the question in a cell. The period simply puts a period after the rendered number.
 \item
-  {[}TD{]} Creates and empty cell
+  {[}TD{]} Creates an empty cell
 \item
   {[}Q{]} Renders the text of the ``Question'' box in a cell
 \item
@@ -654,6 +654,78 @@ The input in the ``layout definition'' box is read from left to right, and is ap
 
 \includegraphics{images/new-images/multiplechoiceQuestion.png}
 \textbf{Picture 5}
+
+\textbf{Adding a text-answer question}
+To add a question with a text answer, click ``\textbf{Add new {[}question{]}}''. Follow the same procedure as detailed above, by typing the number you want to assign to the question in the number box, and typing your question or statement into the question-box. Under ``Answer definition'', choose what type of answer you want, either ``short free text'' or ``long free text''. In ``Layour-string'', type in \textbf{{[}N{]}.{[}TD{]}{[}Q{]}{[}X{]}}.
+
+\textbf{Having the multiple-choice answer options listed vertically instead of horizontally}
+If you would rather have your answer options listed vertically below your question, you type the question in a Free text. To do this, click ``\textbf{Add new {[}Free text{]}}''. Then type the question into the free text box, and type \textbf{{[}T{]}} into the layout-string box.
+Below the ``free text'' you just created, click ``\textbf{Add new {[}question{]}}''. In the number box, assign the number you wish your question to have. Leave the ``question''-box empty.
+Proceed to fill out the ``Answer definition'', and type in your answer options and their unique values. Then, choose ``Line break'' in the Separator-dropdown.
+
+\hypertarget{extra-information}{%
+\subsection{Extra information}\label{extra-information}}
+
+\textbf{Optional questions}
+If the question is not mandatory, you can tell BASS to treat it as such by checking the ``optional''-box, in the upper right corner of the question-editor window. This enables a participant to complete the form without submitting an answer to that specific question.
+
+\textbf{Page break}
+If you want a question to appear on a new page, you can tell BASS to divide your form into pages by checking the ``page break''-box in the upper left corner of an editing window. By checking this box, the item for which you check it will be the first item to display on the new page. The following items will show on the new page.
+
+\textbf{Using the jump function}
+If you want an answer option to skip a participant ahead in your form, for example if a subset of questions isn't relevant if a particular answer option is selected, you can do so by using the ``jump''-function. You find this function to the right of each answer option. Open the dropdown, and select the item you wish that answer option to skip ahead to.
+
+\textbf{Re-use layout and options}
+If you have multiple questions that use the same layout and/or the same options, you can check the ``inheritable''-boxes for ``layout-string'' and/or ``answer options''. This enables the settings of one question to be inherited by another. In the editing window of the questions you wish to be inheriting settings, use the ``Inherit from''-dropdown and choose the question you want them to inherit from.
+
+\textbf{Adding more questions}
+\emph{Adding a multiple-choice question that have the same options as the previous question}.
+If you want to add more questions with the same options as the previous question you just created, click ``\textbf{Add new {[}question{]}}'' and fill out the new question like you did the previous one.
+
+\begin{quote}
+\textbf{Hint:} Don't forget that you can use the ``inherit''-function. Read more about this function in the ``Extra information''-section, ``Re-use layout and options''.
+\end{quote}
+
+\emph{Adding a multiple-choice question that do not have the same options as the previous question}.
+If your next question has a different set of answer options than the previous one, but the same number of answer options, you add a new free text and write the options like previously instructed, and then add the new question.
+
+If your next question has a different \textbf{number} of options as the previous question, you need to add a new ``table definition'' that provides a new layout framework that fits the structure of the new question. Then proceed to add the new free text and question as previously instructed.
+
+\emph{Adding a text-answer question}.
+Create a new question by clicking ``\textbf{Add new {[}question{]}}'' and fill it out like previously instructed.
+
+\hypertarget{scoring-formula}{%
+\section{Scoring formula}\label{scoring-formula}}
+
+In the \textbf{Scoring formula} tab, you can define formulas that calculate the scores from the different items in your instrument. You refer to specific items in your instrument by using the \texttt{@\#} identifier, i.e \texttt{@1} refers to question 1, \texttt{@2} refers to question 2, and so on.
+Should you leave the scoring formula blank, you will still get all value readouts from your instrument. The scoring formula is meant to help with calculating different scores that are relevant to your instrument.
+
+\begin{quote}
+\textbf{Defining a calculation:} \texttt{sum\ =\ @1\ +\ @2\ +\ @3\ +\ @4\ +\ @5}
+\texttt{\#sums\ sum}
+\end{quote}
+
+If you want to calculate several sums or products, you define each score (\texttt{sum}) by giving it a number.
+
+\begin{quote}
+\textbf{Adding several scores:} \texttt{sum1\ =\ @1\ +\ @2\ +\ @3}\texttt{sum2\ =\ @4\ +\ @5\ +\ @6}\texttt{sum3\ =\ @7\ +\ @8\ +\ @9}\texttt{\#sums\ sum1,\ sum2,\ sum3}
+\end{quote}
+
+\begin{quote}
+\textbf{Multiplying several scores:} \texttt{sum1\ =\ (@1\ *\ @2)\ +\ (@3\ *\ @4)} \texttt{sum2\ =\ (@5\ *\ @6)\ +\ (@7\ *\ @8)} \texttt{\#sums\ sum1,\ sum2}
+\end{quote}
+
+You can also calculate the mean of a score, by dividing the number of questions included.
+
+\begin{quote}
+\textbf{Calculating the mean of a score:} \texttt{sum1\ =\ @1\ +\ @2\ +\ @3\ +\ @4\ +\ @5} \texttt{mean1\ =\ @1\ +\ @2\ +\ @3\ +\ @4\ +\ @5\ /\ 5}\texttt{\#sums\ sum1,\ mean1}
+\end{quote}
+
+Just as you can calculate several sums and products, you can also calculate several means.
+
+\begin{quote}
+\textbf{Calculating several means:} \texttt{mean1\ =\ (@1\ +\ @2\ +\ @3)\ /\ 3} \texttt{mean2\ =\ (@4\ +\ @5)\ /\ 2} \texttt{mean3\ =\ (@6\ +\ @7\ +\ @8)\ /\ 3} \texttt{\#sums\ mean1,\ mean2,\ mean3}
+\end{quote}
 
 \hypertarget{create-new-treatment}{%
 \chapter{Create new treatment}\label{create-new-treatment}}

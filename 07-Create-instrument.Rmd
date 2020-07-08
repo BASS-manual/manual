@@ -96,7 +96,7 @@ When you've filled in your answer options and their unique values, you can choos
 >**HELP! What does [N].[TD][Q][TD][X] mean?**<br>
 
 >- [N] Renders the number of the question in a cell. The period simply puts a period after the rendered number.<br>
->- [TD] Creates and empty cell<br>
+>- [TD] Creates an empty cell<br>
 >- [Q] Renders the text of the "Question" box in a cell<br>
 >- [X] Renders the answer options in a cell<br>
 
@@ -108,3 +108,60 @@ The input in the "layout definition" box is read from left to right, and is appl
 
 ![](images/new-images/multiplechoiceQuestion.png)
 **Picture 5**
+
+**Adding a text-answer question**<br>
+To add a question with a text answer, click "**Add new [question]**". Follow the same procedure as detailed above, by typing the number you want to assign to the question in the number box, and typing your question or statement into the question-box. Under "Answer definition", choose what type of answer you want, either "short free text" or "long free text". In "Layour-string", type in **[N].[TD][Q][X]**.
+
+**Having the multiple-choice answer options listed vertically instead of horizontally**<br>
+If you would rather have your answer options listed vertically below your question, you type the question in a Free text. To do this, click "**Add new [Free text]**". Then type the question into the free text box, and type **[T]** into the layout-string box.
+Below the "free text" you just created, click "**Add new [question]**". In the number box, assign the number you wish your question to have. Leave the "question"-box empty.
+Proceed to fill out the "Answer definition", and type in your answer options and their unique values. Then, choose "Line break" in the Separator-dropdown.
+
+### Extra information
+
+**Optional questions**<br>
+If the question is not mandatory, you can tell BASS to treat it as such by checking the "optional"-box, in the upper right corner of the question-editor window. This enables a participant to complete the form without submitting an answer to that specific question.
+
+**Page break**<br>
+If you want a question to appear on a new page, you can tell BASS to divide your form into pages by checking the "page break"-box in the upper left corner of an editing window. By checking this box, the item for which you check it will be the first item to display on the new page. The following items will show on the new page.
+
+**Using the jump function**<br>
+If you want an answer option to skip a participant ahead in your form, for example if a subset of questions isn't relevant if a particular answer option is selected, you can do so by using the "jump"-function. You find this function to the right of each answer option. Open the dropdown, and select the item you wish that answer option to skip ahead to.
+
+**Re-use layout and options**<br>
+If you have multiple questions that use the same layout and/or the same options, you can check the "inheritable"-boxes for "layout-string" and/or "answer options". This enables the settings of one question to be inherited by another. In the editing window of the questions you wish to be inheriting settings, use the "Inherit from"-dropdown and choose the question you want them to inherit from.
+
+**Adding more questions**<br>
+*Adding a multiple-choice question that have the same options as the previous question*.<br>
+If you want to add more questions with the same options as the previous question you just created, click "**Add new [question]**" and fill out the new question like you did the previous one.
+
+>**Hint:** Don't forget that you can use the "inherit"-function. Read more about this function in the "Extra information"-section, "Re-use layout and options".
+
+*Adding a multiple-choice question that do not have the same options as the previous question*.<br>
+If your next question has a different set of answer options than the previous one, but the same number of answer options, you add a new free text and write the options like previously instructed, and then add the new question.
+
+If your next question has a different **number** of options as the previous question, you need to add a new "table definition" that provides a new layout framework that fits the structure of the new question. Then proceed to add the new free text and question as previously instructed.
+
+*Adding a text-answer question*.<br>
+Create a new question by clicking "**Add new [question]**" and fill it out like previously instructed.
+
+## Scoring formula
+In the **Scoring formula** tab, you can define formulas that calculate the scores from the different items in your instrument. You refer to specific items in your instrument by using the `@#` identifier, i.e `@1` refers to question 1, `@2` refers to question 2, and so on.
+Should you leave the scoring formula blank, you will still get all value readouts from your instrument. The scoring formula is meant to help with calculating different scores that are relevant to your instrument.
+
+>**Defining a calculation:**<br> `sum = @1 + @2 + @3 + @4 + @5`<br> 
+`#sums sum`
+
+If you want to calculate several sums or products, you define each score (`sum`) by giving it a number.
+
+>**Adding several scores:**<br> `sum1 = @1 + @2 + @3`<br>`sum2 = @4 + @5 + @6`<br>`sum3 = @7 + @8 + @9`<br>`#sums sum1, sum2, sum3`
+
+>**Multiplying several scores:**<br> `sum1 = (@1 * @2) + (@3 * @4)`<br> `sum2 = (@5 * @6) + (@7 * @8)`<br> `#sums sum1, sum2`
+
+You can also calculate the mean of a score, by dividing the number of questions included.
+
+>**Calculating the mean of a score:**<br> `sum1 = @1 + @2 + @3 + @4 + @5`<br> `mean1 = @1 + @2 + @3 + @4 + @5 / 5`<br>`#sums sum1, mean1`
+
+Just as you can calculate several sums and products, you can also calculate several means.
+
+>**Calculating several means:**<br> `mean1 = (@1 + @2 + @3) / 3`<br> `mean2 = (@4 + @5) / 2`<br> `mean3 = (@6 + @7 + @8 + @9) / 4`<br> `#sums mean1, mean2, mean3`
