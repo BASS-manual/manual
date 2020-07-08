@@ -91,7 +91,7 @@ You can also add reminders to participants who are late with filling in their as
 
 *Remind interval* is the delay upon which reminders are sent to late participants, counted as days after the assessment became available. 
 
-Max number of reminders sets how many reminders can be sent out to the participant, with the previously mentioned time interval. This setting needs to be at least 1 for any reminder to be sent.
+*Max number of reminders* sets how many reminders can be sent out to the participant, with the previously mentioned time interval. This setting needs to be at least 1 for any reminder to be sent.
 
 >**Hint:** If you want additional reminders to be sent, increase the number in this box instead of rescheduling the assessment (see below)
 
