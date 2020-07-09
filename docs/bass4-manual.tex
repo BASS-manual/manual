@@ -78,7 +78,7 @@
 
 \title{BASS4 - ADMINISTRATOR'S MANUAL}
 \author{Louise Serenhov, Erik Sjöstrand, Jenny-Li Örsell \& Brjánn Ljótsson}
-\date{Last updated 2020-07-08}
+\date{Last updated 2020-07-09}
 
 \begin{document}
 \maketitle
@@ -128,7 +128,7 @@ As soon as your database setup is ready, you can login to the administrator's in
 
 All functionality in the BASS administration interface can be accessed from the main menu to the left of your screen.
 
-Which options are visible in the main menu depends on your authorization level. A usual setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments.
+What options are visible in the main menu depends on what privileges have been assigned to your profile. A common setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments.
 
 \includegraphics{images/main-menu.png}
 
@@ -543,7 +543,7 @@ In ``Participants'', there are four tabs:
 You can create new participants in two of the tabs in the Participants view; \emph{My participants} and \emph{All participants}. Participants that are created in the \emph{My participants} tab will be tagged as your participants automatically, while participants created in the \emph{All participants} tab won't be tagged.
 To create a new participant, click \emph{Create participant within project {[}Project Name{]}}. Newly created participants are added at the bottom of each view.
 
-Te delete at participant, click the trash bin icon to the far right of the corresponding participant's row.
+To delete at participant, click the trash bin icon to the far right of the corresponding participant's row.
 
 To edit a participant, click the pencil icon in the table, on the corresponding participant's row. This will take you to the ``Participant stats'' view.
 If you only wish to change, or add, what group a participant belongs to, you can do so directly in the \emph{Group} column of the participant table by using the dropdown. When you've assigned a participant to a group this way, don't forget to click the ``Save'' button at the bottom of the table.
@@ -575,6 +575,67 @@ There are seven tabs in this view:
 
 \hypertarget{participant-stats}{%
 \subsection{Participant stats}\label{participant-stats}}
+
+This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.
+The \emph{Show participant log} button on the top of this view will show a log of all changes and updates done to the participant. The \emph{Show notes} button will show a log of all notes written aout the participant.
+Now notes on a participant can be added by clicking the \emph{Create new note} link.
+
+\begin{quote}
+\textbf{Important note:}Prior to doing this for the first time, make sure to add at least one note category through the \textbf{Note categories}, accesssed from the main menu. Further details on this can be found in the Participant notes section in this manual.
+\end{quote}
+
+\includegraphics{images/new-images/participantStatsLogNotes.png}
+
+The \emph{Stats} box shows data such as how many times the participant has logged in and which privacy consent was approved and when. \emph{Internal ID} is the identification number of the participant used by the database.
+
+\includegraphics{images/new-images/participantsStatsSmall.png}
+
+User information can be edited in the \emph{User information} box.
+
+\includegraphics{images/new-images/participantInfo.png}
+
+Existing passwords \emph{\textbf{cannot be retrieved}}, only cleared or changed. If a participant reports a lost or forgotten password, you can provide them with a link to reset and change their password by clicking the \emph{Send password link} button.
+It is also possible to generate new quick login codes, and to send them by SMS, from this view.
+
+\begin{quote}
+\textbf{Important note:} Quick login settings are managed under \textbf{Security settings} in the main menu.
+\end{quote}
+
+\begin{quote}
+\textbf{Important note:} \emph{Exempt from two-factor authentication} must be enabled under \textbf{Project security} in the main menu. It is only possible to exempt participants from two-factor authentication. It is mandatory for therapists.
+\end{quote}
+
+The \emph{Temporary flag text} box provides you with the possibility to flag a participant with a star icon, that will display next to their name in the participants table. You can add a comment on why you flagged the participant.
+
+The \emph{Temporary notes} box provides you with the possibility to add a temporary note on the participant - this note is also saved in the participant log if your click the ``Save'' button.
+
+\includegraphics{images/new-images/participantTempFlagNote.png}
+
+\emph{Assign participant to therapists} allows you to assign the participant to another, or several other, therapist(s). The number shown in brackets to the right of each therapist's name displays how many participants are already assigned to that therapist. This is useful for when you want to assign participants equally to the available therapists.
+Remember to click ``Save'' to save your changes.
+
+\includegraphics{images/new-images/participantTherapists.png}
+
+You can use the dropdown menu on the bottom of the page to move the participant to another project. This will move the participant to the project of your choosing, and close the tab. If you want top view the participant again, you will need to navigate to the destination project before being able to do so.
+
+\includegraphics{images/new-images/participantMoveProject.png}
+
+\hypertarget{participant-treatments}{%
+\subsection{Participant treatments}\label{participant-treatments}}
+
+To assign a participant to an existing treatment, go to \textbf{Participants}, \textbf{Treatments}, the \textbf{Treatment access} tab. All available treatments are listed here in the dropdown menu.
+
+If a treatment doesn't show up in the dropdown menu, you will have to make it available via \textbf{Treatment containers} in the main menu.
+
+\includegraphics{images/new-images/participantTreatConnect.png}
+
+\begin{quote}
+\textbf{Important note:} While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will really only be able to access \emph{\textbf{one}} of the treatments at a time.
+\end{quote}
+
+\includegraphics{images/new-images/participantTreatAccess.png}
+
+In some studies, you may want to record how much time is spent writing messages to participants by a therapist. \emph{\textbf{More info to come}}
 
 \hypertarget{instruments}{%
 \chapter{Instruments}\label{instruments}}
@@ -786,11 +847,48 @@ Just as you can calculate several sums and products, you can also calculate seve
 \textbf{Calculating several means:} \texttt{mean1\ =\ (@1\ +\ @2\ +\ @3)\ /\ 3} \texttt{mean2\ =\ (@4\ +\ @5)\ /\ 2} \texttt{mean3\ =\ (@6\ +\ @7\ +\ @8\ +\ @9)\ /\ 4} \texttt{\#sums\ mean1,\ mean2,\ mean3}
 \end{quote}
 
+\hypertarget{export}{%
+\section{Export}\label{export}}
+
+The export tab lets you copy the XML code of an instrument, to enable exporting to another database or another program that can accept instruments/forms in XML format.
+
 \hypertarget{create-new-treatment}{%
 \chapter{Create new treatment}\label{create-new-treatment}}
 
 BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.
 A treatment is built by combining \emph{treatment modules} into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization's needs and wishes.
+
+Treatments are accessed by the \textbf{Treatment containers} option in the main menu.
+
+The first thing you will see in this view is a table showing you all the existing treatment containers in the current project. If no treatment containers have been created, the table will be empty.
+You can edit existing treatment containers by clicking the \emph{Edit} link in the column to the right.
+To create new treatment containers, click the \emph{Create new treatment container} link below the table.
+
+\includegraphics{images/new-images/treatmentContainers.png}
+
+\begin{quote}
+\textbf{Important note:} \emph{Treatment containers} in BASS are frameworks that contain all the other components that make up a treatment, such as treatment modules.
+\end{quote}
+
+\hypertarget{a-typical-treatment-structure}{%
+\section{A typical treatment structure}\label{a-typical-treatment-structure}}
+
+A \textbf{treatment container} is the abstract structure that holds all the content of a treatment or treatment series. A typical \textbf{treatment} is built up by several modules, often arranged in a specific order. A typical \textbf{module} consits of:
+
+\begin{itemize}
+\tightlist
+\item
+  One \emph{module text}
+\item
+  (0 - several) \emph{worksheets}
+\item
+  One \emph{homework}
+\end{itemize}
+
+Whenever you create a new treatment, it is advisable to plan the structure from the beginning, so as to get a sense of both the magnitude of the sub-content and the flow of the treatment.
+
+\hypertarget{creating-a-treatment-container}{%
+\section{Creating a treatment container}\label{creating-a-treatment-container}}
 
 \hypertarget{references}{%
 \chapter{References}\label{references}}

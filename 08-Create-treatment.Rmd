@@ -2,3 +2,24 @@
 
 BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.<br>
 A treatment is built by combining *treatment modules* into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization's needs and wishes.
+
+Treatments are accessed by the **Treatment containers** option in the main menu.
+
+The first thing you will see in this view is a table showing you all the existing treatment containers in the current project. If no treatment containers have been created, the table will be empty.<br>
+You can edit existing treatment containers by clicking the *Edit* link in the column to the right.<br>
+To create new treatment containers, click the *Create new treatment container* link below the table.
+
+![](images/new-images/treatmentContainers.png)
+
+>**Important note:** *Treatment containers* in BASS are frameworks that contain all the other components that make up a treatment, such as treatment modules.
+
+## A typical treatment structure
+A **treatment container** is the abstract structure that holds all the content of a treatment or treatment series. A typical **treatment** is built up by several modules, often arranged in a specific order. A typical **module** consits of:
+
+- One *module text*
+- (0 - several) *worksheets*
+- One *homework*
+
+Whenever you create a new treatment, it is advisable to plan the structure from the beginning, so as to get a sense of both the magnitude of the sub-content and the flow of the treatment.
+
+## Creating a treatment container

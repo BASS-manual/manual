@@ -104,6 +104,7 @@
 <li class="chapter" data-level="7.1" data-path="participants.html"><a href="participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>7.1</b> Creating, deleting and editing participants</a></li>
 <li class="chapter" data-level="7.2" data-path="participants.html"><a href="participants.html#the-participant-view"><i class="fa fa-check"></i><b>7.2</b> The participant view</a><ul>
 <li class="chapter" data-level="7.2.1" data-path="participants.html"><a href="participants.html#participant-stats"><i class="fa fa-check"></i><b>7.2.1</b> Participant stats</a></li>
+<li class="chapter" data-level="7.2.2" data-path="participants.html"><a href="participants.html#participant-treatments"><i class="fa fa-check"></i><b>7.2.2</b> Participant treatments</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="instruments.html"><a href="instruments.html"><i class="fa fa-check"></i><b>8</b> Instruments</a><ul>
@@ -115,8 +116,12 @@
 <li class="chapter" data-level="8.2.4" data-path="instruments.html"><a href="instruments.html#extra-information"><i class="fa fa-check"></i><b>8.2.4</b> Extra information</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="instruments.html"><a href="instruments.html#scoring-formula"><i class="fa fa-check"></i><b>8.3</b> Scoring formula</a></li>
+<li class="chapter" data-level="8.4" data-path="instruments.html"><a href="instruments.html#export"><i class="fa fa-check"></i><b>8.4</b> Export</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="create-new-treatment.html"><a href="create-new-treatment.html"><i class="fa fa-check"></i><b>9</b> Create new treatment</a></li>
+<li class="chapter" data-level="9" data-path="create-new-treatment.html"><a href="create-new-treatment.html"><i class="fa fa-check"></i><b>9</b> Create new treatment</a><ul>
+<li class="chapter" data-level="9.1" data-path="create-new-treatment.html"><a href="create-new-treatment.html#a-typical-treatment-structure"><i class="fa fa-check"></i><b>9.1</b> A typical treatment structure</a></li>
+<li class="chapter" data-level="9.2" data-path="create-new-treatment.html"><a href="create-new-treatment.html#creating-a-treatment-container"><i class="fa fa-check"></i><b>9.2</b> Creating a treatment container</a></li>
+</ul></li>
 <li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -142,7 +147,28 @@
 <h1><span class="header-section-number">Chapter 9</span> Create new treatment</h1>
 <p>BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.<br>
 A treatment is built by combining <em>treatment modules</em> into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization’s needs and wishes.</p>
+<p>Treatments are accessed by the <strong>Treatment containers</strong> option in the main menu.</p>
+<p>The first thing you will see in this view is a table showing you all the existing treatment containers in the current project. If no treatment containers have been created, the table will be empty.<br>
+You can edit existing treatment containers by clicking the <em>Edit</em> link in the column to the right.<br>
+To create new treatment containers, click the <em>Create new treatment container</em> link below the table.</p>
+<p><img src="images/new-images/treatmentContainers.png" /></p>
+<blockquote>
+<p><strong>Important note:</strong> <em>Treatment containers</em> in BASS are frameworks that contain all the other components that make up a treatment, such as treatment modules.</p>
+</blockquote>
+<div id="a-typical-treatment-structure" class="section level2">
+<h2><span class="header-section-number">9.1</span> A typical treatment structure</h2>
+<p>A <strong>treatment container</strong> is the abstract structure that holds all the content of a treatment or treatment series. A typical <strong>treatment</strong> is built up by several modules, often arranged in a specific order. A typical <strong>module</strong> consits of:</p>
+<ul>
+<li>One <em>module text</em></li>
+<li>(0 - several) <em>worksheets</em></li>
+<li>One <em>homework</em></li>
+</ul>
+<p>Whenever you create a new treatment, it is advisable to plan the structure from the beginning, so as to get a sense of both the magnitude of the sub-content and the flow of the treatment.</p>
+</div>
+<div id="creating-a-treatment-container" class="section level2">
+<h2><span class="header-section-number">9.2</span> Creating a treatment container</h2>
 
+</div>
 </div>
             </section>
 

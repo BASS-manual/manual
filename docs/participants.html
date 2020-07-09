@@ -104,6 +104,7 @@
 <li class="chapter" data-level="7.1" data-path="participants.html"><a href="participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>7.1</b> Creating, deleting and editing participants</a></li>
 <li class="chapter" data-level="7.2" data-path="participants.html"><a href="participants.html#the-participant-view"><i class="fa fa-check"></i><b>7.2</b> The participant view</a><ul>
 <li class="chapter" data-level="7.2.1" data-path="participants.html"><a href="participants.html#participant-stats"><i class="fa fa-check"></i><b>7.2.1</b> Participant stats</a></li>
+<li class="chapter" data-level="7.2.2" data-path="participants.html"><a href="participants.html#participant-treatments"><i class="fa fa-check"></i><b>7.2.2</b> Participant treatments</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="instruments.html"><a href="instruments.html"><i class="fa fa-check"></i><b>8</b> Instruments</a><ul>
@@ -115,8 +116,12 @@
 <li class="chapter" data-level="8.2.4" data-path="instruments.html"><a href="instruments.html#extra-information"><i class="fa fa-check"></i><b>8.2.4</b> Extra information</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="instruments.html"><a href="instruments.html#scoring-formula"><i class="fa fa-check"></i><b>8.3</b> Scoring formula</a></li>
+<li class="chapter" data-level="8.4" data-path="instruments.html"><a href="instruments.html#export"><i class="fa fa-check"></i><b>8.4</b> Export</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="create-new-treatment.html"><a href="create-new-treatment.html"><i class="fa fa-check"></i><b>9</b> Create new treatment</a></li>
+<li class="chapter" data-level="9" data-path="create-new-treatment.html"><a href="create-new-treatment.html"><i class="fa fa-check"></i><b>9</b> Create new treatment</a><ul>
+<li class="chapter" data-level="9.1" data-path="create-new-treatment.html"><a href="create-new-treatment.html#a-typical-treatment-structure"><i class="fa fa-check"></i><b>9.1</b> A typical treatment structure</a></li>
+<li class="chapter" data-level="9.2" data-path="create-new-treatment.html"><a href="create-new-treatment.html#creating-a-treatment-container"><i class="fa fa-check"></i><b>9.2</b> Creating a treatment container</a></li>
+</ul></li>
 <li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -154,7 +159,7 @@
 <h2><span class="header-section-number">7.1</span> Creating, deleting and editing participants</h2>
 <p>You can create new participants in two of the tabs in the Participants view; <em>My participants</em> and <em>All participants</em>. Participants that are created in the <em>My participants</em> tab will be tagged as your participants automatically, while participants created in the <em>All participants</em> tab won’t be tagged.
 To create a new participant, click <em>Create participant within project [Project Name]</em>. Newly created participants are added at the bottom of each view.</p>
-<p>Te delete at participant, click the trash bin icon to the far right of the corresponding participant’s row.</p>
+<p>To delete at participant, click the trash bin icon to the far right of the corresponding participant’s row.</p>
 <p>To edit a participant, click the pencil icon in the table, on the corresponding participant’s row. This will take you to the “Participant stats” view.<br>
 If you only wish to change, or add, what group a participant belongs to, you can do so directly in the <em>Group</em> column of the participant table by using the dropdown. When you’ve assigned a participant to a group this way, don’t forget to click the “Save” button at the bottom of the table.</p>
 </div>
@@ -173,6 +178,49 @@ If you only wish to change, or add, what group a participant belongs to, you can
 </ul>
 <div id="participant-stats" class="section level3">
 <h3><span class="header-section-number">7.2.1</span> Participant stats</h3>
+<p>This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.<vbr>
+The <em>Show participant log</em> button on the top of this view will show a log of all changes and updates done to the participant. The <em>Show notes</em> button will show a log of all notes written aout the participant.<br>
+Now notes on a participant can be added by clicking the <em>Create new note</em> link.</p>
+<blockquote>
+<p><strong>Important note:</strong>Prior to doing this for the first time, make sure to add at least one note category through the <strong>Note categories</strong>, accesssed from the main menu. Further details on this can be found in the Participant notes section in this manual.</p>
+</blockquote>
+<p><img src="images/new-images/participantStatsLogNotes.png" /></p>
+<hr>
+<p>The <em>Stats</em> box shows data such as how many times the participant has logged in and which privacy consent was approved and when. <em>Internal ID</em> is the identification number of the participant used by the database.</p>
+<p><img src="images/new-images/participantsStatsSmall.png" /></p>
+<hr>
+<p>User information can be edited in the <em>User information</em> box.</p>
+<p><img src="images/new-images/participantInfo.png" /></p>
+<p>Existing passwords <em><strong>cannot be retrieved</strong></em>, only cleared or changed. If a participant reports a lost or forgotten password, you can provide them with a link to reset and change their password by clicking the <em>Send password link</em> button.<br>
+It is also possible to generate new quick login codes, and to send them by SMS, from this view.</p>
+<blockquote>
+<p><strong>Important note:</strong> Quick login settings are managed under <strong>Security settings</strong> in the main menu.</p>
+</blockquote>
+<blockquote>
+<p><strong>Important note:</strong> <em>Exempt from two-factor authentication</em> must be enabled under <strong>Project security</strong> in the main menu. It is only possible to exempt participants from two-factor authentication. It is mandatory for therapists.</p>
+</blockquote>
+<hr>
+<p>The <em>Temporary flag text</em> box provides you with the possibility to flag a participant with a star icon, that will display next to their name in the participants table. You can add a comment on why you flagged the participant.</p>
+<p>The <em>Temporary notes</em> box provides you with the possibility to add a temporary note on the participant - this note is also saved in the participant log if your click the “Save” button.</p>
+<p><img src="images/new-images/participantTempFlagNote.png" /></p>
+<hr>
+<p><em>Assign participant to therapists</em> allows you to assign the participant to another, or several other, therapist(s). The number shown in brackets to the right of each therapist’s name displays how many participants are already assigned to that therapist. This is useful for when you want to assign participants equally to the available therapists.<br>
+Remember to click “Save” to save your changes.</p>
+<p><img src="images/new-images/participantTherapists.png" /></p>
+<hr>
+<p>You can use the dropdown menu on the bottom of the page to move the participant to another project. This will move the participant to the project of your choosing, and close the tab. If you want top view the participant again, you will need to navigate to the destination project before being able to do so.</p>
+<p><img src="images/new-images/participantMoveProject.png" /></p>
+</div>
+<div id="participant-treatments" class="section level3">
+<h3><span class="header-section-number">7.2.2</span> Participant treatments</h3>
+<p>To assign a participant to an existing treatment, go to <strong>Participants</strong>, <strong>Treatments</strong>, the <strong>Treatment access</strong> tab. All available treatments are listed here in the dropdown menu.</p>
+<p>If a treatment doesn’t show up in the dropdown menu, you will have to make it available via <strong>Treatment containers</strong> in the main menu.</p>
+<p><img src="images/new-images/participantTreatConnect.png" /></p>
+<blockquote>
+<p><strong>Important note:</strong> While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will really only be able to access <em><strong>one</strong></em> of the treatments at a time.</p>
+</blockquote>
+<p><img src="images/new-images/participantTreatAccess.png" /></p>
+<p>In some studies, you may want to record how much time is spent writing messages to participants by a therapist. <em><strong>More info to come</strong></em></p>
 
 </div>
 </div>
