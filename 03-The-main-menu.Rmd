@@ -6,7 +6,7 @@ What options are visible in the main menu depends on what privileges have been a
 
 ![](images/main-menu.png)
 
-**Participant Search** lets you search on specific data points relevant to the participants registered in the active project. The *Search* tab will show what information is searchable. See Chapter 4 for further details.
+**Participant Search** lets you search specific data points relevant to the participants registered in the active project. The *Search* tab will show what information is searchable. See Chapter 4 for further details.
 
 The **Project** dropdown menu lets you choose what project to view. This governs which participants and what assessments you can access. Instruments and treatments are shared between projects. To switch projects, simply use the dropdown menu.
 
