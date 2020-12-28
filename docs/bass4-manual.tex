@@ -78,7 +78,7 @@
 
 \title{BASS4 - ADMINISTRATOR'S MANUAL}
 \author{Louise Serenhov, Erik Sjöstrand, Jenny-Li Örsell \& Brjánn Ljótsson}
-\date{Last updated 2020-07-09}
+\date{Last updated 2020-12-28}
 
 \begin{document}
 \maketitle
@@ -128,9 +128,45 @@ As soon as your database setup is ready, you can login to the administrator's in
 
 All functionality in the BASS administration interface can be accessed from the main menu to the left of your screen.
 
-What options are visible in the main menu depends on what privileges have been assigned to your profile. A common setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments.
+What options are visible in the main menu depends on what privileges have been assigned to your profile. A common setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments. The image below shows all available menu options, as presented to database administrators.
 
 \includegraphics{images/main-menu.png}
+
+\textbf{Participant Search} lets you search on specific data points relevant to the participants registered in the active project. The \emph{Search} tab will show what information is searchable. See Chapter 4 for further details.
+
+The \textbf{Project} dropdown menu lets you choose what project to view. This governs which participants and what assessments you can access. Instruments and treatments are shared between projects. To switch projects, simply use the dropdown menu.
+
+\textbf{Participants} lets you see an overview over all the participants registered in the active project. In this overview you can see if a participant is flagged, has sent messages or reported an error, among other information. See Chapter 6 for further details.
+
+\textbf{Assessments} is only shown if you have selected a project from the \textbf{Project} dropdown menu. Here, you can view, create and edit assessments. See Chapter 5 for further details.
+
+\textbf{Registration options} is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See Chapter \# for further details (under construction and will be updated).
+
+\textbf{Project security} lets you define what security measures your project will use, such as two-factor authentication.
+
+The \textbf{Treatment containers} view lets you view, create and edit treatments to be used within BASS. See Chapter 8 for further details.
+
+The \textbf{Instruments} view lets you view, create, edit and delete instruments to be used within BASS. See Chapter 7 for further details.
+
+\textbf{Note categories} lets you define custom note categories to be used to sort information on participants.
+
+\textbf{Answers flagging} lets you set and define rules to flag specific answers or answer ranges in instruments that you want to quickly be notified about, should a participant give those answers.
+
+The \textbf{Projects} lets your view and create projects within the database.
+
+\textbf{Privacy notice} lets you view and edit the privacy notice(s) for the database and its projects. This is mandatory information in the EU that needs to be made available to all potential participants. If you use the built in registration procedure in BASS, this privacy notice is presented there.
+
+\textbf{My settings} lets you view the settings of your therapist login.
+
+\textbf{Security settings} lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See Chapter \# for further details (under construction and will be updated).
+
+\textbf{External messages} lets you view and edit messages which can be sent automatically to the cell phones or e-mail adresses of participants. This is, for example, notifications and reminders about active assessments.
+
+\textbf{Reports} lets you extract reports on data collected through instruments and assessments in BASS. See Chapter \# for further details (under construction and will be updated).
+
+\textbf{Therapists} lets you view, create and edit therapist logins in the database. See Chapter \# for further details (under construction and will be updated).
+
+\textbf{Log out} simply logs you out of the database and ends your current session.
 
 \hypertarget{search-participants}{%
 \chapter{Search participants}\label{search-participants}}
@@ -477,7 +513,7 @@ This option sets flags to be shown for therapists on certain, participant-specif
 
 \emph{Flag participant when assessment becomes activated} raises a flag for participants at the activation of the assessment.
 
-\emph{Flag late participants} raises a flag for participants that haven't filled in an assessment within a certain number of days after it became available. You can set the number of days to wait before flagging in the box labeled \emph{Days until participant is flagged late.}
+\emph{Flag late participants} raises a flag for participants that haven't filled in an assessment within a certain number of days after it became available. You can set the number of days to wait before flagging in the box labeled \emph{Days until participant is flagged late.} If an assessment is late, a flag will immediately be shown on the participant in question in the overview pane under \textbf{Participants}.
 
 \hypertarget{copy-assessment}{%
 \section{Copy assessment}\label{copy-assessment}}
