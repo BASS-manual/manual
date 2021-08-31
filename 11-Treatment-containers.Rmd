@@ -76,11 +76,17 @@ This option lets you add a *treatment content* as a separate menu page in the pa
 
 **Welcome screen**
 Here, you may type in content to show a custom welcome screen/home page in the participant’s view. There are a handful of instructions given on the page itself, to show conditional text or content.
+
 For example, by using the `<ongoing>*YourContentHere*</ongoing>` tag, you can specify the content enclosed in that tag to show when the treatment is ongoing. This is, in essence, the standard text for your home page.
+
 By using `<daysleft>*YourContentHere*</daysleft>` you can set content to show only as long as the participant has more than one day left of the treatment. When that time has passed, this content will not be shown.
+
 By using `<lastday>*YourContentHere*</lastday>` you can set the content to only show on the last day of access. This might be a thank you and/or good luck text, or something similar or appropriate for your treatment.
+
 By using `<limited>*YourContentHere*</limited>` you can set content to only show when the participant has only limited access to the treatment. For example, this could simply be a text informing the participant of the limited access and the changed it entails.
+
 Using `<limiteddaysleft>*YouContentHere*</limiteddaysleft>` you can set conditional content to be shown as long as the participant has more than one day left of their limited access.
+
 Using `<limitedlastday>*YourContentHere*</limitedlastday>` you can set conditional content to be shown on the participant’s last day of limited acces, such as thanking them for their time and effort, and whishing them good luck.
 
 
