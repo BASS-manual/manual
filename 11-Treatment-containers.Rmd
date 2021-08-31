@@ -130,10 +130,20 @@ A typical start of a module main text may look as follows when written in **Mark
 ```markdown
 “# Welcome to your treatment!
 
-This is a ten-week treatment during which we will work together and learn about your symptoms and diagnosis. We will begin this week with psycho-educational material, and continue with some practical breathing exercises. The module should take about 20-30 minutes to complete. It is important that your read all the instructions carefully so that you feel you understand completely. Should you have any questions you are welcome to send us a message by using the “Messages” feature at the top of the page.
-If you encounter any errors, please use the “Problems?” feature on the top right hand side.
+This is a ten-week treatment during which we will work together and learn
+about your symptoms and diagnosis. We will begin this week with
+psycho-educational material, and continue with some practical breathing
+exercises. The module should take about 20-30 minutes to complete. It is
+important that your read all the instructions carefully so that you feel
+you understand completely. Should you have any questions you are welcome to
+send us a message by using the “Messages” feature at the top of the page.
+If you encounter any errors, please use the “Problems?” feature on the top
+right hand side.
 
-Your treatment is divided into ten weeks, with a new module each week. Talk to your therapist if you feel you need to go slower. The modules are as follows:
+Your treatment is divided into ten weeks, with a new module each week. Talk
+to your therapist if you feel you need to go slower. The modules are as
+follows:
+
 - Module 1, start and information
 - Module 2
 - Module 3
@@ -151,10 +161,19 @@ The same main text written in HTML would look like this:
 ```html
 “<h1>Welcome to your treatment!</h1>
 
-This is a ten-week treatment during which we will work together and learn about your symptoms and diagnosis. We will begin this week with psycho-educational material, and continue with some practical breathing exercises. The module should take about 20-30 minutes to complete. It is important that your read all the instructions carefully so that you feel you understand completely. Should you have any questions you are welcome to send us a message by using the “Messages” feature at the top of the page.
-If you encounter any errors, please use the “Problems?” feature on the top right hand side.
+This is a ten-week treatment during which we will work together and learn
+about your symptoms and diagnosis. We will begin this week with
+psycho-educational material, and continue with some practical breathing
+exercises. The module should take about 20-30 minutes to complete. It is
+important that your read all the instructions carefully so that you feel
+you understand completely. Should you have any questions you are welcome to
+send us a message by using the “Messages” feature at the top of the page.
+If you encounter any errors, please use the “Problems?” feature on the top
+right hand side.
 
-Your treatment is divided into ten weeks, with a new module each week. Talk to your therapist if you feel you need to go slower. The modules are as follows:
+Your treatment is divided into ten weeks, with a new module each week. Talk
+to your therapist if you feel you need to go slower. The modules are as
+follows:
 
 <ul>
   <li>Module 1, start and information</li>
