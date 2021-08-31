@@ -8,15 +8,17 @@ output: html_document
 # Instruments
 
 In BASS, instruments are the building blocks of assessments. Under this menu option, you can view a list of all the instruments currently set up in your database, as well as Create new instrument by using the built-in editor and Import instrument from XML to import an already built instrument from another BASS database by copying its XML code. You can also edit instruments, as well as delete them.
-But first, let’s examine the table. 
-To the left we have the *Name* column. This simply shows the name of the instrument, as well as if it is adapted to **responsive presentation** (a small cell phone icon will be shown) and/or if it is a **clinician rated instrument** (a small, grey scroll icon will be shown). Responsive presentation means that the instrument is set up to adapt to different screen sizes, i.e desktop/laptop screens and mobile screens.
-Next is the *Abbreviation* column, which shows the abbreviation of the instrument (if one is specified), such as MADRS-S, HADS, PHQ-9 and so forth.
-The next column is labeled *Title name*, and is the title shown to participants. This can be either the proper name of the instrument, a name of your own choosing, or nothing at all.
-The *Id* column shows the ID the instrument is given within your database. This is useful if you want to set up Answer flags for an instrument. In such a case, you can refer to the instrument’s ID rather than its name, since the ID can’t be changed. As such, it is a more stable way and less vulnerable to changes.
-The following column, *#Items*, displays the number of items in the instrument.
-The next column, *#Completed*, displays the number of times the instrument has been completed by participants.
-The *#Ass.batt. column* displays the number of Assessment batteries in which the instrument is included.
-The last the columns are *Edit* (the pencil icon), *Copy* (the clipboard icon) and *Delete* (the trash can icon).
+
+But first, let’s examine the table.
+
+- To the left we have the *Name* column. This simply shows the name of the instrument, as well as if it is adapted to **responsive presentation** (a small cell phone icon will be shown) and/or if it is a **clinician rated instrument** (a small, grey scroll icon will be shown). Responsive presentation means that the instrument is set up to adapt to different screen sizes, i.e desktop/laptop screens and mobile screens.
+- Next is the *Abbreviation* column, which shows the abbreviation of the instrument (if one is specified), such as MADRS-S, HADS, PHQ-9 and so forth.
+- The next column is labeled *Title name*, and is the title shown to participants. This can be either the proper name of the instrument, a name of your own choosing, or nothing at all.
+- The *Id* column shows the ID the instrument is given within your database. This is useful if you want to set up Answer flags for an instrument. In such a case, you can refer to the instrument’s ID rather than its name, since the ID can’t be changed. As such, it is a more stable way and less vulnerable to changes.
+- The following column, *#Items*, displays the number of items in the instrument.
+- The next column, *#Completed*, displays the number of times the instrument has been completed by participants.
+- The *#Ass.batt. column* displays the number of Assessment batteries in which the instrument is included.
+- The last the columns are *Edit* (the pencil icon), *Copy* (the clipboard icon) and *Delete* (the trash can icon).
 
 There are two ways to create a new instrument in BASS4. Either you can copy an existing instrument, that is similar to the one you wish to create and adjust that instrument. You can also create a new instrument from scratch, using the built in tool in BASS4.
 
@@ -83,6 +85,7 @@ Depending on what questions you would like to add, you go about adding them in d
 
 **Adding multiple-choice questions**<br>
 By follow the instructions below, your end result will look similar to this:
+
 ![](images/new-images/multiplechoiceQ.png)
 
 First, you will need to add a new "free text". To do this, click "**Add new [Free text]**". Then type in the options that are needed for the questions you want to add. For example, if you have five options to your question, you type it in like in picture 4 picture below.

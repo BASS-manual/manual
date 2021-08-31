@@ -163,12 +163,11 @@ Let's begin with the basics, and start with a quick overview of the participant'
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  The login screen for participants is accessed by either \url{https://YourDataBase.webcbt.se} or \url{https://YourDataBase.bassdb.se}, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS's built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.
+  The login screen for participants is accessed by either \texttt{https://YourDataBase.webcbt.se} or \texttt{https://YourDataBase.bassdb.se}, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS's built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.
 \item
   When your participants have logged in, there are three possible screens they may encounter depending on whether they have an active assessment and/or treatment or not.
 
-  \begin{enumerate}
-  \def\labelenumii{\arabic{enumii}.}
+  \begin{itemize}
   \tightlist
   \item
     If your participant has an active assessment, they will be presented with it as soon as they log in. This is true even if they also have an active treatment. When they've completed the assessment, they will be taken to the home page if they have an active treatment. If they do not have an active treatment, they will be automatically logged out since there is nothing else for them to do in BASS at that point.
@@ -176,12 +175,11 @@ Let's begin with the basics, and start with a quick overview of the participant'
     If your participant does not have an active assessment, they will be presented with their home page.
   \item
     If your participant has neither an active assessment nor an active treatment, they will be automatically logged out since there is nothing for them to do in BASS.
-  \end{enumerate}
+  \end{itemize}
 \item
   When your participants have active treatments and no active/pending assessments, they will land at their home page. Here, they have access to a few options:
 
-  \begin{enumerate}
-  \def\labelenumii{\arabic{enumii}.}
+  \begin{itemize}
   \tightlist
   \item
     Start Page -- their home page
@@ -193,7 +191,7 @@ Let's begin with the basics, and start with a quick overview of the participant'
     Privacy notice -- A legal document which is required by EU law (GDPR) and explains what personal data is collected by the project, who stores it and who has access to it.
   \item
     Log out -- Logs the participant out of BASS and ends their session.
-  \end{enumerate}
+  \end{itemize}
 \item
   We will touch upon all these menu options later on in the manual. For now, we're just getting acquainted with the user interface. You may have noticed that there are no menu option for assessments. This is because they are handled differently than treatments. We will return to this topic later on.
 \end{enumerate}
@@ -221,10 +219,13 @@ A participant need to be assigned to a project to be able to fill in instruments
 \textbf{Group}
 A project can be divided into groups, and participants of the same group in a project can be managed collectively.
 
+\textbf{2FA}
+2FA stands from \emph{two-factor authentication}, which is required by BASS by default. As of this writing, this could be set up to use SMS, e-mail och authenticator apps (TOTP).
+
 \hypertarget{login}{%
 \chapter{Login}\label{login}}
 
-As soon as your database setup is ready, you can login to the administrator's interface. The interface is found at an URL of the format ``\url{https://webcbt.se/NameOfYourDatabase}''. Enter your credentials in the login box and press the Login button.
+As soon as your database setup is ready, you can login to the administrator's interface. The interface is found at an URL of the format \texttt{https://webcbt.se/NameOfYourDatabase} or \texttt{https://bassdb.se/NameOfYourDatabase}. Enter your credentials in the login box and press the Login button.
 
 \includegraphics{images/login.png}
 
@@ -756,15 +757,28 @@ In some studies, you may want to record how much time is spent writing messages 
 \chapter{Instruments}\label{instruments}}
 
 In BASS, instruments are the building blocks of assessments. Under this menu option, you can view a list of all the instruments currently set up in your database, as well as Create new instrument by using the built-in editor and Import instrument from XML to import an already built instrument from another BASS database by copying its XML code. You can also edit instruments, as well as delete them.
+
 But first, let's examine the table.
-To the left we have the \emph{Name} column. This simply shows the name of the instrument, as well as if it is adapted to \textbf{responsive presentation} (a small cell phone icon will be shown) and/or if it is a \textbf{clinician rated instrument} (a small, grey scroll icon will be shown). Responsive presentation means that the instrument is set up to adapt to different screen sizes, i.e desktop/laptop screens and mobile screens.
-Next is the \emph{Abbreviation} column, which shows the abbreviation of the instrument (if one is specified), such as MADRS-S, HADS, PHQ-9 and so forth.
-The next column is labeled \emph{Title name}, and is the title shown to participants. This can be either the proper name of the instrument, a name of your own choosing, or nothing at all.
-The \emph{Id} column shows the ID the instrument is given within your database. This is useful if you want to set up Answer flags for an instrument. In such a case, you can refer to the instrument's ID rather than its name, since the ID can't be changed. As such, it is a more stable way and less vulnerable to changes.
-The following column, \emph{\#Items}, displays the number of items in the instrument.
-The next column, \emph{\#Completed}, displays the number of times the instrument has been completed by participants.
-The \emph{\#Ass.batt. column} displays the number of Assessment batteries in which the instrument is included.
-The last the columns are \emph{Edit} (the pencil icon), \emph{Copy} (the clipboard icon) and \emph{Delete} (the trash can icon).
+
+\begin{itemize}
+\tightlist
+\item
+  To the left we have the \emph{Name} column. This simply shows the name of the instrument, as well as if it is adapted to \textbf{responsive presentation} (a small cell phone icon will be shown) and/or if it is a \textbf{clinician rated instrument} (a small, grey scroll icon will be shown). Responsive presentation means that the instrument is set up to adapt to different screen sizes, i.e desktop/laptop screens and mobile screens.
+\item
+  Next is the \emph{Abbreviation} column, which shows the abbreviation of the instrument (if one is specified), such as MADRS-S, HADS, PHQ-9 and so forth.
+\item
+  The next column is labeled \emph{Title name}, and is the title shown to participants. This can be either the proper name of the instrument, a name of your own choosing, or nothing at all.
+\item
+  The \emph{Id} column shows the ID the instrument is given within your database. This is useful if you want to set up Answer flags for an instrument. In such a case, you can refer to the instrument's ID rather than its name, since the ID can't be changed. As such, it is a more stable way and less vulnerable to changes.
+\item
+  The following column, \emph{\#Items}, displays the number of items in the instrument.
+\item
+  The next column, \emph{\#Completed}, displays the number of times the instrument has been completed by participants.
+\item
+  The \emph{\#Ass.batt. column} displays the number of Assessment batteries in which the instrument is included.
+\item
+  The last the columns are \emph{Edit} (the pencil icon), \emph{Copy} (the clipboard icon) and \emph{Delete} (the trash can icon).
+\end{itemize}
 
 There are two ways to create a new instrument in BASS4. Either you can copy an existing instrument, that is similar to the one you wish to create and adjust that instrument. You can also create a new instrument from scratch, using the built in tool in BASS4.
 
@@ -845,6 +859,7 @@ Depending on what questions you would like to add, you go about adding them in d
 
 \textbf{Adding multiple-choice questions}
 By follow the instructions below, your end result will look similar to this:
+
 \includegraphics{images/new-images/multiplechoiceQ.png}
 
 First, you will need to add a new ``free text''. To do this, click ``\textbf{Add new {[}Free text{]}}''. Then type in the options that are needed for the questions you want to add. For example, if you have five options to your question, you type it in like in picture 4 picture below.
@@ -1290,7 +1305,7 @@ Using \texttt{\textless{}limitedlastday\textgreater{}*YourContentHere*\textless{
 \hypertarget{treatment-modules}{%
 \section{Treatment Modules}\label{treatment-modules}}
 
-Now, let's create modules for our treatment. To do this, click Close at the top of the page to exit the treatment settings and return to the Treatment view for your treatment. Here, click the dropdown menu at the bottom of the page and select Module. You will be taken to the settings page for the module. Here, you can give it a name, and tags if you wish. Below these two boxes, there are three dropdown menus:
+Now, let's create modules for our treatment. To do this, click \emph{Close} at the top of the page to exit the treatment settings and return to the Treatment view for your treatment. Here, click the dropdown menu at the bottom of the page and select Module. You will be taken to the settings page for the module. Here, you can give it a name, and tags if you wish. Below these two boxes, there are three dropdown menus:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1318,7 +1333,7 @@ We will start by creating the main text one and work onwards from there in a ``b
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  So, to add a treatment content navigate to your treatment if you're not already there. From the Create new dropdown menu at the bottom of the page, select treatment content. This will take you to the settings and editing page of the treatment content. Start by giving it an appropriate name in the box labeled Name at the top, and click Save.
+  So, to add a treatment content navigate to your treatment if you're not already there. From the Create new dropdown menu at the bottom of the page, select treatment content. This will take you to the settings and editing page of the treatment content. Start by giving it an appropriate name in the box labeled Name at the top, and click \emph{Save}.
 \item
   You may add tags if you wish, to make the content searchable.
 \item
@@ -1335,7 +1350,7 @@ We will start by creating the main text one and work onwards from there in a ``b
   \begin{itemize}
   \tightlist
   \item
-    \emph{Indexed by H1 tags} is the default option and presents the content as a long continuously scrollable page. You can visually divide it into cards by using the HTML tag \texttt{\textless{}h1\textgreater{}YourHeading\textless{}/h1\textgreater{}}, or by using the Markdown syntax \#YourHeading.
+    \emph{Indexed by H1 tags} is the default option and presents the content as a long continuously scrollable page. You can visually divide it into cards by using the \textbf{HTML} tag \texttt{\textless{}h1\textgreater{}YourHeading\textless{}/h1\textgreater{}}, or by using the Markdown syntax \#YourHeading.
   \item
     \emph{Split into pages (use \texttt{\textbackslash{}PAGEBREAK} at the top level)} lets you divide the content into individual pages, PowerPoint-style. As per the instruction in the option text, use \texttt{\textbackslash{}PAGEBREAK} where you wish to insert a page break and switch to a new page.
   \end{itemize}
@@ -1357,9 +1372,7 @@ A few things are worth knowing when working with \textbf{HTML} in BASS:
 \item
   You do not need to use \texttt{\textless{}html\textgreater{}}, \texttt{\textless{}head\textgreater{}}, \texttt{\textless{}title\textgreater{}} or \texttt{\textless{}body\textgreater{}}.
 \item
-  You do not need to define any CSS styles, since BASS has its own \textbf{CSS} sheet that will be the standard design for your treatment content. If you do want to have custom \textbf{CSS} styles for part of your treatment, you can use the
-
-  tag to insert those CSS rules and apply them. Do note however, that you may only apply \textbf{CSS} styles to elements within your treatment content. You cannot apply styles to BASS itself.
+  You do not need to define any CSS styles, since BASS has its own \textbf{CSS} sheet that will be the standard design for your treatment content. If you do want to have custom \textbf{CSS} styles for part of your treatment, you can use the \texttt{\textless{}style\textgreater{}} tag to insert those CSS rules and apply them. Do note however, that you may only apply \textbf{CSS} styles to elements within your treatment content. You cannot apply styles to BASS itself.
 \end{enumerate}
 
 Now, creating content is as simple as starting to type into the edit box. It may seem daunting at first if you are unfamiliar with \textbf{Markdown} and \textbf{HTML}, but there are several good resources available on the web.
@@ -1419,7 +1432,7 @@ The same main text written in HTML would look like this:
 Here we've used a heading (\texttt{\#} in \textbf{Markdown}, \texttt{\textless{}h1\textgreater{}} in \textbf{HTML}), then written some informative text, and finished with an unordered, i.e non-numbered, list (\texttt{-} in \textbf{Markdown}, \texttt{\textless{}ul\textgreater{}} and \texttt{\textless{}li\textgreater{}} in \textbf{HTML}). You can create ordered, i.e numbered, lists by using numbers in place of the dash in \textbf{Markdown}, or using \texttt{\textless{}ol\textgreater{}} in place of \texttt{\textless{}ul\textgreater{}} in \textbf{HTML}. Refer to the guides and tutorials linked above for further information on syntax and formatting in \textbf{Markdown} and/or \textbf{HTML}.
 
 Below the edit box are three buttons. The \emph{Save} button does what it says on the tin: it saves your work. Make a habit of saving often.
-Then there are two more buttons: Insert link and Preview.
+Then there are two more buttons: \emph{Insert link} and \emph{Preview}.
 
 The Preview button will preview your saved treatment content, to give you an idea of how it will look to the participants. It's very useful for checking that your design looks as intended, and as a quick way to check your progress. We recommend that you also create a dummy participant for which you activate your treatment, so that you can log into that participant account and check that your treatment works and looks good ``live'', so to speak.
 

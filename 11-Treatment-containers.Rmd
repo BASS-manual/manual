@@ -113,12 +113,12 @@ We will start by creating the main text one and work onwards from there in a “
 8. Content can be completed multiple times using tabs… lets you use the div element with class=”tabbed” as following `<div class=”tabbed”>*YourContent*</div>`, to have for example a weekly diary be repeatable beyond the first week, without having to set up 10 individual weeks by coding them by hand. The participant can simply click a plus sign to add a new tab, with a fresh week ready to be filled in.
 
 ### Content text
-Content text is the main editing window where you add the text, media content, forms and input field etc. to your treatment content. This is all formatted and structured through Markdown and/or **HTML**.
+Content text is the main editing window where you add the text, media content, forms and input field etc. to your treatment content. This is all formatted and structured through **Markdown** and/or **HTML**.
 A few things are worth knowing when working with **HTML** in BASS:
 
 1. You do not need to define the document type (`<!—DOCTYPE HTML -->`)
 2. You do not need to use `<html>`, `<head>`, `<title>` or `<body>`.
-3. You do not need to define any CSS styles, since BASS has its own **CSS** sheet that will be the standard design for your treatment content. If you do want to have custom **CSS** styles for part of your treatment, you can use the <style> tag to insert those CSS rules and apply them. Do note however, that you may only apply **CSS** styles to elements within your treatment content. You cannot apply styles to BASS itself.
+3. You do not need to define any **CSS** styles, since BASS has its own **CSS** sheet that will be the standard design for your treatment content. If you do want to have custom **CSS** styles for part of your treatment, you can use the `<style>` tag to insert those **CSS** rules and apply them. Do note however, that you may only apply **CSS** styles to elements within your treatment content. You cannot apply styles to BASS itself.
 
 Now, creating content is as simple as starting to type into the edit box. It may seem daunting at first if you are unfamiliar with **Markdown** and **HTML**, but there are several good resources available on the web. 
 One good resource for Markdown is found here: [https://www.markdownguide.org](https://www.markdownguide.org).
