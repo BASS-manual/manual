@@ -1,10 +1,14 @@
-# The main menu
+# Getting your bearings: Navigating the administrator's interface
+
+Now, let’s turn to the administrative interface. You access this through either https://webcbt.se/YourDataBase or https://bassdb.se/YourDataBase. You will have your login credentials supplied by us, and logging in will require 2FA (two-factor authentication) through either SMS or through an authenticator app (Authy, Google Authenticator, Microsoft Authenticator).
 
 All functionality in the BASS administration interface can be accessed from the main menu to the left of your screen. 
 
-What options are visible in the main menu depends on what privileges have been assigned to your profile. A common setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments. The image below shows all available menu options, as presented to database administrators.
+What options are visible in the main menu depends on what privileges have been assigned to your profile. A common setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments. This manual is written to cover BASS in its entirety. The image below shows all available menu options, as presented to database administrators.
 
 ![](images/main-menu.png)
+
+Now, let’s examine what substitutes the main menu:
 
 **Participant Search** lets you search specific data points relevant to the participants registered in the active project. The *Search* tab will show what information is searchable. See Chapter 4 for further details.
 
@@ -41,3 +45,20 @@ The **Projects** lets your view and create projects within the database.
 **Therapists** lets you view, create and edit therapist logins in the database. See Chapter # for further details (under construction and will be updated).
 
 **Log out** simply logs you out of the database and ends your current session.
+
+
+## The intended structure of a BASS project
+
+Now that we’ve familiarized ourselves with the main menu and its options, let’s take a moment and look at the internal structure of BASS, and how it’s set up.
+As you’ve surely gathered by now, the foundation of BASS is the **database**. This is the foundational level upon with all other layers are applied. The next level is the **project**. You can have just one project in your database, or you can have several. Participants are placed in to projects, but may be moved from one project to another if necessary. Each project in your database will have its own registration URL, its own login URL, as well the option to use its own privacy notice.
+The next level in this structure is **groups**. They can be used to group participants *within* a project. This enables you do administer different sets of assessments to different groups of participants, for example. It also lets you use groups as a sorting tool in your reports.
+An important note is that instruments and treatments are stored at the database level, meaning they are accessible from all projects within the database. Assessments, however, are stored at the project level and are as such not shared between projects.
+And to clarify: participants and groups are also not shared between projects.
+
+### Setting up your project
+Now, how do I set up my project? And what do I need to get started? 
+You can get started without setting up a project, and start by building instruments and treatments. However, it’s recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented. To set up your project, simply navigate to **Projects** and click *Create new project*, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.
+
+### Groups
+If you want to use groups in your project, for example to administer different cohorts, navigate to **Participants**, and to the tab labeled **Groups**. To create a group, simply type the name into the text box and click *Save*. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click *Save* again.
+If you haven’t decided whether you need groups or not, you can hold off on creating groups for now. If you know you won’t need groups, you can simply forgo creating any groups.

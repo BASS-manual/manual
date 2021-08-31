@@ -1,0 +1,18 @@
+# References
+
+In this chapter we list some helpful references and tools that might aid you when working with BASS.
+
+## Tools and resources for working with treatments
+Treatments are the most complex and knowledge-intensive thing to build and maintain within BASS, as they require some know-how when it comes to **Markdown** and **HTML**. If you want to add some stylish flair to your treatment, you'll need to dive into a bit of **CSS**. 
+More advanced and more interactive treatments might require knowledge of **JavaScript** as well. Here below are some online resources and tools which you may find helpful:
+
+**Coding software (IDE:s)**
+
+- https://atom.io (an open-source IDE with good enthusiast support)
+- https://code.visualstudio.com (a full-featured IDE from Microsoft)
+
+**Online resources on Markdown, HTML, and JavaScript**
+
+- https://www.markdownguide.org (a well presented and comprehensive guide on using Markdown)
+- https://www.w3schools.com (a good resource for referencing HTML, CSS and JavaScript)
+- https://javascript.info (an in-depth and comprehensive guide and tutorial on JavaScript)

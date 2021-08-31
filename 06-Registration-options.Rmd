@@ -1,0 +1,72 @@
+# Registration options
+Under this menu option, you edit all settings related to the registration procedure. The URL for the registration is shown at the very top of the page. Underneath it is a checkbox labeled *Registration possible (if closed, edit Registration closed text below)*. Check/uncheck this to enable/disable the registration.
+The first table, labeled *Check participant field that should be entered when registering* allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN).
+In the larger table below that, you can edit the following:
+
+**PID name**
+This lets you specify what the PID name is. In Sweden, this is called ”personnummer” whereas in the US it is called ”Social Security Number”, or SSN. Your country may have a different name for this, and this option lets you assign the appropriate name.
+
+**PID format example**
+By typing here, you can present an example of the format you want the PID to be submitted in, such as ”19001212-1122” or “YYYYMMDD-XXXX” in the case of a Swedish example.
+
+**Allow participants to resume registration**
+Checking this box allows participants to pick up the registration process from where they left off if they close the web browser, for example. The requirement for this to function are specified, and a participant will need to use the same e-mail address and/or SMS number when they resume.
+
+**Use BankID for identity verification**
+This is a Sweden only option, that allows participants to use the e-ID solution BankID to verify their identity. This will only collect the personal information you’ve specified in the Check participant field that should be entered when registering.
+
+**Allow changing BankID first and last name**
+Checking this option lets participant change the first and last name collected by BankID. This is a niche option, but may be useful if a participant has submitted a name change that has not yet been updated at Skatteverket. Do note however, that first and last names may be changed by you later. Doing so is a much safer route than allowing participants to change BankID first and last name. As with the option above, any BankID-specific option is Sweden only.
+
+**Allow duplicated BankID registrations**
+This allows a participant to register multiple accounts using the same BankID. As with the options above, any BankID-specific options are Sweden only.
+
+**Allowed calling code countries**
+This setting specifies which calling code countries are allowed by this project. If you have participant from multiple countries, you have to type each relevant country code here (such as ”se” for Sweden, ”no” for Norway, “dk” for Denmark, “fi” for Finland, ”de” for Germany, ”gb” for the United Kingdom, ”us” for the United States”, etc.) for the SMS features to function correctly.
+
+**Registration group**
+This lets you select a previously created group as the default group newly registered participant accounts are placed into. This is mandatory if you want participants to access and complete an assessment as part of their registration.
+To do this, set the group as the Registration group, and active an assessment for that group under Participants, the Groups tab, sub-tab Assessments, and set a start date for the relevant assessment in the Date column.
+
+**Automatic username**
+This allows you to set an automatic username to be assigned to participant accounts, if the specified conditions are met. This can be either an E-mail address or a custom Participant ID (see below). If you do not wish to have automatic usernames, set this to none.
+
+**Automatic password**
+If you’ve elected to use automatic usernames, you can also use automatic passwords. Simply check the box to tell BASS to automatically generate secure passwords for participants when they register. Both usernames and passwords will be shown to the participant at the end of their registration process. If you have assigned assessments to be completed in conjunction with the registration, the username and password information will be presented to the participant before they start their assessment.
+
+**Automatic participant id**
+This lets you use automatic participant IDs, as you specify with the following options. Participant IDs useful as a anonymized way to refer to participants, and to sync data within BASS with offline data, should you have it. If you have similar codes for participant in a journal system or other records outside of BASS, you can tell BASS to use the same syntax for participant IDs.
+
+**Automatic participant id prefix**
+This lets you set a prefix for your participant IDs. This can be whatever you choose.
+
+**Automatic participant id length**
+This allows you to specify the number of digits following the prefix, or simply the number of digits if you’ve elected not to use prefixes. For example, if you type ”3” into this box, the first participant to register will have the participant ID ”001” assigned to them, the next participant will have ”002”, the next ”003” and so on. If you use automatic prefixes, they will be added to this, such as ”Test001”.
+
+**Require study consent**
+Check this box if you wish participant to consent to being part of your study as a step of the registration process. You can edit the study consent further down on this page.
+
+**Render markdown**
+Check this box if you want BASS to render Markdown formatting. A guide on how to use Markdown can be found here: https://www.markdownguide.org
+
+**Personal identification number validation function**
+This lets you write a JavaScript function to check whether participants adhere to the PID format you’ve presented.
+
+**Study information (Markdown/HTML)**
+This text box lets you edit the first page shown when participant click on the registration link. The idea is that you present information on your study here, what it is about, who you are and why you are conducting the study.
+As implied by the heading, you can use Markdown and/or HTML to format your text. Best practices is to choose either Markdown or HTML and stick with one of them. Markdown is simpler and quicker to learn and work with. HTML is more complex and more effortful to learn, but in return gives finer control over how content is displayed.
+It is very useful to learn at least some HTML if you intend to use BASS for treatments, as the treatment modules are built with Markdown and/or HTML.
+A good resource for referencing and learning HTML is found here: https://www.w3schools.com.
+Below the text box is a button labeled Insert link. Clicking this box opens the file browser for your database in a separate browser tab. From here, you can set up a folder structure for document, images, sound files and videos as well as upload such files to BASS. By clicking an uploaded file, you can insert a file path into the textbox. To turn this file path into a viewable image/video or downloadable file, refer to either Markdown or HTML as appropriate. More information on this can be found under the Treatments section.
+
+**Captcha challenge text (Markdown/HTML)**
+This text box lets you edit an optional text to be shown in conjunction with the captcha challenge. The captcha challenge already includes instructions by default, but if you want to add additional information the option to do so is here.
+
+**Study consent (Markdown)**
+If you’ve elected to use study consent (by checking the corresponding checkbox above), this text box is where you edit the consent form. As stated under the header, users will be required to check any checkboxes you put in here (using HTML). To set up a checkbox, use the <input type=”checkbox”> tag. For more information on checkboxes, see the following link: https://www.w3schools.com/tags/att_input_type_checkbox.asp.
+
+**Registration finished text (Markdown/HTML)**
+This textbox lets you type a text or message that is shown to participants when they have completed their registration. As stated under the header, this message is only shown if there are no assessments pending, i.e if you’ve set an assessment to be completed by participants in conjunction with the registration process (as describes under ”registration group”), this message will NOT be shown.
+
+**Registration closed text (Markdown/HTML)**
+As stated under the header, the message or text you type in this box will only be shown when the registration is closed, i.e if you have unchecked the *Registration possible* checkbox at the top of the page.

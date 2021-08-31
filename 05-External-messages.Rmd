@@ -1,0 +1,24 @@
+# External messages
+Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.
+
+## SMS settings
+The first box is labeled *SMS sender name*, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
+The box below, labeled *Standard SMS with quick login code*, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.
+Nestled below that is the dropdown menu *Delivery method for new message notifications to therapists*. The SMS options is as of this writing defunct, so the only valid option is ”E-post”.
+
+## New treatment message notification settings
+Here you specify how treatment notifications will be delivered, and what the message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
+Below that, there is a box for *New message email subject*. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
+The box labeled *New message notification* is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.
+
+## SMS count per month
+This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.
+
+## Email settings
+Under this headline are the settings for e-mail addresses connected to your database. The first one, *Sender automatic messages*, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply[at]ki.se by default.
+Below that is the *General mailbox for database*. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.
+
+## Assessment reminder settings
+Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
+You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
+Below these settings are two textboxes, *Standard SMS assessments reminder* and *Standard email assessment reminder*. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.

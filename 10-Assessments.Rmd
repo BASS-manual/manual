@@ -46,9 +46,9 @@ The Dependence option sets when the assessment is to be activated, in relation t
 
 Date offset from is where you select the previous assessment from which the date/delay is to be calculated. 
 
->**Note:** Setting Date offset from a reoccurring assessment (i.e. WEEKLY) will count the delay from the date of the last assessment and not the first. If this is not what you want, consider creating a dummy assessment without instruments to hold the start/dependence date.
+>**Note:** Setting Date offset from a reccurring assessment (i.e. WEEKLY) will count the delay from the date of the last assessment and not the first. If this is not what you want, consider creating a dummy assessment without instruments to hold the start/dependence date.
 
-Checking Dynamic means that the delay is calculated from the time when the previous assessment was filled out instead of the time when it was scheduled. Note that this setting only can be done on individually managed assessments.
+Checking Dynamic means that the delay is calculated from the time when the previous assessment was completed instead of the time when it was scheduled. Note that this setting only can be done on individually managed assessments.
 
 Delay is the number of days to wait before activation. 
 
