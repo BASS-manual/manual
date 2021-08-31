@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 9 Search participants: Finding what you need | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator`s manual for BASS4." />
   <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 9 Search participants: Finding what you need | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="BASS-manual/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 9 Search participants: Finding what you need | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-basics.html"/>
-<link rel="next" href="login.html"/>
+<link rel="prev" href="registration-options.html"/>
+<link rel="next" href="participants.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -238,32 +238,228 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dictionary" class="section level1">
-<h1><span class="header-section-number">Chapter 3</span> Dictionary</h1>
-<p>These are recurrent concepts in the manual:</p>
-<p><strong>Instrument</strong> <br>
-An instrument is an electronic version of a paper form used during psychological assessment. Some examples of digitalized instruments are VAS (visual analogue scale), MADRS (Montgomery Åsberg Depression Rating Scale), SWLS (Satisfaction With Life Scale) and LSAS (Liebowitz Social Anxiety Scale).</p>
-<p><strong>Assessment</strong> <br>
-An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.</p>
-<p><strong>Type</strong> <br>
-A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.</p>
-<p><strong>Project</strong> <br>
-A project is the administrative concept that connects a set of assessments to a set of participants.</p>
-<p><strong>Participants</strong> <br>
-A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.</p>
-<p><strong>Group</strong> <br>
-A project can be divided into groups, and participants of the same group in a project can be managed collectively.</p>
-<p><strong>2FA</strong> <br>
-2FA stands from <em>two-factor authentication</em>, which is required by BASS by default. As of this writing, this could be set up to use SMS, e-mail och authenticator apps (TOTP).</p>
+<div id="search-participants-finding-what-you-need" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Search participants: Finding what you need</h1>
+<p>The “Participant search” is located at the top of the main menu. This is where you can search for and list participants by specific variables such as groups or projects.</p>
+<p><img src="images/search-participants-menu.png" /></p>
+<p>When you press “Participant search” you will see a view with four tabs:</p>
+<p><img src="images/search-participants-tab.png" /></p>
+<ul>
+<li>Selection – Add a filter to your search</li>
+<li>Search – Perform your search using text strings or other identifiers</li>
+<li>Hidden columns – View and show columns that are hidden</li>
+<li>Save/load settings – Save your recurrent searches for convenience</li>
+</ul>
+<div id="selectionfilter" class="section level2">
+<h2><span class="header-section-number">9.1</span> Selection/filter</h2>
+<p>If you press Selection, you can add a filter to your participant search.</p>
+<p><img src="images/selection-filter.png" /></p>
+<p>Here you can choose if you want to search all participants, your own participants (that you treat) or participants whose treatments you supervise.</p>
+<p>You can also choose which project(s) or group(s) to search. The top two checkboxes can be used to quickly either mark or unmark all the below listed projects or groups. If no specific project or group is checked, all of them will be included in the search. This also means that unchecking all projects/groups won’t return participants without a project/group.</p>
+<blockquote>
+<p><strong>Hint:</strong> If you want to search a specific group you should only mark that group, and not the corresponding project, as this will return all the participants belonging to the project and not only those in the group.</p>
+</blockquote>
+<p>Your chosen selection of participants is shown in the participant list below the tab.</p>
+</div>
+<div id="search" class="section level2">
+<h2><span class="header-section-number">9.2</span> Search</h2>
+<p>The actual search is done in the <strong>Search</strong> tab. If you previously added search filters in the Selection tab they will now be active and delimit your search.</p>
+<p><img src="images/search.png" /></p>
+<p>Here you can use many different variables to search for one or several participants. The search is executed either automatically when you leave a filled-in search box or when you hit the Enter-key on your keyboard. Your search results are shown in the participant list below the tab.</p>
+<p>Note that there is a discrepancy when searching by numbers or by text strings:</p>
+<ul>
+<li><p>Searching for the number “12” will only show the exact hit, while adding a % sign to the search as in “12%” will return both “12”, “123” and “012”.</p></li>
+<li><p>Searching for the text string “my” will return both “My”, “Myra” and “Amy”. You don’t need to add any % sign for text string searches.</p></li>
+</ul>
+<p>To search for several participants at the same time, you add a space between each corresponding search term in the search box.</p>
+<blockquote>
+<p><strong>Hint:</strong> This is useful if you want to search for participants whose IDs are listed on different rows in an Excel-file. Just copy the ID containing rows in Excel and directly paste them into the search box in BASS and they automatically receive a space between them.</p>
+</blockquote>
+</div>
+<div id="hide-show-and-sort-columns" class="section level2">
+<h2><span class="header-section-number">9.3</span> Hide, show and sort columns</h2>
+<p>If you want to hide a column, you hover the mouse over the column header until a red X shows up. By pressing the X, the column will be hidden.</p>
+<p><img src="images/hide-show-sort.png" /></p>
+<p>To show/unhide a column, press the “Hidden columns” tab. This tab shows all hidden columns as buttons. Press the button with the column you want back and it will show up in the search results again.</p>
+<p><img src="images/hidden-columns.png" /></p>
+<p>Most columns can be sorted alphabetically or by number. To sort a column, press the small up/down arrows that show when you hover over the column header.</p>
+</div>
+<div id="column-explanations" class="section level2">
+<h2><span class="header-section-number">9.4</span> Column explanations</h2>
+<p>There are a number of columns showing information, status or possible actions for a participant. Some are explained in the table below.</p>
+<style>
 
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+<table>
+<tr>
+<th>
+Column
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Pen symbol
+</td>
+<td>
+Edit the participant
+</td>
+</tr>
+<tr>
+<td>
+Participant Id
+</td>
+<td>
+A unique identifier for a participant within the study/project. “ANX-001”
+</td>
+</tr>
+<tr>
+<td>
+Internal Id
+</td>
+<td>
+A unique and technical identifier for a participant within the database.
+</td>
+</tr>
+<tr>
+<td>
+Flag symbol
+</td>
+<td>
+Shows if the participant is flagged for something.
+</td>
+</tr>
+<tr>
+<td>
+Message symbol
+</td>
+<td>
+Shows if there are unread messages from the participant.
+</td>
+</tr>
+<tr>
+<td>
+Chat symbol
+</td>
+<td>
+(For supervised therapists)
+Shows if there are unread messages from the supervisor.
+</td>
+</tr>
+<tr>
+<td>
+Approval symbol
+</td>
+<td>
+(For supervisors)
+Shows if there are messages sent from a supervised therapist to a participant that might need approval.
+</td>
+</tr>
+<tr>
+<td>
+Superv Mess
+</td>
+<td>
+(For supervisors)
+Total number of messages in supervisory correspondence. This is a useful way to see how much guidance was needed from the supervisor.
+</td>
+</tr>
+<tr>
+<td>
+Last message
+</td>
+<td>
+Last date when a participant sent a message (was active). Sort on this column and you’ll find participants that are lagging behind.
+</td>
+</tr>
+<tr>
+<td>
+Weeks
+</td>
+<td>
+The number of weeks left of the treatment.
+Treatments without end date are marked with the eternity symbol.
+</td>
+</tr>
+<tr>
+<td>
+Module
+</td>
+<td>
+The latest module the participant got access to. This column also shows for how many days the participant has had access to the module.
+</td>
+</tr>
+<tr>
+<td>
+Homework
+</td>
+<td>
+Shows if there is an unread homework sent in by the participant.
+</td>
+</tr>
+<tr>
+<td>
+Group
+</td>
+<td>
+Shows which group a participant belongs to. You can change the group here, but you need to save the update with the Save button below the list.
+</td>
+</tr>
+<tr>
+<td>
+Heart symbol
+</td>
+<td>
+By pressing the heart, you add the participant to your participants.
+</td>
+</tr>
+<tr>
+<td>
+Trash symbol
+</td>
+<td>
+By pressing the trash symbol, you delete the participant. Be careful as the participant and all its corresponding data then will be lost.
+</td>
+</tr>
+</table>
+</div>
+<div id="saveload-search-settings" class="section level2">
+<h2><span class="header-section-number">9.5</span> Save/load search settings</h2>
+<p>To save your current search settings, including both filters and search parameters, press the Save/load settings-tab. First ensure that the current search result for the settings you want to save are shown in the table below. Then write a name for your settings in the Currently loaded settings box and press “Save as new”.</p>
+<blockquote>
+<p><strong>Hint:</strong> Be careful to not use the “Save” button instead, because this will overwrite any currently loaded settings including its name.</p>
+</blockquote>
+<p><img src="images/save-load1.png" /></p>
+<p>The text “saved!” appears to the right of the buttons and your search is now saved and available in the dropdown below.</p>
+<p><img src="images/save-load2.png" /></p>
+<p>The dropdown “Saved settings” is where you access all your previously saved search settings.</p>
+<blockquote>
+<p><strong>Hint:</strong> If you make a new search, the “Currently loaded settings” box may no longer reflect the content of the search result list below. To be sure that the list matches the settings you want to load, first select “Choose” in the dropdown menu and then reselect the settings you want.</p>
+</blockquote>
+<div id="add-new-participant-to-group-and-change-group" class="section level3">
+<h3><span class="header-section-number">9.5.1</span> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP</h3>
+<p>It is possible to directly create a new participant within a specific project. This function is found below the table of participants. Just choose which project you want to add the new participant to, and you will be redirected to the “New participant”-view with this project pre-filled.</p>
+<p><img src="images/add-new-participants.png" /></p>
+<p>It is also easy to change which group a participant belongs to. For each participant in the table, you can choose a project in the dropdown in the Group column. Don’t forget to save all changes by pressing the “Save” button below the table afterwards.</p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-basics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="login.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="registration-options.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="participants.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -295,7 +491,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/01-Dictionary.Rmd",
+"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/07-Search-participants.Rmd",
 "text": "Edit"
 },
 "history": {

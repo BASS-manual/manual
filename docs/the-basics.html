@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator`s manual for BASS4." />
   <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="BASS-manual/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-basics.html"/>
-<link rel="next" href="login.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="dictionary.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -238,23 +238,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dictionary" class="section level1">
-<h1><span class="header-section-number">Chapter 3</span> Dictionary</h1>
-<p>These are recurrent concepts in the manual:</p>
-<p><strong>Instrument</strong> <br>
-An instrument is an electronic version of a paper form used during psychological assessment. Some examples of digitalized instruments are VAS (visual analogue scale), MADRS (Montgomery Åsberg Depression Rating Scale), SWLS (Satisfaction With Life Scale) and LSAS (Liebowitz Social Anxiety Scale).</p>
-<p><strong>Assessment</strong> <br>
-An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.</p>
-<p><strong>Type</strong> <br>
-A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.</p>
-<p><strong>Project</strong> <br>
-A project is the administrative concept that connects a set of assessments to a set of participants.</p>
-<p><strong>Participants</strong> <br>
-A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.</p>
-<p><strong>Group</strong> <br>
-A project can be divided into groups, and participants of the same group in a project can be managed collectively.</p>
-<p><strong>2FA</strong> <br>
-2FA stands from <em>two-factor authentication</em>, which is required by BASS by default. As of this writing, this could be set up to use SMS, e-mail och authenticator apps (TOTP).</p>
+<div id="the-basics" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> The Basics</h1>
+<p>Let’s begin with the basics, and start with a quick overview of the participant’s view. It is a good idea to familiarize yourself with this view, as most of what you do in the administrative view will have one or more effects in this view. As such, before we begin tweaking things we ought to know what we are tweaking.</p>
+<ol style="list-style-type: decimal">
+<li>The login screen for participants is accessed by either <code>https://YourDataBase.webcbt.se</code> or <code>https://YourDataBase.bassdb.se</code>, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS’s built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.</li>
+<li>When your participants have logged in, there are three possible screens they may encounter depending on whether they have an active assessment and/or treatment or not.
+<ul>
+<li>If your participant has an active assessment, they will be presented with it as soon as they log in. This is true even if they also have an active treatment. When they’ve completed the assessment, they will be taken to the home page if they have an active treatment. If they do not have an active treatment, they will be automatically logged out since there is nothing else for them to do in BASS at that point.</li>
+<li>If your participant does not have an active assessment, they will be presented with their home page.</li>
+<li>If your participant has neither an active assessment nor an active treatment, they will be automatically logged out since there is nothing for them to do in BASS.</li>
+</ul></li>
+<li>When your participants have active treatments and no active/pending assessments, they will land at their home page. Here, they have access to a few options:
+<ul>
+<li>Start Page – their home page</li>
+<li>Modules – Treatment modules. Clicking here grants access to any treatment modules you’ve marked as ”accessible”.</li>
+<li>Messages – BASS’s built in messaging feature which enables secure messaging between a participant and their assigned therapist.</li>
+<li>Privacy notice – A legal document which is required by EU law (GDPR) and explains what personal data is collected by the project, who stores it and who has access to it.</li>
+<li>Log out – Logs the participant out of BASS and ends their session.</li>
+</ul></li>
+<li>We will touch upon all these menu options later on in the manual. For now, we’re just getting acquainted with the user interface. You may have noticed that there are no menu option for assessments. This is because they are handled differently than treatments. We will return to this topic later on.</li>
+</ol>
 
 </div>
             </section>
@@ -262,8 +266,8 @@ A project can be divided into groups, and participants of the same group in a pr
           </div>
         </div>
       </div>
-<a href="the-basics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="login.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dictionary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -295,7 +299,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/01-Dictionary.Rmd",
+"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/00-Basics.Rmd",
 "text": "Edit"
 },
 "history": {

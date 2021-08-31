@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator`s manual for BASS4." />
   <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="BASS-manual/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-basics.html"/>
-<link rel="next" href="login.html"/>
+<link rel="prev" href="settings-and-security.html"/>
+<link rel="next" href="registration-options.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -238,32 +238,45 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dictionary" class="section level1">
-<h1><span class="header-section-number">Chapter 3</span> Dictionary</h1>
-<p>These are recurrent concepts in the manual:</p>
-<p><strong>Instrument</strong> <br>
-An instrument is an electronic version of a paper form used during psychological assessment. Some examples of digitalized instruments are VAS (visual analogue scale), MADRS (Montgomery Åsberg Depression Rating Scale), SWLS (Satisfaction With Life Scale) and LSAS (Liebowitz Social Anxiety Scale).</p>
-<p><strong>Assessment</strong> <br>
-An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.</p>
-<p><strong>Type</strong> <br>
-A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.</p>
-<p><strong>Project</strong> <br>
-A project is the administrative concept that connects a set of assessments to a set of participants.</p>
-<p><strong>Participants</strong> <br>
-A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.</p>
-<p><strong>Group</strong> <br>
-A project can be divided into groups, and participants of the same group in a project can be managed collectively.</p>
-<p><strong>2FA</strong> <br>
-2FA stands from <em>two-factor authentication</em>, which is required by BASS by default. As of this writing, this could be set up to use SMS, e-mail och authenticator apps (TOTP).</p>
+<div id="external-messages" class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> External messages</h1>
+<p>Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.</p>
+<div id="sms-settings" class="section level2">
+<h2><span class="header-section-number">7.1</span> SMS settings</h2>
+<p>The first box is labeled <em>SMS sender name</em>, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
+The box below, labeled <em>Standard SMS with quick login code</em>, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.
+Nestled below that is the dropdown menu <em>Delivery method for new message notifications to therapists</em>. The SMS options is as of this writing defunct, so the only valid option is ”E-post”.</p>
+</div>
+<div id="new-treatment-message-notification-settings" class="section level2">
+<h2><span class="header-section-number">7.2</span> New treatment message notification settings</h2>
+<p>Here you specify how treatment notifications will be delivered, and what the message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
+Below that, there is a box for <em>New message email subject</em>. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
+The box labeled <em>New message notification</em> is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.</p>
+</div>
+<div id="sms-count-per-month" class="section level2">
+<h2><span class="header-section-number">7.3</span> SMS count per month</h2>
+<p>This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.</p>
+</div>
+<div id="email-settings" class="section level2">
+<h2><span class="header-section-number">7.4</span> Email settings</h2>
+<p>Under this headline are the settings for e-mail addresses connected to your database. The first one, <em>Sender automatic messages</em>, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply[at]ki.se by default.
+Below that is the <em>General mailbox for database</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.</p>
+</div>
+<div id="assessment-reminder-settings" class="section level2">
+<h2><span class="header-section-number">7.5</span> Assessment reminder settings</h2>
+<p>Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
+You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
+Below these settings are two textboxes, <em>Standard SMS assessments reminder</em> and <em>Standard email assessment reminder</em>. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-basics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="login.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="settings-and-security.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="registration-options.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -295,7 +308,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/01-Dictionary.Rmd",
+"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/05-External-messages.Rmd",
 "text": "Edit"
 },
 "history": {

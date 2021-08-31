@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 5 Getting your bearings: Navigating the administrator’s interface | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator`s manual for BASS4." />
   <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 5 Getting your bearings: Navigating the administrator’s interface | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="BASS-manual/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Dictionary | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 5 Getting your bearings: Navigating the administrator’s interface | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-basics.html"/>
-<link rel="next" href="login.html"/>
+<link rel="prev" href="login.html"/>
+<link rel="next" href="settings-and-security.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -238,32 +238,58 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dictionary" class="section level1">
-<h1><span class="header-section-number">Chapter 3</span> Dictionary</h1>
-<p>These are recurrent concepts in the manual:</p>
-<p><strong>Instrument</strong> <br>
-An instrument is an electronic version of a paper form used during psychological assessment. Some examples of digitalized instruments are VAS (visual analogue scale), MADRS (Montgomery Åsberg Depression Rating Scale), SWLS (Satisfaction With Life Scale) and LSAS (Liebowitz Social Anxiety Scale).</p>
-<p><strong>Assessment</strong> <br>
-An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.</p>
-<p><strong>Type</strong> <br>
-A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.</p>
-<p><strong>Project</strong> <br>
-A project is the administrative concept that connects a set of assessments to a set of participants.</p>
-<p><strong>Participants</strong> <br>
-A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.</p>
-<p><strong>Group</strong> <br>
-A project can be divided into groups, and participants of the same group in a project can be managed collectively.</p>
-<p><strong>2FA</strong> <br>
-2FA stands from <em>two-factor authentication</em>, which is required by BASS by default. As of this writing, this could be set up to use SMS, e-mail och authenticator apps (TOTP).</p>
+<div id="getting-your-bearings-navigating-the-administrators-interface" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Getting your bearings: Navigating the administrator’s interface</h1>
+<p>Now, let’s turn to the administrative interface. You access this through either <a href="https://webcbt.se/YourDataBase" class="uri">https://webcbt.se/YourDataBase</a> or <a href="https://bassdb.se/YourDataBase" class="uri">https://bassdb.se/YourDataBase</a>. You will have your login credentials supplied by us, and logging in will require 2FA (two-factor authentication) through either SMS or through an authenticator app (Authy, Google Authenticator, Microsoft Authenticator).</p>
+<p>All functionality in the BASS administration interface can be accessed from the main menu to the left of your screen.</p>
+<p>What options are visible in the main menu depends on what privileges have been assigned to your profile. A common setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments. This manual is written to cover BASS in its entirety. The image below shows all available menu options, as presented to database administrators.</p>
+<p><img src="images/main-menu.png" /></p>
+<p>Now, let’s examine what substitutes the main menu:</p>
+<p><strong>Participant Search</strong> lets you search specific data points relevant to the participants registered in the active project. The <em>Search</em> tab will show what information is searchable. See Chapter 4 for further details.</p>
+<p>The <strong>Project</strong> dropdown menu lets you choose what project to view. This governs which participants and what assessments you can access. Instruments and treatments are shared between projects. To switch projects, simply use the dropdown menu.</p>
+<p><strong>Participants</strong> lets you see an overview over all the participants registered in the active project. In this overview you can see if a participant is flagged, has sent messages or reported an error, among other information. See Chapter 6 for further details.</p>
+<p><strong>Assessments</strong> is only shown if you have selected a project from the <strong>Project</strong> dropdown menu. Here, you can view, create and edit assessments. See Chapter 5 for further details.</p>
+<p><strong>Registration options</strong> is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See Chapter # for further details (under construction and will be updated).</p>
+<p><strong>Project security</strong> lets you define what security measures your project will use, such as two-factor authentication.</p>
+<p>The <strong>Treatment containers</strong> view lets you view, create and edit treatments to be used within BASS. See Chapter 8 for further details.</p>
+<p>The <strong>Instruments</strong> view lets you view, create, edit and delete instruments to be used within BASS. See Chapter 7 for further details.</p>
+<p><strong>Note categories</strong> lets you define custom note categories to be used to sort information on participants.</p>
+<p><strong>Answers flagging</strong> lets you set and define rules to flag specific answers or answer ranges in instruments that you want to quickly be notified about, should a participant give those answers.</p>
+<p>The <strong>Projects</strong> lets your view and create projects within the database.</p>
+<p><strong>Privacy notice</strong> lets you view and edit the privacy notice(s) for the database and its projects. This is mandatory information in the EU that needs to be made available to all potential participants. If you use the built in registration procedure in BASS, this privacy notice is presented there.</p>
+<p><strong>My settings</strong> lets you view the settings of your therapist login.</p>
+<p><strong>Security settings</strong> lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See Chapter # for further details (under construction and will be updated).</p>
+<p><strong>External messages</strong> lets you view and edit messages which can be sent automatically to the cell phones or e-mail adresses of participants. This is, for example, notifications and reminders about active assessments.</p>
+<p><strong>Reports</strong> lets you extract reports on data collected through instruments and assessments in BASS. See Chapter # for further details (under construction and will be updated).</p>
+<p><strong>Therapists</strong> lets you view, create and edit therapist logins in the database. See Chapter # for further details (under construction and will be updated).</p>
+<p><strong>Log out</strong> simply logs you out of the database and ends your current session.</p>
+<div id="the-intended-structure-of-a-bass-project" class="section level2">
+<h2><span class="header-section-number">5.1</span> The intended structure of a BASS project</h2>
+<p>Now that we’ve familiarized ourselves with the main menu and its options, let’s take a moment and look at the internal structure of BASS, and how it’s set up.
+As you’ve surely gathered by now, the foundation of BASS is the <strong>database</strong>. This is the foundational level upon with all other layers are applied. The next level is the <strong>project</strong>. You can have just one project in your database, or you can have several. Participants are placed in to projects, but may be moved from one project to another if necessary. Each project in your database will have its own registration URL, its own login URL, as well the option to use its own privacy notice.
+The next level in this structure is <strong>groups</strong>. They can be used to group participants <em>within</em> a project. This enables you do administer different sets of assessments to different groups of participants, for example. It also lets you use groups as a sorting tool in your reports.
+An important note is that instruments and treatments are stored at the database level, meaning they are accessible from all projects within the database. Assessments, however, are stored at the project level and are as such not shared between projects.
+And to clarify: participants and groups are also not shared between projects.</p>
+<div id="setting-up-your-project" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Setting up your project</h3>
+<p>Now, how do I set up my project? And what do I need to get started?
+You can get started without setting up a project, and start by building instruments and treatments. However, it’s recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented. To set up your project, simply navigate to <strong>Projects</strong> and click <em>Create new project</em>, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.</p>
+</div>
+<div id="groups" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Groups</h3>
+<p>If you want to use groups in your project, for example to administer different cohorts, navigate to <strong>Participants</strong>, and to the tab labeled <strong>Groups</strong>. To create a group, simply type the name into the text box and click <em>Save</em>. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click <em>Save</em> again.
+If you haven’t decided whether you need groups or not, you can hold off on creating groups for now. If you know you won’t need groups, you can simply forgo creating any groups.</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-basics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="login.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="login.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="settings-and-security.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -295,7 +321,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/01-Dictionary.Rmd",
+"link": "https://github.com/oskarflygare/webcbt-therapist/edit/master/03-Navigating-in-BASS.Rmd",
 "text": "Edit"
 },
 "history": {
