@@ -63,7 +63,7 @@ Below the text box is a button labeled Insert link. Clicking this box opens the 
 This text box lets you edit an optional text to be shown in conjunction with the captcha challenge. The captcha challenge already includes instructions by default, but if you want to add additional information the option to do so is here.
 
 **Study consent (Markdown)**
-If you’ve elected to use study consent (by checking the corresponding checkbox above), this text box is where you edit the consent form. As stated under the header, users will be required to check any checkboxes you put in here (using HTML). To set up a checkbox, use the `<input type=”checkbox”> tag. For more information on checkboxes, see the following link: https://www.w3schools.com/tags/att_input_type_checkbox.asp.
+If you’ve elected to use study consent (by checking the corresponding checkbox above), this text box is where you edit the consent form. As stated under the header, users will be required to check any checkboxes you put in here (using HTML). To set up a checkbox, use the `<input type=”checkbox”>` tag. For more information on checkboxes, see the following link: https://www.w3schools.com/tags/att_input_type_checkbox.asp.
 
 **Registration finished text (Markdown/HTML)**
 This textbox lets you type a text or message that is shown to participants when they have completed their registration. As stated under the header, this message is only shown if there are no assessments pending, i.e if you’ve set an assessment to be completed by participants in conjunction with the registration process (as describes under ”registration group”), this message will NOT be shown.
