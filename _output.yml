@@ -6,7 +6,7 @@ bookdown::gitbook:
         <li><a href="./">BASS4 Administrator`s Manual</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/oskarflygare/webcbt-therapist/edit/master/%s
+    edit: https://github.com/BASS-manual/manual
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:

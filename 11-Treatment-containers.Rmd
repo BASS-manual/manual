@@ -77,15 +77,21 @@ This option lets you add a *treatment content* as a separate menu page in the pa
 **Welcome screen**
 Here, you may type in content to show a custom welcome screen/home page in the participant’s view. There are a handful of instructions given on the page itself, to show conditional text or content.
 
+
 For example, by using the `<ongoing>*YourContentHere*</ongoing>` tag, you can specify the content enclosed in that tag to show when the treatment is ongoing. This is, in essence, the standard text for your home page.
+
 
 By using `<daysleft>*YourContentHere*</daysleft>` you can set content to show only as long as the participant has more than one day left of the treatment. When that time has passed, this content will not be shown.
 
+
 By using `<lastday>*YourContentHere*</lastday>` you can set the content to only show on the last day of access. This might be a thank you and/or good luck text, or something similar or appropriate for your treatment.
+
 
 By using `<limited>*YourContentHere*</limited>` you can set content to only show when the participant has only limited access to the treatment. For example, this could simply be a text informing the participant of the limited access and the changed it entails.
 
+
 Using `<limiteddaysleft>*YouContentHere*</limiteddaysleft>` you can set conditional content to be shown as long as the participant has more than one day left of their limited access.
+
 
 Using `<limitedlastday>*YourContentHere*</limitedlastday>` you can set conditional content to be shown on the participant’s last day of limited acces, such as thanking them for their time and effort, and whishing them good luck.
 
@@ -127,9 +133,11 @@ A few things are worth knowing when working with **HTML** in BASS:
 3. You do not need to define any **CSS** styles, since BASS has its own **CSS** sheet that will be the standard design for your treatment content. If you do want to have custom **CSS** styles for part of your treatment, you can use the `<style>` tag to insert those **CSS** rules and apply them. Do note however, that you may only apply **CSS** styles to elements within your treatment content. You cannot apply styles to BASS itself.
 
 Now, creating content is as simple as starting to type into the edit box. It may seem daunting at first if you are unfamiliar with **Markdown** and **HTML**, but there are several good resources available on the web. 
-One good resource for Markdown is found here: [https://www.markdownguide.org](https://www.markdownguide.org).
-A good resource for HTML is found here: [https://www.w3schools.com](https://www.w3schools.com). 
-If you want to perform advanced actions, such as automated calculations using user input as variables, you will need to learn some **JavaScript**, and add it to your treatment content with the `<script>` tag.
+- One good resource for Markdown is found here: [https://www.markdownguide.org](https://www.markdownguide.org).
+- A good resource for HTML is found here: [https://www.w3schools.com](https://www.w3schools.com). 
+- If you want to perform advanced actions, such as automated calculations using user input as variables, you will need to learn some **JavaScript**, and add it to your treatment content with the `<script>` tag.
+- Lastly, BASS utilizes Bootstrap 4.6.x. Boostrap is a web development framework aimed to simplify the building of a website using HTML, CSS and some JavaScript. Bootstrap has numerous pre-built components you can use to build your treatment content in BASS. You can read more about Bootstrap here: [https://getbootstrap.com](https://getbootstrap.com). If you want to head straight to the useable components Bootstrap provides, click here: [https://getbootstrap.com/docs/4.6/components/alerts/](https://getbootstrap.com/docs/4.6/components/alerts/).
+
 
 A typical start of a module main text may look as follows when written in **Markdown**:
 
@@ -207,7 +215,7 @@ The *Insert link* button will take you to the file manager in BASS once clicked 
 
 It is good practice to set up an easily navigable folder structure before you start uploading any files. Click the *Create new folder* button at the bottom of the page to create a new folder. Note that any new folder you create will be created within the folder you’re currently located in (i.e if you’ve created folder A and then navigated/clicked into it and create folder B, folder B will be created within folder A). The reason we’re doing this in advance is that you cannot move files around once they’ve been uploaded, so it is important that they are uploaded to their proper place from the start.
 
-Once you’ve set up your folder structure, make sure you are in the folder you want the file to be uploaded to, and go to the lower edge of the screen and click *Välj fil* (Swedish for Select file). This will bring up a file browser, showing local files on your computer, where you can navigate to and select the file you want to upload from your computer. Once you’ve found the correct file, select it and click *Överför* (Swedish for Transfer, or Submit). You may also double-click the file. Once you’ve done so, you will be back at the file manage in BASS, and can see the name of the file you’ve selected for upload at the bottom of the page. If it is the correct file, go to the bottom right corner of the window and click Upload. Depending on the size of the file, this might take a moment. When the upload is finished, your file will be visible in the file manager window. Simply click it to add its file path to your treatment content.
+Once you’ve set up your folder structure, make sure you are in the folder you want the file to be uploaded to, and go to the lower edge of the screen and click *Välj fil* (Swedish for *Select file*). This will bring up a file browser, showing local files on your computer, where you can navigate to and select the file you want to upload from your computer. Once you’ve found the correct file, select it and click *Överför* (Swedish for *Transfer*, or *Submit*). You may also double-click the file. Once you’ve done so, you will be back at the file manage in BASS, and can see the name of the file you’ve selected for upload at the bottom of the page. If it is the correct file, go to the bottom right corner of the window and click Upload. Depending on the size of the file, this might take a moment. When the upload is finished, your file will be visible in the file manager window. Simply click it to add its file path to your treatment content.
 
 Now, depending on the type of file you’ve uploaded, you will need to use different **Markdown syntax** or **HTML tags** to have to show in your treatment content.
 
@@ -262,7 +270,7 @@ A table is a little more complex than a textarea, and consists of three main **H
 </table>
 ```
 
-The `<table>` tag defines where your table begins and where it ends. The `<tr>` tag is a table row, and creates and closes table rows. The `<td>` tag is table data, i.e a table cell within a row. You can use multiple `<td>` tags within a <tr> tag to create multiple cells.
+The `<table>` tag defines where your table begins and where it ends. The `<tr>` tag is a table row, and creates and closes table rows. The `<td>` tag is table data, i.e a table cell within a row. You can use multiple `<td>` tags within a `<tr>` tag to create multiple cells.
 One last mention on tables: tables in BASS are by default scrollable horizontally, to allow you to build wide tables if needed. If you do not wish your table to be scrollable, add `class=”non-scrollable”` to the `<table>` tag, like this:
 
 ```html
