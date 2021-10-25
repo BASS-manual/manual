@@ -137,6 +137,7 @@ Now, creating content is as simple as starting to type into the edit box. It may
 - A good resource for HTML is found here: [https://www.w3schools.com](https://www.w3schools.com). 
 - If you want to perform advanced actions, such as automated calculations using user input as variables, you will need to learn some **JavaScript**, and add it to your treatment content with the `<script>` tag.
 - Lastly, BASS utilizes Bootstrap 4.6.x. Boostrap is a web development framework aimed to simplify the building of a website using HTML, CSS and some JavaScript. Bootstrap has numerous pre-built components you can use to build your treatment content in BASS. You can read more about Bootstrap here: [https://getbootstrap.com](https://getbootstrap.com). If you want to head straight to the useable components Bootstrap provides, click here: [https://getbootstrap.com/docs/4.6/components/alerts/](https://getbootstrap.com/docs/4.6/components/alerts/).
+Note that there are a few Bootstrap components that you ***should not use***, since they're used by the BASS interface itself. Using these components will very likely cause issues. They are: **Badge, Breadcrumb, Navs, Navbar, Pagination** and **Scrollspy**. Furthermore, **Modal** will only work in Worksheets, Homework, or Main texts using `\PAGEBREAK` pagination.
 
 
 A typical start of a module main text may look as follows when written in **Markdown**:
