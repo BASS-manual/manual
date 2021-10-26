@@ -59,7 +59,7 @@ It is also possible to generate new quick login codes, and to send them by SMS, 
 
 >**Important note:** Quick login settings are managed under **Security settings** in the main menu.
 
->**Important note:** *Exempt from two-factor authentication* must be enabled under **Project security** in the main menu. It is only possible to exempt participants from two-factor authentication. It is mandatory for therapists.
+>**Important note:** *Exempt from two-factor authentication* must be enabled under **Project security** in the main menu. Only participants can be exempt from two-factor authentication. It is mandatory for therapists.
 
 <hr>
 The *Temporary flag text* box provides you with the possibility to flag a participant with a star icon, that will display next to their name in the participants table. You can add a comment on why you flagged the participant.
