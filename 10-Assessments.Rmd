@@ -30,7 +30,7 @@ The Repetition option sets if the assessment is to be done once or repeatedly, a
 
 Assessments with the predefined label “Weekly” have repetition set to Weekly and the interval to 7 days. 
 
-Assessments with the label “Point-assessment” have repetition set to Manual. This means that the next assessment can be set manually to occur at an arbitrary date, independent of the time of the previous assessment. This is useful for assessments that are triggered by irregular events, for example a major flair of symptoms. 
+Assessments with the label “Point-assessment” have repetition set to Manual. This means that the next assessment can be set manually to occur at an arbitrary date, independent of the time of the previous assessment. This is useful for assessments that are triggered by irregular events, for example a major flair of symptoms. *Note that this setting (label: Point-assessment or repetition: Manual) is difficult to use correctly. We do not recommend using this setting*.
 
 ### Time limit 
 Here you can set if participants have to fill out the assessment within a certain time limit. 
