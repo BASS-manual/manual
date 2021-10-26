@@ -4,7 +4,8 @@ Under this menu option, you can adjust the settings for external messages sent f
 **SMS settings**
 The first box is labeled *SMS sender name*, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
 The box below, labeled *Standard SMS with quick login code*, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.
-Nestled below that is the dropdown menu *Delivery method for new message notifications to therapists*. The SMS options is as of this writing defunct, so the only valid option is ”E-post”.
+
+Below that is the dropdown menu *Delivery method for new message notifications to therapists*. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly "Unhandled participant tasks" email.
 
 **New treatment message notification settings**
 Here you specify how treatment notifications will be delivered, and what the message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
