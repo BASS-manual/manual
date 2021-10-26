@@ -7,9 +7,6 @@ An instrument is an electronic version of a paper form used during psychological
 **Assessment** <br>
 An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.
 
-**Type** <br>
-A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.
-
 **Project** <br>
 A project is the administrative concept that connects a set of assessments to a set of participants.
 
