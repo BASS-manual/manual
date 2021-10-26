@@ -86,7 +86,7 @@ If a treatment doesn't show up in the dropdown menu, you will have to make it av
 
 ![](images/new-images/participantTreatConnect.png)
 
->**Important note:** While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will really only be able to access *__one__* of the treatments at a time.
+>**Important note:** While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will only be able to access *__one__* of the treatments at a time.
 
 ![](images/new-images/participantTreatAccess.png)
 
