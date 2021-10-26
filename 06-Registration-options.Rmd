@@ -50,7 +50,7 @@ Check this box if you wish participant to consent to being part of your study as
 Check this box if you want BASS to render Markdown formatting. A guide on how to use Markdown can be found here: https://www.markdownguide.org
 
 **Personal identification number validation function**
-This lets you write a JavaScript function to check whether participants adhere to the PID format you’ve presented.
+This lets you write a JavaScript function to check whether participants adhere to the PID format you’ve presented. Upon request, we can supply a function to verify Swedish personnummer. 
 
 **Study information (Markdown/HTML)**
 This text box lets you edit the first page shown when participant click on the registration link. The idea is that you present information on your study here, what it is about, who you are and why you are conducting the study.
