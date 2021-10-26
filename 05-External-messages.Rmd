@@ -8,7 +8,7 @@ The box below, labeled *Standard SMS with quick login code*, is only relevant if
 Below that is the dropdown menu *Delivery method for new message notifications to therapists*. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly "Unhandled participant tasks" email.
 
 **New treatment message notification settings**
-Here you specify how treatment notifications will be delivered, and what the message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
+Here you specify how notifications about new messages will be delivered to participants, and what the notification message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
 Below that, there is a box for *New message email subject*. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
 The box labeled *New message notification* is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.
 
