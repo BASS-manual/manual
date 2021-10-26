@@ -20,7 +20,7 @@ The **Project** dropdown menu lets you choose what project to view. This governs
 
 **Registration options** is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See Chapter 8 for further details.
 
-**Project security** lets you define what security measures your project will use, such as two-factor authentication.
+**Project security** lets you define what security measures your project will use, such as two-factor authentication. These settings pertain to participants' use of the system.
 
 The **Treatment containers** view lets you view, create and edit treatments to be used within BASS. See Chapter 13 for further details.
 
