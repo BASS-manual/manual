@@ -1,6 +1,6 @@
 # Registration options
 Under this menu option, you edit all settings related to the registration procedure. The URL for the registration is shown at the very top of the page. Underneath it is a checkbox labeled *Registration possible (if closed, edit Registration closed text below)*. Check/uncheck this to enable/disable the registration.
-The first table, labeled *Check participant field that should be entered when registering* allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN).
+The first table, labeled *Check participant field that should be entered when registering* allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN, or Swedish personnummer).
 In the larger table below that, you can edit the following:
 
 **PID name**
@@ -35,7 +35,7 @@ This allows you to set an automatic username to be assigned to participant accou
 If you’ve elected to use automatic usernames, you can also use automatic passwords. Simply check the box to tell BASS to automatically generate secure passwords for participants when they register. Both usernames and passwords will be shown to the participant at the end of their registration process. If you have assigned assessments to be completed in conjunction with the registration, the username and password information will be presented to the participant before they start their assessment.
 
 **Automatic participant id**
-This lets you use automatic participant IDs, as you specify with the following options. Participant IDs useful as a anonymized way to refer to participants, and to sync data within BASS with offline data, should you have it. If you have similar codes for participant in a journal system or other records outside of BASS, you can tell BASS to use the same syntax for participant IDs.
+This lets you use automatic participant IDs, as you specify with the following options. Participant IDs (or "study id") are useful as a anonymized way to refer to participants, and to sync data within BASS with offline data, should you have it. If you have similar codes for participant in a journal system or other records outside of BASS, you can tell BASS to use the same syntax for participant IDs.
 
 **Automatic participant id prefix**
 This lets you set a prefix for your participant IDs. This can be whatever you choose.
