@@ -87,7 +87,7 @@ This option sets notes or reminders to automatically be sent to participants on 
 >**Hint:** Remember that you also need to activate quick login under Security Settings in the Main menu to enable this function.
 You can also add reminders to participants who are late with filling in their assessments.
 
->**Note:** It is not possible to only send remainders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
+>**Note:** It is not possible to only send reminders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
 
 *Remind interval* is the delay upon which reminders are sent to late participants, counted as days after the assessment became available. 
 
