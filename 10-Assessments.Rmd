@@ -23,7 +23,7 @@ This option sets whether data-gathering is managed individually or in groups.
 
 >**Hint:** If you have different cohorts, you may want to choose In group. Screening assessments are usually managed In group and these can be activated or deactivated for a certain group and date under Participants -> Groups -> screening group name -> Show -> Assessments. 
 
->**Hint:** If your participants start their treatments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
+>**Hint:** If your participants start their assessments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
 
 ### Repitition 
 The Repetition option sets if the assessment is to be done once or repeatedly, and if so at what intervals and for how many times. 
