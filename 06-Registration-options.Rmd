@@ -47,7 +47,7 @@ This allows you to specify the number of digits following the prefix, or simply 
 Check this box if you wish participant to consent to being part of your study as a step of the registration process. You can edit the study consent further down on this page.
 
 **Render markdown**
-Check this box if you want BASS to render Markdown formatting. A guide on how to use Markdown can be found here: https://www.markdownguide.org
+Check this box if you want BASS to render *Study Information*, *Captcha challenge text*, *Registration finished text*, and *Registration closed text* using markdown formatting (else only HTML). A guide on how to use Markdown can be found here: https://www.markdownguide.org
 
 **Personal identification number validation function**
 This lets you write a JavaScript function to check whether participants adhere to the PID format you’ve presented. If the PID number is incorrect, the function should return a non-empty string with an error message, otherwise it should return the empty string. Upon request, we can supply a function to verify Swedish personnummer. 
