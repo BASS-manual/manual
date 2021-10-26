@@ -62,7 +62,7 @@ And to clarify: participants and groups are also not shared between projects.
 
 ### Setting up your project
 Now, how do I set up my project? And what do I need to get started? 
-You can get started without setting up a project, and start by building instruments and treatments. However, it’s recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented. To set up your project, simply navigate to **Projects** and click *Create new project*, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.
+You can get started without setting up a project, and start by building instruments and treatments. However, it is recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented. To set up your project, simply navigate to **Projects** and click *Create new project*, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.
 
 ### Groups
 If you want to use groups in your project, for example to administer different cohorts, navigate to **Participants**, and to the tab labeled **Groups**. To create a group, simply type the name into the text box and click *Save*. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click *Save* again.
