@@ -17,7 +17,7 @@ A project is the administrative concept that connects a set of assessments to a 
 A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.
 
 **Group** <br>
-A project can be divided into groups, and participants of the same group in a project can be managed collectively.
+A project can be divided into groups, and the assessments of participants of the same group in a project can be managed collectively.
 
 **2FA** <br>
 2FA stands from *two-factor authentication*, which is required by BASS by default. As of this writing, this could be set up to use SMS, e-mail och authenticator apps (TOTP).
