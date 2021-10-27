@@ -23,14 +23,14 @@ This option sets whether data-gathering is managed individually or in groups.
 
 >**Hint:** If you have different cohorts, you may want to choose In group. Screening assessments are usually managed In group and these can be activated or deactivated for a certain group and date under Participants -> Groups -> screening group name -> Show -> Assessments. 
 
->**Hint:** If your participants start their treatments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
+>**Hint:** If your participants start their assessments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
 
 ### Repitition 
 The Repetition option sets if the assessment is to be done once or repeatedly, and if so at what intervals and for how many times. 
 
 Assessments with the predefined label “Weekly” have repetition set to Weekly and the interval to 7 days. 
 
-Assessments with the label “Point-assessment” have repetition set to Manual. This means that the next assessment can be set manually to occur at an arbitrary date, independent of the time of the previous assessment. This is useful for assessments that are triggered by irregular events, for example a major flair of symptoms. 
+Assessments with the label “Point-assessment” have repetition set to Manual. This means that the next assessment can be set manually to occur at an arbitrary date, independent of the time of the previous assessment. This is useful for assessments that are triggered by irregular events, for example a major flair of symptoms. *Note that this setting (label: Point-assessment or repetition: Manual) is difficult to use correctly. We do not recommend using this setting*.
 
 ### Time limit 
 Here you can set if participants have to fill out the assessment within a certain time limit. 
@@ -87,7 +87,7 @@ This option sets notes or reminders to automatically be sent to participants on 
 >**Hint:** Remember that you also need to activate quick login under Security Settings in the Main menu to enable this function.
 You can also add reminders to participants who are late with filling in their assessments.
 
->**Note:** It is not possible to only send remainders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
+>**Note:** It is not possible to only send reminders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
 
 *Remind interval* is the delay upon which reminders are sent to late participants, counted as days after the assessment became available. 
 

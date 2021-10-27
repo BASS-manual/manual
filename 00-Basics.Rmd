@@ -2,15 +2,15 @@
 
 Let’s begin with the basics, and start with a quick overview of the participant’s view. It is a good idea to familiarize yourself with this view, as most of what you do in the administrative view will have one or more effects in this view. As such, before we begin tweaking things we ought to know what we are tweaking.
 
-1. The login screen for participants is accessed by either `https://YourDataBase.webcbt.se` or `https://YourDataBase.bassdb.se`, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS’s built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.
+1. The login screen for participants is accessed by either `https://YourDataBase.webcbt.se` or `https://YourDataBase.bassdb.se`, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS’ built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.
 2.	When your participants have logged in, there are three possible screens they may encounter depending on whether they have an active assessment and/or treatment or not.
     - If your participant has an active assessment, they will be presented with it as soon as they log in. This is true even if they also have an active treatment. When they’ve completed the assessment, they will be taken to the home page if they have an active treatment. If they do not have an active treatment, they will be automatically logged out since there is nothing else for them to do in BASS at that point.
     - If your participant does not have an active assessment, they will be presented with their home page.
     - If your participant has neither an active assessment nor an active treatment, they will be automatically logged out since there is nothing for them to do in BASS.
-3.	When your participants have active treatments and no active/pending assessments, they will land at their home page. Here, they have access to a few options:
-    - Start Page – their home page
-    - Modules – Treatment modules. Clicking here grants access to any treatment modules you’ve marked as ”accessible”.
-    - Messages – BASS’s built in messaging feature which enables secure messaging between a participant and their assigned therapist.
+3.	When your participants have active treatments and no active/pending assessments, they will land at their treatment's home page. Here are the most common menu options in a treatment:
+    - Start Page – their treatments' welcome page
+    - Modules – Treatment modules. Clicking here shows treatment modules you’ve marked as ”accessible”.
+    - Messages – BASS’ built in messaging feature which enables secure messaging between a participant and their assigned therapist.
     - Privacy notice – A legal document which is required by EU law (GDPR) and explains what personal data is collected by the project, who stores it and who has access to it.
     - Log out – Logs the participant out of BASS and ends their session.
-4.	We will touch upon all these menu options later on in the manual. For now, we’re just getting acquainted with the user interface. You may have noticed that there are no menu option for assessments. This is because they are handled differently than treatments. We will return to this topic later on.
+4.	We will touch upon all these and other treatment menu options later on in the manual. For now, we’re just getting acquainted with the user interface. You may have noticed that there are no menu option for assessments. This is because they are handled differently than treatments. We will return to this topic later on.

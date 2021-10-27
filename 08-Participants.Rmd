@@ -59,7 +59,7 @@ It is also possible to generate new quick login codes, and to send them by SMS, 
 
 >**Important note:** Quick login settings are managed under **Security settings** in the main menu.
 
->**Important note:** *Exempt from two-factor authentication* must be enabled under **Project security** in the main menu. It is only possible to exempt participants from two-factor authentication. It is mandatory for therapists.
+>**Important note:** *Exempt from two-factor authentication* must be enabled under **Project security** in the main menu. Only participants can be exempt from two-factor authentication. It is mandatory for therapists.
 
 <hr>
 The *Temporary flag text* box provides you with the possibility to flag a participant with a star icon, that will display next to their name in the participants table. You can add a comment on why you flagged the participant.
@@ -86,7 +86,7 @@ If a treatment doesn't show up in the dropdown menu, you will have to make it av
 
 ![](images/new-images/participantTreatConnect.png)
 
->**Important note:** While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will really only be able to access *__one__* of the treatments at a time.
+>**Important note:** While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will only be able to access *__one__* of the treatments at a time.
 
 ![](images/new-images/participantTreatAccess.png)
 
