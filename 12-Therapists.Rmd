@@ -1,0 +1,63 @@
+---
+title: "12-Therapists"
+author: "BASS-support"
+date: '2022-02-07'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Therapists
+
+The term "therapist" is the term used within BASS to designate anyone who administrates part of or the entirety of a database and its participants. This could be an administrator, whose job it is to build treatment content, instruments and assessments. It could also be a licensed therapist who administers treatments to select participants. It could yet again be students who use BASS as part of a university course in web-based CBT, as well as their supervising teacher or professor.
+The common denominator for all these examples is that they all use a therapist account. What separates them are the differing levels of access (**privileges**) given to them. In this chapter, we will take a look at the therapist accounts, how to set them up and what levels of **privileges** can be given to them.
+
+## Creating a therapist account
+To create a therapist account, you need three things:
+
+- The name of the person who will use the account
+- A working e-mail address for that person, i.e a work e-mail/faculty e-mail
+- A working cell phone number for that person
+
+**A few notes**: The name is not strictly required to be the actual name of the person, but we strongly recommend to use the person's proper name for ease of supervision/activity tracking should it be necessary.
+We furthermore *strongly* recommend the use of work/faculty e-mail or other similarly secure e-mail service backed by your IT department. We generally do not recommend you use publicly available e-mail services such as Gmail, Hotmail, Yahoo and the like.
+Lastly, the cell phone number is required for two-factor authentication. Without it, you will not be able to log in to BASS as a therapist. There is no option to disable two-factor authentication for therapists, but you can choose to send the authentication message via e-mail rather than via SMS.
+
+
+## The "Manage Therapists" view
+This is the landing page when clicking the **Therapists** menu option in the main menu. Normally, the first accounts created are ***admin*** and any accounts used by the BASS support staff. There's no tag or icon designating BASS support staff as such, other than the fact that they will always carry the star moniker which indicates that they are *database administrators*.
+You therapist account has most likely been set up by the BASS support staff, and as such your account is also shown in the list. But what about creating new accounts? Let's have a look!
+
+### Creating a new therapist account
+To create a new therapist account, click the *Create new therapist* link below the list of existing accounts. This will present you with the information view. Here, in the first small table, you can see *last login*, *login count*, *total time*, and *internal id*. All of these are superfluous for now, but are self-explanatory in their function (the *internal id* is used by BASS to identify individual therapists, and may be used to communicate outside of BASS in potentially delicate matters pertaining to specific therapists).
+Below the first little table is a bigger table, with which we will concern ourselves now.
+
+- Login: in this field, you type the username of the therapist account. We recommend keeping a simple format, such as *firstname*, *firstnamesurname* or *firstname-surname*.
+- Full name: in this field, you type the full name of the person who will use the therapist account (i.e Firstname Surname)
+- Email: here, you type the e-mail address which you wish to associate with the therapist account. This e-mail will be used by BASS to send daily updates on participant activities that necessitates inspection or taking action. Only the activities of participants for which the therapist is designated as "therapist" will prompt such updates to the therapist.
+- SMS number: here, you type the cell phone number you wish to associate with the therapist account. As noted above, unless you've changed the delivery method for two-factor authentication messages, this is mandatory.
+- Send SMS/email when supervisor send messages: by checking this box, the therapist will be notified by SMS and/or e-mail when their supervisor (if any) sends them a messages within BASS. This is mainly used in educational settings, where students are assigned a supervisor.
+- Login allowed: checking/un-checking this box enables/disables logging in for the therapist account.
+- Login expiration date: by clicking the empty text box, you will be shown a calender. From this calender you can pick a date up to 182 days in the future to set it as the expiration date for the therapist account allowed login. It is mandatory to set an expiration date, otherwise the therapist will be unable to log in. This date can be extended later on, but no more than 182 days from the current date. This feature is a safeguard to prevent old therapist accounts from being active beyond their intended use.
+- Must change password: by checking this box, the therapist will be required to submit their own personal password upon their first time logging in. I.e the password you set when creating the therapist account will be a temporary, one-time use password if you check this box.
+- New password: here, you type the password for the therapist account
+- Confirm password: here, you confirm the password you've typed above.
+
+When you've entered the information into the fields listed above, click *Save*.
+
+### The Information Tab
+Now that you've saved the therapist account you just created, you should be presented with the **Information** tab for that therapist account. For all intents and purposes, it contains the information you just submitted. From this tab, you can edit the information as well as enable/disable login, extend the expiration date and provide the therapist with a new password if needed.
+
+### The Privileges Tab
+In this tab, you set the privileges given to the therapist account. At the top of the page, you will see the dropdown menu named **Senior therapist**. By defauly, *admin* will be selected. You can leave this as-is.
+
+Beneath the dropdown menu, there is a table named **Global privileges**. These are privileges pertaining to the entire database. If you want to give the therapist account full access to the databse, chech the box named *Administrative privileges*.
+
+A more in-depth look at the different privileges follows below:
+
+- Edit answer flag settings: by checking this box, you give the therapist account access to view and edit answer flag settings under **Answers flagging** in the main menu.
+- Administrative privileges: as noted above, checking this box grants the therapist account full access to the database.
+- Edit other therapists: by checking this box, you give the therapist account access to view and edit other therapist accounts.
+- Groups view: checking this box lets the therapist accounts view the **Groups** tab under **Participants** in the main menu.
+- Edit note categories: as with "Edit answer flag settings", checking this box grants access to view and edit note categories under **Note categories** in the main menu.
+- Supervisor: checking this box lets you designate the therapist account as a supervisor to other therapists.

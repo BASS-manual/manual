@@ -68,3 +68,14 @@ treatment-content
 content-text
 references
 tools-and-resources-for-working-with-treatments
+therapists
+creating-a-therapist-account
+the-manage-therapists-view
+creating-a-new-therapist-account
+the-information-tab
+the-privileges-tab
+the-preview-tab-1
+the-edit-tab-1
+extra-information-1
+scoring-formula-1
+export-1
