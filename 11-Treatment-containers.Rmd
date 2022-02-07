@@ -50,7 +50,7 @@ If the *Access has to be enabled* box is checked, the treatment has to be manual
 By also checking the *Time-limited access* box, you can specify a time window for a participant when the treatment is active and its content available. This time window is specified in the participant view, under the **Treatments** tab.
 
 **Treatment length**
-If the treatment is to be available for a certain numbre of days after it has been activated, you can set that value in the *Treatment length* box. You can always override/customize the treatment availability for a specific paricipant in the **Treatment access** tab of the participant.
+If the treatment is to be available for a certain number of days after it has been activated, you can set that value in the *Treatment length* box. You can always override/customize the treatment availability for a specific participant in the **Treatment access** tab of the participant.
 
 **Manual model access**
 Check this box to be able to activate each module in the treatment separately for a participant. This is useful for when you want to make sure participants are finished with one module before starting with the next one.

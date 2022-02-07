@@ -1,6 +1,6 @@
 # Registration options
 Under this menu option, you edit all settings related to the registration procedure. The URL for the registration is shown at the very top of the page. Underneath it is a checkbox labeled *Registration possible (if closed, edit Registration closed text below)*. Check/uncheck this to enable/disable the registration.
-The first table, labeled *Check participant field that should be entered when registering* allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN, or Swedish personnummer).
+The first table, labeled *Check participant field that should be entered when registering* allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN, or Swedish "personnummer").
 In the larger table below that, you can edit the following:
 
 **PID name**
@@ -50,11 +50,11 @@ Check this box if you wish participant to consent to being part of your study as
 Check this box if you want BASS to render *Study Information*, *Captcha challenge text*, *Registration finished text*, and *Registration closed text* using markdown formatting (else only HTML). A guide on how to use Markdown can be found here: https://www.markdownguide.org
 
 **Personal identification number validation function**
-This lets you write a JavaScript function to check whether participants adhere to the PID format you’ve presented. If the PID number is incorrect, the function should return a non-empty string with an error message, otherwise it should return the empty string. Upon request, we can supply a function to verify Swedish personnummer. 
+This lets you write a JavaScript function to check whether participants adhere to the PID format you’ve presented. If the PID number is incorrect, the function should return a non-empty string with an error message, otherwise it should return the empty string. Upon request, we can supply a function to verify Swedish "personnummer". 
 
 **Study information (Markdown/HTML)**
 This text box lets you edit the first page shown when participant click on the registration link. The idea is that you present information on your study here, what it is about, who you are and why you are conducting the study.
-As implied by the heading, you can use Markdown and/or HTML to format your text. Markdown is enabled by checking the *Render markdown* checkbox above. Best practices is to choose either Markdown or HTML and stick with one of them. Markdown is simpler and quicker to learn and work with. HTML is more complex and more effortful to learn, but in return gives finer control over how content is displayed.
+As implied by the heading, you can use Markdown and/or HTML to format your text. Markdown is enabled by checking the *Render markdown* checkbox above. Best practices is to choose either Markdown or HTML and stick with one of them. Markdown is simpler and quicker to learn and work with. HTML is more complex and requires more effort to learn, but in return gives greater control over how content is displayed.
 It is very useful to learn at least some HTML if you intend to use BASS for treatments, as the treatment modules are built with Markdown and/or HTML.
 A good resource for referencing and learning HTML is found here: https://www.w3schools.com.
 Below the text box is a button labeled Insert link. Clicking this box opens the file browser for your database in a separate browser tab. From here, you can set up a folder structure for document, images, sound files and videos as well as upload such files to BASS. By clicking an uploaded file, you can insert a file path into the textbox. To turn this file path into a viewable image/video or downloadable file, refer to either Markdown or HTML as appropriate. More information on this can be found under the Treatments section.
