@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>12-Therapists</title>
+  <title>BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator`s manual for BASS4." />
   <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
 
-  <meta property="og:title" content="12-Therapists" />
+  <meta property="og:title" content="BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,15 +16,14 @@
   <meta name="github-repo" content="BASS-manual/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="12-Therapists" />
+  <meta name="twitter:title" content="BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
   
 
-<meta name="author" content="BASS-support" />
+<meta name="author" content="Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell &amp; Brjánn Ljótsson" />
 
 
-<meta name="date" content="2020-07-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,9 +32,8 @@
   
 <!--bookdown:link_prev-->
 <!--bookdown:link_next-->
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -44,6 +42,7 @@
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -66,9 +65,9 @@
 
 <!--bookdown:title:start-->
 <div id="header">
-<h1 class="title">12-Therapists</h1>
-<p class="author"><em>BASS-support</em></p>
-<p class="date"><em>2020-07-07</em></p>
+<h1 class="title">BASS4 - ADMINISTRATOR’S MANUAL</h1>
+<p class="author"><em>Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell &amp; Brjánn Ljótsson</em></p>
+<p class="date"><em>Last updated 2022-02-08, current BASS version: 4.11</em></p>
 </div>
 <!--bookdown:title:end-->
 
@@ -155,24 +154,19 @@
 <li><a href="#content-text"><span class="toc-section-number">13.5.1</span> Content text</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#references"><span class="toc-section-number">14</span> References</a>
+<li><a href="#therapists"><span class="toc-section-number">14</span> Therapists</a>
 <ul>
-<li><a href="#tools-and-resources-for-working-with-treatments"><span class="toc-section-number">14.1</span> Tools and resources for working with treatments</a></li>
+<li><a href="#creating-a-therapist-account"><span class="toc-section-number">14.1</span> Creating a therapist account</a></li>
+<li><a href="#the-manage-therapists-view"><span class="toc-section-number">14.2</span> The “Manage Therapists” view</a>
+<ul>
+<li><a href="#creating-a-new-therapist-account"><span class="toc-section-number">14.2.1</span> Creating a new therapist account</a></li>
+<li><a href="#the-information-tab"><span class="toc-section-number">14.2.2</span> The Information Tab</a></li>
+<li><a href="#the-privileges-tab"><span class="toc-section-number">14.2.3</span> The Privileges Tab</a></li>
 </ul></li>
-<li><a href="#therapists"><span class="toc-section-number">15</span> Therapists</a>
-<ul>
-<li><a href="#creating-a-therapist-account"><span class="toc-section-number">15.1</span> Creating a therapist account</a></li>
-<li><a href="#the-manage-therapists-view"><span class="toc-section-number">15.2</span> The “Manage Therapists” view</a>
-<ul>
-<li><a href="#creating-a-new-therapist-account"><span class="toc-section-number">15.2.1</span> Creating a new therapist account</a></li>
-<li><a href="#the-information-tab"><span class="toc-section-number">15.2.2</span> The Information Tab</a></li>
-<li><a href="#the-privileges-tab"><span class="toc-section-number">15.2.3</span> The Privileges Tab</a></li>
-<li><a href="#the-preview-tab-1"><span class="toc-section-number">15.2.4</span> The Preview Tab</a></li>
-<li><a href="#the-edit-tab-1"><span class="toc-section-number">15.2.5</span> The Edit Tab</a></li>
-<li><a href="#extra-information-1"><span class="toc-section-number">15.2.6</span> Extra information</a></li>
 </ul></li>
-<li><a href="#scoring-formula-1"><span class="toc-section-number">15.3</span> Scoring formula</a></li>
-<li><a href="#export-1"><span class="toc-section-number">15.4</span> Export</a></li>
+<li><a href="#references"><span class="toc-section-number">15</span> References</a>
+<ul>
+<li><a href="#tools-and-resources-for-working-with-treatments"><span class="toc-section-number">15.1</span> Tools and resources for working with treatments</a></li>
 </ul></li>
 </ul>
 <!--bookdown:toc2:end-->
@@ -183,7 +177,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">12-Therapists</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BASS4 - ADMINISTRATOR’S MANUAL</a>
           </h1>
         </div>
 
@@ -464,11 +458,31 @@ Below these settings are two textboxes, <em>Standard SMS assessments reminder</e
 </div>
 </div>
 </div>
-<div id="references" class="section level1" number="14">
-<h1><span class="header-section-number">14</span> References</h1>
+<div id="therapists" class="section level1" number="14">
+<h1><span class="header-section-number">14</span> Therapists</h1>
+<p>Placeholder</p>
+<div id="creating-a-therapist-account" class="section level2" number="14.1">
+<h2><span class="header-section-number">14.1</span> Creating a therapist account</h2>
+</div>
+<div id="the-manage-therapists-view" class="section level2" number="14.2">
+<h2><span class="header-section-number">14.2</span> The “Manage Therapists” view</h2>
+<div id="creating-a-new-therapist-account" class="section level3" number="14.2.1">
+<h3><span class="header-section-number">14.2.1</span> Creating a new therapist account</h3>
+</div>
+<div id="the-information-tab" class="section level3" number="14.2.2">
+<h3><span class="header-section-number">14.2.2</span> The Information Tab</h3>
+</div>
+<div id="the-privileges-tab" class="section level3" number="14.2.3">
+<h3><span class="header-section-number">14.2.3</span> The Privileges Tab</h3>
+<!--chapter:end:12-Therapists.Rmd-->
+</div>
+</div>
+</div>
+<div id="references" class="section level1" number="15">
+<h1><span class="header-section-number">15</span> References</h1>
 <p>In this chapter we list some helpful references and tools that might aid you when working with BASS.</p>
-<div id="tools-and-resources-for-working-with-treatments" class="section level2" number="14.1">
-<h2><span class="header-section-number">14.1</span> Tools and resources for working with treatments</h2>
+<div id="tools-and-resources-for-working-with-treatments" class="section level2" number="15.1">
+<h2><span class="header-section-number">15.1</span> Tools and resources for working with treatments</h2>
 <p>Treatments are the most complex and knowledge-intensive thing to build and maintain within BASS, as they require some know-how when it comes to <strong>Markdown</strong> and <strong>HTML</strong>. If you want to add some stylish flair to your treatment, you’ll need to dive into a bit of <strong>CSS</strong>.
 More advanced and more interactive treatments might require knowledge of <strong>JavaScript</strong> as well. Here below are some online resources and tools which you may find helpful:</p>
 <p><strong>Coding software (IDE:s)</strong></p>
@@ -482,189 +496,7 @@ More advanced and more interactive treatments might require knowledge of <strong
 <li><a href="https://www.w3schools.com" class="uri">https://www.w3schools.com</a> (a good resource for referencing HTML, CSS and JavaScript)</li>
 <li><a href="https://javascript.info" class="uri">https://javascript.info</a> (an in-depth and comprehensive guide and tutorial on JavaScript)</li>
 </ul>
-<!--chapter:end:12-References.Rmd-->
-</div>
-</div>
-<div id="therapists" class="section level1" number="15">
-<h1><span class="header-section-number">15</span> Therapists</h1>
-<p>The term “therapist” is the term used within BASS to designate anyone who administrates part of or the entirety of a database and its participants. This could be an administrator, whose job it is to build treatment content, instruments and assessments. It could also be a licensed therapist who administers treatments to select participants. It could yet again be students who use BASS as part of a university course in web-based CBT, as well as their supervising teacher or professor.
-The common denominator for all these examples is that they all use a therapist account. What separates them are the differing levels of access (<strong>privileges</strong>) given to them. In this chapter, we will take a look at the therapist accounts, how to set them up and what levels of <strong>privileges</strong> can be given to them.</p>
-<div id="creating-a-therapist-account" class="section level2" number="15.1">
-<h2><span class="header-section-number">15.1</span> Creating a therapist account</h2>
-<p>To create a therapist account, you need three things:</p>
-<ul>
-<li>The name of the person who will use the account</li>
-<li>A working e-mail address for that person, i.e a work e-mail/faculty e-mail</li>
-<li>A working cell phone number for that person</li>
-</ul>
-<p><strong>A few notes</strong>: The name is not strictly required to be the actual name of the person, but we strongly recommend to use the person’s proper name for ease of supervision/activity tracking should it be necessary.
-We furthermore <em>strongly</em> recommend the use of work/faculty e-mail or other similarly secure e-mail service backed by your IT department. We generally do not recommend you use publicly available e-mail services such as Gmail, Hotmail, Yahoo and the like.
-Lastly, the cell phone number is required for two-factor authentication. Without it, you will not be able to log in to BASS as a therapist. There is no option to disable two-factor authentication for therapists, but you can choose to send the authentication message via e-mail rather than via SMS.</p>
-</div>
-<div id="the-manage-therapists-view" class="section level2" number="15.2">
-<h2><span class="header-section-number">15.2</span> The “Manage Therapists” view</h2>
-<p>This is the landing page when clicking the <strong>Therapists</strong> menu option in the main menu. Normally, the first accounts created are <strong><em>admin</em></strong> and any accounts used by the BASS support staff. There’s no tag or icon designating BASS support staff as such, other than the fact that they will always carry the star moniker which indicates that they are <em>database administrators</em>.
-You therapist account has most likely been set up by the BASS support staff, and as such your account is also shown in the list. But what about creating new accounts? Let’s have a look!</p>
-<div id="creating-a-new-therapist-account" class="section level3" number="15.2.1">
-<h3><span class="header-section-number">15.2.1</span> Creating a new therapist account</h3>
-<p>To create a new therapist account, click the <em>Create new therapist</em> link below the list of existing accounts. This will present you with the information view. Here, in the first small table, you can see <em>last login</em>, <em>login count</em>, <em>total time</em>, and <em>internal id</em>. All of these are superfluous for now, but are self-explanatory in their function (the <em>internal id</em> is used by BASS to identify individual therapists, and may be used to communicate outside of BASS in potentially delicate matters pertaining to specific therapists).
-Below the first little table is a bigger table, with which we will concern ourselves now.</p>
-<ul>
-<li>Login: in this field, you type the username of the therapist account. We recommend keeping a simple format, such as <em>firstname</em>, <em>firstnamesurname</em> or <em>firstname-surname</em>.</li>
-<li>Full name: in this field, you type the full name of the person who will use the therapist account (i.e Firstname Surname)</li>
-<li>Email: here, you type the e-mail address which you wish to associate with the therapist account. This e-mail will be used by BASS to send daily updates on participant activities that necessitates inspection or taking action. Only the activities of participants for which the therapist is designated as “therapist” will prompt such updates to the therapist.</li>
-<li>SMS number: here, you type the cell phone number you wish to associate with the therapist account. As noted above, unless you’ve changed the delivery method for two-factor authentication messages, this is mandatory.</li>
-<li>Send SMS/email when supervisor send messages: by checking this box, the therapist will be notified by SMS and/or e-mail when their supervisor (if any) sends them a messages within BASS. This is mainly used in educational settings, where students are assigned a supervisor.</li>
-<li>Login allowed: checking/un-checking this box enables/disables logging in for the therapist account.</li>
-<li>Login expiration date: by clicking the empty text box, you will be shown a calender. From this calender you can pick a date up to 182 days in the future to set it as the expiration date for the therapist account allowed login. It is mandatory to set an expiration date, otherwise the therapist will be unable to log in. This date can be extended later on, but no more than 182 days from the current date. This feature is a safeguard to prevent old therapist accounts from being active beyond their intended use.</li>
-<li>Must change password: by checking this box, the therapist will be required to submit their own personal password upon their first time logging in. I.e the password you set when creating the therapist account will be a temporary, one-time use password if you check this box.</li>
-<li>New password: here, you type the password for the therapist account</li>
-<li>Confirm password: here, you confirm the password you’ve typed above.</li>
-</ul>
-<p>When you’ve entered the information into the fields listed above, click <em>Save</em>.</p>
-</div>
-<div id="the-information-tab" class="section level3" number="15.2.2">
-<h3><span class="header-section-number">15.2.2</span> The Information Tab</h3>
-<p>Now that you’ve saved the therapist account you just created, you should be presented with the <strong>Information</strong> tab for that therapist account. For all intents and purposes, it contains the information you just submitted. From this tab, you can edit the information as well as enable/disable login, extend the expiration date and provide the therapist with a new password if needed.</p>
-</div>
-<div id="the-privileges-tab" class="section level3" number="15.2.3">
-<h3><span class="header-section-number">15.2.3</span> The Privileges Tab</h3>
-<p>In this tab, you set the privileges given to the therapist account. At the top of the page, you will see the dropdown menu named <strong>Senior therapist</strong>. By defauly, <em>admin</em> will be selected. You can leave this as-is.</p>
-<p>Beneath the dropdown menu, there is a table named <strong>Global privileges</strong>. These are privileges pertaining to the entire database. If you want to give the therapist account full access to the databse, chech the box named <em>Administrative privileges</em>.</p>
-<p>A more in-depth look at the different privileges follows below:</p>
-<ul>
-<li>Edit answer flag settings: by checking this box, you give the therapist account access to view and edit answer flag settings under <strong>Answers flagging</strong> in the main menu.</li>
-<li>Administrative privileges: as noted above, checking this box grants the therapist account full access to the database.</li>
-<li>Edit other therapists: by checking this box, you give the therapist account access to view and edit other therapist accounts.</li>
-<li>Groups view: checking this box lets the therapist accounts view the <strong>Groups</strong> tab under <strong>Participants</strong> in the main menu.</li>
-<li>Edit note categories: As with “Edit answer flag settings,” checking this box grants access to view and edit note categories under <strong>Note categories</strong> in the main menu.</li>
-</ul>
-</div>
-<div id="the-preview-tab-1" class="section level3" number="15.2.4">
-<h3><span class="header-section-number">15.2.4</span> The Preview Tab</h3>
-<p>In this tab, you can view the instrument with it’s final visual design applied (the final visual design is applied automatically by BASS) by clicking the hyperlink named “Open preview in Clojure app.”
-By default, a new tab will open, in which the instrument will be displayed with its final visual design applied. It’s a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.</p>
-</div>
-<div id="the-edit-tab-1" class="section level3" number="15.2.5">
-<h3><span class="header-section-number">15.2.5</span> The Edit Tab</h3>
-<p>This tab is where you create, or build, your new instrument. This is also where you adjust any instrument you’ve copied or want to edit. This is mainly done through adding, editing or deleting content in the form.
-To begin, start by creating and defining a <strong>table definition</strong></p>
-<p><strong>Add table definition</strong><br>
-By default, the first table definition is already created. However, it has not been defined, and thus you need to define it before proceeding to adding additional items and elements to your instrument. To do this, click the “Edit” text in the <strong>Table definition</strong> box. This opens up the editor for this specific item (in this case a table definition).
-One thing to note before starting to assign <strong>Cell width</strong> is that the total width of your instrument is fixed to 700 pixels on PC/Mac. As such, you will have to stay within those confines when defining your table definition.
-If responsive presentation is used, the instrument width will adapt to a mobile screen size where applicable.</p>
-<p>A table definition provides a layout framework for every item below it, up until the next table definition (if there is one).</p>
-<p>A good practice is to allow the first column to take up 30 pixels of screen space. This is done by typing 30 into the first box of the <strong>Cell width</strong> column. If you so wish, you can justify the text of a box to be either left aligned, centered, or right aligned by choosing the corresponding option in the box’s dropdown menu in the <strong>Justify</strong> column.
-The second cell is most often reserved to the text of a question, and can be set to the desired width by typing it into the box.
-Typing a * into the box makes its cell flexible, causing it to fill any left over width not claimed by the other cells in the table definition. If multiple cells are given a flexible width by typing * in their cell width boxes, they will share the left over width evenly.
-The third through 16th cell is usually utlized for answers to a question item, when ordered by <strong>Cell</strong> (horizontally) and can be given any desired width. However, remember that width is limited if you are ordering answers by <strong>cell</strong>, and that long words in an answer may clip into eachother if the allocated space is too small.
-Ordering answers by <strong>line break</strong> organizes them in a vertical structure, and as such they do not suffer this limitation. If you plan to order your answers by <strong>line break</strong> you only need to fill in the boxes for cell 1 and 2 in your table definition that governs the layout for the question items that utilizes <strong>line break</strong></p>
-<p><strong>Add information</strong><br>
-Usually a form starts with information on how to fill it out, and as such you want to add that information before you add your questions. To do this, click “Add new [Free text]” and type the information ionto the “Free text” box.</p>
-<p>In “Free text” you type regular HTML or regular text input. You can find some basic HTML tags in the appendix of this manual, with links to more thorough resources listed as well.
-In “Layout-string,” you type [T], which instructs BASS to render the text in the “Free text” box. Then press save.</p>
-<blockquote>
-<p><strong>Hint:</strong> If you want to have a line above or below your text, to act as a separator, you can type in 1 in the “Border-width upper” or “Border-width lower,” respectively.</p>
-</blockquote>
-<p><strong>Adding questions</strong><br>
-Depending on what questions you would like to add, you go about adding them in different ways. We will adress the most common type of question below.</p>
-<p><strong>Adding multiple-choice questions</strong><br>
-By follow the instructions below, your end result will look similar to this:</p>
-<p><img src="images/new-images/multiplechoiceQ.png" /></p>
-<p>First, you will need to add a new “free text.” To do this, click “<strong>Add new [Free text]</strong>.” Then type in the options that are needed for the questions you want to add. For example, if you have five options to your question, you type it in like in picture 4 picture below.
-<img src="images/new-images/multiplechoiceFreeText.png" />
-<strong>Picture 4</strong></p>
-<p>If you have more options, you add them by typing “[TD] option 6,” before the HTML tag <code>&lt;!--desktop--&gt;</code>. If you have less options, you delete the superfluous [TD] with accompanying text. The reason for the twin [TD][TD] in the beginning is to make empty space for the question you’re adding later. The reason for the single [TD] between the options is to separate the options.</p>
-<blockquote>
-<p><strong>Hint:</strong> <code>&lt;br&gt;</code> is HTML and means that the rest of the text starts on a new row, i.e it implements a line break. If you want to have numbers on one row and the text under, you can add two <br> tags in between. If it’s all supposed to be on the same row, you can omit including any <code>&lt;br&gt;</code> tags.</p>
-</blockquote>
-<p>Like in the “Free text” example, you type [T] in “Layout-string” to instruct BASS to render the text. Then decide whether or not you want borders above or below the text by typing in a numerical value in “Border-width upper” or “Border-width lower,” respectively. Then click “Save.”</p>
-<p>Below the created “free text,” you now click “<strong>Add new [question]</strong>.” In the number box, you type in the number you want to assign to the question. In the “Question”-box you type in the question or statement.</p>
-<p>By using the tools in the “Answer definition” section, you can define what type of answer you want. By default, “<strong>Radio buttons</strong>” is selected as the “Answer type.” If you want multiple choice, you change the “Answer type” to “<strong>Checkboxes</strong>.”
-You can then fill out the different options under “label” (in this example you would use the same options you typed in “free text”) and give them unique values under “value,” see picture 5 below. The values are used to calculate the result with a scoring formula later on.</p>
-<blockquote>
-<p><strong>Important note:</strong> The values for each answer option in a question <em>have</em> to be unique. If to answer options are supposed to have the same value, this is corrected for later on in the scoring formula.</p>
-</blockquote>
-<p>When you’ve filled in your answer options and their unique values, you can choose “Cell” under the “Separator”-dropdown. In “Layout definition” you type in the following: <strong>[N].[TD][Q][TD][X]</strong>. This defines the layout for the question within the framework provided by your table definition. When this is done, click “Save.”</p>
-<blockquote>
-<p><strong>HELP! What does [N].[TD][Q][TD][X] mean?</strong><br></p>
-</blockquote>
-<blockquote>
-<ul>
-<li>[N] Renders the number of the question in a cell. The period simply puts a period after the rendered number.<br></li>
-<li>[TD] Creates an empty cell<br></li>
-<li>[Q] Renders the text of the “Question” box in a cell<br></li>
-<li><input type="checkbox" disabled="" checked="" />
-Renders the answer options in a cell<br></li>
-</ul>
-</blockquote>
-<p>The input in the “layout definition” box is read from left to right, and is applied in the same order. In the layout above [N] is rendered in the first cell, [TD] creates a space, [Q] is rendered in the second cell and [X] is rendered in the third through seventh cell.</p>
-<blockquote>
-<p><strong>Hint:</strong> Make a habit of going back to your Preview page to see what your form looks like. This lets you correct mistakes and make adjustments as you go along.</p>
-</blockquote>
-<blockquote>
-<p><strong>Hint:</strong> You can read about “optional,” “inheritable,” “jump,” and “specification text” under “Extra information.”</p>
-</blockquote>
-<p><img src="images/new-images/multiplechoiceQuestion.png" />
-<strong>Picture 5</strong></p>
-<p><strong>Adding a text-answer question</strong><br>
-To add a question with a text answer, click “<strong>Add new [question]</strong>.” Follow the same procedure as detailed above, by typing the number you want to assign to the question in the number box, and typing your question or statement into the question-box. Under “Answer definition,” choose what type of answer you want, either “short free text” or “long free text.” In “Layour-string,” type in <strong>[N].[TD][Q][X]</strong>.</p>
-<p><strong>Having the multiple-choice answer options listed vertically instead of horizontally</strong><br>
-If you would rather have your answer options listed vertically below your question, you type the question in a Free text. To do this, click “<strong>Add new [Free text]</strong>.” Then type the question into the free text box, and type <strong>[T]</strong> into the layout-string box.
-Below the “free text” you just created, click “<strong>Add new [question]</strong>.” In the number box, assign the number you wish your question to have. Leave the “question”-box empty.
-Proceed to fill out the “Answer definition,” and type in your answer options and their unique values. Then, choose “Line break” in the Separator-dropdown.</p>
-</div>
-<div id="extra-information-1" class="section level3" number="15.2.6">
-<h3><span class="header-section-number">15.2.6</span> Extra information</h3>
-<p><strong>Optional questions</strong><br>
-If the question is not mandatory, you can tell BASS to treat it as such by checking the “optional”-box, in the upper right corner of the question-editor window. This enables a participant to complete the form without submitting an answer to that specific question.</p>
-<p><strong>Page break</strong><br>
-If you want a question to appear on a new page, you can tell BASS to divide your form into pages by checking the “page break”-box in the upper left corner of an editing window. By checking this box, the item for which you check it will be the first item to display on the new page. The following items will show on the new page.</p>
-<p><strong>Using the jump function</strong><br>
-If you want an answer option to skip a participant ahead in your form, for example if a subset of questions isn’t relevant if a particular answer option is selected, you can do so by using the “jump”-function. You find this function to the right of each answer option. Open the dropdown, and select the item you wish that answer option to skip ahead to.</p>
-<p><strong>Re-use layout and options</strong><br>
-If you have multiple questions that use the same layout and/or the same options, you can check the “inheritable”-boxes for “layout-string” and/or “answer options.” This enables the settings of one question to be inherited by another. In the editing window of the questions you wish to be inheriting settings, use the “Inherit from”-dropdown and choose the question you want them to inherit from.</p>
-<p><strong>Adding more questions</strong><br>
-<em>Adding a multiple-choice question that have the same options as the previous question</em>.<br>
-If you want to add more questions with the same options as the previous question you just created, click “<strong>Add new [question]</strong>” and fill out the new question like you did the previous one.</p>
-<blockquote>
-<p><strong>Hint:</strong> Don’t forget that you can use the “inherit”-function. Read more about this function in the “Extra information”-section, “Re-use layout and options.”</p>
-</blockquote>
-<p><em>Adding a multiple-choice question that do not have the same options as the previous question</em>.<br>
-If your next question has a different set of answer options than the previous one, but the same number of answer options, you add a new free text and write the options like previously instructed, and then add the new question.</p>
-<p>If your next question has a different <strong>number</strong> of options as the previous question, you need to add a new “table definition” that provides a new layout framework that fits the structure of the new question. Then proceed to add the new free text and question as previously instructed.</p>
-<p><em>Adding a text-answer question</em>.<br>
-Create a new question by clicking “<strong>Add new [question]</strong>” and fill it out like previously instructed.</p>
-</div>
-</div>
-<div id="scoring-formula-1" class="section level2" number="15.3">
-<h2><span class="header-section-number">15.3</span> Scoring formula</h2>
-<p>In the <strong>Scoring formula</strong> tab, you can define formulas that calculate the scores from the different items in your instrument. You refer to specific items in your instrument by using the <code>@#</code> identifier, i.e <code>@1</code> refers to question 1, <code>@2</code> refers to question 2, and so on.
-Should you leave the scoring formula blank, you will still get all value readouts from your instrument. The scoring formula is meant to help with calculating different scores that are relevant to your instrument.</p>
-<blockquote>
-<p><strong>Defining a calculation:</strong><br> <code>sum = @1 + @2 + @3 + @4 + @5</code><br>
-<code>#sums sum</code></p>
-</blockquote>
-<p>If you want to calculate several sums or products, you define each score (<code>sum</code>) by giving it a number.</p>
-<blockquote>
-<p><strong>Adding several scores:</strong><br> <code>sum1 = @1 + @2 + @3</code><br><code>sum2 = @4 + @5 + @6</code><br><code>sum3 = @7 + @8 + @9</code><br><code>#sums sum1, sum2, sum3</code></p>
-</blockquote>
-<blockquote>
-<p><strong>Multiplying several scores:</strong><br> <code>sum1 = (@1 * @2) + (@3 * @4)</code><br> <code>sum2 = (@5 * @6) + (@7 * @8)</code><br> <code>#sums sum1, sum2</code></p>
-</blockquote>
-<p>You can also calculate the mean of a score, by dividing the number of questions included.</p>
-<blockquote>
-<p><strong>Calculating the mean of a score:</strong><br> <code>sum1 = @1 + @2 + @3 + @4 + @5</code><br> <code>mean1 = @1 + @2 + @3 + @4 + @5 / 5</code><br><code>#sums sum1, mean1</code></p>
-</blockquote>
-<p>Just as you can calculate several sums and products, you can also calculate several means.</p>
-<blockquote>
-<p><strong>Calculating several means:</strong><br> <code>mean1 = (@1 + @2 + @3) / 3</code><br> <code>mean2 = (@4 + @5) / 2</code><br> <code>mean3 = (@6 + @7 + @8 + @9) / 4</code><br> <code>#sums mean1, mean2, mean3</code></p>
-</blockquote>
-</div>
-<div id="export-1" class="section level2" number="15.4">
-<h2><span class="header-section-number">15.4</span> Export</h2>
-<p>The export tab lets you copy the XML code of an instrument, to enable exporting to another database or another program that can accept instruments/forms in XML format.</p>
-<!--chapter:end:12-Therapists.Rmd-->
+<!--chapter:end:13-References.Rmd-->
 </div>
 </div>
 <!--bookdown:body:end-->

@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Therapists
 
 The term "therapist" is the term used within BASS to designate anyone who administrates part of or the entirety of a database and its participants. This could be an administrator, whose job it is to build treatment content, instruments and assessments. It could also be a licensed therapist who administers treatments to select participants. It could yet again be students who use BASS as part of a university course in web-based CBT, as well as their supervising teacher or professor.
