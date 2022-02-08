@@ -1,7 +1,7 @@
 ---
 title: "BASS4 - ADMINISTRATOR’S MANUAL"
 author: "Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell & Brjánn Ljótsson"
-date: "Last updated `r Sys.Date()`, current BASS version: 4.11"
+date: "Last updated `r Sys.Date()`, current BASS version: 4.12"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
