@@ -1,39 +1,41 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{book}
-\usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
-  \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
-\hypersetup{
-            pdftitle={BASS4 - ADMINISTRATOR'S MANUAL},
-            pdfauthor={Louise Serenhov, Erik Sjöstrand, Jenny-Li Örsell \& Brjánn Ljótsson},
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -45,13 +47,13 @@
 \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
 \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
 \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
 \newcommand{\BuiltInTok}[1]{#1}
 \newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
 \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
 \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
 \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
 \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
@@ -59,7 +61,7 @@
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
 \newcommand{\ExtensionTok}[1]{#1}
 \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
 \newcommand{\ImportTok}[1]{#1}
 \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
@@ -68,16 +70,23 @@
 \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
 \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
 \newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
 \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
-\usepackage{graphicx,grffile}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -86,25 +95,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-% set default figure placement to htbp
+% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -113,12 +111,23 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={BASS4 - ADMINISTRATOR'S MANUAL},
+  pdfauthor={Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell \& Brjánn Ljótsson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \title{BASS4 - ADMINISTRATOR'S MANUAL}
-\author{Louise Serenhov, Erik Sjöstrand, Jenny-Li Örsell \& Brjánn Ljótsson}
-\date{Last updated 2021-08-31, current BASS version: 4.9.3}
+\author{Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell \& Brjánn Ljótsson}
+\date{Last updated 2024-06-07, current BASS version: 4.12}
 
 \begin{document}
 \maketitle
@@ -127,10 +136,9 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{introduction}{%
-\chapter{Introduction}\label{introduction}}
+\chapter{Introduction}\label{introduction}
 
-\emph{Disclaimer: This manual is written primarily for full-access administrators in BASS. While you will find instructions and useful tips even if you're not an administrator, note that all options described may not be available to you.}
+\emph{Disclaimer: This manual is written primarily for full-access database administrators. While you will find instructions and useful tips even if you're not an administrator, note that all options described may not be available to you if you have limited access.}
 In this manual you will learn how to manage participants, combine self-help material into treatments, keep track on events during an ongoing study/program, manage security and privacy settings, collect and export data and communicate with participants through the administration interface of BASS.
 
 Should you have questions not yet answered by this manual, you're very welcome to contact us at \texttt{bass-support{[}at{]}ki.se}.
@@ -154,8 +162,7 @@ BASS is comprised of two main parts, or user interfaces: the administrator's vie
   We offer active remote support accessed by mail, telephone and/or digital meetings such as Zoom, Microsoft Teams or similar applications. For clients located in Stockholm, Sweden and the surrounding area, we also offer in-person meetings at the Karolinska Institutet campus in Solna.
 \end{enumerate}
 
-\hypertarget{the-basics}{%
-\chapter{The Basics}\label{the-basics}}
+\chapter{The Basics}\label{the-basics}
 
 Let's begin with the basics, and start with a quick overview of the participant's view. It is a good idea to familiarize yourself with this view, as most of what you do in the administrative view will have one or more effects in this view. As such, before we begin tweaking things we ought to know what we are tweaking.
 
@@ -163,7 +170,7 @@ Let's begin with the basics, and start with a quick overview of the participant'
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  The login screen for participants is accessed by either \texttt{https://YourDataBase.webcbt.se} or \texttt{https://YourDataBase.bassdb.se}, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS's built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.
+  The login screen for participants is accessed by either \texttt{https://YourDataBase.webcbt.se} or \texttt{https://YourDataBase.bassdb.se}, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS' built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.
 \item
   When your participants have logged in, there are three possible screens they may encounter depending on whether they have an active assessment and/or treatment or not.
 
@@ -177,27 +184,26 @@ Let's begin with the basics, and start with a quick overview of the participant'
     If your participant has neither an active assessment nor an active treatment, they will be automatically logged out since there is nothing for them to do in BASS.
   \end{itemize}
 \item
-  When your participants have active treatments and no active/pending assessments, they will land at their home page. Here, they have access to a few options:
+  When your participants have active treatments and no active/pending assessments, they will land at their treatment's home page. Here are the most common menu options in a treatment:
 
   \begin{itemize}
   \tightlist
   \item
-    Start Page -- their home page
+    Start Page -- their treatments' welcome page
   \item
-    Modules -- Treatment modules. Clicking here grants access to any treatment modules you've marked as ''accessible''.
+    Modules -- Treatment modules. Clicking here shows treatment modules you've marked as ''accessible''.
   \item
-    Messages -- BASS's built in messaging feature which enables secure messaging between a participant and their assigned therapist.
+    Messages -- BASS' built in messaging feature which enables secure messaging between a participant and their assigned therapist.
   \item
     Privacy notice -- A legal document which is required by EU law (GDPR) and explains what personal data is collected by the project, who stores it and who has access to it.
   \item
     Log out -- Logs the participant out of BASS and ends their session.
   \end{itemize}
 \item
-  We will touch upon all these menu options later on in the manual. For now, we're just getting acquainted with the user interface. You may have noticed that there are no menu option for assessments. This is because they are handled differently than treatments. We will return to this topic later on.
+  We will touch upon all these and other treatment menu options later on in the manual. For now, we're just getting acquainted with the user interface. You may have noticed that there are no menu option for assessments. This is because they are handled differently than treatments. We will return to this topic later on.
 \end{enumerate}
 
-\hypertarget{dictionary}{%
-\chapter{Dictionary}\label{dictionary}}
+\chapter{Dictionary}\label{dictionary}
 
 These are recurrent concepts in the manual:
 
@@ -207,9 +213,6 @@ An instrument is an electronic version of a paper form used during psychological
 \textbf{Assessment}
 An assessment is a set of instruments, given in a specific order and at a specific occasion or for a specific number of occasions. A pre- and post-treatment assessment often consist of the same instruments with the afterward addition of one instrument measuring treatment satisfaction.
 
-\textbf{Type}
-A type represents the time-aspect of an assessment. Each assessment is linked to a type, typically SCREEN, PRE, POST or FOLLOW-UP or a customized type.
-
 \textbf{Project}
 A project is the administrative concept that connects a set of assessments to a set of participants.
 
@@ -217,20 +220,18 @@ A project is the administrative concept that connects a set of assessments to a 
 A participant need to be assigned to a project to be able to fill in instruments and follow an assessment.
 
 \textbf{Group}
-A project can be divided into groups, and participants of the same group in a project can be managed collectively.
+A project can be divided into groups, and the assessments of participants of the same group in a project can be managed collectively.
 
 \textbf{2FA}
 2FA stands from \emph{two-factor authentication}, which is required by BASS by default. As of this writing, this could be set up to use SMS, e-mail och authenticator apps (TOTP).
 
-\hypertarget{login}{%
-\chapter{Login}\label{login}}
+\chapter{Login}\label{login}
 
 As soon as your database setup is ready, you can login to the administrator's interface. The interface is found at an URL of the format \texttt{https://webcbt.se/NameOfYourDatabase} or \texttt{https://bassdb.se/NameOfYourDatabase}. Enter your credentials in the login box and press the Login button.
 
 \includegraphics{images/login.png}
 
-\hypertarget{getting-your-bearings-navigating-the-administrators-interface}{%
-\chapter{Getting your bearings: Navigating the administrator's interface}\label{getting-your-bearings-navigating-the-administrators-interface}}
+\chapter{Getting your bearings: Navigating the administrator's interface}\label{getting-your-bearings-navigating-the-administrators-interface}
 
 Now, let's turn to the administrative interface. You access this through either \url{https://webcbt.se/YourDataBase} or \url{https://bassdb.se/YourDataBase}. You will have your login credentials supplied by us, and logging in will require 2FA (two-factor authentication) through either SMS or through an authenticator app (Authy, Google Authenticator, Microsoft Authenticator).
 
@@ -242,21 +243,21 @@ What options are visible in the main menu depends on what privileges have been a
 
 Now, let's examine what substitutes the main menu:
 
-\textbf{Participant Search} lets you search specific data points relevant to the participants registered in the active project. The \emph{Search} tab will show what information is searchable. See Chapter 4 for further details.
+\textbf{Participant Search} lets you search specific data points relevant to the participants registered in the active project. The \emph{Search} tab will show what information is searchable. See \textbf{\emph{Chapter 9}} for further details.
 
 The \textbf{Project} dropdown menu lets you choose what project to view. This governs which participants and what assessments you can access. Instruments and treatments are shared between projects. To switch projects, simply use the dropdown menu.
 
-\textbf{Participants} lets you see an overview over all the participants registered in the active project. In this overview you can see if a participant is flagged, has sent messages or reported an error, among other information. See Chapter 6 for further details.
+\textbf{Participants} lets you see an overview over all the participants registered in the active project. In this overview you can see if a participant is flagged, has sent messages or reported an error, among other information. See \textbf{\emph{Chapter 10}} for further details.
 
-\textbf{Assessments} is only shown if you have selected a project from the \textbf{Project} dropdown menu. Here, you can view, create and edit assessments. See Chapter 5 for further details.
+\textbf{Assessments} is only shown if you have selected a project from the \textbf{Project} dropdown menu. Here, you can view, create and edit assessments. See \textbf{\emph{Chapter 12}} for further details.
 
-\textbf{Registration options} is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See Chapter \# for further details (under construction and will be updated).
+\textbf{Registration options} is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See \textbf{\emph{Chapter 8}} for further details.
 
-\textbf{Project security} lets you define what security measures your project will use, such as two-factor authentication.
+\textbf{Project security} lets you define what security measures your project will use, such as two-factor authentication. These settings pertain to participants' use of the system. See \textbf{\emph{Chapter 6}} for a more in-depth look at security settings.
 
-The \textbf{Treatment containers} view lets you view, create and edit treatments to be used within BASS. See Chapter 8 for further details.
+The \textbf{Treatment containers} view lets you view, create and edit treatments to be used within BASS. See \textbf{\emph{Chapter 13}} for more on how to build treatment content in BASS.
 
-The \textbf{Instruments} view lets you view, create, edit and delete instruments to be used within BASS. See Chapter 7 for further details.
+The \textbf{Instruments} view lets you view, create, edit and delete instruments to be used within BASS. See \textbf{\emph{Chapter 11}} for further details.
 
 \textbf{Note categories} lets you define custom note categories to be used to sort information on participants.
 
@@ -268,118 +269,101 @@ The \textbf{Projects} lets your view and create projects within the database.
 
 \textbf{My settings} lets you view the settings of your therapist login.
 
-\textbf{Security settings} lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See Chapter \# for further details (under construction and will be updated).
+\textbf{Security settings} lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See \textbf{\emph{Chapter 6}} for further details.
 
-\textbf{External messages} lets you view and edit messages which can be sent automatically to the cell phones or e-mail adresses of participants. This is, for example, notifications and reminders about active assessments.
+\textbf{External messages} lets you view and edit messages which can be sent automatically to the cell phones or e-mail adresses of participants. This is, for example, notifications and reminders about active assessments. See \textbf{\emph{Chapter 7}} for further details.
 
-\textbf{Reports} lets you extract reports on data collected through instruments and assessments in BASS. See Chapter \# for further details (under construction and will be updated).
+\textbf{Reports} lets you extract reports on data collected through instruments and assessments in BASS. This part of BASS in undergoing a major update, and the manual will be updated to reflect the new Reports feature once it goes live.
 
 \textbf{Therapists} lets you view, create and edit therapist logins in the database. See Chapter \# for further details (under construction and will be updated).
 
 \textbf{Log out} simply logs you out of the database and ends your current session.
 
-\hypertarget{the-intended-structure-of-a-bass-project}{%
-\section{The intended structure of a BASS project}\label{the-intended-structure-of-a-bass-project}}
+\section{The intended structure of a BASS project}\label{the-intended-structure-of-a-bass-project}
 
 Now that we've familiarized ourselves with the main menu and its options, let's take a moment and look at the internal structure of BASS, and how it's set up.
-As you've surely gathered by now, the foundation of BASS is the \textbf{database}. This is the foundational level upon with all other layers are applied. The next level is the \textbf{project}. You can have just one project in your database, or you can have several. Participants are placed in to projects, but may be moved from one project to another if necessary. Each project in your database will have its own registration URL, its own login URL, as well the option to use its own privacy notice.
+As you've surely gathered by now, the foundation of BASS is the \textbf{database}. This is the foundational level upon with all other layers are applied. The next level is the \textbf{project}. You can have just one project in your database, or you can have several. Participants are placed in to projects, but may be moved from one project to another if necessary. Each project in your database has its own
+- Participants and groups
+- Assessments
+- Registration (and unique URL to that registration)
+- Settings for answers flagging (all projects can also share global flagging settings)
+- Privacy notice
 The next level in this structure is \textbf{groups}. They can be used to group participants \emph{within} a project. This enables you do administer different sets of assessments to different groups of participants, for example. It also lets you use groups as a sorting tool in your reports.
 An important note is that instruments and treatments are stored at the database level, meaning they are accessible from all projects within the database. Assessments, however, are stored at the project level and are as such not shared between projects.
 And to clarify: participants and groups are also not shared between projects.
 
-\hypertarget{setting-up-your-project}{%
-\subsection{Setting up your project}\label{setting-up-your-project}}
+\subsection{Setting up your project}\label{setting-up-your-project}
 
 Now, how do I set up my project? And what do I need to get started?
-You can get started without setting up a project, and start by building instruments and treatments. However, it's recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented. To set up your project, simply navigate to \textbf{Projects} and click \emph{Create new project}, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.
+You can get started without setting up a project, and start by building instruments and treatments. However, it is recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented. To set up your project, simply navigate to \textbf{Projects} and click \emph{Create new project}, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.
 
-\hypertarget{groups}{%
-\subsection{Groups}\label{groups}}
+\subsection{Groups}\label{groups}
 
 If you want to use groups in your project, for example to administer different cohorts, navigate to \textbf{Participants}, and to the tab labeled \textbf{Groups}. To create a group, simply type the name into the text box and click \emph{Save}. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click \emph{Save} again.
 If you haven't decided whether you need groups or not, you can hold off on creating groups for now. If you know you won't need groups, you can simply forgo creating any groups.
 
-\hypertarget{settings-and-security}{%
-\chapter{Settings and security}\label{settings-and-security}}
+\chapter{Settings and security}\label{settings-and-security}
 
 The security settings are split up between two menu options: The \textbf{Project security} and \textbf{Security settings} options, respectively. \textbf{Project security} deals with two-factor authentication for your participants in a specific project. You are given the options to provide 2FA via SMS or e-mail, or both. You can also opt to use 2FA via one of two authenticator mobile apps: Microsoft Authenticator or Google Authenticator. This option is called TOTP.
-\textbf{Security settings} handles more baseline security settings for your database.
+\textbf{Security settings} handles global security settings for your database.
 
-\hypertarget{security-settings-therapists}{%
-\section{Security settings (therapists)}\label{security-settings-therapists}}
-
+\textbf{Security settings (therapists)}
 Here you can choose by which mean (SMS and/or e-mail) you want 2FA for therapists. Check the box or boxes for the options you want to use.
 Below the 2FA options are \emph{password requirements}. Here you can specify rules for the passwords of therapist logins. You can also specify if you want mandatory password changes by typing in a number in the box labeled \emph{Monthly interval} for mandatory password change.
 
-\hypertarget{security-settings-participants}{%
-\section{Security settings (participants)}\label{security-settings-participants}}
-
+\textbf{Security settings (participants)}
 In this table you can decide whether you want to use the quick login feature or not, as well as specify the settings for it. To allow the use of it, simply check the box labeled \emph{Allow quick login}.
-In the box below, you can specify what number of days the quick login codes are valid after they've been generated (default 14 days). Be wary of allowing too long periods of time, since quick login codes does not require user names, passwords or 2FA. Before you consider using quick login codes, make sure your participants does not share e-mail accounts for cell phones with anyone else. \textbf{\emph{If another person gets hold of an active quick login code link, they will have full access to that participant login as long as that code stays active.}}
+In the box below, you can specify what number of days the quick login codes are valid after they've been generated (default 14 days). Be wary of allowing too long periods of time, since quick login codes does not require user names, passwords or 2FA. Before you consider using quick login codes, make sure your participants does not share e-mail accounts for cell phones with anyone else. \textbf{\emph{If another person gets hold of an active quick login code link, they will have access to that participant login as long as that code stays active.}} Note however that the quick login only gives access to assessments, access to treatment always require a password.
+
 Below the duration setting, an example URL for quick login codes is shown.
 
-\hypertarget{wait-what-are-quick-login-codes}{%
-\subsection{Wait! What are quick login codes?}\label{wait-what-are-quick-login-codes}}
+\begin{quote}
+\textbf{\emph{Wait! What are quick login codes?}}
+Quick login codes are sequences of numbers and letters that are assigned to \textgreater participants. Each participant is assigned their own unique code. BASS can \textgreater use these unique codes to identify the participant and log them in to their \textgreater account automatically, without requiring user name, password or 2FA. This \textgreater is useful if you wish to streamline the login process and lower the \textgreater barriers for your participants. As mentioned above, it does pose some vital \textgreater security questions however and should not be used unless you feel \textgreater comfortable in that the security of your participants isn't jeopardized.
+\end{quote}
 
-Quick login codes are sequences of numbers and letters that are assigned to participants. Each participant is assigned their own unique code. BASS can use these unique codes to identify the participant and log them in to their account automatically, without requiring user name, password or 2FA. This is useful if you wish to streamline the login process and lower the barriers for your participants. As mentioned above, it does pose some vital security questions however and should not be used unless you feel comfortable in that the security of your participants isn't jeopardized.
-
-\hypertarget{lost-password-method}{%
-\section{Lost password method}\label{lost-password-method}}
-
+\textbf{Lost password method}
 The options here allow you to specify how participants who report lost passwords are handled. You can choose whether to require participants to confirm their e-mail or not before they're flagged as having reported a lost password.
 
-\hypertarget{participant-files}{%
-\section{Participant files}\label{participant-files}}
-
+\textbf{Participant files}
 This option governs whether the uploading of participant specific files is allowed. This options is provided to allow different therapists to upload for example offline paperwork as a scanned file, or a complex figure drawing. This is a solely administrative side feature, and does not allow uploading and sharing of files with the participant in question.
 
-\hypertarget{oauth-totp-app-links-participants}{%
-\section{OAuth TOTP app links (participants)}\label{oauth-totp-app-links-participants}}
+\textbf{OAuth TOTP app links (participants)}
+The OAuth feature allows you to use authenticator apps (for example, Google Authenticator or Microsoft Authenticator) for two-factor authentication. This is a more secure way to use 2FA than SMS or e-mail, but requires a few more steps for the participant to activate. For participants who are less accustomed to modern technology, 2FA via SMS or e-mail may be preferrable.
 
-This is a new feature that allows you to use authenticator apps (Google Authenticator and Microsoft Authenticator as of this writing) for two-factor authentication. This is a more secure way to use 2FA than SMS or e-mail, but requires a few more steps for the participant to activate. For participants who are less accustomed to modern technology, 2FA via SMS or e-mail may be preferrable.
+The selection here determines what apps are suggested when participants install TOTP on their smartphone. We can add links to other apps on your request.
 
-\hypertarget{external-messages}{%
-\chapter{External messages}\label{external-messages}}
+\chapter{External messages}\label{external-messages}
 
 Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.
 
-\hypertarget{sms-settings}{%
-\section{SMS settings}\label{sms-settings}}
-
+\textbf{SMS settings}
 The first box is labeled \emph{SMS sender name}, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
 The box below, labeled \emph{Standard SMS with quick login code}, is only relevant if you've elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.
-Nestled below that is the dropdown menu \emph{Delivery method for new message notifications to therapists}. The SMS options is as of this writing defunct, so the only valid option is ''E-post''.
 
-\hypertarget{new-treatment-message-notification-settings}{%
-\section{New treatment message notification settings}\label{new-treatment-message-notification-settings}}
+Below that is the dropdown menu \emph{Delivery method for new message notifications to therapists}. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly ``Unhandled participant tasks'' email.
 
-Here you specify how treatment notifications will be delivered, and what the message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
+\textbf{New treatment message notification settings}
+Here you specify how notifications about new messages will be delivered to participants, and what the notification message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
 Below that, there is a box for \emph{New message email subject}. This is only relevant if you've selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
 The box labeled \emph{New message notification} is where you type the message that will be sent as an SMS or e-mail according to the settings you've specified above.
 
-\hypertarget{sms-count-per-month}{%
-\section{SMS count per month}\label{sms-count-per-month}}
-
+\textbf{SMS count per month}
 This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.
 
-\hypertarget{email-settings}{%
-\section{Email settings}\label{email-settings}}
-
+\textbf{Email settings}
 Under this headline are the settings for e-mail addresses connected to your database. The first one, \emph{Sender automatic messages}, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply{[}at{]}ki.se by default.
 Below that is the \emph{General mailbox for database}. This e-mail address is shown to participant as the contact e-mail in case they're experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won't go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.
 
-\hypertarget{assessment-reminder-settings}{%
-\section{Assessment reminder settings}\label{assessment-reminder-settings}}
-
+\textbf{Assessment reminder settings}
 Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
 You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
 Below these settings are two textboxes, \emph{Standard SMS assessments reminder} and \emph{Standard email assessment reminder}. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.
 
-\hypertarget{registration-options}{%
-\chapter{Registration options}\label{registration-options}}
+\chapter{Registration options}\label{registration-options}
 
 Under this menu option, you edit all settings related to the registration procedure. The URL for the registration is shown at the very top of the page. Underneath it is a checkbox labeled \emph{Registration possible (if closed, edit Registration closed text below)}. Check/uncheck this to enable/disable the registration.
-The first table, labeled \emph{Check participant field that should be entered when registering} allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN).
+The first table, labeled \emph{Check participant field that should be entered when registering} allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN, or Swedish ``personnummer'').
 In the larger table below that, you can edit the following:
 
 \textbf{PID name}
@@ -414,7 +398,7 @@ This allows you to set an automatic username to be assigned to participant accou
 If you've elected to use automatic usernames, you can also use automatic passwords. Simply check the box to tell BASS to automatically generate secure passwords for participants when they register. Both usernames and passwords will be shown to the participant at the end of their registration process. If you have assigned assessments to be completed in conjunction with the registration, the username and password information will be presented to the participant before they start their assessment.
 
 \textbf{Automatic participant id}
-This lets you use automatic participant IDs, as you specify with the following options. Participant IDs useful as a anonymized way to refer to participants, and to sync data within BASS with offline data, should you have it. If you have similar codes for participant in a journal system or other records outside of BASS, you can tell BASS to use the same syntax for participant IDs.
+This lets you use automatic participant IDs, as you specify with the following options. Participant IDs (or ``study id'') are useful as a anonymized way to refer to participants, and to sync data within BASS with offline data, should you have it. If you have similar codes for participant in other records outside of BASS, you can tell BASS to use the same syntax for participant IDs.
 
 \textbf{Automatic participant id prefix}
 This lets you set a prefix for your participant IDs. This can be whatever you choose.
@@ -426,14 +410,14 @@ This allows you to specify the number of digits following the prefix, or simply 
 Check this box if you wish participant to consent to being part of your study as a step of the registration process. You can edit the study consent further down on this page.
 
 \textbf{Render markdown}
-Check this box if you want BASS to render Markdown formatting. A guide on how to use Markdown can be found here: \url{https://www.markdownguide.org}
+Check this box if you want BASS to render \emph{Study Information}, \emph{Captcha challenge text}, \emph{Registration finished text}, and \emph{Registration closed text} using markdown formatting (else only HTML). A guide on how to use Markdown can be found here: \url{https://www.markdownguide.org}
 
 \textbf{Personal identification number validation function}
-This lets you write a JavaScript function to check whether participants adhere to the PID format you've presented.
+This lets you write a JavaScript function to check whether participants adhere to the PID format you've presented. If the PID number is incorrect, the function should return a non-empty string with an error message, otherwise it should return the empty string. Upon request, we can supply a function to verify Swedish ``personnummer''.
 
 \textbf{Study information (Markdown/HTML)}
 This text box lets you edit the first page shown when participant click on the registration link. The idea is that you present information on your study here, what it is about, who you are and why you are conducting the study.
-As implied by the heading, you can use Markdown and/or HTML to format your text. Best practices is to choose either Markdown or HTML and stick with one of them. Markdown is simpler and quicker to learn and work with. HTML is more complex and more effortful to learn, but in return gives finer control over how content is displayed.
+As implied by the heading, you can use Markdown and/or HTML to format your text. Markdown is enabled by checking the \emph{Render markdown} checkbox above. Best practices is to choose either Markdown or HTML and stick with one of them. Markdown is simpler and quicker to learn and work with. HTML is more complex and requires more effort to learn, but in return gives greater control over how content is displayed.
 It is very useful to learn at least some HTML if you intend to use BASS for treatments, as the treatment modules are built with Markdown and/or HTML.
 A good resource for referencing and learning HTML is found here: \url{https://www.w3schools.com}.
 Below the text box is a button labeled Insert link. Clicking this box opens the file browser for your database in a separate browser tab. From here, you can set up a folder structure for document, images, sound files and videos as well as upload such files to BASS. By clicking an uploaded file, you can insert a file path into the textbox. To turn this file path into a viewable image/video or downloadable file, refer to either Markdown or HTML as appropriate. More information on this can be found under the Treatments section.
@@ -442,7 +426,7 @@ Below the text box is a button labeled Insert link. Clicking this box opens the 
 This text box lets you edit an optional text to be shown in conjunction with the captcha challenge. The captcha challenge already includes instructions by default, but if you want to add additional information the option to do so is here.
 
 \textbf{Study consent (Markdown)}
-If you've elected to use study consent (by checking the corresponding checkbox above), this text box is where you edit the consent form. As stated under the header, users will be required to check any checkboxes you put in here (using HTML). To set up a checkbox, use the tag. For more information on checkboxes, see the following link: \url{https://www.w3schools.com/tags/att_input_type_checkbox.asp}.
+If you've elected to use study consent (by checking the corresponding checkbox above), this text box is where you edit the consent form. As stated under the header, users will be required to check any checkboxes you put in here (using HTML). To set up a checkbox, use the \texttt{\textless{}input\ type=”checkbox”\textgreater{}} tag. For more information on checkboxes, see the following link: \url{https://www.w3schools.com/tags/att_input_type_checkbox.asp}.
 
 \textbf{Registration finished text (Markdown/HTML)}
 This textbox lets you type a text or message that is shown to participants when they have completed their registration. As stated under the header, this message is only shown if there are no assessments pending, i.e if you've set an assessment to be completed by participants in conjunction with the registration process (as describes under ''registration group''), this message will NOT be shown.
@@ -450,8 +434,7 @@ This textbox lets you type a text or message that is shown to participants when 
 \textbf{Registration closed text (Markdown/HTML)}
 As stated under the header, the message or text you type in this box will only be shown when the registration is closed, i.e if you have unchecked the \emph{Registration possible} checkbox at the top of the page.
 
-\hypertarget{search-participants-finding-what-you-need}{%
-\chapter{Search participants: Finding what you need}\label{search-participants-finding-what-you-need}}
+\chapter{Search participants: Finding what you need}\label{search-participants-finding-what-you-need}
 
 The ``Participant search'' is located at the top of the main menu. This is where you can search for and list participants by specific variables such as groups or projects.
 
@@ -473,8 +456,7 @@ When you press ``Participant search'' you will see a view with four tabs:
   Save/load settings -- Save your recurrent searches for convenience
 \end{itemize}
 
-\hypertarget{selectionfilter}{%
-\section{Selection/filter}\label{selectionfilter}}
+\section{Selection/filter}\label{selectionfilter}
 
 If you press Selection, you can add a filter to your participant search.
 
@@ -490,8 +472,7 @@ You can also choose which project(s) or group(s) to search. The top two checkbox
 
 Your chosen selection of participants is shown in the participant list below the tab.
 
-\hypertarget{search}{%
-\section{Search}\label{search}}
+\section{Search}\label{search}
 
 The actual search is done in the \textbf{Search} tab. If you previously added search filters in the Selection tab they will now be active and delimit your search.
 
@@ -514,8 +495,7 @@ To search for several participants at the same time, you add a space between eac
 \textbf{Hint:} This is useful if you want to search for participants whose IDs are listed on different rows in an Excel-file. Just copy the ID containing rows in Excel and directly paste them into the search box in BASS and they automatically receive a space between them.
 \end{quote}
 
-\hypertarget{hide-show-and-sort-columns}{%
-\section{Hide, show and sort columns}\label{hide-show-and-sort-columns}}
+\section{Hide, show and sort columns}\label{hide-show-and-sort-columns}
 
 If you want to hide a column, you hover the mouse over the column header until a red X shows up. By pressing the X, the column will be hidden.
 
@@ -527,8 +507,7 @@ To show/unhide a column, press the ``Hidden columns'' tab. This tab shows all hi
 
 Most columns can be sorted alphabetically or by number. To sort a column, press the small up/down arrows that show when you hover over the column header.
 
-\hypertarget{column-explanations}{%
-\section{Column explanations}\label{column-explanations}}
+\section{Column explanations}\label{column-explanations}
 
 There are a number of columns showing information, status or possible actions for a participant. Some are explained in the table below.
 
@@ -600,8 +579,7 @@ Trash symbol
 
 By pressing the trash symbol, you delete the participant. Be careful as the participant and all its corresponding data then will be lost.
 
-\hypertarget{saveload-search-settings}{%
-\section{Save/load search settings}\label{saveload-search-settings}}
+\section{Save/load search settings}\label{saveload-search-settings}
 
 To save your current search settings, including both filters and search parameters, press the Save/load settings-tab. First ensure that the current search result for the settings you want to save are shown in the table below. Then write a name for your settings in the Currently loaded settings box and press ``Save as new''.
 
@@ -621,8 +599,7 @@ The dropdown ``Saved settings'' is where you access all your previously saved se
 \textbf{Hint:} If you make a new search, the ``Currently loaded settings'' box may no longer reflect the content of the search result list below. To be sure that the list matches the settings you want to load, first select ``Choose'' in the dropdown menu and then reselect the settings you want.
 \end{quote}
 
-\hypertarget{add-new-participant-to-group-and-change-group}{%
-\subsection{ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP}\label{add-new-participant-to-group-and-change-group}}
+\subsection{ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP}\label{add-new-participant-to-group-and-change-group}
 
 It is possible to directly create a new participant within a specific project. This function is found below the table of participants. Just choose which project you want to add the new participant to, and you will be redirected to the ``New participant''-view with this project pre-filled.
 
@@ -630,8 +607,7 @@ It is possible to directly create a new participant within a specific project. T
 
 It is also easy to change which group a participant belongs to. For each participant in the table, you can choose a project in the dropdown in the Group column. Don't forget to save all changes by pressing the ``Save'' button below the table afterwards.
 
-\hypertarget{participants}{%
-\chapter{Participants}\label{participants}}
+\chapter{Participants}\label{participants}
 
 The ``Participants'' view is one way to access participant information. It is very similar to the ``Participant search'' view, and it is mostly down to personal preference on which to use. You can customize ``Participant search'' to show exactly the data you want to see, while ``Participants'' is predefined and more simplistic. One important difference remains, however: the \textbf{``Groups''} tab, which only exists under ``Participants''.
 
@@ -653,8 +629,7 @@ In ``Participants'', there are four tabs:
 
 \includegraphics{images/new-images/participantsTabs.png}
 
-\hypertarget{creating-deleting-and-editing-participants}{%
-\section{Creating, deleting and editing participants}\label{creating-deleting-and-editing-participants}}
+\section{Creating, deleting and editing participants}\label{creating-deleting-and-editing-participants}
 
 You can create new participants in two of the tabs in the Participants view; \emph{My participants} and \emph{All participants}. Participants that are created in the \emph{My participants} tab will be tagged as your participants automatically, while participants created in the \emph{All participants} tab won't be tagged.
 To create a new participant, click \emph{Create participant within project {[}Project Name{]}}. Newly created participants are added at the bottom of each view.
@@ -664,8 +639,7 @@ To delete at participant, click the trash bin icon to the far right of the corre
 To edit a participant, click the pencil icon in the table, on the corresponding participant's row. This will take you to the ``Participant stats'' view.
 If you only wish to change, or add, what group a participant belongs to, you can do so directly in the \emph{Group} column of the participant table by using the dropdown. When you've assigned a participant to a group this way, don't forget to click the ``Save'' button at the bottom of the table.
 
-\hypertarget{the-participant-view}{%
-\section{The participant view}\label{the-participant-view}}
+\section{The participant view}\label{the-participant-view}
 
 When you create or edit a participant, the participant view is shown. To exit this view, and return to the participants table, click the ``close'' text to the right of the participant's name. If you made any changes to the participant, don't forget to save them by clicking the ``Save'' button at the bottom of the page.
 
@@ -689,8 +663,7 @@ There are seven tabs in this view:
   \emph{Graphs}, where you can see graphs on the answers the participant has given on recurring assessments.
 \end{itemize}
 
-\hypertarget{participant-stats}{%
-\subsection{Participant stats}\label{participant-stats}}
+\subsection{Participant stats}\label{participant-stats}
 
 This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.
 The \emph{Show participant log} button on the top of this view will show a log of all changes and updates done to the participant. The \emph{Show notes} button will show a log of all notes written aout the participant.
@@ -718,7 +691,7 @@ It is also possible to generate new quick login codes, and to send them by SMS, 
 \end{quote}
 
 \begin{quote}
-\textbf{Important note:} \emph{Exempt from two-factor authentication} must be enabled under \textbf{Project security} in the main menu. It is only possible to exempt participants from two-factor authentication. It is mandatory for therapists.
+\textbf{Important note:} \emph{Exempt from two-factor authentication} must be enabled under \textbf{Project security} in the main menu. Only participants can be exempt from two-factor authentication. It is mandatory for therapists.
 \end{quote}
 
 The \emph{Temporary flag text} box provides you with the possibility to flag a participant with a star icon, that will display next to their name in the participants table. You can add a comment on why you flagged the participant.
@@ -736,8 +709,7 @@ You can use the dropdown menu on the bottom of the page to move the participant 
 
 \includegraphics{images/new-images/participantMoveProject.png}
 
-\hypertarget{participant-treatments}{%
-\subsection{Participant treatments}\label{participant-treatments}}
+\subsection{Participant treatments}\label{participant-treatments}
 
 To assign a participant to an existing treatment, go to \textbf{Participants}, \textbf{Treatments}, the \textbf{Treatment access} tab. All available treatments are listed here in the dropdown menu.
 
@@ -746,15 +718,14 @@ If a treatment doesn't show up in the dropdown menu, you will have to make it av
 \includegraphics{images/new-images/participantTreatConnect.png}
 
 \begin{quote}
-\textbf{Important note:} While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will really only be able to access \emph{\textbf{one}} of the treatments at a time.
+\textbf{Important note:} While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will only be able to access \emph{\textbf{one}} of the treatments at a time.
 \end{quote}
 
 \includegraphics{images/new-images/participantTreatAccess.png}
 
 In some studies, you may want to record how much time is spent writing messages to participants by a therapist. \emph{\textbf{More info to come}}
 
-\hypertarget{instruments}{%
-\chapter{Instruments}\label{instruments}}
+\chapter{Instruments}\label{instruments}
 
 In BASS, instruments are the building blocks of assessments. Under this menu option, you can view a list of all the instruments currently set up in your database, as well as Create new instrument by using the built-in editor and Import instrument from XML to import an already built instrument from another BASS database by copying its XML code. You can also edit instruments, as well as delete them.
 
@@ -782,8 +753,7 @@ But first, let's examine the table.
 
 There are two ways to create a new instrument in BASS4. Either you can copy an existing instrument, that is similar to the one you wish to create and adjust that instrument. You can also create a new instrument from scratch, using the built in tool in BASS4.
 
-\hypertarget{copy-an-instrument}{%
-\section{Copy an instrument}\label{copy-an-instrument}}
+\section{Copy an instrument}\label{copy-an-instrument}
 
 To copy an instrument, follow these steps:
 1) Navigate to \textbf{Instruments} in the main menu to the left. Here you can view all instruments currently available in your database.
@@ -791,13 +761,11 @@ To copy an instrument, follow these steps:
 3) Open the instrument you just created by clicking the pencil icon to the right on the instrument row. If you hover the mouse pointer over the pencil icon, it will display the tooltip ``Edit instrument''. Clicking the pencil icon will show the instrument editor. The ``Creating a new instrument'' section explains how this editor works.
 4) Prior to editing the instrument, it's good practice to open a separate window or browser tab by using the \textbf{Preview-function}. This function is located under the Preview-tab, and opened by clicking the ``Open preview in Clojure app'' hyperlink. By default, a new tab will open where the instrument will be displayed in its formatted layout. It's a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.
 
-\hypertarget{creating-a-new-instrument}{%
-\section{Creating a new instrument}\label{creating-a-new-instrument}}
+\section{Creating a new instrument}\label{creating-a-new-instrument}
 
 To begin creating a new instrument, navigate to \textbf{Instruments} in the main menu on the left. This will open up a table view showing you all the instruments currently available in your database. On the bottom of the table, there is a hyperlink with the text ``Create new instrument''. Clicking this hyperlink will take you to the \textbf{General} view of the instrument editor, as shown in picture 1 below. The tabs named \textbf{Edit}, \textbf{Preview}, \textbf{Scoring Formula} and \textbf{Export} are also displayed.
 
-\hypertarget{the-general-tab}{%
-\subsection{The General Tab}\label{the-general-tab}}
+\subsection{The General Tab}\label{the-general-tab}
 
 This tab is where you can change the \textbf{Name} of the instrument, its \textbf{Abbreviation} (both of which are only show in the administrator's view), as well as the \textbf{Title name} (which is the title presented to the participants).
 For example, this could be \textbf{Audit} in all three cases, as show in picture 1 below.
@@ -807,8 +775,7 @@ For example, this could be \textbf{Audit} in all three cases, as show in picture
 
 If the instrument you are creating is supposed to be filled out by a clinician, you check the box called \textbf{Clinician assessment}.
 
-\hypertarget{the-bass4-table}{%
-\subsubsection{The BASS4 Table}\label{the-bass4-table}}
+\subsubsection{The BASS4 Table}\label{the-bass4-table}
 
 This table contains three options that influence the presentation of your instrument.
 \textbf{Classic presentation in BASS4} governs whether your instrument is shown in a classic layout, i.e somewhat smaller font size, or a more modern layout with a somewhat larger font size (16 pixels).
@@ -819,14 +786,12 @@ Leaving this box unchecked will cause the instrument to display its PC/Mac layou
 
 When you've entered the information, click \textbf{save}.
 
-\hypertarget{the-preview-tab}{%
-\subsection{The Preview Tab}\label{the-preview-tab}}
+\subsection{The Preview Tab}\label{the-preview-tab}
 
 In this tab, you can view the instrument with it's final visual design applied (the final visual design is applied automatically by BASS) by clicking the hyperlink named ``Open preview in Clojure app''.
 By default, a new tab will open, in which the instrument will be displayed with its final visual design applied. It's a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.
 
-\hypertarget{the-edit-tab}{%
-\subsection{The Edit Tab}\label{the-edit-tab}}
+\subsection{The Edit Tab}\label{the-edit-tab}
 
 This tab is where you create, or build, your new instrument. This is also where you adjust any instrument you've copied or want to edit. This is mainly done through adding, editing or deleting content in the form.
 To begin, start by creating and defining a \textbf{table definition}
@@ -898,8 +863,8 @@ When you've filled in your answer options and their unique values, you can choos
   {[}TD{]} Creates an empty cell
 \item
   {[}Q{]} Renders the text of the ``Question'' box in a cell
-\item
-  {[}X{]} Renders the answer options in a cell
+\item[$\boxtimes$]
+  Renders the answer options in a cell
 \end{itemize}
 \end{quote}
 
@@ -924,8 +889,7 @@ If you would rather have your answer options listed vertically below your questi
 Below the ``free text'' you just created, click ``\textbf{Add new {[}question{]}}''. In the number box, assign the number you wish your question to have. Leave the ``question''-box empty.
 Proceed to fill out the ``Answer definition'', and type in your answer options and their unique values. Then, choose ``Line break'' in the Separator-dropdown.
 
-\hypertarget{extra-information}{%
-\subsection{Extra information}\label{extra-information}}
+\subsection{Extra information}\label{extra-information}
 
 \textbf{Optional questions}
 If the question is not mandatory, you can tell BASS to treat it as such by checking the ``optional''-box, in the upper right corner of the question-editor window. This enables a participant to complete the form without submitting an answer to that specific question.
@@ -955,8 +919,7 @@ If your next question has a different \textbf{number} of options as the previous
 \emph{Adding a text-answer question}.
 Create a new question by clicking ``\textbf{Add new {[}question{]}}'' and fill it out like previously instructed.
 
-\hypertarget{scoring-formula}{%
-\section{Scoring formula}\label{scoring-formula}}
+\section{Scoring formula}\label{scoring-formula}
 
 In the \textbf{Scoring formula} tab, you can define formulas that calculate the scores from the different items in your instrument. You refer to specific items in your instrument by using the \texttt{@\#} identifier, i.e \texttt{@1} refers to question 1, \texttt{@2} refers to question 2, and so on.
 Should you leave the scoring formula blank, you will still get all value readouts from your instrument. The scoring formula is meant to help with calculating different scores that are relevant to your instrument.
@@ -988,13 +951,11 @@ Just as you can calculate several sums and products, you can also calculate seve
 \textbf{Calculating several means:} \texttt{mean1\ =\ (@1\ +\ @2\ +\ @3)\ /\ 3} \texttt{mean2\ =\ (@4\ +\ @5)\ /\ 2} \texttt{mean3\ =\ (@6\ +\ @7\ +\ @8\ +\ @9)\ /\ 4} \texttt{\#sums\ mean1,\ mean2,\ mean3}
 \end{quote}
 
-\hypertarget{export}{%
-\section{Export}\label{export}}
+\section{Export}\label{export}
 
 The export tab lets you copy the XML code of an instrument, to enable exporting to another database or another program that can accept instruments/forms in XML format.
 
-\hypertarget{assessments}{%
-\chapter{Assessments}\label{assessments}}
+\chapter{Assessments}\label{assessments}
 
 Assessments are accessed from the ``Assessments'' option in the main menu. Note that you first have to choose a project in the dropdown in the main menu to make the Assessments option for that project visible. When you press ``Assessments'' you will see a view showing the existing assessments of the chosen project. All assessments that are listed in this view can be manually sorted with the upwards pointing arrow symbols to the right of each assessment name.
 
@@ -1004,18 +965,15 @@ You can show or hide the expanded overview by pressing the Show assessments over
 
 \textbf{Hint:} Among other things, the assessment overview shows the order of each instrument in all assessments. This is a good place to ensure that the instrument order is kept from one assessment to another throughout the project. It also enables you to easily see if you somewhere have missed to include an instrument that should appear in several, similar assessments.
 
-\hypertarget{create-or-edit-assessments}{%
-\section{Create or edit assessments}\label{create-or-edit-assessments}}
+\section{Create or edit assessments}\label{create-or-edit-assessments}
 
 Add a new assessment to your project by pressing ``Create new assessment'' at the bottom of the Assessment view. To instead edit an existing assessment, press the pencil symbol to the right of the name of the assessment you want to edit. This opens up the assessment panel where you can set a number of variables that define the assessment:
 
-\hypertarget{name}{%
-\subsection{Name}\label{name}}
+\subsection{Name}\label{name}
 
 Here you can fill in a name for your assessment, for example \textbf{\emph{Screening}}.
 
-\hypertarget{labelcustom-label}{%
-\subsection{Label/Custom label}\label{labelcustom-label}}
+\subsection{Label/Custom label}\label{labelcustom-label}
 
 You can either select one of the predefined labels in the drop-down, or write your own label in the Custom label textbox. Adding a custom label will surpass any predefined label that is selected from the drop-down. Note that the assessment label will be visible in reports when you export your data.
 
@@ -1023,8 +981,7 @@ You can either select one of the predefined labels in the drop-down, or write yo
 \textbf{Hint:} By selecting Weekly-assessment or Point-assessment some stats for Repetition (below) are preset.
 \end{quote}
 
-\hypertarget{managed}{%
-\subsection{Managed}\label{managed}}
+\subsection{Managed}\label{managed}
 
 This option sets whether data-gathering is managed individually or in groups.
 
@@ -1033,20 +990,18 @@ This option sets whether data-gathering is managed individually or in groups.
 \end{quote}
 
 \begin{quote}
-\textbf{Hint:} If your participants start their treatments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
+\textbf{Hint:} If your participants start their assessments at different times, you usually choose Individually. The Individually option is also more flexible for long-term studies spanning over months when participants go for vacation and need some individual adjustment to the timing of assessments.
 \end{quote}
 
-\hypertarget{repitition}{%
-\subsection{Repitition}\label{repitition}}
+\subsection{Repitition}\label{repitition}
 
 The Repetition option sets if the assessment is to be done once or repeatedly, and if so at what intervals and for how many times.
 
 Assessments with the predefined label ``Weekly'' have repetition set to Weekly and the interval to 7 days.
 
-Assessments with the label ``Point-assessment'' have repetition set to Manual. This means that the next assessment can be set manually to occur at an arbitrary date, independent of the time of the previous assessment. This is useful for assessments that are triggered by irregular events, for example a major flair of symptoms.
+Assessments with the label ``Point-assessment'' have repetition set to Manual. This means that the next assessment can be set manually to occur at an arbitrary date, independent of the time of the previous assessment. This is useful for assessments that are triggered by irregular events, for example a major flair of symptoms. \emph{Note that this setting (label: Point-assessment or repetition: Manual) is difficult to use correctly. We do not recommend using this setting}.
 
-\hypertarget{time-limit}{%
-\subsection{Time limit}\label{time-limit}}
+\subsection{Time limit}\label{time-limit}
 
 Here you can set if participants have to fill out the assessment within a certain time limit.
 
@@ -1060,8 +1015,7 @@ An assessment with the time limit of 7 days that starts on a Monday will be avai
 \textbf{Hint:} Keeping the time limit short, or shorter than the repetition interval, has the effect that participants fill in correct data corresponding to the set time-frame, but sometimes will miss the window when they can report. This is useful in assessments where accurate and time-dependent data is more important than full attendance.
 \end{quote}
 
-\hypertarget{dependence}{%
-\subsection{Dependence}\label{dependence}}
+\subsection{Dependence}\label{dependence}
 
 The Dependence option sets when the assessment is to be activated, in relation to the date of a previous assessment. The relationship is kept even if you change the date of the previous assessment.
 
@@ -1079,8 +1033,7 @@ Delay is the number of days to wait before activation.
 \textbf{Hint:} If you can't see the calculated date of your assessment in the view under Participants -\textgreater{} Groups -\textgreater{} group name -\textgreater{} Show -\textgreater{} Assessments, try to set the date of the previous interrelated assessment again and press the Save button.
 \end{quote}
 
-\hypertarget{clinician-rated}{%
-\subsection{Clinician rated}\label{clinician-rated}}
+\subsection{Clinician rated}\label{clinician-rated}
 
 This option hides all instruments in the assessment for participants and instead enable clinicians to fill in the associated `clinician rated' instruments via the administration interface.
 
@@ -1094,18 +1047,15 @@ This setting allows a clinician to fill in the instrument(s) for a specific pati
 \textbf{Hint:} Clinician rated assessments won't send automatic reminders. An option is to use flags instead to mark undone tasks.
 \end{quote}
 
-\hypertarget{randomize-instrument-order}{%
-\subsection{Randomize instrument order}\label{randomize-instrument-order}}
+\subsection{Randomize instrument order}\label{randomize-instrument-order}
 
 With this option you set the order of the included instruments to be randomized. If not set, the order in which the instruments appear in the assessment will be the same as the order they are presented in the box Assessment Instruments shown to the right.
 
-\hypertarget{welcomethank-you-text}{%
-\subsection{Welcome/Thank you text}\label{welcomethank-you-text}}
+\subsection{Welcome/Thank you text}\label{welcomethank-you-text}
 
 Here you write messages formatted in either Markdown or HTML that you want to show to participants before (welcome) and after (thank you) they fill in the assessment.
 
-\hypertarget{concurrent-and-merged-assessments}{%
-\subsection{Concurrent and merged assessments}\label{concurrent-and-merged-assessments}}
+\subsection{Concurrent and merged assessments}\label{concurrent-and-merged-assessments}
 
 With this option you can set the order in which coinciding assessments appear to participants.
 
@@ -1115,8 +1065,7 @@ The \textbf{\emph{Merge assessment\ldots{}}} box sets if an assessment is to be 
 
 The \textbf{\emph{If merged}} -- Show\ldots{} box sets if Welcome/Thank you-messages are to be shown even on coincidence as per the Merge assessment setting above. Note that it can be tricky to write messages that work both standalone and together with/as part of other assessment messages.
 
-\hypertarget{automatic-reminders}{%
-\subsection{Automatic reminders}\label{automatic-reminders}}
+\subsection{Automatic reminders}\label{automatic-reminders}
 
 This option sets notes or reminders to automatically be sent to participants on certain events. The basic functionality is that a note is sent the same day as an assessment becomes available. With the check boxes you can choose which media to use, mobile text messages (SMS) and/or email.
 
@@ -1128,7 +1077,7 @@ You can also add reminders to participants who are late with filling in their as
 \end{quote}
 
 \begin{quote}
-\textbf{Note:} It is not possible to only send remainders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
+\textbf{Note:} It is not possible to only send reminders to participants that are late with filling in their assessments, you always need to activate availability notes too (by checking either of the sms/email boxes) for this extra functionality to be enabled.
 \end{quote}
 
 \emph{Remind interval} is the delay upon which reminders are sent to late participants, counted as days after the assessment became available.
@@ -1151,8 +1100,7 @@ You can also add reminders to participants who are late with filling in their as
 
 It is also possible to set a \emph{Custom notifications/reminders} text in the corresponding textbox. This text is shared between emails and SMS. The \emph{Subject for activation} emails and SMS can however differ and are set in the two bottom textboxes. Custom notifications/reminders can be up to around 150 characters long.
 
-\hypertarget{participant-flagging}{%
-\subsection{Participant flagging}\label{participant-flagging}}
+\subsection{Participant flagging}\label{participant-flagging}
 
 This option sets flags to be shown for therapists on certain, participant-specific events.
 
@@ -1160,8 +1108,7 @@ This option sets flags to be shown for therapists on certain, participant-specif
 
 \emph{Flag late participants} raises a flag for participants that haven't filled in an assessment within a certain number of days after it became available. You can set the number of days to wait before flagging in the box labeled \emph{Days until participant is flagged late.} If an assessment is late, a flag will immediately be shown on the participant in question in the overview pane under \textbf{Participants}.
 
-\hypertarget{copy-assessment}{%
-\section{Copy assessment}\label{copy-assessment}}
+\section{Copy assessment}\label{copy-assessment}
 
 You can create a copy of an assessment and save it to the same project before editing it. This functionality makes it quick and easy to create several similar assessments that occur at different time points within your project.
 
@@ -1171,8 +1118,7 @@ To copy assessments in the Assessment view, check the boxes of the assessments y
 
 \includegraphics{images/copy-assessment.png}
 
-\hypertarget{dummy-assessments---some-scheduling-tricks}{%
-\section{Dummy assessments - some scheduling tricks}\label{dummy-assessments---some-scheduling-tricks}}
+\section{Dummy assessments - some scheduling tricks}\label{dummy-assessments---some-scheduling-tricks}
 
 Empty assessments that doesn't contain any instruments can be used as timers to schedule administrative activities.
 
@@ -1180,10 +1126,9 @@ Empty assessments that doesn't contain any instruments can be used as timers to 
 
 \textbf{Example 2, Scheduling manual actions:} An empty assessment can also be used together with flagging to prompt a certain action from the therapist. This is useful when something needs to be manually sent or done by the therapist a certain number of days into treatment while participants have individual treatment start dates. The trick is achieved by creating an empty assessment (i.e.~FLAG FOR SENDING DEVICE) that is dependent on a previous assessment (i.e.~FIRST ASSESSMENT) and activated with a chosen delay (i.e.~63 days after). By checking the box Flag participant when assessment becomes activated, the therapist will see individually occurring flags on participants whenever it is time for them to receive the attention/service from the therapist. Since the assessment doesn't contain any instruments, only the therapist will get a notice (flag).
 
-\textbf{Example 3, Scheduling text messages (SMS):} An empty assessment that is managed In group and linked to a text message can be used to schedule an independent reminder to all participants (i.e. ``Happy New Year! If you find it hard to keep to your new lifestyle during events like this, log in and re-read the advice in module 3''). An empty assessment can also be created to remind a single individual that hasn't done so for a while to log in.
+\textbf{Example 3, Scheduling text messages (SMS):} An empty assessment that is managed In group and linked to a text message can be used to schedule an independent reminder to all participants (i.e.~``Happy New Year! If you find it hard to keep to your new lifestyle during events like this, log in and re-read the advice in module 3''). An empty assessment can also be created to remind a single individual that hasn't done so for a while to log in.
 
-\hypertarget{assessment-instruments}{%
-\section{Assessment instruments}\label{assessment-instruments}}
+\section{Assessment instruments}\label{assessment-instruments}
 
 All available instruments are listed in the right panel of the Assessment view. To include an instrument, check the box to the left of its name and then press the \emph{Save} button. The number shown between the brackets to the right of each instrument name shows how many questions the instrument contains. The \emph{Total number of items} top row shows the current total sum of questions in the assessment.
 
@@ -1195,8 +1140,7 @@ The order in which the instruments appear in the assessment will be the same as 
 \textbf{Hint:} If you can't see any/all arrows, first select the instruments you want to include and press Save. Then change the order of the instruments and press Save again
 \end{quote}
 
-\hypertarget{create-new-treatment}{%
-\chapter{Create new treatment}\label{create-new-treatment}}
+\chapter{Create new treatment}\label{create-new-treatment}
 
 BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.
 A treatment is built by combining \emph{treatment modules} into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization's needs and wishes.
@@ -1213,8 +1157,7 @@ To create new treatment containers, click the \emph{Create new treatment contain
 \textbf{Important note:} \emph{Treatment containers} in BASS are frameworks that contain all the other components that make up a treatment, such as treatment modules.
 \end{quote}
 
-\hypertarget{a-typical-treatment-structure}{%
-\section{A typical treatment structure}\label{a-typical-treatment-structure}}
+\section{A typical treatment structure}\label{a-typical-treatment-structure}
 
 A \textbf{treatment container} is the abstract structure that holds all the content of a treatment or treatment series. A typical \textbf{treatment} is built up by several modules, often arranged in a specific order. A typical \textbf{module} consits of:
 
@@ -1230,8 +1173,7 @@ A \textbf{treatment container} is the abstract structure that holds all the cont
 
 Whenever you create a new treatment, it is advisable to plan the structure from the beginning, so as to get a sense of both the magnitude of the sub-content and the flow of the treatment.
 
-\hypertarget{creating-a-treatment-container}{%
-\section{Creating a treatment container}\label{creating-a-treatment-container}}
+\section{Creating a treatment container}\label{creating-a-treatment-container}
 
 In the \textbf{Treatment containers} view, click the \emph{Create new treatment container} link below the table. This opens the editing view of the new treatment container. You can close the container by clicking \emph{Close} at the top to return to the table listing all existing treatment containers. Don't forget to save any changes first, by clicking the \emph{Save} button.
 
@@ -1240,8 +1182,7 @@ In the \textbf{Treatment containers} view, click the \emph{Create new treatment 
 Give your treatment container a name in the \emph{Name} box, and save it.
 You can now add treatments, modules and specific contents such as texts, worksheets and homeworks to your treatment container, by using the dropdown menu at the bottom of the page.
 
-\hypertarget{creating-a-treatment}{%
-\section{Creating a treatment}\label{creating-a-treatment}}
+\section{Creating a treatment}\label{creating-a-treatment}
 
 Regardless whether you just created a new treatment container or chose to edit an existing one, you can add a new treatment to it, by selecting \emph{Create new\ldots{} {[}Treatment{]}} in the dropdown menu ar the bottom of the view. This opens the editing view of the new treatment. You can close the treatment by clicking \emph{Close} at the top of the view to return to the corresponding treatment container. Don't forget to save any changes before doing so, by clicking the \emph{Save} button.
 
@@ -1264,7 +1205,7 @@ If the \emph{Access has to be enabled} box is checked, the treatment has to be m
 By also checking the \emph{Time-limited access} box, you can specify a time window for a participant when the treatment is active and its content available. This time window is specified in the participant view, under the \textbf{Treatments} tab.
 
 \textbf{Treatment length}
-If the treatment is to be available for a certain numbre of days after it has been activated, you can set that value in the \emph{Treatment length} box. You can always override/customize the treatment availability for a specific paricipant in the \textbf{Treatment access} tab of the participant.
+If the treatment is to be available for a certain number of days after it has been activated, you can set that value in the \emph{Treatment length} box. You can always override/customize the treatment availability for a specific participant in the \textbf{Treatment access} tab of the participant.
 
 \textbf{Manual model access}
 Check this box to be able to activate each module in the treatment separately for a participant. This is useful for when you want to make sure participants are finished with one module before starting with the next one.
@@ -1295,15 +1236,20 @@ This option lets you add a \emph{treatment content} as a separate menu page in t
 
 \textbf{Welcome screen}
 Here, you may type in content to show a custom welcome screen/home page in the participant's view. There are a handful of instructions given on the page itself, to show conditional text or content.
+
 For example, by using the \texttt{\textless{}ongoing\textgreater{}*YourContentHere*\textless{}/ongoing\textgreater{}} tag, you can specify the content enclosed in that tag to show when the treatment is ongoing. This is, in essence, the standard text for your home page.
+
 By using \texttt{\textless{}daysleft\textgreater{}*YourContentHere*\textless{}/daysleft\textgreater{}} you can set content to show only as long as the participant has more than one day left of the treatment. When that time has passed, this content will not be shown.
+
 By using \texttt{\textless{}lastday\textgreater{}*YourContentHere*\textless{}/lastday\textgreater{}} you can set the content to only show on the last day of access. This might be a thank you and/or good luck text, or something similar or appropriate for your treatment.
+
 By using \texttt{\textless{}limited\textgreater{}*YourContentHere*\textless{}/limited\textgreater{}} you can set content to only show when the participant has only limited access to the treatment. For example, this could simply be a text informing the participant of the limited access and the changed it entails.
+
 Using \texttt{\textless{}limiteddaysleft\textgreater{}*YouContentHere*\textless{}/limiteddaysleft\textgreater{}} you can set conditional content to be shown as long as the participant has more than one day left of their limited access.
+
 Using \texttt{\textless{}limitedlastday\textgreater{}*YourContentHere*\textless{}/limitedlastday\textgreater{}} you can set conditional content to be shown on the participant's last day of limited acces, such as thanking them for their time and effort, and whishing them good luck.
 
-\hypertarget{treatment-modules}{%
-\section{Treatment Modules}\label{treatment-modules}}
+\section{Treatment Modules}\label{treatment-modules}
 
 Now, let's create modules for our treatment. To do this, click \emph{Close} at the top of the page to exit the treatment settings and return to the Treatment view for your treatment. Here, click the dropdown menu at the bottom of the page and select Module. You will be taken to the settings page for the module. Here, you can give it a name, and tags if you wish. Below these two boxes, there are three dropdown menus:
 
@@ -1322,8 +1268,7 @@ If you're working in a newly created databasa, leave the main text, worksheets, 
 If you're working in a pre-existing treatment with completed \emph{treatment content} ready for use, add them as appropriate.
 Click \emph{Close} at the top of the Module settings page to close it and return to the treatment overview.
 
-\hypertarget{treatment-content}{%
-\section{Treatment Content}\label{treatment-content}}
+\section{Treatment Content}\label{treatment-content}
 
 So, let's create some treatment content to add to our module. The treatment content is where most of the work goes into treatments. This is where you add text content, media content, forms and other input fields. You have a large degree of freedom to design your own treatment content and you can have it be as simple or as advanced you want or your knowledge of \textbf{HTML}, \textbf{CSS}, and if you're an advanced user, \textbf{JavaScript} dictates. We will be including some templates of the most commonly used \textbf{HTML} in this manual that you can copy and paste into your treatment content. To build a ``complete'' module with main text, one worksheet, and a homework, we'll need to create three separate treatment content units.
 
@@ -1358,10 +1303,9 @@ We will start by creating the main text one and work onwards from there in a ``b
   Content can be completed multiple times using tabs\ldots{} lets you use the div element with class=''tabbed'' as following \texttt{\textless{}div\ class=”tabbed”\textgreater{}*YourContent*\textless{}/div\textgreater{}}, to have for example a weekly diary be repeatable beyond the first week, without having to set up 10 individual weeks by coding them by hand. The participant can simply click a plus sign to add a new tab, with a fresh week ready to be filled in.
 \end{enumerate}
 
-\hypertarget{content-text}{%
-\subsection{Content text}\label{content-text}}
+\subsection{Content text}\label{content-text}
 
-Content text is the main editing window where you add the text, media content, forms and input field etc. to your treatment content. This is all formatted and structured through Markdown and/or \textbf{HTML}.
+Content text is the main editing window where you add the text, media content, forms and input field etc. to your treatment content. This is all formatted and structured through \textbf{Markdown} and/or \textbf{HTML}.
 A few things are worth knowing when working with \textbf{HTML} in BASS:
 
 \begin{enumerate}
@@ -1372,34 +1316,46 @@ A few things are worth knowing when working with \textbf{HTML} in BASS:
 \item
   You do not need to use \texttt{\textless{}html\textgreater{}}, \texttt{\textless{}head\textgreater{}}, \texttt{\textless{}title\textgreater{}} or \texttt{\textless{}body\textgreater{}}.
 \item
-  You do not need to define any CSS styles, since BASS has its own \textbf{CSS} sheet that will be the standard design for your treatment content. If you do want to have custom \textbf{CSS} styles for part of your treatment, you can use the \texttt{\textless{}style\textgreater{}} tag to insert those CSS rules and apply them. Do note however, that you may only apply \textbf{CSS} styles to elements within your treatment content. You cannot apply styles to BASS itself.
+  You do not need to define any \textbf{CSS} styles, since BASS has its own \textbf{CSS} sheet that will be the standard design for your treatment content. If you do want to have custom \textbf{CSS} styles for part of your treatment, you can use the \texttt{\textless{}style\textgreater{}} tag to insert those \textbf{CSS} rules and apply them. Do note however, that you may only apply \textbf{CSS} styles to elements within your treatment content. You cannot apply styles to BASS itself.
 \end{enumerate}
 
 Now, creating content is as simple as starting to type into the edit box. It may seem daunting at first if you are unfamiliar with \textbf{Markdown} and \textbf{HTML}, but there are several good resources available on the web.
-One good resource for Markdown is found here: \url{https://www.markdownguide.org}.
-A good resource for HTML is found here: \url{https://www.w3schools.com}.
-If you want to perform advanced actions, such as automated calculations using user input as variables, you will need to learn some \textbf{JavaScript}, and add it to your treatment content with the \texttt{\textless{}script\textgreater{}} tag.
+- One good resource for Markdown is found here: \url{https://www.markdownguide.org}.
+- A good resource for HTML is found here: \url{https://www.w3schools.com}.
+- If you want to perform advanced actions, such as automated calculations using user input as variables, you will need to learn some \textbf{JavaScript}, and add it to your treatment content with the \texttt{\textless{}script\textgreater{}} tag.
+- Lastly, BASS utilizes Bootstrap 4.6.x. Boostrap is a web development framework aimed to simplify the building of a website using HTML, CSS and some JavaScript. Bootstrap has numerous pre-built components you can use to build your treatment content in BASS. You can read more about Bootstrap here: \url{https://getbootstrap.com}. If you want to head straight to the useable components Bootstrap provides, click here: \url{https://getbootstrap.com/docs/4.6/components/alerts/}.
+Note that there are a few Bootstrap components that you \textbf{\emph{should not use}}, since they're used by the BASS interface itself. Using these components will very likely cause issues. They are: \textbf{Badge, Breadcrumb, Navs, Navbar, Pagination} and \textbf{Scrollspy}. Furthermore, \textbf{Modal} will only work in Worksheets, Homework, or Main texts using \texttt{\textbackslash{}PAGEBREAK} pagination.
 
 A typical start of a module main text may look as follows when written in \textbf{Markdown}:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{“# Welcome to your treatment!}
+\NormalTok{“\# Welcome to your treatment!}
 
-\NormalTok{This is a ten-week treatment during which we will work together and learn about your symptoms and diagnosis. We will begin this week with psycho-educational material, and continue with some practical breathing exercises. The module should take about 20-30 minutes to complete. It is important that your read all the instructions carefully so that you feel you understand completely. Should you have any questions you are welcome to send us a message by using the “Messages” feature at the top of the page.}
-\NormalTok{If you encounter any errors, please use the “Problems?” feature on the top right hand side.}
+\NormalTok{This is a ten{-}week treatment during which we will work together and learn}
+\NormalTok{about your symptoms and diagnosis. We will begin this week with}
+\NormalTok{psycho{-}educational material, and continue with some practical breathing}
+\NormalTok{exercises. The module should take about 20{-}30 minutes to complete. It is}
+\NormalTok{important that your read all the instructions carefully so that you feel}
+\NormalTok{you understand completely. Should you have any questions you are welcome to}
+\NormalTok{send us a message by using the “Messages” feature at the top of the page.}
+\NormalTok{If you encounter any errors, please use the “Problems?” feature on the top}
+\NormalTok{right hand side.}
 
-\NormalTok{Your treatment is divided into ten weeks, with a new module each week. Talk to your therapist if you feel you need to go slower. The modules are as follows:}
-\NormalTok{- }\FloatTok{Module 1, start and information}
-\FloatTok{- Module 2}
-\FloatTok{- Module 3}
-\FloatTok{- Module 4}
-\FloatTok{- Module 5}
-\FloatTok{- Module 6}
-\FloatTok{- Module 7}
-\FloatTok{- Module 8}
-\FloatTok{- Module 9}
-\FloatTok{- Module 10, finish”}
+\NormalTok{Your treatment is divided into ten weeks, with a new module each week. Talk}
+\NormalTok{to your therapist if you feel you need to go slower. The modules are as}
+\NormalTok{follows:}
+
+\SpecialStringTok{{-} }\NormalTok{Module 1, start and information}
+\SpecialStringTok{{-} }\NormalTok{Module 2}
+\SpecialStringTok{{-} }\NormalTok{Module 3}
+\SpecialStringTok{{-} }\NormalTok{Module 4}
+\SpecialStringTok{{-} }\NormalTok{Module 5}
+\SpecialStringTok{{-} }\NormalTok{Module 6}
+\SpecialStringTok{{-} }\NormalTok{Module 7}
+\SpecialStringTok{{-} }\NormalTok{Module 8}
+\SpecialStringTok{{-} }\NormalTok{Module 9}
+\SpecialStringTok{{-} }\NormalTok{Module 10, finish”}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1407,25 +1363,34 @@ The same main text written in HTML would look like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{“}\KeywordTok{<h1>}\NormalTok{Welcome to your treatment!}\KeywordTok{</h1>}
+\NormalTok{“}\DataTypeTok{\textless{}}\KeywordTok{h1}\DataTypeTok{\textgreater{}}\NormalTok{Welcome to your treatment!}\DataTypeTok{\textless{}/}\KeywordTok{h1}\DataTypeTok{\textgreater{}}
 
-\NormalTok{This is a ten-week treatment during which we will work together and learn about your symptoms and diagnosis. We will begin this week with psycho-educational material, and continue with some practical breathing exercises. The module should take about 20-30 minutes to complete. It is important that your read all the instructions carefully so that you feel you understand completely. Should you have any questions you are welcome to send us a message by using the “Messages” feature at the top of the page.}
-\NormalTok{If you encounter any errors, please use the “Problems?” feature on the top right hand side.}
+\NormalTok{This is a ten{-}week treatment during which we will work together and learn}
+\NormalTok{about your symptoms and diagnosis. We will begin this week with}
+\NormalTok{psycho{-}educational material, and continue with some practical breathing}
+\NormalTok{exercises. The module should take about 20{-}30 minutes to complete. It is}
+\NormalTok{important that your read all the instructions carefully so that you feel}
+\NormalTok{you understand completely. Should you have any questions you are welcome to}
+\NormalTok{send us a message by using the “Messages” feature at the top of the page.}
+\NormalTok{If you encounter any errors, please use the “Problems?” feature on the top}
+\NormalTok{right hand side.}
 
-\NormalTok{Your treatment is divided into ten weeks, with a new module each week. Talk to your therapist if you feel you need to go slower. The modules are as follows:}
+\NormalTok{Your treatment is divided into ten weeks, with a new module each week. Talk}
+\NormalTok{to your therapist if you feel you need to go slower. The modules are as}
+\NormalTok{follows:}
 
-\KeywordTok{<ul>}
-  \KeywordTok{<li>}\NormalTok{Module 1, start and information}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 2}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 3}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 4}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 5}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 6}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 7}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 8}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 9}\KeywordTok{</li>}
-  \KeywordTok{<li>}\NormalTok{Module 10, finish}\KeywordTok{</li>}
-\KeywordTok{</ul>}\NormalTok{”}
+\DataTypeTok{\textless{}}\KeywordTok{ul}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 1, start and information}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 2}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 3}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 4}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 5}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 6}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 7}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 8}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 9}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{li}\DataTypeTok{\textgreater{}}\NormalTok{Module 10, finish}\DataTypeTok{\textless{}/}\KeywordTok{li}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}/}\KeywordTok{ul}\DataTypeTok{\textgreater{}}\NormalTok{”}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1441,7 +1406,7 @@ The \emph{Insert link} button will take you to the file manager in BASS once cli
 
 It is good practice to set up an easily navigable folder structure before you start uploading any files. Click the \emph{Create new folder} button at the bottom of the page to create a new folder. Note that any new folder you create will be created within the folder you're currently located in (i.e if you've created folder A and then navigated/clicked into it and create folder B, folder B will be created within folder A). The reason we're doing this in advance is that you cannot move files around once they've been uploaded, so it is important that they are uploaded to their proper place from the start.
 
-Once you've set up your folder structure, make sure you are in the folder you want the file to be uploaded to, and go to the lower edge of the screen and click \emph{Välj fil} (Swedish for Select file). This will bring up a file browser, showing local files on your computer, where you can navigate to and select the file you want to upload from your computer. Once you've found the correct file, select it and click \emph{Överför} (Swedish for Transfer, or Submit). You may also double-click the file. Once you've done so, you will be back at the file manage in BASS, and can see the name of the file you've selected for upload at the bottom of the page. If it is the correct file, go to the bottom right corner of the window and click Upload. Depending on the size of the file, this might take a moment. When the upload is finished, your file will be visible in the file manager window. Simply click it to add its file path to your treatment content.
+Once you've set up your folder structure, make sure you are in the folder you want the file to be uploaded to, and go to the lower edge of the screen and click \emph{Välj fil} (Swedish for \emph{Select file}). This will bring up a file browser, showing local files on your computer, where you can navigate to and select the file you want to upload from your computer. Once you've found the correct file, select it and click \emph{Överför} (Swedish for \emph{Transfer}, or \emph{Submit}). You may also double-click the file. Once you've done so, you will be back at the file manage in BASS, and can see the name of the file you've selected for upload at the bottom of the page. If it is the correct file, go to the bottom right corner of the window and click Upload. Depending on the size of the file, this might take a moment. When the upload is finished, your file will be visible in the file manager window. Simply click it to add its file path to your treatment content.
 
 Now, depending on the type of file you've uploaded, you will need to use different \textbf{Markdown syntax} or \textbf{HTML tags} to have to show in your treatment content.
 
@@ -1452,7 +1417,7 @@ If you'd rather write HTML, you use the following tag:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{<img}\OtherTok{ src=}\StringTok{”image.png”}\KeywordTok{>}
+\DataTypeTok{\textless{}}\KeywordTok{img}\OtherTok{ src}\OperatorTok{=}\StringTok{”image.png”}\DataTypeTok{\textgreater{}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1462,9 +1427,9 @@ If it is an audio file, you will have to use \textbf{HTML} since \textbf{Markdow
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{<audio}\OtherTok{ controls}\KeywordTok{>}
-  \KeywordTok{<source}\OtherTok{ src=}\StringTok{"audio.mp3"}\OtherTok{ type=}\StringTok{"audio/mp3"}\KeywordTok{>}
-\KeywordTok{</audio>}
+\DataTypeTok{\textless{}}\KeywordTok{audio}\OtherTok{ controls}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{source}\OtherTok{ src}\OperatorTok{=}\StringTok{"audio.mp3"}\OtherTok{ type}\OperatorTok{=}\StringTok{"audio/mp3"}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}/}\KeywordTok{audio}\DataTypeTok{\textgreater{}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1472,9 +1437,9 @@ As with audio, \textbf{Markdown} does not handle video files so you will have to
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{<video}\OtherTok{ controls}\KeywordTok{>}
-  \KeywordTok{<source}\OtherTok{ src=}\StringTok{”video.mp4”}\OtherTok{ type=}\StringTok{”video/mp4”}\KeywordTok{>}
-\KeywordTok{</video>}
+\DataTypeTok{\textless{}}\KeywordTok{video}\OtherTok{ controls}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{source}\OtherTok{ src}\OperatorTok{=}\StringTok{”video.mp4”}\OtherTok{ type}\OperatorTok{=}\StringTok{”video/mp4”}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}/}\KeywordTok{video}\DataTypeTok{\textgreater{}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1485,7 +1450,7 @@ To use this simply type:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{<textarea}\OtherTok{ name=}\StringTok{”textarea1”}\KeywordTok{></textarea>}
+\DataTypeTok{\textless{}}\KeywordTok{textarea}\OtherTok{ name}\OperatorTok{=}\StringTok{”textarea1”}\DataTypeTok{\textgreater{}\textless{}/}\KeywordTok{textarea}\DataTypeTok{\textgreater{}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1496,30 +1461,28 @@ A table is a little more complex than a textarea, and consists of three main \te
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{<table>}
-  \KeywordTok{<tr>}
-    \KeywordTok{<td>}
+\DataTypeTok{\textless{}}\KeywordTok{table}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{tr}\DataTypeTok{\textgreater{}}
+    \DataTypeTok{\textless{}}\KeywordTok{td}\DataTypeTok{\textgreater{}}
 \NormalTok{      *Your content*}
-    \KeywordTok{</td>}
-  \KeywordTok{</tr>}
-\KeywordTok{</table>}
+    \DataTypeTok{\textless{}/}\KeywordTok{td}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}/}\KeywordTok{tr}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}/}\KeywordTok{table}\DataTypeTok{\textgreater{}}
 \end{Highlighting}
 \end{Shaded}
 
-The \texttt{\textless{}table\textgreater{}} tag defines where your table begins and where it ends. The \texttt{\textless{}tr\textgreater{}} tag is a table row, and creates and closes table rows. The \texttt{\textless{}td\textgreater{}} tag is table data, i.e a table cell within a row. You can use multiple \texttt{\textless{}td\textgreater{}} tags within a
-
-tag to create multiple cells.
+The \texttt{\textless{}table\textgreater{}} tag defines where your table begins and where it ends. The \texttt{\textless{}tr\textgreater{}} tag is a table row, and creates and closes table rows. The \texttt{\textless{}td\textgreater{}} tag is table data, i.e a table cell within a row. You can use multiple \texttt{\textless{}td\textgreater{}} tags within a \texttt{\textless{}tr\textgreater{}} tag to create multiple cells.
 One last mention on tables: tables in BASS are by default scrollable horizontally, to allow you to build wide tables if needed. If you do not wish your table to be scrollable, add \texttt{class=”non-scrollable”} to the \texttt{\textless{}table\textgreater{}} tag, like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{<table}\OtherTok{ class=}\StringTok{”non-scrollable”}\KeywordTok{>}
-  \KeywordTok{<tr>}
-    \KeywordTok{<td>}
+\DataTypeTok{\textless{}}\KeywordTok{table}\OtherTok{ class}\OperatorTok{=}\StringTok{”non{-}scrollable”}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}}\KeywordTok{tr}\DataTypeTok{\textgreater{}}
+    \DataTypeTok{\textless{}}\KeywordTok{td}\DataTypeTok{\textgreater{}}
 \NormalTok{      *Your content*}
-    \KeywordTok{</td>}
-  \KeywordTok{</tr>}
-\KeywordTok{</table>}
+    \DataTypeTok{\textless{}/}\KeywordTok{td}\DataTypeTok{\textgreater{}}
+  \DataTypeTok{\textless{}/}\KeywordTok{tr}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}/}\KeywordTok{table}\DataTypeTok{\textgreater{}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1531,13 +1494,98 @@ This covers the basic of building treatment content in BASS. We recommend you pl
 
 \textbf{To add a treatment content} as either a main text, a homework, or a worksheet, go back to the treatment overview and click Edit next to the module you created. In the settings view that opens up, select the appropriate dropdown menu (main text, homework, worksheet) and select your treatment content from the list. Click Save.
 
-\hypertarget{references}{%
-\chapter{References}\label{references}}
+\chapter{Therapists}\label{therapists}
+
+The term ``therapist'' is the term used within BASS to designate anyone who administrates part of or the entirety of a database and its participants. This could be an administrator, whose job it is to build treatment content, instruments and assessments. It could also be a licensed therapist who administers treatments to select participants. It could yet again be students who use BASS as part of a university course in web-based CBT, as well as their supervising teacher or professor.
+The common denominator for all these examples is that they all use a therapist account. What separates them are the differing levels of access (\textbf{privileges}) given to them. In this chapter, we will take a look at the therapist accounts, how to set them up and what levels of \textbf{privileges} can be given to them.
+
+\section{Creating a therapist account}\label{creating-a-therapist-account}
+
+To create a therapist account, you need three things:
+
+\begin{itemize}
+\tightlist
+\item
+  The name of the person who will use the account
+\item
+  A working e-mail address for that person, i.e a work e-mail/faculty e-mail
+\item
+  A working cell phone number for that person
+\end{itemize}
+
+\textbf{A few notes}: The name is not strictly required to be the actual name of the person, but we strongly recommend to use the person's proper name for ease of supervision/activity tracking should it be necessary.
+We furthermore \emph{strongly} recommend the use of work/faculty e-mail or other similarly secure e-mail service backed by your IT department. We generally do not recommend you use publicly available e-mail services such as Gmail, Hotmail, Yahoo and the like.
+Lastly, the cell phone number is required for two-factor authentication. Without it, you will not be able to log in to BASS as a therapist. There is no option to disable two-factor authentication for therapists, but you can choose to send the authentication message via e-mail rather than via SMS.
+
+\section{The ``Manage Therapists'' view}\label{the-manage-therapists-view}
+
+This is the landing page when clicking the \textbf{Therapists} menu option in the main menu. Normally, the first accounts created are \textbf{\emph{admin}} and any accounts used by the BASS support staff. There's no tag or icon designating BASS support staff as such, other than the fact that they will always carry the star moniker which indicates that they are \emph{database administrators}.
+You therapist account has most likely been set up by the BASS support staff, and as such your account is also shown in the list. But what about creating new accounts? Let's have a look!
+
+\subsection{Creating a new therapist account}\label{creating-a-new-therapist-account}
+
+To create a new therapist account, click the \emph{Create new therapist} link below the list of existing accounts. This will present you with the information view. Here, in the first small table, you can see \emph{last login}, \emph{login count}, \emph{total time}, and \emph{internal id}. All of these are superfluous for now, but are self-explanatory in their function (the \emph{internal id} is used by BASS to identify individual therapists, and may be used to communicate outside of BASS in potentially delicate matters pertaining to specific therapists).
+Below the first little table is a bigger table, with which we will concern ourselves now.
+
+\begin{itemize}
+\tightlist
+\item
+  Login: in this field, you type the username of the therapist account. We recommend keeping a simple format, such as \emph{firstname}, \emph{firstnamesurname} or \emph{firstname-surname}.
+\item
+  Full name: in this field, you type the full name of the person who will use the therapist account (i.e Firstname Surname)
+\item
+  Email: here, you type the e-mail address which you wish to associate with the therapist account. This e-mail will be used by BASS to send daily updates on participant activities that necessitates inspection or taking action. Only the activities of participants for which the therapist is designated as ``therapist'' will prompt such updates to the therapist.
+\item
+  SMS number: here, you type the cell phone number you wish to associate with the therapist account. As noted above, unless you've changed the delivery method for two-factor authentication messages, this is mandatory.
+\item
+  Send SMS/email when supervisor send messages: by checking this box, the therapist will be notified by SMS and/or e-mail when their supervisor (if any) sends them a messages within BASS. This is mainly used in educational settings, where students are assigned a supervisor.
+\item
+  Login allowed: checking/un-checking this box enables/disables logging in for the therapist account.
+\item
+  Login expiration date: by clicking the empty text box, you will be shown a calender. From this calender you can pick a date up to 182 days in the future to set it as the expiration date for the therapist account allowed login. It is mandatory to set an expiration date, otherwise the therapist will be unable to log in. This date can be extended later on, but no more than 182 days from the current date. This feature is a safeguard to prevent old therapist accounts from being active beyond their intended use.
+\item
+  Must change password: by checking this box, the therapist will be required to submit their own personal password upon their first time logging in. I.e the password you set when creating the therapist account will be a temporary, one-time use password if you check this box.
+\item
+  New password: here, you type the password for the therapist account
+\item
+  Confirm password: here, you confirm the password you've typed above.
+\end{itemize}
+
+When you've entered the information into the fields listed above, click \emph{Save}.
+
+\subsection{The Information Tab}\label{the-information-tab}
+
+Now that you've saved the therapist account you just created, you should be presented with the \textbf{Information} tab for that therapist account. For all intents and purposes, it contains the information you just submitted. From this tab, you can edit the information as well as enable/disable login, extend the expiration date and provide the therapist with a new password if needed.
+
+\subsection{The Privileges Tab}\label{the-privileges-tab}
+
+In this tab, you set the privileges given to the therapist account. At the top of the page, you will see the dropdown menu named \textbf{Senior therapist}. By defauly, \emph{admin} will be selected. You can leave this as-is.
+
+Beneath the dropdown menu, there is a table named \textbf{Global privileges}. These are privileges pertaining to the entire database. If you want to give the therapist account full access to the databse, chech the box named \emph{Administrative privileges}.
+
+A more in-depth look at the different privileges follows below:
+
+\begin{itemize}
+\tightlist
+\item
+  Edit answer flag settings: by checking this box, you give the therapist account access to view and edit answer flag settings under \textbf{Answers flagging} in the main menu.
+\item
+  Administrative privileges: as noted above, checking this box grants the therapist account full access to the database.
+\item
+  Edit other therapists: by checking this box, you give the therapist account access to view and edit other therapist accounts.
+\item
+  Groups view: checking this box lets the therapist accounts view the \textbf{Groups} tab under \textbf{Participants} in the main menu.
+\item
+  Edit note categories: as with ``Edit answer flag settings'', checking this box grants access to view and edit note categories under \textbf{Note categories} in the main menu.
+\item
+  Supervisor: checking this box lets you designate the therapist account as a supervisor to other therapists.
+\end{itemize}
+
+\chapter{References}\label{references}
 
 In this chapter we list some helpful references and tools that might aid you when working with BASS.
 
-\hypertarget{tools-and-resources-for-working-with-treatments}{%
-\section{Tools and resources for working with treatments}\label{tools-and-resources-for-working-with-treatments}}
+\section{Tools and resources for working with treatments}\label{tools-and-resources-for-working-with-treatments}
 
 Treatments are the most complex and knowledge-intensive thing to build and maintain within BASS, as they require some know-how when it comes to \textbf{Markdown} and \textbf{HTML}. If you want to add some stylish flair to your treatment, you'll need to dive into a bit of \textbf{CSS}.
 More advanced and more interactive treatments might require knowledge of \textbf{JavaScript} as well. Here below are some online resources and tools which you may find helpful:
@@ -1564,6 +1612,6 @@ More advanced and more interactive treatments might require knowledge of \textbf
   \url{https://javascript.info} (an in-depth and comprehensive guide and tutorial on JavaScript)
 \end{itemize}
 
-\bibliography{bibliography.bib,packages.bib}
+  \bibliography{bibliography.bib,packages.bib}
 
 \end{document}

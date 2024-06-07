@@ -5,20 +5,19 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 13 Create new treatment | BASS4 - ADMINISTRATOR’S MANUAL</title>
-  <meta name="description" content="Adminstrator`s manual for BASS4." />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="description" content="Adminstrator’s manual for BASS4." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 13 Create new treatment | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
-  
-  <meta property="og:description" content="Adminstrator`s manual for BASS4." />
-  <meta name="github-repo" content="BASS-manual/manual" />
+  <meta property="og:description" content="Adminstrator’s manual for BASS4." />
+  <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 13 Create new treatment | BASS4 - ADMINISTRATOR’S MANUAL" />
   
-  <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
+  <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
 
 <meta name="author" content="Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell &amp; Brjánn Ljótsson" />
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="assessments.html"/>
 <link rel="next" href="therapists.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,14 +48,14 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -66,7 +65,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -92,7 +91,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -105,7 +104,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -119,6 +118,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -157,7 +160,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.2" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#search"><i class="fa fa-check"></i><b>9.2</b> Search</a></li>
 <li class="chapter" data-level="9.3" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#hide-show-and-sort-columns"><i class="fa fa-check"></i><b>9.3</b> Hide, show and sort columns</a></li>
 <li class="chapter" data-level="9.4" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#column-explanations"><i class="fa fa-check"></i><b>9.4</b> Column explanations</a></li>
-<li class="chapter" data-level="9.5" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#saveload-search-settings"><i class="fa fa-check"></i><b>9.5</b> Save/load search settings</a></li>
+<li class="chapter" data-level="9.5" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#saveload-search-settings"><i class="fa fa-check"></i><b>9.5</b> Save/load search settings</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#add-new-participant-to-group-and-change-group"><i class="fa fa-check"></i><b>9.5.1</b> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
 <ul>
@@ -190,12 +196,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.1.3" data-path="assessments.html"><a href="assessments.html#managed"><i class="fa fa-check"></i><b>12.1.3</b> Managed</a></li>
 <li class="chapter" data-level="12.1.4" data-path="assessments.html"><a href="assessments.html#repitition"><i class="fa fa-check"></i><b>12.1.4</b> Repitition</a></li>
 <li class="chapter" data-level="12.1.5" data-path="assessments.html"><a href="assessments.html#time-limit"><i class="fa fa-check"></i><b>12.1.5</b> Time limit</a></li>
-<li class="chapter" data-level="12.1.6" data-path="assessments.html"><a href="assessments.html#clinician-rated"><i class="fa fa-check"></i><b>12.1.6</b> Clinician rated</a></li>
-<li class="chapter" data-level="12.1.7" data-path="assessments.html"><a href="assessments.html#randomize-instrument-order"><i class="fa fa-check"></i><b>12.1.7</b> Randomize instrument order</a></li>
-<li class="chapter" data-level="12.1.8" data-path="assessments.html"><a href="assessments.html#welcomethank-you-text"><i class="fa fa-check"></i><b>12.1.8</b> Welcome/Thank you text</a></li>
-<li class="chapter" data-level="12.1.9" data-path="assessments.html"><a href="assessments.html#concurrent-and-merged-assessments"><i class="fa fa-check"></i><b>12.1.9</b> Concurrent and merged assessments</a></li>
-<li class="chapter" data-level="12.1.10" data-path="assessments.html"><a href="assessments.html#automatic-reminders"><i class="fa fa-check"></i><b>12.1.10</b> Automatic reminders</a></li>
-<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#participant-flagging"><i class="fa fa-check"></i><b>12.1.11</b> Participant flagging</a></li>
+<li class="chapter" data-level="12.1.6" data-path="assessments.html"><a href="assessments.html#dependence"><i class="fa fa-check"></i><b>12.1.6</b> Dependence</a></li>
+<li class="chapter" data-level="12.1.7" data-path="assessments.html"><a href="assessments.html#clinician-rated"><i class="fa fa-check"></i><b>12.1.7</b> Clinician rated</a></li>
+<li class="chapter" data-level="12.1.8" data-path="assessments.html"><a href="assessments.html#randomize-instrument-order"><i class="fa fa-check"></i><b>12.1.8</b> Randomize instrument order</a></li>
+<li class="chapter" data-level="12.1.9" data-path="assessments.html"><a href="assessments.html#welcomethank-you-text"><i class="fa fa-check"></i><b>12.1.9</b> Welcome/Thank you text</a></li>
+<li class="chapter" data-level="12.1.10" data-path="assessments.html"><a href="assessments.html#concurrent-and-merged-assessments"><i class="fa fa-check"></i><b>12.1.10</b> Concurrent and merged assessments</a></li>
+<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#automatic-reminders"><i class="fa fa-check"></i><b>12.1.11</b> Automatic reminders</a></li>
+<li class="chapter" data-level="12.1.12" data-path="assessments.html"><a href="assessments.html#participant-flagging"><i class="fa fa-check"></i><b>12.1.12</b> Participant flagging</a></li>
 </ul></li>
 <li class="chapter" data-level="12.2" data-path="assessments.html"><a href="assessments.html#copy-assessment"><i class="fa fa-check"></i><b>12.2</b> Copy assessment</a></li>
 <li class="chapter" data-level="12.3" data-path="assessments.html"><a href="assessments.html#dummy-assessments---some-scheduling-tricks"><i class="fa fa-check"></i><b>12.3</b> Dummy assessments - some scheduling tricks</a></li>
@@ -246,8 +253,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="create-new-treatment" class="section level1" number="13">
-<h1><span class="header-section-number">Chapter 13</span> Create new treatment</h1>
+<div id="create-new-treatment" class="section level1 hasAnchor" number="13">
+<h1><span class="header-section-number">Chapter 13</span> Create new treatment<a href="create-new-treatment.html#create-new-treatment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.<br>
 A treatment is built by combining <em>treatment modules</em> into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization’s needs and wishes.</p>
 <p>Treatments are accessed by the <strong>Treatment containers</strong> option in the main menu.</p>
@@ -258,8 +265,8 @@ To create new treatment containers, click the <em>Create new treatment container
 <blockquote>
 <p><strong>Important note:</strong> <em>Treatment containers</em> in BASS are frameworks that contain all the other components that make up a treatment, such as treatment modules.</p>
 </blockquote>
-<div id="a-typical-treatment-structure" class="section level2" number="13.1">
-<h2><span class="header-section-number">13.1</span> A typical treatment structure</h2>
+<div id="a-typical-treatment-structure" class="section level2 hasAnchor" number="13.1">
+<h2><span class="header-section-number">13.1</span> A typical treatment structure<a href="create-new-treatment.html#a-typical-treatment-structure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>A <strong>treatment container</strong> is the abstract structure that holds all the content of a treatment or treatment series. A typical <strong>treatment</strong> is built up by several modules, often arranged in a specific order. A typical <strong>module</strong> consits of:</p>
 <ul>
 <li>One <em>module text</em></li>
@@ -268,15 +275,15 @@ To create new treatment containers, click the <em>Create new treatment container
 </ul>
 <p>Whenever you create a new treatment, it is advisable to plan the structure from the beginning, so as to get a sense of both the magnitude of the sub-content and the flow of the treatment.</p>
 </div>
-<div id="creating-a-treatment-container" class="section level2" number="13.2">
-<h2><span class="header-section-number">13.2</span> Creating a treatment container</h2>
+<div id="creating-a-treatment-container" class="section level2 hasAnchor" number="13.2">
+<h2><span class="header-section-number">13.2</span> Creating a treatment container<a href="create-new-treatment.html#creating-a-treatment-container" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In the <strong>Treatment containers</strong> view, click the <em>Create new treatment container</em> link below the table. This opens the editing view of the new treatment container. You can close the container by clicking <em>Close</em> at the top to return to the table listing all existing treatment containers. Don’t forget to save any changes first, by clicking the <em>Save</em> button.</p>
 <p><img src="images/new-images/treatmentsEditContainer.png" /></p>
 <p>Give your treatment container a name in the <em>Name</em> box, and save it.<br>
 You can now add treatments, modules and specific contents such as texts, worksheets and homeworks to your treatment container, by using the dropdown menu at the bottom of the page.</p>
 </div>
-<div id="creating-a-treatment" class="section level2" number="13.3">
-<h2><span class="header-section-number">13.3</span> Creating a treatment</h2>
+<div id="creating-a-treatment" class="section level2 hasAnchor" number="13.3">
+<h2><span class="header-section-number">13.3</span> Creating a treatment<a href="create-new-treatment.html#creating-a-treatment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Regardless whether you just created a new treatment container or chose to edit an existing one, you can add a new treatment to it, by selecting <em>Create new… [Treatment]</em> in the dropdown menu ar the bottom of the view. This opens the editing view of the new treatment. You can close the treatment by clicking <em>Close</em> at the top of the view to return to the corresponding treatment container. Don’t forget to save any changes before doing so, by clicking the <em>Save</em> button.</p>
 <p>Give your treatment a name, by typing it into the <em>Name</em> box and save it.</p>
 <p><img src="images/new-images/treatmentTreatSettings.png" /></p>
@@ -317,8 +324,8 @@ Here, you may type in content to show a custom welcome screen/home page in the p
 <p>Using <code>&lt;limiteddaysleft&gt;*YouContentHere*&lt;/limiteddaysleft&gt;</code> you can set conditional content to be shown as long as the participant has more than one day left of their limited access.</p>
 <p>Using <code>&lt;limitedlastday&gt;*YourContentHere*&lt;/limitedlastday&gt;</code> you can set conditional content to be shown on the participant’s last day of limited acces, such as thanking them for their time and effort, and whishing them good luck.</p>
 </div>
-<div id="treatment-modules" class="section level2" number="13.4">
-<h2><span class="header-section-number">13.4</span> Treatment Modules</h2>
+<div id="treatment-modules" class="section level2 hasAnchor" number="13.4">
+<h2><span class="header-section-number">13.4</span> Treatment Modules<a href="create-new-treatment.html#treatment-modules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now, let’s create modules for our treatment. To do this, click <em>Close</em> at the top of the page to exit the treatment settings and return to the Treatment view for your treatment. Here, click the dropdown menu at the bottom of the page and select Module. You will be taken to the settings page for the module. Here, you can give it a name, and tags if you wish. Below these two boxes, there are three dropdown menus:</p>
 <ol style="list-style-type: decimal">
 <li><strong>Main text</strong> is where you assign a treatment content to be the main text of the module. This is usually the instructions, a psycho-educational text and other information relevant to the module.</li>
@@ -329,8 +336,8 @@ Here, you may type in content to show a custom welcome screen/home page in the p
 If you’re working in a pre-existing treatment with completed <em>treatment content</em> ready for use, add them as appropriate.
 Click <em>Close</em> at the top of the Module settings page to close it and return to the treatment overview.</p>
 </div>
-<div id="treatment-content" class="section level2" number="13.5">
-<h2><span class="header-section-number">13.5</span> Treatment Content</h2>
+<div id="treatment-content" class="section level2 hasAnchor" number="13.5">
+<h2><span class="header-section-number">13.5</span> Treatment Content<a href="create-new-treatment.html#treatment-content" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>So, let’s create some treatment content to add to our module. The treatment content is where most of the work goes into treatments. This is where you add text content, media content, forms and other input fields. You have a large degree of freedom to design your own treatment content and you can have it be as simple or as advanced you want or your knowledge of <strong>HTML</strong>, <strong>CSS</strong>, and if you’re an advanced user, <strong>JavaScript</strong> dictates. We will be including some templates of the most commonly used <strong>HTML</strong> in this manual that you can copy and paste into your treatment content. To build a “complete” module with main text, one worksheet, and a homework, we’ll need to create three separate treatment content units.</p>
 <p>We will start by creating the main text one and work onwards from there in a “bottom up” fashion where we lay the foundation first, and add the complementary content when that’s done.</p>
 <ol style="list-style-type: decimal">
@@ -347,8 +354,8 @@ Click <em>Close</em> at the top of the Module settings page to close it and retu
 </ul></li>
 <li>Content can be completed multiple times using tabs… lets you use the div element with class=”tabbed” as following <code>&lt;div class=”tabbed”&gt;*YourContent*&lt;/div&gt;</code>, to have for example a weekly diary be repeatable beyond the first week, without having to set up 10 individual weeks by coding them by hand. The participant can simply click a plus sign to add a new tab, with a fresh week ready to be filled in.</li>
 </ol>
-<div id="content-text" class="section level3" number="13.5.1">
-<h3><span class="header-section-number">13.5.1</span> Content text</h3>
+<div id="content-text" class="section level3 hasAnchor" number="13.5.1">
+<h3><span class="header-section-number">13.5.1</span> Content text<a href="create-new-treatment.html#content-text" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Content text is the main editing window where you add the text, media content, forms and input field etc. to your treatment content. This is all formatted and structured through <strong>Markdown</strong> and/or <strong>HTML</strong>.
 A few things are worth knowing when working with <strong>HTML</strong> in BASS:</p>
 <ol style="list-style-type: decimal">
@@ -363,65 +370,65 @@ A few things are worth knowing when working with <strong>HTML</strong> in BASS:<
 - Lastly, BASS utilizes Bootstrap 4.6.x. Boostrap is a web development framework aimed to simplify the building of a website using HTML, CSS and some JavaScript. Bootstrap has numerous pre-built components you can use to build your treatment content in BASS. You can read more about Bootstrap here: <a href="https://getbootstrap.com">https://getbootstrap.com</a>. If you want to head straight to the useable components Bootstrap provides, click here: <a href="https://getbootstrap.com/docs/4.6/components/alerts/">https://getbootstrap.com/docs/4.6/components/alerts/</a>.
 Note that there are a few Bootstrap components that you <strong><em>should not use</em></strong>, since they’re used by the BASS interface itself. Using these components will very likely cause issues. They are: <strong>Badge, Breadcrumb, Navs, Navbar, Pagination</strong> and <strong>Scrollspy</strong>. Furthermore, <strong>Modal</strong> will only work in Worksheets, Homework, or Main texts using <code>\PAGEBREAK</code> pagination.</p>
 <p>A typical start of a module main text may look as follows when written in <strong>Markdown</strong>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="create-new-treatment.html#cb1-1" aria-hidden="true" tabindex="-1"></a>“# Welcome to your treatment!</span>
-<span id="cb1-2"><a href="create-new-treatment.html#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="create-new-treatment.html#cb1-3" aria-hidden="true" tabindex="-1"></a>This is a ten-week treatment during which we will work together and learn</span>
-<span id="cb1-4"><a href="create-new-treatment.html#cb1-4" aria-hidden="true" tabindex="-1"></a>about your symptoms and diagnosis. We will begin this week with</span>
-<span id="cb1-5"><a href="create-new-treatment.html#cb1-5" aria-hidden="true" tabindex="-1"></a>psycho-educational material, and continue with some practical breathing</span>
-<span id="cb1-6"><a href="create-new-treatment.html#cb1-6" aria-hidden="true" tabindex="-1"></a>exercises. The module should take about 20-30 minutes to complete. It is</span>
-<span id="cb1-7"><a href="create-new-treatment.html#cb1-7" aria-hidden="true" tabindex="-1"></a>important that your read all the instructions carefully so that you feel</span>
-<span id="cb1-8"><a href="create-new-treatment.html#cb1-8" aria-hidden="true" tabindex="-1"></a>you understand completely. Should you have any questions you are welcome to</span>
-<span id="cb1-9"><a href="create-new-treatment.html#cb1-9" aria-hidden="true" tabindex="-1"></a>send us a message by using the “Messages” feature at the top of the page.</span>
-<span id="cb1-10"><a href="create-new-treatment.html#cb1-10" aria-hidden="true" tabindex="-1"></a>If you encounter any errors, please use the “Problems?” feature on the top</span>
-<span id="cb1-11"><a href="create-new-treatment.html#cb1-11" aria-hidden="true" tabindex="-1"></a>right hand side.</span>
-<span id="cb1-12"><a href="create-new-treatment.html#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="create-new-treatment.html#cb1-13" aria-hidden="true" tabindex="-1"></a>Your treatment is divided into ten weeks, with a new module each week. Talk</span>
-<span id="cb1-14"><a href="create-new-treatment.html#cb1-14" aria-hidden="true" tabindex="-1"></a>to your therapist if you feel you need to go slower. The modules are as</span>
-<span id="cb1-15"><a href="create-new-treatment.html#cb1-15" aria-hidden="true" tabindex="-1"></a>follows:</span>
-<span id="cb1-16"><a href="create-new-treatment.html#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="create-new-treatment.html#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 1, start and information</span>
-<span id="cb1-18"><a href="create-new-treatment.html#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 2</span>
-<span id="cb1-19"><a href="create-new-treatment.html#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 3</span>
-<span id="cb1-20"><a href="create-new-treatment.html#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 4</span>
-<span id="cb1-21"><a href="create-new-treatment.html#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 5</span>
-<span id="cb1-22"><a href="create-new-treatment.html#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 6</span>
-<span id="cb1-23"><a href="create-new-treatment.html#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 7</span>
-<span id="cb1-24"><a href="create-new-treatment.html#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 8</span>
-<span id="cb1-25"><a href="create-new-treatment.html#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 9</span>
-<span id="cb1-26"><a href="create-new-treatment.html#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Module 10, finish”</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="create-new-treatment.html#cb1-1" tabindex="-1"></a>“# Welcome to your treatment!</span>
+<span id="cb1-2"><a href="create-new-treatment.html#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="create-new-treatment.html#cb1-3" tabindex="-1"></a>This is a ten-week treatment during which we will work together and learn</span>
+<span id="cb1-4"><a href="create-new-treatment.html#cb1-4" tabindex="-1"></a>about your symptoms and diagnosis. We will begin this week with</span>
+<span id="cb1-5"><a href="create-new-treatment.html#cb1-5" tabindex="-1"></a>psycho-educational material, and continue with some practical breathing</span>
+<span id="cb1-6"><a href="create-new-treatment.html#cb1-6" tabindex="-1"></a>exercises. The module should take about 20-30 minutes to complete. It is</span>
+<span id="cb1-7"><a href="create-new-treatment.html#cb1-7" tabindex="-1"></a>important that your read all the instructions carefully so that you feel</span>
+<span id="cb1-8"><a href="create-new-treatment.html#cb1-8" tabindex="-1"></a>you understand completely. Should you have any questions you are welcome to</span>
+<span id="cb1-9"><a href="create-new-treatment.html#cb1-9" tabindex="-1"></a>send us a message by using the “Messages” feature at the top of the page.</span>
+<span id="cb1-10"><a href="create-new-treatment.html#cb1-10" tabindex="-1"></a>If you encounter any errors, please use the “Problems?” feature on the top</span>
+<span id="cb1-11"><a href="create-new-treatment.html#cb1-11" tabindex="-1"></a>right hand side.</span>
+<span id="cb1-12"><a href="create-new-treatment.html#cb1-12" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="create-new-treatment.html#cb1-13" tabindex="-1"></a>Your treatment is divided into ten weeks, with a new module each week. Talk</span>
+<span id="cb1-14"><a href="create-new-treatment.html#cb1-14" tabindex="-1"></a>to your therapist if you feel you need to go slower. The modules are as</span>
+<span id="cb1-15"><a href="create-new-treatment.html#cb1-15" tabindex="-1"></a>follows:</span>
+<span id="cb1-16"><a href="create-new-treatment.html#cb1-16" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="create-new-treatment.html#cb1-17" tabindex="-1"></a><span class="ss">- </span>Module 1, start and information</span>
+<span id="cb1-18"><a href="create-new-treatment.html#cb1-18" tabindex="-1"></a><span class="ss">- </span>Module 2</span>
+<span id="cb1-19"><a href="create-new-treatment.html#cb1-19" tabindex="-1"></a><span class="ss">- </span>Module 3</span>
+<span id="cb1-20"><a href="create-new-treatment.html#cb1-20" tabindex="-1"></a><span class="ss">- </span>Module 4</span>
+<span id="cb1-21"><a href="create-new-treatment.html#cb1-21" tabindex="-1"></a><span class="ss">- </span>Module 5</span>
+<span id="cb1-22"><a href="create-new-treatment.html#cb1-22" tabindex="-1"></a><span class="ss">- </span>Module 6</span>
+<span id="cb1-23"><a href="create-new-treatment.html#cb1-23" tabindex="-1"></a><span class="ss">- </span>Module 7</span>
+<span id="cb1-24"><a href="create-new-treatment.html#cb1-24" tabindex="-1"></a><span class="ss">- </span>Module 8</span>
+<span id="cb1-25"><a href="create-new-treatment.html#cb1-25" tabindex="-1"></a><span class="ss">- </span>Module 9</span>
+<span id="cb1-26"><a href="create-new-treatment.html#cb1-26" tabindex="-1"></a><span class="ss">- </span>Module 10, finish”</span></code></pre></div>
 <p>The same main text written in HTML would look like this:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="create-new-treatment.html#cb2-1" aria-hidden="true" tabindex="-1"></a>“<span class="kw">&lt;h1&gt;</span>Welcome to your treatment!<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb2-2"><a href="create-new-treatment.html#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="create-new-treatment.html#cb2-3" aria-hidden="true" tabindex="-1"></a>This is a ten-week treatment during which we will work together and learn</span>
-<span id="cb2-4"><a href="create-new-treatment.html#cb2-4" aria-hidden="true" tabindex="-1"></a>about your symptoms and diagnosis. We will begin this week with</span>
-<span id="cb2-5"><a href="create-new-treatment.html#cb2-5" aria-hidden="true" tabindex="-1"></a>psycho-educational material, and continue with some practical breathing</span>
-<span id="cb2-6"><a href="create-new-treatment.html#cb2-6" aria-hidden="true" tabindex="-1"></a>exercises. The module should take about 20-30 minutes to complete. It is</span>
-<span id="cb2-7"><a href="create-new-treatment.html#cb2-7" aria-hidden="true" tabindex="-1"></a>important that your read all the instructions carefully so that you feel</span>
-<span id="cb2-8"><a href="create-new-treatment.html#cb2-8" aria-hidden="true" tabindex="-1"></a>you understand completely. Should you have any questions you are welcome to</span>
-<span id="cb2-9"><a href="create-new-treatment.html#cb2-9" aria-hidden="true" tabindex="-1"></a>send us a message by using the “Messages” feature at the top of the page.</span>
-<span id="cb2-10"><a href="create-new-treatment.html#cb2-10" aria-hidden="true" tabindex="-1"></a>If you encounter any errors, please use the “Problems?” feature on the top</span>
-<span id="cb2-11"><a href="create-new-treatment.html#cb2-11" aria-hidden="true" tabindex="-1"></a>right hand side.</span>
-<span id="cb2-12"><a href="create-new-treatment.html#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="create-new-treatment.html#cb2-13" aria-hidden="true" tabindex="-1"></a>Your treatment is divided into ten weeks, with a new module each week. Talk</span>
-<span id="cb2-14"><a href="create-new-treatment.html#cb2-14" aria-hidden="true" tabindex="-1"></a>to your therapist if you feel you need to go slower. The modules are as</span>
-<span id="cb2-15"><a href="create-new-treatment.html#cb2-15" aria-hidden="true" tabindex="-1"></a>follows:</span>
-<span id="cb2-16"><a href="create-new-treatment.html#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="create-new-treatment.html#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;ul&gt;</span></span>
-<span id="cb2-18"><a href="create-new-treatment.html#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 1, start and information<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-19"><a href="create-new-treatment.html#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 2<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-20"><a href="create-new-treatment.html#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 3<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-21"><a href="create-new-treatment.html#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 4<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-22"><a href="create-new-treatment.html#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 5<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-23"><a href="create-new-treatment.html#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 6<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-24"><a href="create-new-treatment.html#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 7<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-25"><a href="create-new-treatment.html#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 8<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-26"><a href="create-new-treatment.html#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 9<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-27"><a href="create-new-treatment.html#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;li&gt;</span>Module 10, finish<span class="kw">&lt;/li&gt;</span></span>
-<span id="cb2-28"><a href="create-new-treatment.html#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/ul&gt;</span>”</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="create-new-treatment.html#cb2-1" tabindex="-1"></a>“<span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Welcome to your treatment!<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="create-new-treatment.html#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="create-new-treatment.html#cb2-3" tabindex="-1"></a>This is a ten-week treatment during which we will work together and learn</span>
+<span id="cb2-4"><a href="create-new-treatment.html#cb2-4" tabindex="-1"></a>about your symptoms and diagnosis. We will begin this week with</span>
+<span id="cb2-5"><a href="create-new-treatment.html#cb2-5" tabindex="-1"></a>psycho-educational material, and continue with some practical breathing</span>
+<span id="cb2-6"><a href="create-new-treatment.html#cb2-6" tabindex="-1"></a>exercises. The module should take about 20-30 minutes to complete. It is</span>
+<span id="cb2-7"><a href="create-new-treatment.html#cb2-7" tabindex="-1"></a>important that your read all the instructions carefully so that you feel</span>
+<span id="cb2-8"><a href="create-new-treatment.html#cb2-8" tabindex="-1"></a>you understand completely. Should you have any questions you are welcome to</span>
+<span id="cb2-9"><a href="create-new-treatment.html#cb2-9" tabindex="-1"></a>send us a message by using the “Messages” feature at the top of the page.</span>
+<span id="cb2-10"><a href="create-new-treatment.html#cb2-10" tabindex="-1"></a>If you encounter any errors, please use the “Problems?” feature on the top</span>
+<span id="cb2-11"><a href="create-new-treatment.html#cb2-11" tabindex="-1"></a>right hand side.</span>
+<span id="cb2-12"><a href="create-new-treatment.html#cb2-12" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="create-new-treatment.html#cb2-13" tabindex="-1"></a>Your treatment is divided into ten weeks, with a new module each week. Talk</span>
+<span id="cb2-14"><a href="create-new-treatment.html#cb2-14" tabindex="-1"></a>to your therapist if you feel you need to go slower. The modules are as</span>
+<span id="cb2-15"><a href="create-new-treatment.html#cb2-15" tabindex="-1"></a>follows:</span>
+<span id="cb2-16"><a href="create-new-treatment.html#cb2-16" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="create-new-treatment.html#cb2-17" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">ul</span><span class="dt">&gt;</span></span>
+<span id="cb2-18"><a href="create-new-treatment.html#cb2-18" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 1, start and information<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-19"><a href="create-new-treatment.html#cb2-19" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 2<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-20"><a href="create-new-treatment.html#cb2-20" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 3<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-21"><a href="create-new-treatment.html#cb2-21" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 4<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-22"><a href="create-new-treatment.html#cb2-22" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 5<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-23"><a href="create-new-treatment.html#cb2-23" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 6<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-24"><a href="create-new-treatment.html#cb2-24" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 7<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-25"><a href="create-new-treatment.html#cb2-25" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 8<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-26"><a href="create-new-treatment.html#cb2-26" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 9<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-27"><a href="create-new-treatment.html#cb2-27" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 10, finish<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-28"><a href="create-new-treatment.html#cb2-28" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">ul</span><span class="dt">&gt;</span>”</span></code></pre></div>
 <p>Here we’ve used a heading (<code>#</code> in <strong>Markdown</strong>, <code>&lt;h1&gt;</code> in <strong>HTML</strong>), then written some informative text, and finished with an unordered, i.e non-numbered, list (<code>-</code> in <strong>Markdown</strong>, <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> in <strong>HTML</strong>). You can create ordered, i.e numbered, lists by using numbers in place of the dash in <strong>Markdown</strong>, or using <code>&lt;ol&gt;</code> in place of <code>&lt;ul&gt;</code> in <strong>HTML</strong>. Refer to the guides and tutorials linked above for further information on syntax and formatting in <strong>Markdown</strong> and/or <strong>HTML</strong>.</p>
 <p>Below the edit box are three buttons. The <em>Save</em> button does what it says on the tin: it saves your work. Make a habit of saving often.
 Then there are two more buttons: <em>Insert link</em> and <em>Preview</em>.</p>
-<p>The Preview button will preview your saved treatment content, to give you an idea of how it will look to the participants. It’s very useful for checking that your design looks as intended, and as a quick way to check your progress. We recommend that you also create a dummy participant for which you activate your treatment, so that you can log into that participant account and check that your treatment works and looks good “live,” so to speak.</p>
+<p>The Preview button will preview your saved treatment content, to give you an idea of how it will look to the participants. It’s very useful for checking that your design looks as intended, and as a quick way to check your progress. We recommend that you also create a dummy participant for which you activate your treatment, so that you can log into that participant account and check that your treatment works and looks good “live”, so to speak.</p>
 <p>Note that when you click <em>Save</em>, your Preview window will be emptied. Simply click <em>Preview</em> again to show your preview.
 The <em>Insert link</em> button will take you to the file manager in BASS once clicked (the file manager will open in a new browser tab). Here you can upload images, audio and video files, documents and so on, to be used in your treatment content or be made available to download for your participants. At the top of the page you will see the file path you’re currently in.</p>
 <p>It is good practice to set up an easily navigable folder structure before you start uploading any files. Click the <em>Create new folder</em> button at the bottom of the page to create a new folder. Note that any new folder you create will be created within the folder you’re currently located in (i.e if you’ve created folder A and then navigated/clicked into it and create folder B, folder B will be created within folder A). The reason we’re doing this in advance is that you cannot move files around once they’ve been uploaded, so it is important that they are uploaded to their proper place from the start.</p>
@@ -430,39 +437,39 @@ The <em>Insert link</em> button will take you to the file manager in BASS once c
 <p>If it is an image file, you will need to use the following Markdown syntax:
 <code>![My Image](image.png)</code></p>
 <p>If you’d rather write HTML, you use the following tag:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="create-new-treatment.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">”image.png”</span><span class="kw">&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="create-new-treatment.html#cb3-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">”image.png”</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>The “image.png” is used here as a placeholder for the file path to your image. As such, it should be replaced and will look something like this: <code>File.php?uploadedfile=/[file path to your image]</code>.</p>
 <p>If it is an audio file, you will have to use <strong>HTML</strong> since <strong>Markdown</strong> does not handle audio files.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="create-new-treatment.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;audio</span> <span class="er">controls</span><span class="kw">&gt;</span></span>
-<span id="cb4-2"><a href="create-new-treatment.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;source</span> <span class="er">src</span><span class="ot">=</span><span class="st">&quot;audio.mp3&quot;</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;audio/mp3&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb4-3"><a href="create-new-treatment.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/audio&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="create-new-treatment.html#cb4-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">audio</span><span class="ot"> controls</span><span class="dt">&gt;</span></span>
+<span id="cb4-2"><a href="create-new-treatment.html#cb4-2" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">source</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;audio.mp3&quot;</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;audio/mp3&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb4-3"><a href="create-new-treatment.html#cb4-3" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">audio</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>As with audio, <strong>Markdown</strong> does not handle video files so you will have to use <strong>HTML</strong> for video files as well. The <strong>HTML</strong> is similar to that which is used for audio, but refers to video instead. see the example below.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="create-new-treatment.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;video</span> <span class="er">controls</span><span class="kw">&gt;</span></span>
-<span id="cb5-2"><a href="create-new-treatment.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;source</span> <span class="er">src</span><span class="ot">=</span><span class="st">”video.mp4”</span> <span class="er">type</span><span class="ot">=</span><span class="st">”video/mp4”</span><span class="kw">&gt;</span></span>
-<span id="cb5-3"><a href="create-new-treatment.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/video&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="create-new-treatment.html#cb5-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">video</span><span class="ot"> controls</span><span class="dt">&gt;</span></span>
+<span id="cb5-2"><a href="create-new-treatment.html#cb5-2" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">source</span><span class="ot"> src</span><span class="op">=</span><span class="st">”video.mp4”</span><span class="ot"> type</span><span class="op">=</span><span class="st">”video/mp4”</span><span class="dt">&gt;</span></span>
+<span id="cb5-3"><a href="create-new-treatment.html#cb5-3" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">video</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>As with the image example above, the “audio.mp3” and “video.mp4” examples given here are just placeholder, and should be replaced with the actual file path to your audio or video file.</p>
 <p>One very common <strong>HTML</strong> tag to use is <code>&lt;textarea&gt;</code>. This will let you create a text input box where participant can write answers to questions.
 To use this simply type:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="create-new-treatment.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;textarea</span> <span class="er">name</span><span class="ot">=</span><span class="st">”textarea1”</span><span class="kw">&gt;&lt;/textarea&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="create-new-treatment.html#cb6-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">textarea</span><span class="ot"> name</span><span class="op">=</span><span class="st">”textarea1”</span><span class="dt">&gt;&lt;/</span><span class="kw">textarea</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>A very important part of any type of input you add to your treatment document, is to give it a unique <em>“name”-attribute</em>. This unique name may not be shared by any other <strong>HTML</strong> element within the same treatment content. This is because the <em>name-attribute</em> is used by BASS to differentiate between inputs and the answers that participants give. If you use the same <em>name-attribute</em> for several <strong>HTML</strong> elements, they will be filled in with the same answer when a participant clicks save, overwriting any other answers given.</p>
 <p>Another common <strong>HTML tag</strong> to use is <code>&lt;table&gt;</code>. This is very useful to structure content into columns and rows.
 A table is a little more complex than a textarea, and consists of three main <strong>HTML tags</strong>, as follows:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="create-new-treatment.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;table&gt;</span></span>
-<span id="cb7-2"><a href="create-new-treatment.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;tr&gt;</span></span>
-<span id="cb7-3"><a href="create-new-treatment.html#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;td&gt;</span></span>
-<span id="cb7-4"><a href="create-new-treatment.html#cb7-4" aria-hidden="true" tabindex="-1"></a>      *Your content*</span>
-<span id="cb7-5"><a href="create-new-treatment.html#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/td&gt;</span></span>
-<span id="cb7-6"><a href="create-new-treatment.html#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/tr&gt;</span></span>
-<span id="cb7-7"><a href="create-new-treatment.html#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/table&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="create-new-treatment.html#cb7-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">table</span><span class="dt">&gt;</span></span>
+<span id="cb7-2"><a href="create-new-treatment.html#cb7-2" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb7-3"><a href="create-new-treatment.html#cb7-3" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb7-4"><a href="create-new-treatment.html#cb7-4" tabindex="-1"></a>      *Your content*</span>
+<span id="cb7-5"><a href="create-new-treatment.html#cb7-5" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb7-6"><a href="create-new-treatment.html#cb7-6" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb7-7"><a href="create-new-treatment.html#cb7-7" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>The <code>&lt;table&gt;</code> tag defines where your table begins and where it ends. The <code>&lt;tr&gt;</code> tag is a table row, and creates and closes table rows. The <code>&lt;td&gt;</code> tag is table data, i.e a table cell within a row. You can use multiple <code>&lt;td&gt;</code> tags within a <code>&lt;tr&gt;</code> tag to create multiple cells.
 One last mention on tables: tables in BASS are by default scrollable horizontally, to allow you to build wide tables if needed. If you do not wish your table to be scrollable, add <code>class=”non-scrollable”</code> to the <code>&lt;table&gt;</code> tag, like this:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="create-new-treatment.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;table</span> <span class="er">class</span><span class="ot">=</span><span class="st">”non-scrollable”</span><span class="kw">&gt;</span></span>
-<span id="cb8-2"><a href="create-new-treatment.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;tr&gt;</span></span>
-<span id="cb8-3"><a href="create-new-treatment.html#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;td&gt;</span></span>
-<span id="cb8-4"><a href="create-new-treatment.html#cb8-4" aria-hidden="true" tabindex="-1"></a>      *Your content*</span>
-<span id="cb8-5"><a href="create-new-treatment.html#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/td&gt;</span></span>
-<span id="cb8-6"><a href="create-new-treatment.html#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/tr&gt;</span></span>
-<span id="cb8-7"><a href="create-new-treatment.html#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/table&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="create-new-treatment.html#cb8-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">table</span><span class="ot"> class</span><span class="op">=</span><span class="st">”non-scrollable”</span><span class="dt">&gt;</span></span>
+<span id="cb8-2"><a href="create-new-treatment.html#cb8-2" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb8-3"><a href="create-new-treatment.html#cb8-3" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb8-4"><a href="create-new-treatment.html#cb8-4" tabindex="-1"></a>      *Your content*</span>
+<span id="cb8-5"><a href="create-new-treatment.html#cb8-5" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb8-6"><a href="create-new-treatment.html#cb8-6" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb8-7"><a href="create-new-treatment.html#cb8-7" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>BASS features <em>basic syntax highlighting</em>, and will color different parts of your <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> code to make it easier to read and find elements of your code. In addition, if you’ve forgotten to close an HTML tag, it will be colored bright red to remind you and highlight potential problems within your code.</p>
 <p>If you’re working with a lot of <strong>HTML</strong> in your treatment contents, it may benefit you to check your code regularly in a dedicated coding program (known as an IDE), such as Atom <a href="https://atom.io">https://atom.io</a> or Visual Studio Code <a href="https://code.visualstudio.com">https://codde.visualstudio.com</a>. These programs are specifically designed to write code, and will give you a good overview of your entire document.</p>
 <p>This covers the basic of building treatment content in BASS. We recommend you play around with it while referencing the resources linked above. If you run into issues, feel free to contact us.</p>
@@ -481,7 +488,6 @@ One last mention on tables: tables in BASS are by default scrollable horizontall
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -522,7 +528,7 @@ gitbook.start({
 },
 "download": ["bass4-manual.pdf", "bass4-manual.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

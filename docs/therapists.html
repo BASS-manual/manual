@@ -31,8 +31,8 @@
   
 <link rel="prev" href="create-new-treatment.html"/>
 <link rel="next" href="references.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,12 +48,80 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
-
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -92,7 +160,10 @@
 <li class="chapter" data-level="9.2" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#search"><i class="fa fa-check"></i><b>9.2</b> Search</a></li>
 <li class="chapter" data-level="9.3" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#hide-show-and-sort-columns"><i class="fa fa-check"></i><b>9.3</b> Hide, show and sort columns</a></li>
 <li class="chapter" data-level="9.4" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#column-explanations"><i class="fa fa-check"></i><b>9.4</b> Column explanations</a></li>
-<li class="chapter" data-level="9.5" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#saveload-search-settings"><i class="fa fa-check"></i><b>9.5</b> Save/load search settings</a></li>
+<li class="chapter" data-level="9.5" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#saveload-search-settings"><i class="fa fa-check"></i><b>9.5</b> Save/load search settings</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#add-new-participant-to-group-and-change-group"><i class="fa fa-check"></i><b>9.5.1</b> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
 <ul>
@@ -125,12 +196,13 @@
 <li class="chapter" data-level="12.1.3" data-path="assessments.html"><a href="assessments.html#managed"><i class="fa fa-check"></i><b>12.1.3</b> Managed</a></li>
 <li class="chapter" data-level="12.1.4" data-path="assessments.html"><a href="assessments.html#repitition"><i class="fa fa-check"></i><b>12.1.4</b> Repitition</a></li>
 <li class="chapter" data-level="12.1.5" data-path="assessments.html"><a href="assessments.html#time-limit"><i class="fa fa-check"></i><b>12.1.5</b> Time limit</a></li>
-<li class="chapter" data-level="12.1.6" data-path="assessments.html"><a href="assessments.html#clinician-rated"><i class="fa fa-check"></i><b>12.1.6</b> Clinician rated</a></li>
-<li class="chapter" data-level="12.1.7" data-path="assessments.html"><a href="assessments.html#randomize-instrument-order"><i class="fa fa-check"></i><b>12.1.7</b> Randomize instrument order</a></li>
-<li class="chapter" data-level="12.1.8" data-path="assessments.html"><a href="assessments.html#welcomethank-you-text"><i class="fa fa-check"></i><b>12.1.8</b> Welcome/Thank you text</a></li>
-<li class="chapter" data-level="12.1.9" data-path="assessments.html"><a href="assessments.html#concurrent-and-merged-assessments"><i class="fa fa-check"></i><b>12.1.9</b> Concurrent and merged assessments</a></li>
-<li class="chapter" data-level="12.1.10" data-path="assessments.html"><a href="assessments.html#automatic-reminders"><i class="fa fa-check"></i><b>12.1.10</b> Automatic reminders</a></li>
-<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#participant-flagging"><i class="fa fa-check"></i><b>12.1.11</b> Participant flagging</a></li>
+<li class="chapter" data-level="12.1.6" data-path="assessments.html"><a href="assessments.html#dependence"><i class="fa fa-check"></i><b>12.1.6</b> Dependence</a></li>
+<li class="chapter" data-level="12.1.7" data-path="assessments.html"><a href="assessments.html#clinician-rated"><i class="fa fa-check"></i><b>12.1.7</b> Clinician rated</a></li>
+<li class="chapter" data-level="12.1.8" data-path="assessments.html"><a href="assessments.html#randomize-instrument-order"><i class="fa fa-check"></i><b>12.1.8</b> Randomize instrument order</a></li>
+<li class="chapter" data-level="12.1.9" data-path="assessments.html"><a href="assessments.html#welcomethank-you-text"><i class="fa fa-check"></i><b>12.1.9</b> Welcome/Thank you text</a></li>
+<li class="chapter" data-level="12.1.10" data-path="assessments.html"><a href="assessments.html#concurrent-and-merged-assessments"><i class="fa fa-check"></i><b>12.1.10</b> Concurrent and merged assessments</a></li>
+<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#automatic-reminders"><i class="fa fa-check"></i><b>12.1.11</b> Automatic reminders</a></li>
+<li class="chapter" data-level="12.1.12" data-path="assessments.html"><a href="assessments.html#participant-flagging"><i class="fa fa-check"></i><b>12.1.12</b> Participant flagging</a></li>
 </ul></li>
 <li class="chapter" data-level="12.2" data-path="assessments.html"><a href="assessments.html#copy-assessment"><i class="fa fa-check"></i><b>12.2</b> Copy assessment</a></li>
 <li class="chapter" data-level="12.3" data-path="assessments.html"><a href="assessments.html#dummy-assessments---some-scheduling-tricks"><i class="fa fa-check"></i><b>12.3</b> Dummy assessments - some scheduling tricks</a></li>
@@ -181,12 +253,12 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="therapists" class="section level1" number="14">
-<h1><span class="header-section-number">Chapter 14</span> Therapists</h1>
+<div id="therapists" class="section level1 hasAnchor" number="14">
+<h1><span class="header-section-number">Chapter 14</span> Therapists<a href="therapists.html#therapists" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The term “therapist” is the term used within BASS to designate anyone who administrates part of or the entirety of a database and its participants. This could be an administrator, whose job it is to build treatment content, instruments and assessments. It could also be a licensed therapist who administers treatments to select participants. It could yet again be students who use BASS as part of a university course in web-based CBT, as well as their supervising teacher or professor.
 The common denominator for all these examples is that they all use a therapist account. What separates them are the differing levels of access (<strong>privileges</strong>) given to them. In this chapter, we will take a look at the therapist accounts, how to set them up and what levels of <strong>privileges</strong> can be given to them.</p>
-<div id="creating-a-therapist-account" class="section level2" number="14.1">
-<h2><span class="header-section-number">14.1</span> Creating a therapist account</h2>
+<div id="creating-a-therapist-account" class="section level2 hasAnchor" number="14.1">
+<h2><span class="header-section-number">14.1</span> Creating a therapist account<a href="therapists.html#creating-a-therapist-account" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>To create a therapist account, you need three things:</p>
 <ul>
 <li>The name of the person who will use the account</li>
@@ -197,12 +269,12 @@ The common denominator for all these examples is that they all use a therapist a
 We furthermore <em>strongly</em> recommend the use of work/faculty e-mail or other similarly secure e-mail service backed by your IT department. We generally do not recommend you use publicly available e-mail services such as Gmail, Hotmail, Yahoo and the like.
 Lastly, the cell phone number is required for two-factor authentication. Without it, you will not be able to log in to BASS as a therapist. There is no option to disable two-factor authentication for therapists, but you can choose to send the authentication message via e-mail rather than via SMS.</p>
 </div>
-<div id="the-manage-therapists-view" class="section level2" number="14.2">
-<h2><span class="header-section-number">14.2</span> The “Manage Therapists” view</h2>
+<div id="the-manage-therapists-view" class="section level2 hasAnchor" number="14.2">
+<h2><span class="header-section-number">14.2</span> The “Manage Therapists” view<a href="therapists.html#the-manage-therapists-view" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This is the landing page when clicking the <strong>Therapists</strong> menu option in the main menu. Normally, the first accounts created are <strong><em>admin</em></strong> and any accounts used by the BASS support staff. There’s no tag or icon designating BASS support staff as such, other than the fact that they will always carry the star moniker which indicates that they are <em>database administrators</em>.
 You therapist account has most likely been set up by the BASS support staff, and as such your account is also shown in the list. But what about creating new accounts? Let’s have a look!</p>
-<div id="creating-a-new-therapist-account" class="section level3" number="14.2.1">
-<h3><span class="header-section-number">14.2.1</span> Creating a new therapist account</h3>
+<div id="creating-a-new-therapist-account" class="section level3 hasAnchor" number="14.2.1">
+<h3><span class="header-section-number">14.2.1</span> Creating a new therapist account<a href="therapists.html#creating-a-new-therapist-account" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To create a new therapist account, click the <em>Create new therapist</em> link below the list of existing accounts. This will present you with the information view. Here, in the first small table, you can see <em>last login</em>, <em>login count</em>, <em>total time</em>, and <em>internal id</em>. All of these are superfluous for now, but are self-explanatory in their function (the <em>internal id</em> is used by BASS to identify individual therapists, and may be used to communicate outside of BASS in potentially delicate matters pertaining to specific therapists).
 Below the first little table is a bigger table, with which we will concern ourselves now.</p>
 <ul>
@@ -219,12 +291,12 @@ Below the first little table is a bigger table, with which we will concern ourse
 </ul>
 <p>When you’ve entered the information into the fields listed above, click <em>Save</em>.</p>
 </div>
-<div id="the-information-tab" class="section level3" number="14.2.2">
-<h3><span class="header-section-number">14.2.2</span> The Information Tab</h3>
+<div id="the-information-tab" class="section level3 hasAnchor" number="14.2.2">
+<h3><span class="header-section-number">14.2.2</span> The Information Tab<a href="therapists.html#the-information-tab" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Now that you’ve saved the therapist account you just created, you should be presented with the <strong>Information</strong> tab for that therapist account. For all intents and purposes, it contains the information you just submitted. From this tab, you can edit the information as well as enable/disable login, extend the expiration date and provide the therapist with a new password if needed.</p>
 </div>
-<div id="the-privileges-tab" class="section level3" number="14.2.3">
-<h3><span class="header-section-number">14.2.3</span> The Privileges Tab</h3>
+<div id="the-privileges-tab" class="section level3 hasAnchor" number="14.2.3">
+<h3><span class="header-section-number">14.2.3</span> The Privileges Tab<a href="therapists.html#the-privileges-tab" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In this tab, you set the privileges given to the therapist account. At the top of the page, you will see the dropdown menu named <strong>Senior therapist</strong>. By defauly, <em>admin</em> will be selected. You can leave this as-is.</p>
 <p>Beneath the dropdown menu, there is a table named <strong>Global privileges</strong>. These are privileges pertaining to the entire database. If you want to give the therapist account full access to the databse, chech the box named <em>Administrative privileges</em>.</p>
 <p>A more in-depth look at the different privileges follows below:</p>
@@ -233,7 +305,7 @@ Below the first little table is a bigger table, with which we will concern ourse
 <li>Administrative privileges: as noted above, checking this box grants the therapist account full access to the database.</li>
 <li>Edit other therapists: by checking this box, you give the therapist account access to view and edit other therapist accounts.</li>
 <li>Groups view: checking this box lets the therapist accounts view the <strong>Groups</strong> tab under <strong>Participants</strong> in the main menu.</li>
-<li>Edit note categories: as with “Edit answer flag settings,” checking this box grants access to view and edit note categories under <strong>Note categories</strong> in the main menu.</li>
+<li>Edit note categories: as with “Edit answer flag settings”, checking this box grants access to view and edit note categories under <strong>Note categories</strong> in the main menu.</li>
 <li>Supervisor: checking this box lets you designate the therapist account as a supervisor to other therapists.</li>
 </ul>
 
@@ -250,7 +322,6 @@ Below the first little table is a bigger table, with which we will concern ourse
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -291,7 +362,7 @@ gitbook.start({
 },
 "download": ["bass4-manual.pdf", "bass4-manual.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

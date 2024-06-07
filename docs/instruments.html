@@ -4,27 +4,25 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 11 Instruments | 07-Instruments</title>
-  <meta name="description" content="Adminstrator`s manual for BASS4." />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <title>Chapter 11 Instruments | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <meta name="description" content="Adminstrator’s manual for BASS4." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 11 Instruments | 07-Instruments" />
+  <meta property="og:title" content="Chapter 11 Instruments | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
-  
-  <meta property="og:description" content="Adminstrator`s manual for BASS4." />
-  <meta name="github-repo" content="BASS-manual/manual" />
+  <meta property="og:description" content="Adminstrator’s manual for BASS4." />
+  <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 11 Instruments | 07-Instruments" />
+  <meta name="twitter:title" content="Chapter 11 Instruments | BASS4 - ADMINISTRATOR’S MANUAL" />
   
-  <meta name="twitter:description" content="Adminstrator`s manual for BASS4." />
+  <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
 
-<meta name="author" content="BASS-support" />
+<meta name="author" content="Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell &amp; Brjánn Ljótsson" />
 
 
-<meta name="date" content="2020-07-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +31,8 @@
   
 <link rel="prev" href="participants.html"/>
 <link rel="next" href="assessments.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,12 +48,80 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
-
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -94,7 +160,10 @@
 <li class="chapter" data-level="9.2" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#search"><i class="fa fa-check"></i><b>9.2</b> Search</a></li>
 <li class="chapter" data-level="9.3" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#hide-show-and-sort-columns"><i class="fa fa-check"></i><b>9.3</b> Hide, show and sort columns</a></li>
 <li class="chapter" data-level="9.4" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#column-explanations"><i class="fa fa-check"></i><b>9.4</b> Column explanations</a></li>
-<li class="chapter" data-level="9.5" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#saveload-search-settings"><i class="fa fa-check"></i><b>9.5</b> Save/load search settings</a></li>
+<li class="chapter" data-level="9.5" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#saveload-search-settings"><i class="fa fa-check"></i><b>9.5</b> Save/load search settings</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#add-new-participant-to-group-and-change-group"><i class="fa fa-check"></i><b>9.5.1</b> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
 <ul>
@@ -127,12 +196,13 @@
 <li class="chapter" data-level="12.1.3" data-path="assessments.html"><a href="assessments.html#managed"><i class="fa fa-check"></i><b>12.1.3</b> Managed</a></li>
 <li class="chapter" data-level="12.1.4" data-path="assessments.html"><a href="assessments.html#repitition"><i class="fa fa-check"></i><b>12.1.4</b> Repitition</a></li>
 <li class="chapter" data-level="12.1.5" data-path="assessments.html"><a href="assessments.html#time-limit"><i class="fa fa-check"></i><b>12.1.5</b> Time limit</a></li>
-<li class="chapter" data-level="12.1.6" data-path="assessments.html"><a href="assessments.html#clinician-rated"><i class="fa fa-check"></i><b>12.1.6</b> Clinician rated</a></li>
-<li class="chapter" data-level="12.1.7" data-path="assessments.html"><a href="assessments.html#randomize-instrument-order"><i class="fa fa-check"></i><b>12.1.7</b> Randomize instrument order</a></li>
-<li class="chapter" data-level="12.1.8" data-path="assessments.html"><a href="assessments.html#welcomethank-you-text"><i class="fa fa-check"></i><b>12.1.8</b> Welcome/Thank you text</a></li>
-<li class="chapter" data-level="12.1.9" data-path="assessments.html"><a href="assessments.html#concurrent-and-merged-assessments"><i class="fa fa-check"></i><b>12.1.9</b> Concurrent and merged assessments</a></li>
-<li class="chapter" data-level="12.1.10" data-path="assessments.html"><a href="assessments.html#automatic-reminders"><i class="fa fa-check"></i><b>12.1.10</b> Automatic reminders</a></li>
-<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#participant-flagging"><i class="fa fa-check"></i><b>12.1.11</b> Participant flagging</a></li>
+<li class="chapter" data-level="12.1.6" data-path="assessments.html"><a href="assessments.html#dependence"><i class="fa fa-check"></i><b>12.1.6</b> Dependence</a></li>
+<li class="chapter" data-level="12.1.7" data-path="assessments.html"><a href="assessments.html#clinician-rated"><i class="fa fa-check"></i><b>12.1.7</b> Clinician rated</a></li>
+<li class="chapter" data-level="12.1.8" data-path="assessments.html"><a href="assessments.html#randomize-instrument-order"><i class="fa fa-check"></i><b>12.1.8</b> Randomize instrument order</a></li>
+<li class="chapter" data-level="12.1.9" data-path="assessments.html"><a href="assessments.html#welcomethank-you-text"><i class="fa fa-check"></i><b>12.1.9</b> Welcome/Thank you text</a></li>
+<li class="chapter" data-level="12.1.10" data-path="assessments.html"><a href="assessments.html#concurrent-and-merged-assessments"><i class="fa fa-check"></i><b>12.1.10</b> Concurrent and merged assessments</a></li>
+<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#automatic-reminders"><i class="fa fa-check"></i><b>12.1.11</b> Automatic reminders</a></li>
+<li class="chapter" data-level="12.1.12" data-path="assessments.html"><a href="assessments.html#participant-flagging"><i class="fa fa-check"></i><b>12.1.12</b> Participant flagging</a></li>
 </ul></li>
 <li class="chapter" data-level="12.2" data-path="assessments.html"><a href="assessments.html#copy-assessment"><i class="fa fa-check"></i><b>12.2</b> Copy assessment</a></li>
 <li class="chapter" data-level="12.3" data-path="assessments.html"><a href="assessments.html#dummy-assessments---some-scheduling-tricks"><i class="fa fa-check"></i><b>12.3</b> Dummy assessments - some scheduling tricks</a></li>
@@ -175,7 +245,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">07-Instruments</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BASS4 - ADMINISTRATOR’S MANUAL</a>
           </h1>
         </div>
 
@@ -183,8 +253,8 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="instruments" class="section level1" number="11">
-<h1><span class="header-section-number">Chapter 11</span> Instruments</h1>
+<div id="instruments" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">Chapter 11</span> Instruments<a href="instruments.html#instruments" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>In BASS, instruments are the building blocks of assessments. Under this menu option, you can view a list of all the instruments currently set up in your database, as well as Create new instrument by using the built-in editor and Import instrument from XML to import an already built instrument from another BASS database by copying its XML code. You can also edit instruments, as well as delete them.</p>
 <p>But first, let’s examine the table.</p>
 <ul>
@@ -198,26 +268,26 @@
 <li>The last the columns are <em>Edit</em> (the pencil icon), <em>Copy</em> (the clipboard icon) and <em>Delete</em> (the trash can icon).</li>
 </ul>
 <p>There are two ways to create a new instrument in BASS4. Either you can copy an existing instrument, that is similar to the one you wish to create and adjust that instrument. You can also create a new instrument from scratch, using the built in tool in BASS4.</p>
-<div id="copy-an-instrument" class="section level2" number="11.1">
-<h2><span class="header-section-number">11.1</span> Copy an instrument</h2>
+<div id="copy-an-instrument" class="section level2 hasAnchor" number="11.1">
+<h2><span class="header-section-number">11.1</span> Copy an instrument<a href="instruments.html#copy-an-instrument" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>To copy an instrument, follow these steps:<br>
 1) Navigate to <strong>Instruments</strong> in the main menu to the left. Here you can view all instruments currently available in your database.<br>
-2) On the far right of the instrument you wish to copy, next to the trash can icon, is an icon resembling two documents. If you hover with the mouse pointer over this icon, it will say “Copy instrument.” Clicking on this icon will create a copy of the instrument, called “Copy of [Instrument].”<br>
-3) Open the instrument you just created by clicking the pencil icon to the right on the instrument row. If you hover the mouse pointer over the pencil icon, it will display the tooltip “Edit instrument.” Clicking the pencil icon will show the instrument editor. The “Creating a new instrument” section explains how this editor works.<br>
+2) On the far right of the instrument you wish to copy, next to the trash can icon, is an icon resembling two documents. If you hover with the mouse pointer over this icon, it will say “Copy instrument”. Clicking on this icon will create a copy of the instrument, called “Copy of [Instrument]”.<br>
+3) Open the instrument you just created by clicking the pencil icon to the right on the instrument row. If you hover the mouse pointer over the pencil icon, it will display the tooltip “Edit instrument”. Clicking the pencil icon will show the instrument editor. The “Creating a new instrument” section explains how this editor works.<br>
 4) Prior to editing the instrument, it’s good practice to open a separate window or browser tab by using the <strong>Preview-function</strong>. This function is located under the Preview-tab, and opened by clicking the “Open preview in Clojure app” hyperlink. By default, a new tab will open where the instrument will be displayed in its formatted layout. It’s a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.</p>
 </div>
-<div id="creating-a-new-instrument" class="section level2" number="11.2">
-<h2><span class="header-section-number">11.2</span> Creating a new instrument</h2>
-<p>To begin creating a new instrument, navigate to <strong>Instruments</strong> in the main menu on the left. This will open up a table view showing you all the instruments currently available in your database. On the bottom of the table, there is a hyperlink with the text “Create new instrument.” Clicking this hyperlink will take you to the <strong>General</strong> view of the instrument editor, as shown in picture 1 below. The tabs named <strong>Edit</strong>, <strong>Preview</strong>, <strong>Scoring Formula</strong> and <strong>Export</strong> are also displayed.</p>
-<div id="the-general-tab" class="section level3" number="11.2.1">
-<h3><span class="header-section-number">11.2.1</span> The General Tab</h3>
+<div id="creating-a-new-instrument" class="section level2 hasAnchor" number="11.2">
+<h2><span class="header-section-number">11.2</span> Creating a new instrument<a href="instruments.html#creating-a-new-instrument" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To begin creating a new instrument, navigate to <strong>Instruments</strong> in the main menu on the left. This will open up a table view showing you all the instruments currently available in your database. On the bottom of the table, there is a hyperlink with the text “Create new instrument”. Clicking this hyperlink will take you to the <strong>General</strong> view of the instrument editor, as shown in picture 1 below. The tabs named <strong>Edit</strong>, <strong>Preview</strong>, <strong>Scoring Formula</strong> and <strong>Export</strong> are also displayed.</p>
+<div id="the-general-tab" class="section level3 hasAnchor" number="11.2.1">
+<h3><span class="header-section-number">11.2.1</span> The General Tab<a href="instruments.html#the-general-tab" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This tab is where you can change the <strong>Name</strong> of the instrument, its <strong>Abbreviation</strong> (both of which are only show in the administrator’s view), as well as the <strong>Title name</strong> (which is the title presented to the participants).
 For example, this could be <strong>Audit</strong> in all three cases, as show in picture 1 below.</p>
 <p><img src="images/new-images/InstrumentsGeneral1.png" />
 <strong>Picture 1</strong></p>
 <p>If the instrument you are creating is supposed to be filled out by a clinician, you check the box called <strong>Clinician assessment</strong>.</p>
-<div id="the-bass4-table" class="section level4" number="11.2.1.1">
-<h4><span class="header-section-number">11.2.1.1</span> The BASS4 Table</h4>
+<div id="the-bass4-table" class="section level4 hasAnchor" number="11.2.1.1">
+<h4><span class="header-section-number">11.2.1.1</span> The BASS4 Table<a href="instruments.html#the-bass4-table" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This table contains three options that influence the presentation of your instrument.<br>
 <strong>Classic presentation in BASS4</strong> governs whether your instrument is shown in a classic layout, i.e somewhat smaller font size, or a more modern layout with a somewhat larger font size (16 pixels).<br>
 <strong>Responsive presentation</strong> governs whether or not your instrument is adjusted automatically according to the size of the screen it is viewed on (i.e mobile or PC/Mac). This mainly affects <em>Question</em> items, where answers ordered by cell will require additional steps be taken in order to display correctly.Instructions on how to do this are found under the “Edit” section.
@@ -227,13 +297,13 @@ Leaving this box unchecked will cause the instrument to display its PC/Mac layou
 <p>When you’ve entered the information, click <strong>save</strong>.</p>
 </div>
 </div>
-<div id="the-preview-tab" class="section level3" number="11.2.2">
-<h3><span class="header-section-number">11.2.2</span> The Preview Tab</h3>
-<p>In this tab, you can view the instrument with it’s final visual design applied (the final visual design is applied automatically by BASS) by clicking the hyperlink named “Open preview in Clojure app.”
+<div id="the-preview-tab" class="section level3 hasAnchor" number="11.2.2">
+<h3><span class="header-section-number">11.2.2</span> The Preview Tab<a href="instruments.html#the-preview-tab" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In this tab, you can view the instrument with it’s final visual design applied (the final visual design is applied automatically by BASS) by clicking the hyperlink named “Open preview in Clojure app”.
 By default, a new tab will open, in which the instrument will be displayed with its final visual design applied. It’s a good idea to have this tab opened while editing the instrument in the instrument editor, and switching back and forth between the browser tabs to see your updates displayed in the Preview.</p>
 </div>
-<div id="the-edit-tab" class="section level3" number="11.2.3">
-<h3><span class="header-section-number">11.2.3</span> The Edit Tab</h3>
+<div id="the-edit-tab" class="section level3 hasAnchor" number="11.2.3">
+<h3><span class="header-section-number">11.2.3</span> The Edit Tab<a href="instruments.html#the-edit-tab" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This tab is where you create, or build, your new instrument. This is also where you adjust any instrument you’ve copied or want to edit. This is mainly done through adding, editing or deleting content in the form.
 To begin, start by creating and defining a <strong>table definition</strong></p>
 <p><strong>Add table definition</strong><br>
@@ -249,30 +319,30 @@ Ordering answers by <strong>line break</strong> organizes them in a vertical str
 <p><strong>Add information</strong><br>
 Usually a form starts with information on how to fill it out, and as such you want to add that information before you add your questions. To do this, click “Add new [Free text]” and type the information ionto the “Free text” box.</p>
 <p>In “Free text” you type regular HTML or regular text input. You can find some basic HTML tags in the appendix of this manual, with links to more thorough resources listed as well.
-In “Layout-string,” you type [T], which instructs BASS to render the text in the “Free text” box. Then press save.</p>
+In “Layout-string”, you type [T], which instructs BASS to render the text in the “Free text” box. Then press save.</p>
 <blockquote>
-<p><strong>Hint:</strong> If you want to have a line above or below your text, to act as a separator, you can type in 1 in the “Border-width upper” or “Border-width lower,” respectively.</p>
+<p><strong>Hint:</strong> If you want to have a line above or below your text, to act as a separator, you can type in 1 in the “Border-width upper” or “Border-width lower”, respectively.</p>
 </blockquote>
 <p><strong>Adding questions</strong><br>
 Depending on what questions you would like to add, you go about adding them in different ways. We will adress the most common type of question below.</p>
 <p><strong>Adding multiple-choice questions</strong><br>
 By follow the instructions below, your end result will look similar to this:</p>
 <p><img src="images/new-images/multiplechoiceQ.png" /></p>
-<p>First, you will need to add a new “free text.” To do this, click “<strong>Add new [Free text]</strong>.” Then type in the options that are needed for the questions you want to add. For example, if you have five options to your question, you type it in like in picture 4 picture below.
+<p>First, you will need to add a new “free text”. To do this, click “<strong>Add new [Free text]</strong>”. Then type in the options that are needed for the questions you want to add. For example, if you have five options to your question, you type it in like in picture 4 picture below.
 <img src="images/new-images/multiplechoiceFreeText.png" />
 <strong>Picture 4</strong></p>
-<p>If you have more options, you add them by typing “[TD] option 6,” before the HTML tag <code>&lt;!--desktop--&gt;</code>. If you have less options, you delete the superfluous [TD] with accompanying text. The reason for the twin [TD][TD] in the beginning is to make empty space for the question you’re adding later. The reason for the single [TD] between the options is to separate the options.</p>
+<p>If you have more options, you add them by typing “[TD] option 6”, before the HTML tag <code>&lt;!--desktop--&gt;</code>. If you have less options, you delete the superfluous [TD] with accompanying text. The reason for the twin [TD][TD] in the beginning is to make empty space for the question you’re adding later. The reason for the single [TD] between the options is to separate the options.</p>
 <blockquote>
 <p><strong>Hint:</strong> <code>&lt;br&gt;</code> is HTML and means that the rest of the text starts on a new row, i.e it implements a line break. If you want to have numbers on one row and the text under, you can add two <br> tags in between. If it’s all supposed to be on the same row, you can omit including any <code>&lt;br&gt;</code> tags.</p>
 </blockquote>
-<p>Like in the “Free text” example, you type [T] in “Layout-string” to instruct BASS to render the text. Then decide whether or not you want borders above or below the text by typing in a numerical value in “Border-width upper” or “Border-width lower,” respectively. Then click “Save.”</p>
-<p>Below the created “free text,” you now click “<strong>Add new [question]</strong>.” In the number box, you type in the number you want to assign to the question. In the “Question”-box you type in the question or statement.</p>
-<p>By using the tools in the “Answer definition” section, you can define what type of answer you want. By default, “<strong>Radio buttons</strong>” is selected as the “Answer type.” If you want multiple choice, you change the “Answer type” to “<strong>Checkboxes</strong>.”
-You can then fill out the different options under “label” (in this example you would use the same options you typed in “free text”) and give them unique values under “value,” see picture 5 below. The values are used to calculate the result with a scoring formula later on.</p>
+<p>Like in the “Free text” example, you type [T] in “Layout-string” to instruct BASS to render the text. Then decide whether or not you want borders above or below the text by typing in a numerical value in “Border-width upper” or “Border-width lower”, respectively. Then click “Save”.</p>
+<p>Below the created “free text”, you now click “<strong>Add new [question]</strong>”. In the number box, you type in the number you want to assign to the question. In the “Question”-box you type in the question or statement.</p>
+<p>By using the tools in the “Answer definition” section, you can define what type of answer you want. By default, “<strong>Radio buttons</strong>” is selected as the “Answer type”. If you want multiple choice, you change the “Answer type” to “<strong>Checkboxes</strong>”.
+You can then fill out the different options under “label” (in this example you would use the same options you typed in “free text”) and give them unique values under “value”, see picture 5 below. The values are used to calculate the result with a scoring formula later on.</p>
 <blockquote>
 <p><strong>Important note:</strong> The values for each answer option in a question <em>have</em> to be unique. If to answer options are supposed to have the same value, this is corrected for later on in the scoring formula.</p>
 </blockquote>
-<p>When you’ve filled in your answer options and their unique values, you can choose “Cell” under the “Separator”-dropdown. In “Layout definition” you type in the following: <strong>[N].[TD][Q][TD][X]</strong>. This defines the layout for the question within the framework provided by your table definition. When this is done, click “Save.”</p>
+<p>When you’ve filled in your answer options and their unique values, you can choose “Cell” under the “Separator”-dropdown. In “Layout definition” you type in the following: <strong>[N].[TD][Q][TD][X]</strong>. This defines the layout for the question within the framework provided by your table definition. When this is done, click “Save”.</p>
 <blockquote>
 <p><strong>HELP! What does [N].[TD][Q][TD][X] mean?</strong><br></p>
 </blockquote>
@@ -281,8 +351,7 @@ You can then fill out the different options under “label” (in this example y
 <li>[N] Renders the number of the question in a cell. The period simply puts a period after the rendered number.<br></li>
 <li>[TD] Creates an empty cell<br></li>
 <li>[Q] Renders the text of the “Question” box in a cell<br></li>
-<li><input type="checkbox" disabled="" checked="" />
-Renders the answer options in a cell<br></li>
+<li><label><input type="checkbox" checked="" />Renders the answer options in a cell<br></label></li>
 </ul>
 </blockquote>
 <p>The input in the “layout definition” box is read from left to right, and is applied in the same order. In the layout above [N] is rendered in the first cell, [TD] creates a space, [Q] is rendered in the second cell and [X] is rendered in the third through seventh cell.</p>
@@ -290,19 +359,19 @@ Renders the answer options in a cell<br></li>
 <p><strong>Hint:</strong> Make a habit of going back to your Preview page to see what your form looks like. This lets you correct mistakes and make adjustments as you go along.</p>
 </blockquote>
 <blockquote>
-<p><strong>Hint:</strong> You can read about “optional,” “inheritable,” “jump,” and “specification text” under “Extra information.”</p>
+<p><strong>Hint:</strong> You can read about “optional”, “inheritable”, “jump”, and “specification text” under “Extra information”.</p>
 </blockquote>
 <p><img src="images/new-images/multiplechoiceQuestion.png" />
 <strong>Picture 5</strong></p>
 <p><strong>Adding a text-answer question</strong><br>
-To add a question with a text answer, click “<strong>Add new [question]</strong>.” Follow the same procedure as detailed above, by typing the number you want to assign to the question in the number box, and typing your question or statement into the question-box. Under “Answer definition,” choose what type of answer you want, either “short free text” or “long free text.” In “Layour-string,” type in <strong>[N].[TD][Q][X]</strong>.</p>
+To add a question with a text answer, click “<strong>Add new [question]</strong>”. Follow the same procedure as detailed above, by typing the number you want to assign to the question in the number box, and typing your question or statement into the question-box. Under “Answer definition”, choose what type of answer you want, either “short free text” or “long free text”. In “Layour-string”, type in <strong>[N].[TD][Q][X]</strong>.</p>
 <p><strong>Having the multiple-choice answer options listed vertically instead of horizontally</strong><br>
-If you would rather have your answer options listed vertically below your question, you type the question in a Free text. To do this, click “<strong>Add new [Free text]</strong>.” Then type the question into the free text box, and type <strong>[T]</strong> into the layout-string box.
-Below the “free text” you just created, click “<strong>Add new [question]</strong>.” In the number box, assign the number you wish your question to have. Leave the “question”-box empty.
-Proceed to fill out the “Answer definition,” and type in your answer options and their unique values. Then, choose “Line break” in the Separator-dropdown.</p>
+If you would rather have your answer options listed vertically below your question, you type the question in a Free text. To do this, click “<strong>Add new [Free text]</strong>”. Then type the question into the free text box, and type <strong>[T]</strong> into the layout-string box.
+Below the “free text” you just created, click “<strong>Add new [question]</strong>”. In the number box, assign the number you wish your question to have. Leave the “question”-box empty.
+Proceed to fill out the “Answer definition”, and type in your answer options and their unique values. Then, choose “Line break” in the Separator-dropdown.</p>
 </div>
-<div id="extra-information" class="section level3" number="11.2.4">
-<h3><span class="header-section-number">11.2.4</span> Extra information</h3>
+<div id="extra-information" class="section level3 hasAnchor" number="11.2.4">
+<h3><span class="header-section-number">11.2.4</span> Extra information<a href="instruments.html#extra-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Optional questions</strong><br>
 If the question is not mandatory, you can tell BASS to treat it as such by checking the “optional”-box, in the upper right corner of the question-editor window. This enables a participant to complete the form without submitting an answer to that specific question.</p>
 <p><strong>Page break</strong><br>
@@ -310,12 +379,12 @@ If you want a question to appear on a new page, you can tell BASS to divide your
 <p><strong>Using the jump function</strong><br>
 If you want an answer option to skip a participant ahead in your form, for example if a subset of questions isn’t relevant if a particular answer option is selected, you can do so by using the “jump”-function. You find this function to the right of each answer option. Open the dropdown, and select the item you wish that answer option to skip ahead to.</p>
 <p><strong>Re-use layout and options</strong><br>
-If you have multiple questions that use the same layout and/or the same options, you can check the “inheritable”-boxes for “layout-string” and/or “answer options.” This enables the settings of one question to be inherited by another. In the editing window of the questions you wish to be inheriting settings, use the “Inherit from”-dropdown and choose the question you want them to inherit from.</p>
+If you have multiple questions that use the same layout and/or the same options, you can check the “inheritable”-boxes for “layout-string” and/or “answer options”. This enables the settings of one question to be inherited by another. In the editing window of the questions you wish to be inheriting settings, use the “Inherit from”-dropdown and choose the question you want them to inherit from.</p>
 <p><strong>Adding more questions</strong><br>
 <em>Adding a multiple-choice question that have the same options as the previous question</em>.<br>
 If you want to add more questions with the same options as the previous question you just created, click “<strong>Add new [question]</strong>” and fill out the new question like you did the previous one.</p>
 <blockquote>
-<p><strong>Hint:</strong> Don’t forget that you can use the “inherit”-function. Read more about this function in the “Extra information”-section, “Re-use layout and options.”</p>
+<p><strong>Hint:</strong> Don’t forget that you can use the “inherit”-function. Read more about this function in the “Extra information”-section, “Re-use layout and options”.</p>
 </blockquote>
 <p><em>Adding a multiple-choice question that do not have the same options as the previous question</em>.<br>
 If your next question has a different set of answer options than the previous one, but the same number of answer options, you add a new free text and write the options like previously instructed, and then add the new question.</p>
@@ -324,8 +393,8 @@ If your next question has a different set of answer options than the previous on
 Create a new question by clicking “<strong>Add new [question]</strong>” and fill it out like previously instructed.</p>
 </div>
 </div>
-<div id="scoring-formula" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> Scoring formula</h2>
+<div id="scoring-formula" class="section level2 hasAnchor" number="11.3">
+<h2><span class="header-section-number">11.3</span> Scoring formula<a href="instruments.html#scoring-formula" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In the <strong>Scoring formula</strong> tab, you can define formulas that calculate the scores from the different items in your instrument. You refer to specific items in your instrument by using the <code>@#</code> identifier, i.e <code>@1</code> refers to question 1, <code>@2</code> refers to question 2, and so on.
 Should you leave the scoring formula blank, you will still get all value readouts from your instrument. The scoring formula is meant to help with calculating different scores that are relevant to your instrument.</p>
 <blockquote>
@@ -348,8 +417,8 @@ Should you leave the scoring formula blank, you will still get all value readout
 <p><strong>Calculating several means:</strong><br> <code>mean1 = (@1 + @2 + @3) / 3</code><br> <code>mean2 = (@4 + @5) / 2</code><br> <code>mean3 = (@6 + @7 + @8 + @9) / 4</code><br> <code>#sums mean1, mean2, mean3</code></p>
 </blockquote>
 </div>
-<div id="export" class="section level2" number="11.4">
-<h2><span class="header-section-number">11.4</span> Export</h2>
+<div id="export" class="section level2 hasAnchor" number="11.4">
+<h2><span class="header-section-number">11.4</span> Export<a href="instruments.html#export" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The export tab lets you copy the XML code of an instrument, to enable exporting to another database or another program that can accept instruments/forms in XML format.</p>
 
 </div>
@@ -364,7 +433,6 @@ Should you leave the scoring formula blank, you will still get all value readout
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -405,7 +473,7 @@ gitbook.start({
 },
 "download": ["bass4-manual.pdf", "bass4-manual.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
