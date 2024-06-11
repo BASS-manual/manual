@@ -1,7 +1,17 @@
 # Login
 
-As soon as your database setup is ready, you can login to the administrator’s interface. The interface is found at an URL of the format `https://webcbt.se/NameOfYourDatabase` or `https://bassdb.se/NameOfYourDatabase`. Enter your credentials in the login box and press the Login button.
+As soon as your database setup is ready, you can login to the administrator’s interface. The interface is found at an URL of the format `https://NameOfYourDatabase-admin.webcbt.se/` or `https://NameOfYourDatabase-admin.bassdb.se/`. 
+<br>
+You will have your login credentials supplied by us, and logging in will require 2FA (two-factor authentication) through either SMS or through an authenticator app (Authy, Google Authenticator, Microsoft Authenticator).
+<br>
+Enter your credentials in the login box and press the Login button.
 <br>
 <br>
 
 ![](images/login.png)
+<br><br>
+After this you will be taken to a page for double authentication. The code could arrive to you by sms or email depending on how your database is set up.
+<br><br>
+![](images/login_2FA.png)
+<br><br>
+*2FA alternatives can be handled in Security Settings, see* ***Chapter 6***
