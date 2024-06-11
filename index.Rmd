@@ -21,7 +21,7 @@ Should you have questions not yet answered by this manual, you're very welcome t
 
 BASS is comprised of two main parts, or user interfaces: the administrator’s view and the participant’s view. These are part of the same database, but accessed through slightly different web addresses, URL:s.
 
-1. The administrator’s view is accessed through the URL https://webcbt.se/YourDataBase or its variant https://bassdb.se/YourDataBase. 
+1. The administrator’s view is accessed through the URL https://YourDataBase-admin.webcbt.se or its variant https://YourDataBase-admin.bassdb.se. 
 2. The participant’s view is accessed through a similar URL: https://YourDataBase.webcbt.se or its corresponding variant https://YourDataBase.bassdb.se.
 3. These different URL domains are presented as options for you to choose which one suits your project the best. A research project might not have much in common with CBT treatments, and as such the domain ”webcbt.se” might seem a little odd to participants. In such cases, the domain ”bassdb.se” might be more suitable. On the flip side, ”webcbt.se” might be a perfect fit in the case where CBT treatments are in fact the main part of your project.
 4. BASS is a powerful and flexible tool specifically designed for online psychological research projects or treatment programs. It supports online registration, assessment, treatment as well as being able to provide detailed data reports.
