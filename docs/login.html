@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
 
-<meta name="author" content="Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell &amp; Brjánn Ljótsson" />
+<meta name="author" content="Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell, Isabell Soberius &amp; Brjánn Ljótsson" />
 
 
 
@@ -65,7 +65,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -255,10 +255,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="login" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Login<a href="login.html#login" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>As soon as your database setup is ready, you can login to the administrator’s interface. The interface is found at an URL of the format <code>https://webcbt.se/NameOfYourDatabase</code> or <code>https://bassdb.se/NameOfYourDatabase</code>. Enter your credentials in the login box and press the Login button.
+<p>As soon as your database setup is ready, you can login to the administrator’s interface. The interface is found at an URL of the format <code>https://NameOfYourDatabase-admin.webcbt.se/</code> or <code>https://NameOfYourDatabase-admin.bassdb.se/</code>.
+<br>
+You will have your login credentials supplied by us, and logging in will require 2FA (two-factor authentication) through either SMS or through an authenticator app (Authy, Google Authenticator, Microsoft Authenticator).
+<br>
+Enter your credentials in the login box and press the Login button.
 <br>
 <br></p>
-<p><img src="images/login.png" /></p>
+<p><img src="images/login.png" />
+<br><br>
+After this you will be taken to a page for double authentication. The code could arrive to you by sms or email depending on how your database is set up.
+<br><br>
+<img src="images/login_2FA.png" />
+<br><br>
+<em>2FA alternatives can be handled in Security Settings, see</em> <strong><em>Chapter 6</em></strong></p>
 
 </div>
             </section>

@@ -63,4 +63,3 @@ the-information-tab
 the-privileges-tab
 references
 tools-and-resources-for-working-with-treatments
-title-07-instruments
