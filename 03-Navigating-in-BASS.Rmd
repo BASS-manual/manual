@@ -50,12 +50,14 @@ The **Projects** lets your view and create projects within the database.
 ## The intended structure of a BASS project
 
 Now that we’ve familiarized ourselves with the main menu and its options, let’s take a moment and look at the internal structure of BASS, and how it’s set up.
-As you’ve surely gathered by now, the foundation of BASS is the **database**. This is the foundational level upon with all other layers are applied. The next level is the **project**. You can have just one project in your database, or you can have several. Participants are placed in to projects, but may be moved from one project to another if necessary. Each project in your database has its own 
+As you’ve surely gathered by now, the foundation of BASS is the **database**. This is the foundational level upon with all other layers are applied. The next level is the **project**. You can have just one project in your database, or you can have several. Participants are placed in to projects, but may be moved from one project to another if necessary. Each project in your database has its own
+
   - Participants and groups
   - Assessments
   - Registration (and unique URL to that registration)
   - Settings for answers flagging (all projects can also share global flagging settings)
   - Privacy notice
+  
 The next level in this structure is **groups**. They can be used to group participants *within* a project. This enables you do administer different sets of assessments to different groups of participants, for example. It also lets you use groups as a sorting tool in your reports.
 An important note is that instruments and treatments are stored at the database level, meaning they are accessible from all projects within the database. Assessments, however, are stored at the project level and are as such not shared between projects.
 And to clarify: participants and groups are also not shared between projects.
