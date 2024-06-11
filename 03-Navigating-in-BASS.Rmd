@@ -1,6 +1,6 @@
 # Getting your bearings: Navigating the administrator's interface
 
-Now, let’s turn to the administrative interface. You access this through either https://webcbt.se/YourDataBase or https://bassdb.se/YourDataBase. You will have your login credentials supplied by us, and logging in will require 2FA (two-factor authentication) through either SMS or through an authenticator app (Authy, Google Authenticator, Microsoft Authenticator).
+Now, let’s turn to the administrative interface. You access this through either https://YourDataBase-admin.webcbt.se/ or https://YourDataBase-admin.bassdb.se/. 
 
 All functionality in the BASS administration interface can be accessed from the main menu to the left of your screen. 
 
@@ -20,7 +20,7 @@ The **Project** dropdown menu lets you choose what project to view. This governs
 
 **Registration options** is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See ***Chapter 8*** for further details.
 
-**Project security** lets you define what security measures your project will use, such as two-factor authentication. These settings pertain to participants' use of the system. See ***Chapter 6*** for a more in-depth look at security settings.
+**Project security** lets you define what security measures your project will use, such as two-factor authentication. These settings pertain to *participants'* use of the system. See ***Chapter 6*** for a more in-depth look at security settings.
 
 The **Treatment containers** view lets you view, create and edit treatments to be used within BASS. See ***Chapter 13*** for more on how to build treatment content in BASS.
 
@@ -38,11 +38,11 @@ The **Projects** lets your view and create projects within the database.
 
 **Security settings** lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See ***Chapter 6*** for further details.
 
-**External messages** lets you view and edit messages which can be sent automatically to the cell phones or e-mail adresses of participants. This is, for example, notifications and reminders about active assessments. See ***Chapter 7*** for further details.
+**External messages** lets you manage default settings for outgoing communication to participants and therapists. This is, for example, notifications and reminders about active assessments, notifications on treatment chat messages, and definition of sms-sender. See ***Chapter 7*** for further details.
 
 **Reports** lets you extract reports on data collected through instruments and assessments in BASS. This part of BASS in undergoing a major update, and the manual will be updated to reflect the new Reports feature once it goes live.
 
-**Therapists** lets you view, create and edit therapist logins in the database. See Chapter # for further details (under construction and will be updated).
+**Therapists** lets you view, create and edit therapist logins in the database. See ***Chapter 14*** for further details.
 
 **Log out** simply logs you out of the database and ends your current session.
 
