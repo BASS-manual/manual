@@ -82,9 +82,9 @@ Last but not least you can see how many participants are included in each projec
 ![](images/projects.png)
 
 ### Setting up groups
-If you want to use groups in your project, for example to administer different cohorts, navigate to **Participants**, and to the tab labeled **Groups**. To create a group, simply type the name into the text box and click *Create*. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click *Save*.
+If you want to use groups in your project for example to administer different cohorts, navigate to **Participants**, and to the tab labeled **Groups**. To create a group, simply type the name into the text box and click *Create*. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click *Save*.
 ![](images/groups.png)
 
 >**Hint:**If you haven’t decided whether you need groups or not, you can hold off on creating groups for now. If you know you won’t need groups, you can simply forgo creating any groups.
 
-<hr>
+For more information on groups see **Chapter \@ref(Groups)** 
