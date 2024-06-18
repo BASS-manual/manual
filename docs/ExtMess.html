@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 10 Participants | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator’s manual for BASS4." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 10 Participants | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Adminstrator’s manual for BASS4." />
   <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 10 Participants | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="search-participants-finding-what-you-need.html"/>
-<link rel="next" href="instruments.html"/>
+<link rel="prev" href="settings-and-security.html"/>
+<link rel="next" href="registration-options.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -253,95 +253,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="participants" class="section level1 hasAnchor" number="10">
-<h1><span class="header-section-number">Chapter 10</span> Participants<a href="participants.html#participants" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>The “Participants” view is one way to access participant information. It is very similar to the “Participant search” view, and it is mostly down to personal preference on which to use. You can customize “Participant search” to show exactly the data you want to see, while “Participants” is predefined and more simplistic. One important difference remains, however: the <strong>“Groups”</strong> tab, which only exists under “Participants”.</p>
-<p>Depending on which project is selected in the dropdown in the main menu, the result in the “Participants” view will differ. If a specific project is selected, only participants in that project wil be shown under each tab.</p>
-<p>In “Participants”, there are four tabs:</p>
-<ul>
-<li><em>My participants</em>, which shows you any participants assigned to you (as a therapist)</li>
-<li><em>Supervisions</em>, which is similiar to “Supervised participants”</li>
-<li><em>All participants</em>, which shows you all participants in a project. If no project is selected, it will show all participants in the database.</li>
-<li><em>Groups</em>, which shows you the groups created in a project, and gives you the tools to manage them.</li>
-</ul>
-<p><img src="images/new-images/participantsTabs.png" /></p>
-<div id="creating-deleting-and-editing-participants" class="section level2 hasAnchor" number="10.1">
-<h2><span class="header-section-number">10.1</span> Creating, deleting and editing participants<a href="participants.html#creating-deleting-and-editing-participants" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>You can create new participants in two of the tabs in the Participants view; <em>My participants</em> and <em>All participants</em>. Participants that are created in the <em>My participants</em> tab will be tagged as your participants automatically, while participants created in the <em>All participants</em> tab won’t be tagged.
-To create a new participant, click <em>Create participant within project [Project Name]</em>. Newly created participants are added at the bottom of each view.</p>
-<p>To delete at participant, click the trash bin icon to the far right of the corresponding participant’s row.</p>
-<p>To edit a participant, click the pencil icon in the table, on the corresponding participant’s row. This will take you to the “Participant stats” view.<br>
-If you only wish to change, or add, what group a participant belongs to, you can do so directly in the <em>Group</em> column of the participant table by using the dropdown. When you’ve assigned a participant to a group this way, don’t forget to click the “Save” button at the bottom of the table.</p>
-</div>
-<div id="the-participant-view" class="section level2 hasAnchor" number="10.2">
-<h2><span class="header-section-number">10.2</span> The participant view<a href="participants.html#the-participant-view" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When you create or edit a participant, the participant view is shown. To exit this view, and return to the participants table, click the “close” text to the right of the participant’s name. If you made any changes to the participant, don’t forget to save them by clicking the “Save” button at the bottom of the page.</p>
-<p>There are seven tabs in this view:</p>
-<ul>
-<li><em>Participants stats</em>, where you can view all fundamental information on the participant</li>
-<li><em>Treatments</em>, where you can view and manage any treatments connected to the participant</li>
-<li><em>Files</em>, where you can upload files relevant to the participant. These files cannot be viewed by the participant, but only by therapist who have access to the participant.</li>
-<li><em>External messages</em>, where you can manually send SMS or e-mail messages to the participant, and review the status on any previously sent external messages.</li>
-<li><em>Flags</em>, where you can view any flags the participant might have.</li>
-<li><em>Assessments</em>, where you can view and manage assessments for the participant. You can also activate or deactivate individually managed assessment through this view.</li>
-<li><em>Graphs</em>, where you can see graphs on the answers the participant has given on recurring assessments.</li>
-</ul>
-<div id="participant-stats" class="section level3 hasAnchor" number="10.2.1">
-<h3><span class="header-section-number">10.2.1</span> Participant stats<a href="participants.html#participant-stats" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.<vbr>
-The <em>Show participant log</em> button on the top of this view will show a log of all changes and updates done to the participant. The <em>Show notes</em> button will show a log of all notes written aout the participant.<br>
-Now notes on a participant can be added by clicking the <em>Create new note</em> link.</p>
-<blockquote>
-<p><strong>Important note:</strong>Prior to doing this for the first time, make sure to add at least one note category through the <strong>Note categories</strong>, accesssed from the main menu. Further details on this can be found in the Participant notes section in this manual.</p>
-</blockquote>
-<p><img src="images/new-images/participantStatsLogNotes.png" /></p>
-<hr>
-<p>The <em>Stats</em> box shows data such as how many times the participant has logged in and which privacy consent was approved and when. <em>Internal ID</em> is the identification number of the participant used by the database.</p>
-<p><img src="images/new-images/participantsStatsSmall.png" /></p>
-<hr>
-<p>User information can be edited in the <em>User information</em> box.</p>
-<p><img src="images/new-images/participantInfo.png" /></p>
-<p>Existing passwords <em><strong>cannot be retrieved</strong></em>, only cleared or changed. If a participant reports a lost or forgotten password, you can provide them with a link to reset and change their password by clicking the <em>Send password link</em> button.<br>
-It is also possible to generate new quick login codes, and to send them by SMS, from this view.</p>
-<blockquote>
-<p><strong>Important note:</strong> Quick login settings are managed under <strong>Security settings</strong> in the main menu.</p>
-</blockquote>
-<blockquote>
-<p><strong>Important note:</strong> <em>Exempt from two-factor authentication</em> must be enabled under <strong>Project security</strong> in the main menu. Only participants can be exempt from two-factor authentication. It is mandatory for therapists.</p>
-</blockquote>
-<hr>
-<p>The <em>Temporary flag text</em> box provides you with the possibility to flag a participant with a star icon, that will display next to their name in the participants table. You can add a comment on why you flagged the participant.</p>
-<p>The <em>Temporary notes</em> box provides you with the possibility to add a temporary note on the participant - this note is also saved in the participant log if your click the “Save” button.</p>
-<p><img src="images/new-images/participantTempFlagNote.png" /></p>
-<hr>
-<p><em>Assign participant to therapists</em> allows you to assign the participant to another, or several other, therapist(s). The number shown in brackets to the right of each therapist’s name displays how many participants are already assigned to that therapist. This is useful for when you want to assign participants equally to the available therapists.<br>
-Remember to click “Save” to save your changes.</p>
-<p><img src="images/new-images/participantTherapists.png" /></p>
-<hr>
-<p>You can use the dropdown menu on the bottom of the page to move the participant to another project. This will move the participant to the project of your choosing, and close the tab. If you want top view the participant again, you will need to navigate to the destination project before being able to do so.</p>
-<p><img src="images/new-images/participantMoveProject.png" /></p>
-</div>
-<div id="PartTreat" class="section level3 hasAnchor" number="10.2.2">
-<h3><span class="header-section-number">10.2.2</span> Participant treatments<a href="participants.html#PartTreat" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To assign a participant to an existing treatment, go to <strong>Participants</strong>, <strong>Treatments</strong>, the <strong>Treatment access</strong> tab. All available treatments are listed here in the dropdown menu.</p>
-<p>If a treatment doesn’t show up in the dropdown menu, you will have to make it available via <strong>Treatment containers</strong> in the main menu.</p>
-<p><img src="images/new-images/participantTreatConnect.png" /></p>
-<blockquote>
-<p><strong>Important note:</strong> While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will only be able to access <em><strong>one</strong></em> of the treatments at a time.</p>
-</blockquote>
-<p><img src="images/new-images/participantTreatAccess.png" /></p>
-<p>In some studies, you may want to record how much time is spent writing messages to participants by a therapist. <em><strong>More info to come</strong></em></p>
+<div id="ExtMess" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> External messages<a href="ExtMess.html#ExtMess" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.</p>
+<p><strong>SMS settings</strong>
+The first box is labeled <em>SMS sender name</em>, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
+The box below, labeled <em>Standard SMS with quick login code</em>, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.</p>
+<p>Below that is the dropdown menu <em>Delivery method for new message notifications to therapists</em>. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly “Unhandled participant tasks” email.</p>
+<p><strong>New treatment message notification settings</strong>
+Here you specify how notifications about new messages will be delivered to participants, and what the notification message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
+Below that, there is a box for <em>New message email subject</em>. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
+The box labeled <em>New message notification</em> is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.</p>
+<p><strong>SMS count per month</strong>
+This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.</p>
+<p><strong>Email settings</strong>
+Under this headline are the settings for e-mail addresses connected to your database. The first one, <em>Sender automatic messages</em>, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply[at]ki.se by default.
+Below that is the <em>General mailbox for database</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.</p>
+<p><strong>Assessment reminder settings</strong>
+Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
+You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
+Below these settings are two textboxes, <em>Standard SMS assessments reminder</em> and <em>Standard email assessment reminder</em>. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.</p>
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="search-participants-finding-what-you-need.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="instruments.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="settings-and-security.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="registration-options.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -372,7 +312,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/BASS-manual/manual/tree/master/08-Participants.Rmd",
+"link": "https://github.com/BASS-manual/manual/tree/master/05-External-messages.Rmd",
 "text": "Edit"
 },
 "history": {

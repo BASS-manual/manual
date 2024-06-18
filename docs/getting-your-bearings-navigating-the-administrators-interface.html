@@ -147,12 +147,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="5.1" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#the-intended-structure-of-a-bass-project"><i class="fa fa-check"></i><b>5.1</b> The intended structure of a BASS project</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#setting-up-your-project"><i class="fa fa-check"></i><b>5.1.1</b> Setting up your project</a></li>
-<li class="chapter" data-level="5.1.2" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#groups"><i class="fa fa-check"></i><b>5.1.2</b> Groups</a></li>
+<li class="chapter" data-level="5.1.1" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#setting-up-projects"><i class="fa fa-check"></i><b>5.1.1</b> Setting up projects</a></li>
+<li class="chapter" data-level="5.1.2" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#setting-up-groups"><i class="fa fa-check"></i><b>5.1.2</b> Setting up groups</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="settings-and-security.html"><a href="settings-and-security.html"><i class="fa fa-check"></i><b>6</b> Settings and security</a></li>
-<li class="chapter" data-level="7" data-path="external-messages.html"><a href="external-messages.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
+<li class="chapter" data-level="7" data-path="ExtMess.html"><a href="ExtMess.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
 <li class="chapter" data-level="8" data-path="registration-options.html"><a href="registration-options.html"><i class="fa fa-check"></i><b>8</b> Registration options</a></li>
 <li class="chapter" data-level="9" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html"><i class="fa fa-check"></i><b>9</b> Search participants: Finding what you need</a>
 <ul>
@@ -171,7 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.2" data-path="participants.html"><a href="participants.html#the-participant-view"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
 <ul>
 <li class="chapter" data-level="10.2.1" data-path="participants.html"><a href="participants.html#participant-stats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
-<li class="chapter" data-level="10.2.2" data-path="participants.html"><a href="participants.html#participant-treatments"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
+<li class="chapter" data-level="10.2.2" data-path="participants.html"><a href="participants.html#PartTreat"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="instruments.html"><a href="instruments.html"><i class="fa fa-check"></i><b>11</b> Instruments</a>
@@ -292,15 +292,35 @@ As you’ve surely gathered by now, the foundation of BASS is the <strong>databa
 <p>The next level in this structure is <strong>groups</strong>. They can be used to group participants <em>within</em> a project. This enables you do administer different sets of assessments to different groups of participants, for example. It also lets you use groups as a sorting tool in your reports.
 An important note is that instruments and treatments are stored at the database level, meaning they are accessible from all projects within the database. Assessments, however, are stored at the project level and are as such not shared between projects.
 And to clarify: participants and groups are also not shared between projects.</p>
-<div id="setting-up-your-project" class="section level3 hasAnchor" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> Setting up your project<a href="getting-your-bearings-navigating-the-administrators-interface.html#setting-up-your-project" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Now, how do I set up my project? And what do I need to get started?
-You can get started without setting up a project, and start by building instruments and treatments. However, it is recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented. To set up your project, simply navigate to <strong>Projects</strong> and click <em>Create new project</em>, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.</p>
+<div id="setting-up-projects" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Setting up projects<a href="getting-your-bearings-navigating-the-administrators-interface.html#setting-up-projects" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+Now, how do I set up my project? And what do I need to get started?
+You can get started without setting up a project, and start by building instruments and treatments. However, it is recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented.
+<br>
+To set up your project, simply navigate to <strong>Projects</strong> and click <em>Create new project</em>, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.
+<hr>
+<blockquote>
+<p><strong>Note:</strong> It is not possible to remove a project. So if you accidentally create one, just give it a name to indicate that it is not in use.</p>
+</blockquote>
+<p><br>
+For each project one can specify an <em>email recipient</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues related to the specific project. It is also used as a fallback address for unhandled participant task emails in case a participant does not have a therapist assigned to them (so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention). If there is no email address specified for the project the <em>General mailbox for database</em> specified under <strong>External messages</strong> is used (see <strong>Chapter <a href="ExtMess.html#ExtMess">7</a></strong>).
+<br><br>
+One can also specify <em>HTML title for database</em> in order to give both the administrator and participant interface a title. In the image below you see that the HTML title shows up as the tab name for the interface.
+<br><br>
+If you want therapists to be able to log time on their communication with participants, you need to check <em>Timing</em> on the project to activate that feature. See more on this in <strong>Chapter <a href="participants.html#PartTreat">10.2.2</a> Participant Treatments</strong>.
+<br><br>
+Last but not least you can see how many participants are included in each project in the column <em>#Participants</em>.
+<br><br>
+<img src="images/projects.png" /></p>
 </div>
-<div id="groups" class="section level3 hasAnchor" number="5.1.2">
-<h3><span class="header-section-number">5.1.2</span> Groups<a href="getting-your-bearings-navigating-the-administrators-interface.html#groups" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you want to use groups in your project, for example to administer different cohorts, navigate to <strong>Participants</strong>, and to the tab labeled <strong>Groups</strong>. To create a group, simply type the name into the text box and click <em>Save</em>. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click <em>Save</em> again.
-If you haven’t decided whether you need groups or not, you can hold off on creating groups for now. If you know you won’t need groups, you can simply forgo creating any groups.</p>
+<div id="setting-up-groups" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Setting up groups<a href="getting-your-bearings-navigating-the-administrators-interface.html#setting-up-groups" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you want to use groups in your project, for example to administer different cohorts, navigate to <strong>Participants</strong>, and to the tab labeled <strong>Groups</strong>. To create a group, simply type the name into the text box and click <em>Create</em>. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click <em>Save</em>.
+<img src="images/groups.png" /></p>
+<blockquote>
+<p><strong>Hint:</strong>If you haven’t decided whether you need groups or not, you can hold off on creating groups for now. If you know you won’t need groups, you can simply forgo creating any groups.</p>
+</blockquote>
+<hr>
 
 </div>
 </div>

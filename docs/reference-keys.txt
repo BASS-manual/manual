@@ -4,10 +4,10 @@ dictionary
 login
 getting-your-bearings-navigating-the-administrators-interface
 the-intended-structure-of-a-bass-project
-setting-up-your-project
-groups
+setting-up-projects
+setting-up-groups
 settings-and-security
-external-messages
+ExtMess
 registration-options
 search-participants-finding-what-you-need
 selectionfilter
@@ -20,7 +20,7 @@ participants
 creating-deleting-and-editing-participants
 the-participant-view
 participant-stats
-participant-treatments
+PartTreat
 instruments
 copy-an-instrument
 creating-a-new-instrument
