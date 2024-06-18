@@ -16,9 +16,9 @@ hide-show-and-sort-columns
 column-explanations
 saveload-search-settings
 add-new-participant-to-group-and-change-group
-participants
+Participants
 creating-deleting-and-editing-participants
-the-participant-view
+PartView
 participant-stats
 PartTreat
 instruments
@@ -55,6 +55,8 @@ creating-a-treatment
 treatment-modules
 treatment-content
 content-text
+Groups
+GroupAssess
 therapists
 creating-a-therapist-account
 the-manage-therapists-view
