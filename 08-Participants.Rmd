@@ -79,7 +79,7 @@ You can use the dropdown menu on the bottom of the page to move the participant 
 
 ![](images/new-images/participantMoveProject.png)
 
-### Participant treatments
+### Participant treatments {#PartTreat}
 To assign a participant to an existing treatment, go to **Participants**, **Treatments**, the **Treatment access** tab. All available treatments are listed here in the dropdown menu.
 
 If a treatment doesn't show up in the dropdown menu, you will have to make it available via **Treatment containers** in the main menu.
