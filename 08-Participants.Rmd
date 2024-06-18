@@ -1,4 +1,4 @@
-# Participants
+# Participants {#Participants}
 
 The "Participants" view is one way to access participant information. It is very similar to the "Participant search" view, and it is mostly down to personal preference on which to use. You can customize "Participant search" to show exactly the data you want to see, while "Participants" is predefined and more simplistic. One important difference remains, however: the **"Groups"** tab, which only exists under "Participants".
 
@@ -22,7 +22,7 @@ To delete at participant, click the trash bin icon to the far right of the corre
 To edit a participant, click the pencil icon in the table, on the corresponding participant's row. This will take you to the "Participant stats" view.<br>
 If you only wish to change, or add, what group a participant belongs to, you can do so directly in the *Group* column of the participant table by using the dropdown. When you've assigned a participant to a group this way, don't forget to click the "Save" button at the bottom of the table.
 
-## The participant view
+## The participant view {#PartView}
 When you create or edit a participant, the participant view is shown. To exit this view, and return to the participants table, click the "close" text to the right of the participant's name. If you made any changes to the participant, don't forget to save them by clicking the "Save" button at the bottom of the page.
 
 There are seven tabs in this view:
