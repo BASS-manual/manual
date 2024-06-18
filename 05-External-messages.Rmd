@@ -1,4 +1,4 @@
-# External messages
+# External messages {#ExtMess}
 Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.
 
 **SMS settings**
