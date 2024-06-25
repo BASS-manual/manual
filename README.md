@@ -53,7 +53,7 @@ When starting the program, you will want to *clone* the repository (File -> Clon
 
 If you are using the command line, you can just `cd` to where ever you prefer to have your code and do
 
-`git clone https://github.com/brjann/manual`
+`git clone https://github.com/bass-manual/manual`
 
 Now git will download all the files and change history from GitHub. When done, all the files will be found in the folder `manual`. In this folder, there is a hidden folder, `.git` where all editing history of the repo is stored as different edits, patches, of all files in the repo.
 
@@ -73,7 +73,7 @@ In the RStudio IDE, there is a tab "Build" with a small button "Build Book". Pre
 
 What has changed now?
 
-If you go to the Git tab in RStudio IDE, you'll see a large number of files that has changed, bot 09-Instruments.Rmd (which was the file we changed), but also a lot of files under docs/, mostly html files, but also `.tex`, `.pdf` etc. All these files are changed (or re-created) during the build step.
+If you go to the Git tab in RStudio IDE, you'll see a large number of files that has changed, bot 09-Instruments.Rmd (which was the file we changed), but also a lot of files under docs/, mostly html files, but also images and javascript. All these files are changed (or re-created) during the build step.
 
 Just commit the change in 09-Instrument.rmd by selecting this file, and the press the button `commit`. You will se a window where all additions are highlighted in green, and you are supposed to write a commit message telling the world what this change means.
 
@@ -95,6 +95,6 @@ We have already built the manual locally. We did chose to not commit these chang
 
 It could be a good idea to release a new version of the manual in a somewhat structured manner. The build process has to be done locally, and all the /docs files should be commited and pushed.
 
-The files in docs/ is actually the files served online via https://bass-manual.github.io/manual/ or https://brjann.github.io/manual/
+The files in docs/ is actually the files served online via https://bass-manual.github.io/manual/
 
 
