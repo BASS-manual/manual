@@ -1,8 +1,8 @@
-# Participants {#Participants}
+# Participants {#participants}
 
 The "Participants" view is one way to access participant information. It is very similar to the "Participant search" view, and it is mostly down to personal preference on which to use. You can customize "Participant search" to show exactly the data you want to see, while "Participants" is predefined and more simplistic. One important difference remains, however: the **"Groups"** tab, which only exists under "Participants".
 
-Depending on which project is selected in the dropdown in the main menu, the result in the "Participants" view will differ. If a specific project is selected, only participants in that project wil be shown under each tab.
+Depending on which project is selected in the dropdown in the main menu, the result in the "Participants" view will differ. If a specific project is selected, only gparticipants in that project wil be shown under each tab.
 
 In "Participants", there are four tabs: 
 
@@ -22,7 +22,7 @@ To delete at participant, click the trash bin icon to the far right of the corre
 To edit a participant, click the pencil icon in the table, on the corresponding participant's row. This will take you to the "Participant stats" view.<br>
 If you only wish to change, or add, what group a participant belongs to, you can do so directly in the *Group* column of the participant table by using the dropdown. When you've assigned a participant to a group this way, don't forget to click the "Save" button at the bottom of the table.
 
-## The participant view {#PartView}
+## The participant view {#partview}
 When you create or edit a participant, the participant view is shown. To exit this view, and return to the participants table, click the "close" text to the right of the participant's name. If you made any changes to the participant, don't forget to save them by clicking the "Save" button at the bottom of the page.
 
 There are seven tabs in this view:
@@ -79,7 +79,7 @@ You can use the dropdown menu on the bottom of the page to move the participant 
 
 ![](images/new-images/participantMoveProject.png)
 
-### Participant treatments {#PartTreat}
+### Participant treatments {#parttreat}
 To assign a participant to an existing treatment, go to **Participants**, **Treatments**, the **Treatment access** tab. All available treatments are listed here in the dropdown menu.
 
 If a treatment doesn't show up in the dropdown menu, you will have to make it available via **Treatment containers** in the main menu.

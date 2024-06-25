@@ -1,4 +1,4 @@
-# Groups {#Groups}
+# Groups {#groups}
 
 You can use groups in your project, for example to administer different cohorts. You access Groups from the “Participants” option in the main menu, and then you select the tab *Groups*.
 <br>
@@ -19,9 +19,9 @@ To administer a group further click *Show* on the group you are interested in. T
 - Group participants
 - Group Assessments
 
-In *group participants* you can se a list of all the participants in the current group. From here you can administer the participants individually just like in the other participant list views. See more on this in **Chapter \@ref(Participants)**
+In *group participants* you can se a list of all the participants in the current group. From here you can administer the participants individually just like in the other participant list views. See more on this in **Chapter \@ref(participants)**
 
-## Group Assessments {#GroupAssess}
+## Group Assessments {#groupassess}
 
 TBD...
 
