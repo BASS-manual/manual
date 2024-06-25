@@ -65,7 +65,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -152,7 +152,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="settings-and-security.html"><a href="settings-and-security.html"><i class="fa fa-check"></i><b>6</b> Settings and security</a></li>
-<li class="chapter" data-level="7" data-path="ExtMess.html"><a href="ExtMess.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
+<li class="chapter" data-level="7" data-path="extmess.html"><a href="extmess.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
 <li class="chapter" data-level="8" data-path="registration-options.html"><a href="registration-options.html"><i class="fa fa-check"></i><b>8</b> Registration options</a></li>
 <li class="chapter" data-level="9" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html"><i class="fa fa-check"></i><b>9</b> Search participants: Finding what you need</a>
 <ul>
@@ -165,13 +165,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.5.1" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#add-new-participant-to-group-and-change-group"><i class="fa fa-check"></i><b>9.5.1</b> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="Participants.html"><a href="Participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
+<li class="chapter" data-level="10" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="Participants.html"><a href="Participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>10.1</b> Creating, deleting and editing participants</a></li>
-<li class="chapter" data-level="10.2" data-path="Participants.html"><a href="Participants.html#PartView"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
+<li class="chapter" data-level="10.1" data-path="participants.html"><a href="participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>10.1</b> Creating, deleting and editing participants</a></li>
+<li class="chapter" data-level="10.2" data-path="participants.html"><a href="participants.html#partview"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
 <ul>
-<li class="chapter" data-level="10.2.1" data-path="Participants.html"><a href="Participants.html#participant-stats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
-<li class="chapter" data-level="10.2.2" data-path="Participants.html"><a href="Participants.html#PartTreat"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
+<li class="chapter" data-level="10.2.1" data-path="participants.html"><a href="participants.html#participant-stats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
+<li class="chapter" data-level="10.2.2" data-path="participants.html"><a href="participants.html#parttreat"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="instruments.html"><a href="instruments.html"><i class="fa fa-check"></i><b>11</b> Instruments</a>
@@ -219,9 +219,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.5.1" data-path="create-new-treatment.html"><a href="create-new-treatment.html#content-text"><i class="fa fa-check"></i><b>13.5.1</b> Content text</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="Groups.html"><a href="Groups.html"><i class="fa fa-check"></i><b>14</b> Groups</a>
+<li class="chapter" data-level="14" data-path="groups.html"><a href="groups.html"><i class="fa fa-check"></i><b>14</b> Groups</a>
 <ul>
-<li class="chapter" data-level="14.1" data-path="Groups.html"><a href="Groups.html#GroupAssess"><i class="fa fa-check"></i><b>14.1</b> Group Assessments</a></li>
+<li class="chapter" data-level="14.1" data-path="groups.html"><a href="groups.html#groupassess"><i class="fa fa-check"></i><b>14.1</b> Group Assessments</a></li>
 </ul></li>
 <li class="chapter" data-level="15" data-path="therapists.html"><a href="therapists.html"><i class="fa fa-check"></i><b>15</b> Therapists</a>
 <ul>
@@ -257,10 +257,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Participants" class="section level1 hasAnchor" number="10">
-<h1><span class="header-section-number">Chapter 10</span> Participants<a href="Participants.html#Participants" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="participants" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Chapter 10</span> Participants<a href="participants.html#participants" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The “Participants” view is one way to access participant information. It is very similar to the “Participant search” view, and it is mostly down to personal preference on which to use. You can customize “Participant search” to show exactly the data you want to see, while “Participants” is predefined and more simplistic. One important difference remains, however: the <strong>“Groups”</strong> tab, which only exists under “Participants”.</p>
-<p>Depending on which project is selected in the dropdown in the main menu, the result in the “Participants” view will differ. If a specific project is selected, only participants in that project wil be shown under each tab.</p>
+<p>Depending on which project is selected in the dropdown in the main menu, the result in the “Participants” view will differ. If a specific project is selected, only gparticipants in that project wil be shown under each tab.</p>
 <p>In “Participants”, there are four tabs:</p>
 <ul>
 <li><em>My participants</em>, which shows you any participants assigned to you (as a therapist)</li>
@@ -270,15 +270,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p><img src="images/new-images/participantsTabs.png" /></p>
 <div id="creating-deleting-and-editing-participants" class="section level2 hasAnchor" number="10.1">
-<h2><span class="header-section-number">10.1</span> Creating, deleting and editing participants<a href="Participants.html#creating-deleting-and-editing-participants" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">10.1</span> Creating, deleting and editing participants<a href="participants.html#creating-deleting-and-editing-participants" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>You can create new participants in two of the tabs in the Participants view; <em>My participants</em> and <em>All participants</em>. Participants that are created in the <em>My participants</em> tab will be tagged as your participants automatically, while participants created in the <em>All participants</em> tab won’t be tagged.
 To create a new participant, click <em>Create participant within project [Project Name]</em>. Newly created participants are added at the bottom of each view.</p>
 <p>To delete at participant, click the trash bin icon to the far right of the corresponding participant’s row.</p>
 <p>To edit a participant, click the pencil icon in the table, on the corresponding participant’s row. This will take you to the “Participant stats” view.<br>
 If you only wish to change, or add, what group a participant belongs to, you can do so directly in the <em>Group</em> column of the participant table by using the dropdown. When you’ve assigned a participant to a group this way, don’t forget to click the “Save” button at the bottom of the table.</p>
 </div>
-<div id="PartView" class="section level2 hasAnchor" number="10.2">
-<h2><span class="header-section-number">10.2</span> The participant view<a href="Participants.html#PartView" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="partview" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> The participant view<a href="participants.html#partview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>When you create or edit a participant, the participant view is shown. To exit this view, and return to the participants table, click the “close” text to the right of the participant’s name. If you made any changes to the participant, don’t forget to save them by clicking the “Save” button at the bottom of the page.</p>
 <p>There are seven tabs in this view:</p>
 <ul>
@@ -291,7 +291,7 @@ If you only wish to change, or add, what group a participant belongs to, you can
 <li><em>Graphs</em>, where you can see graphs on the answers the participant has given on recurring assessments.</li>
 </ul>
 <div id="participant-stats" class="section level3 hasAnchor" number="10.2.1">
-<h3><span class="header-section-number">10.2.1</span> Participant stats<a href="Participants.html#participant-stats" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">10.2.1</span> Participant stats<a href="participants.html#participant-stats" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.<vbr>
 The <em>Show participant log</em> button on the top of this view will show a log of all changes and updates done to the participant. The <em>Show notes</em> button will show a log of all notes written aout the participant.<br>
 Now notes on a participant can be added by clicking the <em>Create new note</em> link.</p>
@@ -325,8 +325,8 @@ Remember to click “Save” to save your changes.</p>
 <p>You can use the dropdown menu on the bottom of the page to move the participant to another project. This will move the participant to the project of your choosing, and close the tab. If you want top view the participant again, you will need to navigate to the destination project before being able to do so.</p>
 <p><img src="images/new-images/participantMoveProject.png" /></p>
 </div>
-<div id="PartTreat" class="section level3 hasAnchor" number="10.2.2">
-<h3><span class="header-section-number">10.2.2</span> Participant treatments<a href="Participants.html#PartTreat" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="parttreat" class="section level3 hasAnchor" number="10.2.2">
+<h3><span class="header-section-number">10.2.2</span> Participant treatments<a href="participants.html#parttreat" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To assign a participant to an existing treatment, go to <strong>Participants</strong>, <strong>Treatments</strong>, the <strong>Treatment access</strong> tab. All available treatments are listed here in the dropdown menu.</p>
 <p>If a treatment doesn’t show up in the dropdown menu, you will have to make it available via <strong>Treatment containers</strong> in the main menu.</p>
 <p><img src="images/new-images/participantTreatConnect.png" /></p>

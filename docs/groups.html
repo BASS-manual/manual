@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 14 Groups | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator’s manual for BASS4." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 14 Groups | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Adminstrator’s manual for BASS4." />
   <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 14 Groups | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="settings-and-security.html"/>
-<link rel="next" href="registration-options.html"/>
+<link rel="prev" href="create-new-treatment.html"/>
+<link rel="next" href="therapists.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -65,7 +65,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -147,12 +147,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="5.1" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#the-intended-structure-of-a-bass-project"><i class="fa fa-check"></i><b>5.1</b> The intended structure of a BASS project</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#projects"><i class="fa fa-check"></i><b>5.1.1</b> Projects</a></li>
-<li class="chapter" data-level="5.1.2" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#groups"><i class="fa fa-check"></i><b>5.1.2</b> Groups</a></li>
+<li class="chapter" data-level="5.1.1" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#setting-up-projects"><i class="fa fa-check"></i><b>5.1.1</b> Setting up projects</a></li>
+<li class="chapter" data-level="5.1.2" data-path="getting-your-bearings-navigating-the-administrators-interface.html"><a href="getting-your-bearings-navigating-the-administrators-interface.html#setting-up-groups"><i class="fa fa-check"></i><b>5.1.2</b> Setting up groups</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="settings-and-security.html"><a href="settings-and-security.html"><i class="fa fa-check"></i><b>6</b> Settings and security</a></li>
-<li class="chapter" data-level="7" data-path="external-messages.html"><a href="external-messages.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
+<li class="chapter" data-level="7" data-path="extmess.html"><a href="extmess.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
 <li class="chapter" data-level="8" data-path="registration-options.html"><a href="registration-options.html"><i class="fa fa-check"></i><b>8</b> Registration options</a></li>
 <li class="chapter" data-level="9" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html"><i class="fa fa-check"></i><b>9</b> Search participants: Finding what you need</a>
 <ul>
@@ -168,10 +168,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
 <ul>
 <li class="chapter" data-level="10.1" data-path="participants.html"><a href="participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>10.1</b> Creating, deleting and editing participants</a></li>
-<li class="chapter" data-level="10.2" data-path="participants.html"><a href="participants.html#the-participant-view"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
+<li class="chapter" data-level="10.2" data-path="participants.html"><a href="participants.html#partview"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
 <ul>
 <li class="chapter" data-level="10.2.1" data-path="participants.html"><a href="participants.html#participant-stats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
-<li class="chapter" data-level="10.2.2" data-path="participants.html"><a href="participants.html#participant-treatments"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
+<li class="chapter" data-level="10.2.2" data-path="participants.html"><a href="participants.html#parttreat"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="instruments.html"><a href="instruments.html"><i class="fa fa-check"></i><b>11</b> Instruments</a>
@@ -219,19 +219,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.5.1" data-path="create-new-treatment.html"><a href="create-new-treatment.html#content-text"><i class="fa fa-check"></i><b>13.5.1</b> Content text</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="therapists.html"><a href="therapists.html"><i class="fa fa-check"></i><b>14</b> Therapists</a>
+<li class="chapter" data-level="14" data-path="groups.html"><a href="groups.html"><i class="fa fa-check"></i><b>14</b> Groups</a>
 <ul>
-<li class="chapter" data-level="14.1" data-path="therapists.html"><a href="therapists.html#creating-a-therapist-account"><i class="fa fa-check"></i><b>14.1</b> Creating a therapist account</a></li>
-<li class="chapter" data-level="14.2" data-path="therapists.html"><a href="therapists.html#the-manage-therapists-view"><i class="fa fa-check"></i><b>14.2</b> The “Manage Therapists” view</a>
+<li class="chapter" data-level="14.1" data-path="groups.html"><a href="groups.html#groupassess"><i class="fa fa-check"></i><b>14.1</b> Group Assessments</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="therapists.html"><a href="therapists.html"><i class="fa fa-check"></i><b>15</b> Therapists</a>
 <ul>
-<li class="chapter" data-level="14.2.1" data-path="therapists.html"><a href="therapists.html#creating-a-new-therapist-account"><i class="fa fa-check"></i><b>14.2.1</b> Creating a new therapist account</a></li>
-<li class="chapter" data-level="14.2.2" data-path="therapists.html"><a href="therapists.html#the-information-tab"><i class="fa fa-check"></i><b>14.2.2</b> The Information Tab</a></li>
-<li class="chapter" data-level="14.2.3" data-path="therapists.html"><a href="therapists.html#the-privileges-tab"><i class="fa fa-check"></i><b>14.2.3</b> The Privileges Tab</a></li>
+<li class="chapter" data-level="15.1" data-path="therapists.html"><a href="therapists.html#creating-a-therapist-account"><i class="fa fa-check"></i><b>15.1</b> Creating a therapist account</a></li>
+<li class="chapter" data-level="15.2" data-path="therapists.html"><a href="therapists.html#the-manage-therapists-view"><i class="fa fa-check"></i><b>15.2</b> The “Manage Therapists” view</a>
+<ul>
+<li class="chapter" data-level="15.2.1" data-path="therapists.html"><a href="therapists.html#creating-a-new-therapist-account"><i class="fa fa-check"></i><b>15.2.1</b> Creating a new therapist account</a></li>
+<li class="chapter" data-level="15.2.2" data-path="therapists.html"><a href="therapists.html#the-information-tab"><i class="fa fa-check"></i><b>15.2.2</b> The Information Tab</a></li>
+<li class="chapter" data-level="15.2.3" data-path="therapists.html"><a href="therapists.html#the-privileges-tab"><i class="fa fa-check"></i><b>15.2.3</b> The Privileges Tab</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>15</b> References</a>
+<li class="chapter" data-level="16" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>16</b> References</a>
 <ul>
-<li class="chapter" data-level="15.1" data-path="references.html"><a href="references.html#tools-and-resources-for-working-with-treatments"><i class="fa fa-check"></i><b>15.1</b> Tools and resources for working with treatments</a></li>
+<li class="chapter" data-level="16.1" data-path="references.html"><a href="references.html#tools-and-resources-for-working-with-treatments"><i class="fa fa-check"></i><b>16.1</b> Tools and resources for working with treatments</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -253,35 +257,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="external-messages" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> External messages<a href="external-messages.html#external-messages" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.</p>
-<p><strong>SMS settings</strong>
-The first box is labeled <em>SMS sender name</em>, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
-The box below, labeled <em>Standard SMS with quick login code</em>, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.</p>
-<p>Below that is the dropdown menu <em>Delivery method for new message notifications to therapists</em>. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly “Unhandled participant tasks” email.</p>
-<p><strong>New treatment message notification settings</strong>
-Here you specify how notifications about new messages will be delivered to participants, and what the notification message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
-Below that, there is a box for <em>New message email subject</em>. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
-The box labeled <em>New message notification</em> is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.</p>
-<p><strong>SMS count per month</strong>
-This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.</p>
-<p><strong>Email settings</strong>
-Under this headline are the settings for e-mail addresses connected to your database. The first one, <em>Sender automatic messages</em>, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply[at]ki.se by default.
-Below that is the <em>General mailbox for database</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.</p>
-<p><strong>Assessment reminder settings</strong>
-Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
-You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
-Below these settings are two textboxes, <em>Standard SMS assessments reminder</em> and <em>Standard email assessment reminder</em>. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.</p>
+<div id="groups" class="section level1 hasAnchor" number="14">
+<h1><span class="header-section-number">Chapter 14</span> Groups<a href="groups.html#groups" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>You can use groups in your project, for example to administer different cohorts. You access Groups from the “Participants” option in the main menu, and then you select the tab <em>Groups</em>.
+<br>
+To create a group, simply type the name into the text box and click <em>Create</em>.</p>
+<p><img src="images/groups.png" /></p>
+<p>If you want to edit this name later on, you can easily do so by editing the name directly in its box and click <em>Save</em>.</p>
+<p><img src="images/GroupsList.png" />
+<br>
+In the groups overview one can see the number of participants in each group.</p>
+<blockquote>
+<p><em>Hint:</em> You can rearrange the order of the groups by using the arrows in the right most column</p>
+</blockquote>
+<p>To administer a group further click <em>Show</em> on the group you are interested in. This will take you to a view with two tabs</p>
+<ul>
+<li>Group participants</li>
+<li>Group Assessments</li>
+</ul>
+<p>In <em>group participants</em> you can se a list of all the participants in the current group. From here you can administer the participants individually just like in the other participant list views. See more on this in <strong>Chapter <a href="participants.html#participants">10</a></strong></p>
+<div id="groupassess" class="section level2 hasAnchor" number="14.1">
+<h2><span class="header-section-number">14.1</span> Group Assessments<a href="groups.html#groupassess" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>TBD…</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="settings-and-security.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="registration-options.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="create-new-treatment.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="therapists.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -312,7 +319,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/BASS-manual/manual/tree/master/05-External-messages.Rmd",
+"link": "https://github.com/BASS-manual/manual/tree/master/12-Groups.Rmd",
 "text": "Edit"
 },
 "history": {

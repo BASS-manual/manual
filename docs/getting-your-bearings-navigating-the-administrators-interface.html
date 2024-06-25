@@ -65,7 +65,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -152,7 +152,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="settings-and-security.html"><a href="settings-and-security.html"><i class="fa fa-check"></i><b>6</b> Settings and security</a></li>
-<li class="chapter" data-level="7" data-path="ExtMess.html"><a href="ExtMess.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
+<li class="chapter" data-level="7" data-path="extmess.html"><a href="extmess.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
 <li class="chapter" data-level="8" data-path="registration-options.html"><a href="registration-options.html"><i class="fa fa-check"></i><b>8</b> Registration options</a></li>
 <li class="chapter" data-level="9" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html"><i class="fa fa-check"></i><b>9</b> Search participants: Finding what you need</a>
 <ul>
@@ -165,13 +165,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.5.1" data-path="search-participants-finding-what-you-need.html"><a href="search-participants-finding-what-you-need.html#add-new-participant-to-group-and-change-group"><i class="fa fa-check"></i><b>9.5.1</b> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="Participants.html"><a href="Participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
+<li class="chapter" data-level="10" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="Participants.html"><a href="Participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>10.1</b> Creating, deleting and editing participants</a></li>
-<li class="chapter" data-level="10.2" data-path="Participants.html"><a href="Participants.html#PartView"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
+<li class="chapter" data-level="10.1" data-path="participants.html"><a href="participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>10.1</b> Creating, deleting and editing participants</a></li>
+<li class="chapter" data-level="10.2" data-path="participants.html"><a href="participants.html#partview"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
 <ul>
-<li class="chapter" data-level="10.2.1" data-path="Participants.html"><a href="Participants.html#participant-stats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
-<li class="chapter" data-level="10.2.2" data-path="Participants.html"><a href="Participants.html#PartTreat"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
+<li class="chapter" data-level="10.2.1" data-path="participants.html"><a href="participants.html#participant-stats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
+<li class="chapter" data-level="10.2.2" data-path="participants.html"><a href="participants.html#parttreat"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="instruments.html"><a href="instruments.html"><i class="fa fa-check"></i><b>11</b> Instruments</a>
@@ -219,9 +219,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.5.1" data-path="create-new-treatment.html"><a href="create-new-treatment.html#content-text"><i class="fa fa-check"></i><b>13.5.1</b> Content text</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="Groups.html"><a href="Groups.html"><i class="fa fa-check"></i><b>14</b> Groups</a>
+<li class="chapter" data-level="14" data-path="groups.html"><a href="groups.html"><i class="fa fa-check"></i><b>14</b> Groups</a>
 <ul>
-<li class="chapter" data-level="14.1" data-path="Groups.html"><a href="Groups.html#GroupAssess"><i class="fa fa-check"></i><b>14.1</b> Group Assessments</a></li>
+<li class="chapter" data-level="14.1" data-path="groups.html"><a href="groups.html#groupassess"><i class="fa fa-check"></i><b>14.1</b> Group Assessments</a></li>
 </ul></li>
 <li class="chapter" data-level="15" data-path="therapists.html"><a href="therapists.html"><i class="fa fa-check"></i><b>15</b> Therapists</a>
 <ul>
@@ -307,11 +307,11 @@ To set up your project, simply navigate to <strong>Projects</strong> and click <
 <p><strong>Note:</strong> It is not possible to remove a project. So if you accidentally create one, just give it a name to indicate that it is not in use.</p>
 </blockquote>
 <p><br>
-For each project one can specify an <em>email recipient</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues related to the specific project. It is also used as a fallback address for unhandled participant task emails in case a participant does not have a therapist assigned to them (so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention). If there is no email address specified for the project the <em>General mailbox for database</em> specified under <strong>External messages</strong> is used (see <strong>Chapter <a href="ExtMess.html#ExtMess">7</a></strong>).
+For each project one can specify an <em>email recipient</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues related to the specific project. It is also used as a fallback address for unhandled participant task emails in case a participant does not have a therapist assigned to them (so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention). If there is no email address specified for the project the <em>General mailbox for database</em> specified under <strong>External messages</strong> is used (see <strong>Chapter <a href="extmess.html#extmess">7</a></strong>).
 <br><br>
 One can also specify <em>HTML title for database</em> in order to give both the administrator and participant interface a title. In the image below you see that the HTML title shows up as the tab name for the interface.
 <br><br>
-If you want therapists to be able to log time on their communication with participants, you need to check <em>Timing</em> on the project to activate that feature. See more on this in <strong>Chapter <a href="Participants.html#PartTreat">10.2.2</a> Participant Treatments</strong>.
+If you want therapists to be able to log time on their communication with participants, you need to check <em>Timing</em> on the project to activate that feature. See more on this in <strong>Chapter <a href="participants.html#parttreat">10.2.2</a> Participant Treatments</strong>.
 <br><br>
 Last but not least you can see how many participants are included in each project in the column <em>#Participants</em>.
 <br><br>
@@ -324,7 +324,7 @@ Last but not least you can see how many participants are included in each projec
 <blockquote>
 <p><strong>Hint:</strong>If you haven’t decided whether you need groups or not, you can hold off on creating groups for now. If you know you won’t need groups, you can simply forgo creating any groups.</p>
 </blockquote>
-<p>For more information on groups see <strong>Chapter <a href="Groups.html#Groups">14</a></strong></p>
+<p>For more information on groups see <strong>Chapter <a href="groups.html#groups">14</a></strong></p>
 
 </div>
 </div>
