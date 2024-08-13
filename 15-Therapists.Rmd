@@ -3,7 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Therapists
+# Therapists {#therapists}
 
 The term "therapist" is the term used within BASS to designate anyone who administrates part of or the entirety of a database and its participants. This could be an administrator, whose job it is to build treatment content, instruments and assessments. It could also be a licensed therapist who administers treatments to select participants. It could yet again be students who use BASS as part of a university course in web-based CBT, as well as their supervising teacher or professor.
 The common denominator for all these examples is that they all use a therapist account. What separates them are the differing levels of access (**privileges**) given to them. In this chapter, we will take a look at the therapist accounts, how to set them up and what levels of **privileges** can be given to them.

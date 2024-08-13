@@ -42,7 +42,7 @@ The **Projects** lets your view and create projects within the database.
 
 **Reports** lets you extract reports on data collected through instruments and assessments in BASS. This part of BASS in undergoing a major update, and the manual will be updated to reflect the new Reports feature once it goes live.
 
-**Therapists** lets you view, create and edit therapist logins in the database. See ***Chapter 14*** for further details.
+**Therapists** lets you view, create and edit therapist logins in the database. See ***Chapter \@ref(therapists)*** for further details.
 
 **Log out** simply logs you out of the database and ends your current session.
 
