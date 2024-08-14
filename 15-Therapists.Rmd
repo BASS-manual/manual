@@ -57,3 +57,9 @@ A more in-depth look at the different privileges follows below:
 - Groups view: checking this box lets the therapist accounts view the **Groups** tab under **Participants** in the main menu.
 - Edit note categories: as with "Edit answer flag settings", checking this box grants access to view and edit note categories under **Note categories** in the main menu.
 - Supervisor: checking this box lets you designate the therapist account as a supervisor to other therapists.
+
+### Communicate the login details
+
+BASS does not send out any notifications to newly created therapists. The login information; login link, username, and one-time password, need to be communicated manually to the user by the person who created it. 
+
+>**Hint!** We do not recommend sending all of the login information in one email or similar, but instead communicate link and username in one medium and password in another.
