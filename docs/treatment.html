@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 13 Create new treatment | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <meta name="description" content="Adminstrator’s manual for BASS4." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 13 Create new treatment | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Adminstrator’s manual for BASS4." />
+  <meta name="github-repo" content="brjann/manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 13 Create new treatment | BASS4 - ADMINISTRATOR’S MANUAL" />
+  
+  <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
+  
+
+<meta name="author" content="Louise Serenhov, Erik Sjöstrand, Jonna Ekelin Thomas, Jenny-Li Örsell, Isabell Soberius &amp; Brjánn Ljótsson" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="assessments.html"/>
+<link rel="next" href="groups.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">BASS4 Administrator`s Manual</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="basics.html"><a href="basics.html"><i class="fa fa-check"></i><b>2</b> The Basics</a></li>
+<li class="chapter" data-level="3" data-path="dictonary.html"><a href="dictonary.html"><i class="fa fa-check"></i><b>3</b> Dictionary</a></li>
+<li class="chapter" data-level="4" data-path="login.html"><a href="login.html"><i class="fa fa-check"></i><b>4</b> Login</a></li>
+<li class="chapter" data-level="5" data-path="navigating.html"><a href="navigating.html"><i class="fa fa-check"></i><b>5</b> Getting your bearings: Navigating the administrator’s interface</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="navigating.html"><a href="navigating.html#the-intended-structure-of-a-bass-project"><i class="fa fa-check"></i><b>5.1</b> The intended structure of a BASS project</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="navigating.html"><a href="navigating.html#setupproject"><i class="fa fa-check"></i><b>5.1.1</b> Setting up projects</a></li>
+<li class="chapter" data-level="5.1.2" data-path="navigating.html"><a href="navigating.html#setting-up-groups"><i class="fa fa-check"></i><b>5.1.2</b> Setting up groups</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="settingssecurity.html"><a href="settingssecurity.html"><i class="fa fa-check"></i><b>6</b> Settings and security</a></li>
+<li class="chapter" data-level="7" data-path="extmess.html"><a href="extmess.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
+<li class="chapter" data-level="8" data-path="registration.html"><a href="registration.html"><i class="fa fa-check"></i><b>8</b> Registration options</a></li>
+<li class="chapter" data-level="9" data-path="search.html"><a href="search.html"><i class="fa fa-check"></i><b>9</b> Search participants: Finding what you need</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="search.html"><a href="search.html#selectionfilter"><i class="fa fa-check"></i><b>9.1</b> Selection/filter</a></li>
+<li class="chapter" data-level="9.2" data-path="search.html"><a href="search.html#search-1"><i class="fa fa-check"></i><b>9.2</b> Search</a></li>
+<li class="chapter" data-level="9.3" data-path="search.html"><a href="search.html#hide-show-and-sort-columns"><i class="fa fa-check"></i><b>9.3</b> Hide, show and sort columns</a></li>
+<li class="chapter" data-level="9.4" data-path="search.html"><a href="search.html#column-explanations"><i class="fa fa-check"></i><b>9.4</b> Column explanations</a></li>
+<li class="chapter" data-level="9.5" data-path="search.html"><a href="search.html#saveload-search-settings"><i class="fa fa-check"></i><b>9.5</b> Save/load search settings</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="search.html"><a href="search.html#add-new-participant-to-group-and-change-group"><i class="fa fa-check"></i><b>9.5.1</b> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="participants.html"><a href="participants.html"><i class="fa fa-check"></i><b>10</b> Participants</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="participants.html"><a href="participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>10.1</b> Creating, deleting and editing participants</a></li>
+<li class="chapter" data-level="10.2" data-path="participants.html"><a href="participants.html#partview"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="participants.html"><a href="participants.html#participant-stats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
+<li class="chapter" data-level="10.2.2" data-path="participants.html"><a href="participants.html#parttreat"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="instruments.html"><a href="instruments.html"><i class="fa fa-check"></i><b>11</b> Instruments</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="instruments.html"><a href="instruments.html#copy-an-instrument"><i class="fa fa-check"></i><b>11.1</b> Copy an instrument</a></li>
+<li class="chapter" data-level="11.2" data-path="instruments.html"><a href="instruments.html#creating-a-new-instrument"><i class="fa fa-check"></i><b>11.2</b> Creating a new instrument</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="instruments.html"><a href="instruments.html#the-general-tab"><i class="fa fa-check"></i><b>11.2.1</b> The General Tab</a></li>
+<li class="chapter" data-level="11.2.2" data-path="instruments.html"><a href="instruments.html#the-preview-tab"><i class="fa fa-check"></i><b>11.2.2</b> The Preview Tab</a></li>
+<li class="chapter" data-level="11.2.3" data-path="instruments.html"><a href="instruments.html#the-edit-tab"><i class="fa fa-check"></i><b>11.2.3</b> The Edit Tab</a></li>
+<li class="chapter" data-level="11.2.4" data-path="instruments.html"><a href="instruments.html#extra-information"><i class="fa fa-check"></i><b>11.2.4</b> Extra information</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="instruments.html"><a href="instruments.html#scoring-formula"><i class="fa fa-check"></i><b>11.3</b> Scoring formula</a></li>
+<li class="chapter" data-level="11.4" data-path="instruments.html"><a href="instruments.html#export"><i class="fa fa-check"></i><b>11.4</b> Export</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="assessments.html"><a href="assessments.html"><i class="fa fa-check"></i><b>12</b> Assessments</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="assessments.html"><a href="assessments.html#create-or-edit-assessments"><i class="fa fa-check"></i><b>12.1</b> Create or edit assessments</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="assessments.html"><a href="assessments.html#name"><i class="fa fa-check"></i><b>12.1.1</b> Name</a></li>
+<li class="chapter" data-level="12.1.2" data-path="assessments.html"><a href="assessments.html#labelcustom-label"><i class="fa fa-check"></i><b>12.1.2</b> Label/Custom label</a></li>
+<li class="chapter" data-level="12.1.3" data-path="assessments.html"><a href="assessments.html#managed"><i class="fa fa-check"></i><b>12.1.3</b> Managed</a></li>
+<li class="chapter" data-level="12.1.4" data-path="assessments.html"><a href="assessments.html#repitition"><i class="fa fa-check"></i><b>12.1.4</b> Repitition</a></li>
+<li class="chapter" data-level="12.1.5" data-path="assessments.html"><a href="assessments.html#time-limit"><i class="fa fa-check"></i><b>12.1.5</b> Time limit</a></li>
+<li class="chapter" data-level="12.1.6" data-path="assessments.html"><a href="assessments.html#dependence"><i class="fa fa-check"></i><b>12.1.6</b> Dependence</a></li>
+<li class="chapter" data-level="12.1.7" data-path="assessments.html"><a href="assessments.html#clinician-rated"><i class="fa fa-check"></i><b>12.1.7</b> Clinician rated</a></li>
+<li class="chapter" data-level="12.1.8" data-path="assessments.html"><a href="assessments.html#randomize-instrument-order"><i class="fa fa-check"></i><b>12.1.8</b> Randomize instrument order</a></li>
+<li class="chapter" data-level="12.1.9" data-path="assessments.html"><a href="assessments.html#welcomethank-you-text"><i class="fa fa-check"></i><b>12.1.9</b> Welcome/Thank you text</a></li>
+<li class="chapter" data-level="12.1.10" data-path="assessments.html"><a href="assessments.html#concurrent-and-merged-assessments"><i class="fa fa-check"></i><b>12.1.10</b> Concurrent and merged assessments</a></li>
+<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#automatic-reminders"><i class="fa fa-check"></i><b>12.1.11</b> Automatic reminders</a></li>
+<li class="chapter" data-level="12.1.12" data-path="assessments.html"><a href="assessments.html#participant-flagging"><i class="fa fa-check"></i><b>12.1.12</b> Participant flagging</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="assessments.html"><a href="assessments.html#copy-assessment"><i class="fa fa-check"></i><b>12.2</b> Copy assessment</a></li>
+<li class="chapter" data-level="12.3" data-path="assessments.html"><a href="assessments.html#dummy-assessments---some-scheduling-tricks"><i class="fa fa-check"></i><b>12.3</b> Dummy assessments - some scheduling tricks</a></li>
+<li class="chapter" data-level="12.4" data-path="assessments.html"><a href="assessments.html#assessment-instruments"><i class="fa fa-check"></i><b>12.4</b> Assessment instruments</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="treatment.html"><a href="treatment.html"><i class="fa fa-check"></i><b>13</b> Create new treatment</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="treatment.html"><a href="treatment.html#a-typical-treatment-structure"><i class="fa fa-check"></i><b>13.1</b> A typical treatment structure</a></li>
+<li class="chapter" data-level="13.2" data-path="treatment.html"><a href="treatment.html#creating-a-treatment-container"><i class="fa fa-check"></i><b>13.2</b> Creating a treatment container</a></li>
+<li class="chapter" data-level="13.3" data-path="treatment.html"><a href="treatment.html#creating-a-treatment"><i class="fa fa-check"></i><b>13.3</b> Creating a treatment</a></li>
+<li class="chapter" data-level="13.4" data-path="treatment.html"><a href="treatment.html#treatment-modules"><i class="fa fa-check"></i><b>13.4</b> Treatment Modules</a></li>
+<li class="chapter" data-level="13.5" data-path="treatment.html"><a href="treatment.html#treatment-content"><i class="fa fa-check"></i><b>13.5</b> Treatment Content</a>
+<ul>
+<li class="chapter" data-level="13.5.1" data-path="treatment.html"><a href="treatment.html#content-text"><i class="fa fa-check"></i><b>13.5.1</b> Content text</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="groups.html"><a href="groups.html"><i class="fa fa-check"></i><b>14</b> Groups</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="groups.html"><a href="groups.html#groupassess"><i class="fa fa-check"></i><b>14.1</b> Group Assessments</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="therapists.html"><a href="therapists.html"><i class="fa fa-check"></i><b>15</b> Therapists</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="therapists.html"><a href="therapists.html#creating-a-therapist-account"><i class="fa fa-check"></i><b>15.1</b> Creating a therapist account</a></li>
+<li class="chapter" data-level="15.2" data-path="therapists.html"><a href="therapists.html#the-manage-therapists-view"><i class="fa fa-check"></i><b>15.2</b> The “Manage Therapists” view</a>
+<ul>
+<li class="chapter" data-level="15.2.1" data-path="therapists.html"><a href="therapists.html#creating-a-new-therapist-account"><i class="fa fa-check"></i><b>15.2.1</b> Creating a new therapist account</a></li>
+<li class="chapter" data-level="15.2.2" data-path="therapists.html"><a href="therapists.html#the-information-tab"><i class="fa fa-check"></i><b>15.2.2</b> The Information Tab</a></li>
+<li class="chapter" data-level="15.2.3" data-path="therapists.html"><a href="therapists.html#the-privileges-tab"><i class="fa fa-check"></i><b>15.2.3</b> The Privileges Tab</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>16</b> References</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="references.html"><a href="references.html#tools-and-resources-for-working-with-treatments"><i class="fa fa-check"></i><b>16.1</b> Tools and resources for working with treatments</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BASS4 - ADMINISTRATOR’S MANUAL</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="treatment" class="section level1 hasAnchor" number="13">
+<h1><span class="header-section-number">Chapter 13</span> Create new treatment<a href="treatment.html#treatment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.<br>
+A treatment is built by combining <em>treatment modules</em> into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization’s needs and wishes.</p>
+<p>Treatments are accessed by the <strong>Treatment containers</strong> option in the main menu.</p>
+<p>The first thing you will see in this view is a table showing you all the existing treatment containers in the current project. If no treatment containers have been created, the table will be empty.<br>
+You can edit existing treatment containers by clicking the <em>Edit</em> link in the column to the right.<br>
+To create new treatment containers, click the <em>Create new treatment container</em> link below the table.</p>
+<p><img src="images/new-images/treatmentContainers.png" /></p>
+<blockquote>
+<p><strong>Important note:</strong> <em>Treatment containers</em> in BASS are frameworks that contain all the other components that make up a treatment, such as treatment modules.</p>
+</blockquote>
+<div id="a-typical-treatment-structure" class="section level2 hasAnchor" number="13.1">
+<h2><span class="header-section-number">13.1</span> A typical treatment structure<a href="treatment.html#a-typical-treatment-structure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A <strong>treatment container</strong> is the abstract structure that holds all the content of a treatment or treatment series. A typical <strong>treatment</strong> is built up by several modules, often arranged in a specific order. A typical <strong>module</strong> consits of:</p>
+<ul>
+<li>One <em>module text</em></li>
+<li>(0 - several) <em>worksheets</em></li>
+<li>One <em>homework</em></li>
+</ul>
+<p>Whenever you create a new treatment, it is advisable to plan the structure from the beginning, so as to get a sense of both the magnitude of the sub-content and the flow of the treatment.</p>
+</div>
+<div id="creating-a-treatment-container" class="section level2 hasAnchor" number="13.2">
+<h2><span class="header-section-number">13.2</span> Creating a treatment container<a href="treatment.html#creating-a-treatment-container" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In the <strong>Treatment containers</strong> view, click the <em>Create new treatment container</em> link below the table. This opens the editing view of the new treatment container. You can close the container by clicking <em>Close</em> at the top to return to the table listing all existing treatment containers. Don’t forget to save any changes first, by clicking the <em>Save</em> button.</p>
+<p><img src="images/new-images/treatmentsEditContainer.png" /></p>
+<p>Give your treatment container a name in the <em>Name</em> box, and save it.<br>
+You can now add treatments, modules and specific contents such as texts, worksheets and homeworks to your treatment container, by using the dropdown menu at the bottom of the page.</p>
+</div>
+<div id="creating-a-treatment" class="section level2 hasAnchor" number="13.3">
+<h2><span class="header-section-number">13.3</span> Creating a treatment<a href="treatment.html#creating-a-treatment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Regardless whether you just created a new treatment container or chose to edit an existing one, you can add a new treatment to it, by selecting <em>Create new… [Treatment]</em> in the dropdown menu ar the bottom of the view. This opens the editing view of the new treatment. You can close the treatment by clicking <em>Close</em> at the top of the view to return to the corresponding treatment container. Don’t forget to save any changes before doing so, by clicking the <em>Save</em> button.</p>
+<p>Give your treatment a name, by typing it into the <em>Name</em> box and save it.</p>
+<p><img src="images/new-images/treatmentTreatSettings.png" /></p>
+<p>Before adding in modules with content to the treatment, there are a few <strong>Treatment settings</strong> to consider.</p>
+<p><strong>Available</strong>
+By checking this box, the treatment can be assigned to participants.</p>
+<blockquote>
+<p><strong>Important note:</strong> Any participants assigned to the treatment will automatically and continuously have access to all its content unless you limit the access with the settings below.</p>
+</blockquote>
+<p><strong>Access has to be enabled/time-limited access</strong>
+If the <em>Access has to be enabled</em> box is checked, the treatment has to be manually activated for a participant before its content becomes available to that participant.</p>
+<p>By also checking the <em>Time-limited access</em> box, you can specify a time window for a participant when the treatment is active and its content available. This time window is specified in the participant view, under the <strong>Treatments</strong> tab.</p>
+<p><strong>Treatment length</strong>
+If the treatment is to be available for a certain number of days after it has been activated, you can set that value in the <em>Treatment length</em> box. You can always override/customize the treatment availability for a specific participant in the <strong>Treatment access</strong> tab of the participant.</p>
+<p><strong>Manual model access</strong>
+Check this box to be able to activate each module in the treatment separately for a participant. This is useful for when you want to make sure participants are finished with one module before starting with the next one.</p>
+<p><strong>Participants can send messages</strong>
+Checking this box makes it possible for participants to send messages to their therapists during an active treatment, by using the built-in messaging feature in BASS.</p>
+<p><strong>Therapists can send messages</strong>
+Checking this box makes it possible for therapists to send messages to their participants during an active treatment, by using the built-in messaging feature in BASS.</p>
+<p><strong>Use homework review</strong>
+Checking this box has two implications:</p>
+<ul>
+<li>First, a participant can choose to either save a homework (to be able to work on it later), or send it to the therapist (which marks it as finished and locks it, disabling further editing).</li>
+<li>Second, an icon will be displayed i the <em>Homework</em> column of the <em>Participant search</em> view, that flags whenever a participant has submitted a finished homework and thus notifies the therapists of the fact at a glance.</li>
+</ul>
+<p><strong>Modules</strong>
+This is where you connect modules to your treatment. If you have not yet created any modules this will be empty, without any modules to choose from.
+If you’re working in an established database with pre-existing treatment modules, they will show up in the dropdown menu. Click on a treatment module to add it to your treatment.</p>
+<p><strong>Pages</strong>
+This option lets you add a <em>treatment content</em> as a separate menu page in the participant’s view. For example, this could be a sleep diary which the participants are to work with for the duration of their treatment, or any similar worksheet that is not part of any particular module. It may also be an instructions page, or a page with a collection of links to downloadable treatment content, such as a PDF document.</p>
+<p><strong>Welcome screen</strong>
+Here, you may type in content to show a custom welcome screen/home page in the participant’s view. There are a handful of instructions given on the page itself, to show conditional text or content.</p>
+<p>For example, by using the <code>&lt;ongoing&gt;*YourContentHere*&lt;/ongoing&gt;</code> tag, you can specify the content enclosed in that tag to show when the treatment is ongoing. This is, in essence, the standard text for your home page.</p>
+<p>By using <code>&lt;daysleft&gt;*YourContentHere*&lt;/daysleft&gt;</code> you can set content to show only as long as the participant has more than one day left of the treatment. When that time has passed, this content will not be shown.</p>
+<p>By using <code>&lt;lastday&gt;*YourContentHere*&lt;/lastday&gt;</code> you can set the content to only show on the last day of access. This might be a thank you and/or good luck text, or something similar or appropriate for your treatment.</p>
+<p>By using <code>&lt;limited&gt;*YourContentHere*&lt;/limited&gt;</code> you can set content to only show when the participant has only limited access to the treatment. For example, this could simply be a text informing the participant of the limited access and the changed it entails.</p>
+<p>Using <code>&lt;limiteddaysleft&gt;*YouContentHere*&lt;/limiteddaysleft&gt;</code> you can set conditional content to be shown as long as the participant has more than one day left of their limited access.</p>
+<p>Using <code>&lt;limitedlastday&gt;*YourContentHere*&lt;/limitedlastday&gt;</code> you can set conditional content to be shown on the participant’s last day of limited acces, such as thanking them for their time and effort, and whishing them good luck.</p>
+</div>
+<div id="treatment-modules" class="section level2 hasAnchor" number="13.4">
+<h2><span class="header-section-number">13.4</span> Treatment Modules<a href="treatment.html#treatment-modules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now, let’s create modules for our treatment. To do this, click <em>Close</em> at the top of the page to exit the treatment settings and return to the Treatment view for your treatment. Here, click the dropdown menu at the bottom of the page and select Module. You will be taken to the settings page for the module. Here, you can give it a name, and tags if you wish. Below these two boxes, there are three dropdown menus:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Main text</strong> is where you assign a treatment content to be the main text of the module. This is usually the instructions, a psycho-educational text and other information relevant to the module.</li>
+<li><strong>Worksheets</strong> is where you assign a treatment content to be a worksheet connected to the module. You can assign multiple worksheets to a single module. Worksheets can be worked with and iterated upon by the participant.</li>
+<li><strong>Homework</strong> is where you assign a treatment content to be the homework of the module. You may only assign one homework per module. Homework can not be iterated upon by the participant once it has been submitted for review and subsequently approved by the therapist. If the therapist returns the homework to the participant, they’re able to make changes.</li>
+</ol>
+<p>If you’re working in a newly created databasa, leave the main text, worksheets, and homework dropdown menus empty, since there is no <em>treatment content</em> to assign yet.
+If you’re working in a pre-existing treatment with completed <em>treatment content</em> ready for use, add them as appropriate.
+Click <em>Close</em> at the top of the Module settings page to close it and return to the treatment overview.</p>
+</div>
+<div id="treatment-content" class="section level2 hasAnchor" number="13.5">
+<h2><span class="header-section-number">13.5</span> Treatment Content<a href="treatment.html#treatment-content" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>So, let’s create some treatment content to add to our module. The treatment content is where most of the work goes into treatments. This is where you add text content, media content, forms and other input fields. You have a large degree of freedom to design your own treatment content and you can have it be as simple or as advanced you want or your knowledge of <strong>HTML</strong>, <strong>CSS</strong>, and if you’re an advanced user, <strong>JavaScript</strong> dictates. We will be including some templates of the most commonly used <strong>HTML</strong> in this manual that you can copy and paste into your treatment content. To build a “complete” module with main text, one worksheet, and a homework, we’ll need to create three separate treatment content units.</p>
+<p>We will start by creating the main text one and work onwards from there in a “bottom up” fashion where we lay the foundation first, and add the complementary content when that’s done.</p>
+<ol style="list-style-type: decimal">
+<li>So, to add a treatment content navigate to your treatment if you’re not already there. From the Create new dropdown menu at the bottom of the page, select treatment content. This will take you to the settings and editing page of the treatment content. Start by giving it an appropriate name in the box labeled Name at the top, and click <em>Save</em>.</li>
+<li>You may add tags if you wish, to make the content searchable.</li>
+<li><em>Data namespace</em> is recommended to leave as is (auto-generated) unless you have a clear and specific reason to change it. The name space is used by BASS to identify the treatment content and save the information contained within in.</li>
+<li><em>Path to file</em> lets you assign a file to be the content of the treatment content instead of a text. By clicking the Browse server button you will be taken to the internal file manager of your BASS database, from where you can set up a folder structure. This server browser is somewhat limited in comparison to the insert link version in that you cannot upload any files through this version, only select already existing files to link to.</li>
+<li><em>Show example content</em> lets you fill in a worksheet example to see how a worksheet is built in BASS. Click Fill in example in BASS4 below to view an example version of a worksheet from the participant point of view.</li>
+<li><em>Use markdown+HTML (else only HTML)</em> lets you decide whether to use HTML and Markdown for formatting, or only <strong>HTML</strong>. We recommend leaving this checked, unless you’re confident in your <strong>HTML</strong> skills and do not wish to have any Markdown syntax potentially interfering in your <strong>HTML</strong> code.</li>
+<li>Navigation mode is a new option added to treatment content that lets you select the manner in which your content is presented. Click the corresponding radio button to select the mode you wish to use.
+<ul>
+<li><em>Indexed by H1 tags</em> is the default option and presents the content as a long continuously scrollable page. You can visually divide it into cards by using the <strong>HTML</strong> tag <code>&lt;h1&gt;YourHeading&lt;/h1&gt;</code>, or by using the Markdown syntax #YourHeading.</li>
+<li><em>Split into pages (use <code>\PAGEBREAK</code> at the top level)</em> lets you divide the content into individual pages, PowerPoint-style. As per the instruction in the option text, use <code>\PAGEBREAK</code> where you wish to insert a page break and switch to a new page.</li>
+</ul></li>
+<li>Content can be completed multiple times using tabs… lets you use the div element with class=”tabbed” as following <code>&lt;div class=”tabbed”&gt;*YourContent*&lt;/div&gt;</code>, to have for example a weekly diary be repeatable beyond the first week, without having to set up 10 individual weeks by coding them by hand. The participant can simply click a plus sign to add a new tab, with a fresh week ready to be filled in.</li>
+</ol>
+<div id="content-text" class="section level3 hasAnchor" number="13.5.1">
+<h3><span class="header-section-number">13.5.1</span> Content text<a href="treatment.html#content-text" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Content text is the main editing window where you add the text, media content, forms and input field etc. to your treatment content. This is all formatted and structured through <strong>Markdown</strong> and/or <strong>HTML</strong>.
+A few things are worth knowing when working with <strong>HTML</strong> in BASS:</p>
+<ol style="list-style-type: decimal">
+<li>You do not need to define the document type (<code>&lt;!—DOCTYPE HTML --&gt;</code>)</li>
+<li>You do not need to use <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code> or <code>&lt;body&gt;</code>.</li>
+<li>You do not need to define any <strong>CSS</strong> styles, since BASS has its own <strong>CSS</strong> sheet that will be the standard design for your treatment content. If you do want to have custom <strong>CSS</strong> styles for part of your treatment, you can use the <code>&lt;style&gt;</code> tag to insert those <strong>CSS</strong> rules and apply them. Do note however, that you may only apply <strong>CSS</strong> styles to elements within your treatment content. You cannot apply styles to BASS itself.</li>
+</ol>
+<p>Now, creating content is as simple as starting to type into the edit box. It may seem daunting at first if you are unfamiliar with <strong>Markdown</strong> and <strong>HTML</strong>, but there are several good resources available on the web.
+- One good resource for Markdown is found here: <a href="https://www.markdownguide.org">https://www.markdownguide.org</a>.
+- A good resource for HTML is found here: <a href="https://www.w3schools.com">https://www.w3schools.com</a>.
+- If you want to perform advanced actions, such as automated calculations using user input as variables, you will need to learn some <strong>JavaScript</strong>, and add it to your treatment content with the <code>&lt;script&gt;</code> tag.
+- Lastly, BASS utilizes Bootstrap 4.6.x. Boostrap is a web development framework aimed to simplify the building of a website using HTML, CSS and some JavaScript. Bootstrap has numerous pre-built components you can use to build your treatment content in BASS. You can read more about Bootstrap here: <a href="https://getbootstrap.com">https://getbootstrap.com</a>. If you want to head straight to the useable components Bootstrap provides, click here: <a href="https://getbootstrap.com/docs/4.6/components/alerts/">https://getbootstrap.com/docs/4.6/components/alerts/</a>.
+Note that there are a few Bootstrap components that you <strong><em>should not use</em></strong>, since they’re used by the BASS interface itself. Using these components will very likely cause issues. They are: <strong>Badge, Breadcrumb, Navs, Navbar, Pagination</strong> and <strong>Scrollspy</strong>. Furthermore, <strong>Modal</strong> will only work in Worksheets, Homework, or Main texts using <code>\PAGEBREAK</code> pagination.</p>
+<p>A typical start of a module main text may look as follows when written in <strong>Markdown</strong>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="treatment.html#cb1-1" tabindex="-1"></a>“# Welcome to your treatment!</span>
+<span id="cb1-2"><a href="treatment.html#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="treatment.html#cb1-3" tabindex="-1"></a>This is a ten-week treatment during which we will work together and learn</span>
+<span id="cb1-4"><a href="treatment.html#cb1-4" tabindex="-1"></a>about your symptoms and diagnosis. We will begin this week with</span>
+<span id="cb1-5"><a href="treatment.html#cb1-5" tabindex="-1"></a>psycho-educational material, and continue with some practical breathing</span>
+<span id="cb1-6"><a href="treatment.html#cb1-6" tabindex="-1"></a>exercises. The module should take about 20-30 minutes to complete. It is</span>
+<span id="cb1-7"><a href="treatment.html#cb1-7" tabindex="-1"></a>important that your read all the instructions carefully so that you feel</span>
+<span id="cb1-8"><a href="treatment.html#cb1-8" tabindex="-1"></a>you understand completely. Should you have any questions you are welcome to</span>
+<span id="cb1-9"><a href="treatment.html#cb1-9" tabindex="-1"></a>send us a message by using the “Messages” feature at the top of the page.</span>
+<span id="cb1-10"><a href="treatment.html#cb1-10" tabindex="-1"></a>If you encounter any errors, please use the “Problems?” feature on the top</span>
+<span id="cb1-11"><a href="treatment.html#cb1-11" tabindex="-1"></a>right hand side.</span>
+<span id="cb1-12"><a href="treatment.html#cb1-12" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="treatment.html#cb1-13" tabindex="-1"></a>Your treatment is divided into ten weeks, with a new module each week. Talk</span>
+<span id="cb1-14"><a href="treatment.html#cb1-14" tabindex="-1"></a>to your therapist if you feel you need to go slower. The modules are as</span>
+<span id="cb1-15"><a href="treatment.html#cb1-15" tabindex="-1"></a>follows:</span>
+<span id="cb1-16"><a href="treatment.html#cb1-16" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="treatment.html#cb1-17" tabindex="-1"></a><span class="ss">- </span>Module 1, start and information</span>
+<span id="cb1-18"><a href="treatment.html#cb1-18" tabindex="-1"></a><span class="ss">- </span>Module 2</span>
+<span id="cb1-19"><a href="treatment.html#cb1-19" tabindex="-1"></a><span class="ss">- </span>Module 3</span>
+<span id="cb1-20"><a href="treatment.html#cb1-20" tabindex="-1"></a><span class="ss">- </span>Module 4</span>
+<span id="cb1-21"><a href="treatment.html#cb1-21" tabindex="-1"></a><span class="ss">- </span>Module 5</span>
+<span id="cb1-22"><a href="treatment.html#cb1-22" tabindex="-1"></a><span class="ss">- </span>Module 6</span>
+<span id="cb1-23"><a href="treatment.html#cb1-23" tabindex="-1"></a><span class="ss">- </span>Module 7</span>
+<span id="cb1-24"><a href="treatment.html#cb1-24" tabindex="-1"></a><span class="ss">- </span>Module 8</span>
+<span id="cb1-25"><a href="treatment.html#cb1-25" tabindex="-1"></a><span class="ss">- </span>Module 9</span>
+<span id="cb1-26"><a href="treatment.html#cb1-26" tabindex="-1"></a><span class="ss">- </span>Module 10, finish”</span></code></pre></div>
+<p>The same main text written in HTML would look like this:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="treatment.html#cb2-1" tabindex="-1"></a>“<span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Welcome to your treatment!<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="treatment.html#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="treatment.html#cb2-3" tabindex="-1"></a>This is a ten-week treatment during which we will work together and learn</span>
+<span id="cb2-4"><a href="treatment.html#cb2-4" tabindex="-1"></a>about your symptoms and diagnosis. We will begin this week with</span>
+<span id="cb2-5"><a href="treatment.html#cb2-5" tabindex="-1"></a>psycho-educational material, and continue with some practical breathing</span>
+<span id="cb2-6"><a href="treatment.html#cb2-6" tabindex="-1"></a>exercises. The module should take about 20-30 minutes to complete. It is</span>
+<span id="cb2-7"><a href="treatment.html#cb2-7" tabindex="-1"></a>important that your read all the instructions carefully so that you feel</span>
+<span id="cb2-8"><a href="treatment.html#cb2-8" tabindex="-1"></a>you understand completely. Should you have any questions you are welcome to</span>
+<span id="cb2-9"><a href="treatment.html#cb2-9" tabindex="-1"></a>send us a message by using the “Messages” feature at the top of the page.</span>
+<span id="cb2-10"><a href="treatment.html#cb2-10" tabindex="-1"></a>If you encounter any errors, please use the “Problems?” feature on the top</span>
+<span id="cb2-11"><a href="treatment.html#cb2-11" tabindex="-1"></a>right hand side.</span>
+<span id="cb2-12"><a href="treatment.html#cb2-12" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="treatment.html#cb2-13" tabindex="-1"></a>Your treatment is divided into ten weeks, with a new module each week. Talk</span>
+<span id="cb2-14"><a href="treatment.html#cb2-14" tabindex="-1"></a>to your therapist if you feel you need to go slower. The modules are as</span>
+<span id="cb2-15"><a href="treatment.html#cb2-15" tabindex="-1"></a>follows:</span>
+<span id="cb2-16"><a href="treatment.html#cb2-16" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="treatment.html#cb2-17" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">ul</span><span class="dt">&gt;</span></span>
+<span id="cb2-18"><a href="treatment.html#cb2-18" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 1, start and information<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-19"><a href="treatment.html#cb2-19" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 2<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-20"><a href="treatment.html#cb2-20" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 3<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-21"><a href="treatment.html#cb2-21" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 4<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-22"><a href="treatment.html#cb2-22" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 5<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-23"><a href="treatment.html#cb2-23" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 6<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-24"><a href="treatment.html#cb2-24" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 7<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-25"><a href="treatment.html#cb2-25" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 8<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-26"><a href="treatment.html#cb2-26" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 9<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-27"><a href="treatment.html#cb2-27" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Module 10, finish<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb2-28"><a href="treatment.html#cb2-28" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">ul</span><span class="dt">&gt;</span>”</span></code></pre></div>
+<p>Here we’ve used a heading (<code>#</code> in <strong>Markdown</strong>, <code>&lt;h1&gt;</code> in <strong>HTML</strong>), then written some informative text, and finished with an unordered, i.e non-numbered, list (<code>-</code> in <strong>Markdown</strong>, <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> in <strong>HTML</strong>). You can create ordered, i.e numbered, lists by using numbers in place of the dash in <strong>Markdown</strong>, or using <code>&lt;ol&gt;</code> in place of <code>&lt;ul&gt;</code> in <strong>HTML</strong>. Refer to the guides and tutorials linked above for further information on syntax and formatting in <strong>Markdown</strong> and/or <strong>HTML</strong>.</p>
+<p>Below the edit box are three buttons. The <em>Save</em> button does what it says on the tin: it saves your work. Make a habit of saving often.
+Then there are two more buttons: <em>Insert link</em> and <em>Preview</em>.</p>
+<p>The Preview button will preview your saved treatment content, to give you an idea of how it will look to the participants. It’s very useful for checking that your design looks as intended, and as a quick way to check your progress. We recommend that you also create a dummy participant for which you activate your treatment, so that you can log into that participant account and check that your treatment works and looks good “live”, so to speak.</p>
+<p>Note that when you click <em>Save</em>, your Preview window will be emptied. Simply click <em>Preview</em> again to show your preview.
+The <em>Insert link</em> button will take you to the file manager in BASS once clicked (the file manager will open in a new browser tab). Here you can upload images, audio and video files, documents and so on, to be used in your treatment content or be made available to download for your participants. At the top of the page you will see the file path you’re currently in.</p>
+<p>It is good practice to set up an easily navigable folder structure before you start uploading any files. Click the <em>Create new folder</em> button at the bottom of the page to create a new folder. Note that any new folder you create will be created within the folder you’re currently located in (i.e if you’ve created folder A and then navigated/clicked into it and create folder B, folder B will be created within folder A). The reason we’re doing this in advance is that you cannot move files around once they’ve been uploaded, so it is important that they are uploaded to their proper place from the start.</p>
+<p>Once you’ve set up your folder structure, make sure you are in the folder you want the file to be uploaded to, and go to the lower edge of the screen and click <em>Välj fil</em> (Swedish for <em>Select file</em>). This will bring up a file browser, showing local files on your computer, where you can navigate to and select the file you want to upload from your computer. Once you’ve found the correct file, select it and click <em>Överför</em> (Swedish for <em>Transfer</em>, or <em>Submit</em>). You may also double-click the file. Once you’ve done so, you will be back at the file manage in BASS, and can see the name of the file you’ve selected for upload at the bottom of the page. If it is the correct file, go to the bottom right corner of the window and click Upload. Depending on the size of the file, this might take a moment. When the upload is finished, your file will be visible in the file manager window. Simply click it to add its file path to your treatment content.</p>
+<p>Now, depending on the type of file you’ve uploaded, you will need to use different <strong>Markdown syntax</strong> or <strong>HTML tags</strong> to have to show in your treatment content.</p>
+<p>If it is an image file, you will need to use the following Markdown syntax:
+<code>![My Image](image.png)</code></p>
+<p>If you’d rather write HTML, you use the following tag:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="treatment.html#cb3-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">”image.png”</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>The “image.png” is used here as a placeholder for the file path to your image. As such, it should be replaced and will look something like this: <code>File.php?uploadedfile=/[file path to your image]</code>.</p>
+<p>If it is an audio file, you will have to use <strong>HTML</strong> since <strong>Markdown</strong> does not handle audio files.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="treatment.html#cb4-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">audio</span><span class="ot"> controls</span><span class="dt">&gt;</span></span>
+<span id="cb4-2"><a href="treatment.html#cb4-2" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">source</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;audio.mp3&quot;</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;audio/mp3&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb4-3"><a href="treatment.html#cb4-3" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">audio</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>As with audio, <strong>Markdown</strong> does not handle video files so you will have to use <strong>HTML</strong> for video files as well. The <strong>HTML</strong> is similar to that which is used for audio, but refers to video instead. see the example below.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="treatment.html#cb5-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">video</span><span class="ot"> controls</span><span class="dt">&gt;</span></span>
+<span id="cb5-2"><a href="treatment.html#cb5-2" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">source</span><span class="ot"> src</span><span class="op">=</span><span class="st">”video.mp4”</span><span class="ot"> type</span><span class="op">=</span><span class="st">”video/mp4”</span><span class="dt">&gt;</span></span>
+<span id="cb5-3"><a href="treatment.html#cb5-3" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">video</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>As with the image example above, the “audio.mp3” and “video.mp4” examples given here are just placeholder, and should be replaced with the actual file path to your audio or video file.</p>
+<p>One very common <strong>HTML</strong> tag to use is <code>&lt;textarea&gt;</code>. This will let you create a text input box where participant can write answers to questions.
+To use this simply type:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="treatment.html#cb6-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">textarea</span><span class="ot"> name</span><span class="op">=</span><span class="st">”textarea1”</span><span class="dt">&gt;&lt;/</span><span class="kw">textarea</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>A very important part of any type of input you add to your treatment document, is to give it a unique <em>“name”-attribute</em>. This unique name may not be shared by any other <strong>HTML</strong> element within the same treatment content. This is because the <em>name-attribute</em> is used by BASS to differentiate between inputs and the answers that participants give. If you use the same <em>name-attribute</em> for several <strong>HTML</strong> elements, they will be filled in with the same answer when a participant clicks save, overwriting any other answers given.</p>
+<p>Another common <strong>HTML tag</strong> to use is <code>&lt;table&gt;</code>. This is very useful to structure content into columns and rows.
+A table is a little more complex than a textarea, and consists of three main <strong>HTML tags</strong>, as follows:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="treatment.html#cb7-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">table</span><span class="dt">&gt;</span></span>
+<span id="cb7-2"><a href="treatment.html#cb7-2" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb7-3"><a href="treatment.html#cb7-3" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb7-4"><a href="treatment.html#cb7-4" tabindex="-1"></a>      *Your content*</span>
+<span id="cb7-5"><a href="treatment.html#cb7-5" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb7-6"><a href="treatment.html#cb7-6" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb7-7"><a href="treatment.html#cb7-7" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>The <code>&lt;table&gt;</code> tag defines where your table begins and where it ends. The <code>&lt;tr&gt;</code> tag is a table row, and creates and closes table rows. The <code>&lt;td&gt;</code> tag is table data, i.e a table cell within a row. You can use multiple <code>&lt;td&gt;</code> tags within a <code>&lt;tr&gt;</code> tag to create multiple cells.
+One last mention on tables: tables in BASS are by default scrollable horizontally, to allow you to build wide tables if needed. If you do not wish your table to be scrollable, add <code>class=”non-scrollable”</code> to the <code>&lt;table&gt;</code> tag, like this:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="treatment.html#cb8-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">table</span><span class="ot"> class</span><span class="op">=</span><span class="st">”non-scrollable”</span><span class="dt">&gt;</span></span>
+<span id="cb8-2"><a href="treatment.html#cb8-2" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb8-3"><a href="treatment.html#cb8-3" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb8-4"><a href="treatment.html#cb8-4" tabindex="-1"></a>      *Your content*</span>
+<span id="cb8-5"><a href="treatment.html#cb8-5" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb8-6"><a href="treatment.html#cb8-6" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb8-7"><a href="treatment.html#cb8-7" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>BASS features <em>basic syntax highlighting</em>, and will color different parts of your <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> code to make it easier to read and find elements of your code. In addition, if you’ve forgotten to close an HTML tag, it will be colored bright red to remind you and highlight potential problems within your code.</p>
+<p>If you’re working with a lot of <strong>HTML</strong> in your treatment contents, it may benefit you to check your code regularly in a dedicated coding program (known as an IDE), such as Atom <a href="https://atom.io">https://atom.io</a> or Visual Studio Code <a href="https://code.visualstudio.com">https://codde.visualstudio.com</a>. These programs are specifically designed to write code, and will give you a good overview of your entire document.</p>
+<p>This covers the basic of building treatment content in BASS. We recommend you play around with it while referencing the resources linked above. If you run into issues, feel free to contact us.</p>
+<p><strong>To add a treatment content</strong> as either a main text, a homework, or a worksheet, go back to the treatment overview and click Edit next to the module you created. In the settings view that opens up, select the appropriate dropdown menu (main text, homework, worksheet) and select your treatment content from the list. Click Save.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="assessments.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="groups.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/BASS-manual/manual/tree/master/11-Treatment-containers.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bass4-manual.pdf", "bass4-manual.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

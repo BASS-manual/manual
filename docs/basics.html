@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator’s manual for BASS4." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Adminstrator’s manual for BASS4." />
   <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="settingssecurity.html"/>
-<link rel="next" href="registration.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="dictonary.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -257,26 +257,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="extmess" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> External messages<a href="extmess.html#extmess" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.</p>
-<p><strong>SMS settings</strong>
-The first box is labeled <em>SMS sender name</em>, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
-The box below, labeled <em>Standard SMS with quick login code</em>, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.</p>
-<p>Below that is the dropdown menu <em>Delivery method for new message notifications to therapists</em>. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly “Unhandled participant tasks” email.</p>
-<p><strong>New treatment message notification settings</strong>
-Here you specify how notifications about new messages will be delivered to participants, and what the notification message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
-Below that, there is a box for <em>New message email subject</em>. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
-The box labeled <em>New message notification</em> is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.</p>
-<p><strong>SMS count per month</strong>
-This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.</p>
-<p><strong>Email settings</strong>
-Under this headline are the settings for e-mail addresses connected to your database. The first one, <em>Sender automatic messages</em>, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply[at]ki.se by default.
-Below that is the <em>General mailbox for database</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.</p>
-<p><strong>Assessment reminder settings</strong>
-Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
-You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
-Below these settings are two textboxes, <em>Standard SMS assessments reminder</em> and <em>Standard email assessment reminder</em>. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.</p>
+<div id="basics" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> The Basics<a href="basics.html#basics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Let’s begin with the basics, and start with a quick overview of the participant’s view. It is a good idea to familiarize yourself with this view, as most of what you do in the administrative view will have one or more effects in this view. As such, before we begin tweaking things we ought to know what we are tweaking.</p>
+<ol style="list-style-type: decimal">
+<li>The login screen for participants is accessed by either <code>https://YourDataBase.webcbt.se</code> or <code>https://YourDataBase.bassdb.se</code>, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS’ built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.</li>
+<li>When your participants have logged in, there are three possible screens they may encounter depending on whether they have an active assessment and/or treatment or not.
+<ul>
+<li>If your participant has an active assessment, they will be presented with it as soon as they log in. This is true even if they also have an active treatment. When they’ve completed the assessment, they will be taken to the home page if they have an active treatment. If they do not have an active treatment, they will be automatically logged out since there is nothing else for them to do in BASS at that point.</li>
+<li>If your participant does not have an active assessment, they will be presented with their home page.</li>
+<li>If your participant has neither an active assessment nor an active treatment, they will be automatically logged out since there is nothing for them to do in BASS.</li>
+</ul></li>
+<li>When your participants have active treatments and no active/pending assessments, they will land at their treatment’s home page. Here are the most common menu options in a treatment:
+<ul>
+<li>Start Page – their treatments’ welcome page</li>
+<li>Modules – Treatment modules. Clicking here shows treatment modules you’ve marked as ”accessible”.</li>
+<li>Messages – BASS’ built in messaging feature which enables secure messaging between a participant and their assigned therapist.</li>
+<li>Privacy notice – A legal document which is required by EU law (GDPR) and explains what personal data is collected by the project, who stores it and who has access to it.</li>
+<li>Log out – Logs the participant out of BASS and ends their session.</li>
+</ul></li>
+<li>We will touch upon all these and other treatment menu options later on in the manual. For now, we’re just getting acquainted with the user interface. You may have noticed that there are no menu option for assessments. This is because they are handled differently than treatments. We will return to this topic later on.</li>
+</ol>
 
 </div>
             </section>
@@ -284,8 +285,8 @@ Below these settings are two textboxes, <em>Standard SMS assessments reminder</e
           </div>
         </div>
       </div>
-<a href="settingssecurity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="registration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dictonary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -316,7 +317,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/BASS-manual/manual/tree/master/05-External-messages.Rmd",
+"link": "https://github.com/BASS-manual/manual/tree/master/00-Basics.Rmd",
 "text": "Edit"
 },
 "history": {

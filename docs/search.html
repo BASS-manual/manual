@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 9 Search participants: Finding what you need | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator’s manual for BASS4." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 9 Search participants: Finding what you need | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Adminstrator’s manual for BASS4." />
   <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 9 Search participants: Finding what you need | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="settingssecurity.html"/>
-<link rel="next" href="registration.html"/>
+<link rel="prev" href="registration.html"/>
+<link rel="next" href="participants.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -257,35 +257,228 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="extmess" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> External messages<a href="extmess.html#extmess" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.</p>
-<p><strong>SMS settings</strong>
-The first box is labeled <em>SMS sender name</em>, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
-The box below, labeled <em>Standard SMS with quick login code</em>, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.</p>
-<p>Below that is the dropdown menu <em>Delivery method for new message notifications to therapists</em>. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly “Unhandled participant tasks” email.</p>
-<p><strong>New treatment message notification settings</strong>
-Here you specify how notifications about new messages will be delivered to participants, and what the notification message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
-Below that, there is a box for <em>New message email subject</em>. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
-The box labeled <em>New message notification</em> is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.</p>
-<p><strong>SMS count per month</strong>
-This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.</p>
-<p><strong>Email settings</strong>
-Under this headline are the settings for e-mail addresses connected to your database. The first one, <em>Sender automatic messages</em>, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply[at]ki.se by default.
-Below that is the <em>General mailbox for database</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.</p>
-<p><strong>Assessment reminder settings</strong>
-Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
-You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
-Below these settings are two textboxes, <em>Standard SMS assessments reminder</em> and <em>Standard email assessment reminder</em>. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.</p>
+<div id="search" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Search participants: Finding what you need<a href="search.html#search" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The “Participant search” is located at the top of the main menu. This is where you can search for and list participants by specific variables such as groups or projects.</p>
+<p><img src="images/search-participants-menu.png" /></p>
+<p>When you press “Participant search” you will see a view with four tabs:</p>
+<p><img src="images/search-participants-tab.png" /></p>
+<ul>
+<li>Selection – Add a filter to your search</li>
+<li>Search – Perform your search using text strings or other identifiers</li>
+<li>Hidden columns – View and show columns that are hidden</li>
+<li>Save/load settings – Save your recurrent searches for convenience</li>
+</ul>
+<div id="selectionfilter" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Selection/filter<a href="search.html#selectionfilter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you press Selection, you can add a filter to your participant search.</p>
+<p><img src="images/selection-filter.png" /></p>
+<p>Here you can choose if you want to search all participants, your own participants (that you treat) or participants whose treatments you supervise.</p>
+<p>You can also choose which project(s) or group(s) to search. The top two checkboxes can be used to quickly either mark or unmark all the below listed projects or groups. If no specific project or group is checked, all of them will be included in the search. This also means that unchecking all projects/groups won’t return participants without a project/group.</p>
+<blockquote>
+<p><strong>Hint:</strong> If you want to search a specific group you should only mark that group, and not the corresponding project, as this will return all the participants belonging to the project and not only those in the group.</p>
+</blockquote>
+<p>Your chosen selection of participants is shown in the participant list below the tab.</p>
+</div>
+<div id="search-1" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Search<a href="search.html#search-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The actual search is done in the <strong>Search</strong> tab. If you previously added search filters in the Selection tab they will now be active and delimit your search.</p>
+<p><img src="images/search.png" /></p>
+<p>Here you can use many different variables to search for one or several participants. The search is executed either automatically when you leave a filled-in search box or when you hit the Enter-key on your keyboard. Your search results are shown in the participant list below the tab.</p>
+<p>Note that there is a discrepancy when searching by numbers or by text strings:</p>
+<ul>
+<li><p>Searching for the number “12” will only show the exact hit, while adding a % sign to the search as in “12%” will return both “12”, “123” and “012”.</p></li>
+<li><p>Searching for the text string “my” will return both “My”, “Myra” and “Amy”. You don’t need to add any % sign for text string searches.</p></li>
+</ul>
+<p>To search for several participants at the same time, you add a space between each corresponding search term in the search box.</p>
+<blockquote>
+<p><strong>Hint:</strong> This is useful if you want to search for participants whose IDs are listed on different rows in an Excel-file. Just copy the ID containing rows in Excel and directly paste them into the search box in BASS and they automatically receive a space between them.</p>
+</blockquote>
+</div>
+<div id="hide-show-and-sort-columns" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Hide, show and sort columns<a href="search.html#hide-show-and-sort-columns" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you want to hide a column, you hover the mouse over the column header until a red X shows up. By pressing the X, the column will be hidden.</p>
+<p><img src="images/hide-show-sort.png" /></p>
+<p>To show/unhide a column, press the “Hidden columns” tab. This tab shows all hidden columns as buttons. Press the button with the column you want back and it will show up in the search results again.</p>
+<p><img src="images/hidden-columns.png" /></p>
+<p>Most columns can be sorted alphabetically or by number. To sort a column, press the small up/down arrows that show when you hover over the column header.</p>
+</div>
+<div id="column-explanations" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Column explanations<a href="search.html#column-explanations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are a number of columns showing information, status or possible actions for a participant. Some are explained in the table below.</p>
+<style>
 
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+<table>
+<tr>
+<th>
+Column
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Pen symbol
+</td>
+<td>
+Edit the participant
+</td>
+</tr>
+<tr>
+<td>
+Participant Id
+</td>
+<td>
+A unique identifier for a participant within the study/project. “ANX-001”
+</td>
+</tr>
+<tr>
+<td>
+Internal Id
+</td>
+<td>
+A unique and technical identifier for a participant within the database.
+</td>
+</tr>
+<tr>
+<td>
+Flag symbol
+</td>
+<td>
+Shows if the participant is flagged for something.
+</td>
+</tr>
+<tr>
+<td>
+Message symbol
+</td>
+<td>
+Shows if there are unread messages from the participant.
+</td>
+</tr>
+<tr>
+<td>
+Chat symbol
+</td>
+<td>
+(For supervised therapists)
+Shows if there are unread messages from the supervisor.
+</td>
+</tr>
+<tr>
+<td>
+Approval symbol
+</td>
+<td>
+(For supervisors)
+Shows if there are messages sent from a supervised therapist to a participant that might need approval.
+</td>
+</tr>
+<tr>
+<td>
+Superv Mess
+</td>
+<td>
+(For supervisors)
+Total number of messages in supervisory correspondence. This is a useful way to see how much guidance was needed from the supervisor.
+</td>
+</tr>
+<tr>
+<td>
+Last message
+</td>
+<td>
+Last date when a participant sent a message (was active). Sort on this column and you’ll find participants that are lagging behind.
+</td>
+</tr>
+<tr>
+<td>
+Weeks
+</td>
+<td>
+The number of weeks left of the treatment.
+Treatments without end date are marked with the eternity symbol.
+</td>
+</tr>
+<tr>
+<td>
+Module
+</td>
+<td>
+The latest module the participant got access to. This column also shows for how many days the participant has had access to the module.
+</td>
+</tr>
+<tr>
+<td>
+Homework
+</td>
+<td>
+Shows if there is an unread homework sent in by the participant.
+</td>
+</tr>
+<tr>
+<td>
+Group
+</td>
+<td>
+Shows which group a participant belongs to. You can change the group here, but you need to save the update with the Save button below the list.
+</td>
+</tr>
+<tr>
+<td>
+Heart symbol
+</td>
+<td>
+By pressing the heart, you add the participant to your participants.
+</td>
+</tr>
+<tr>
+<td>
+Trash symbol
+</td>
+<td>
+By pressing the trash symbol, you delete the participant. Be careful as the participant and all its corresponding data then will be lost.
+</td>
+</tr>
+</table>
+</div>
+<div id="saveload-search-settings" class="section level2 hasAnchor" number="9.5">
+<h2><span class="header-section-number">9.5</span> Save/load search settings<a href="search.html#saveload-search-settings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To save your current search settings, including both filters and search parameters, press the Save/load settings-tab. First ensure that the current search result for the settings you want to save are shown in the table below. Then write a name for your settings in the Currently loaded settings box and press “Save as new”.</p>
+<blockquote>
+<p><strong>Hint:</strong> Be careful to not use the “Save” button instead, because this will overwrite any currently loaded settings including its name.</p>
+</blockquote>
+<p><img src="images/save-load1.png" /></p>
+<p>The text “saved!” appears to the right of the buttons and your search is now saved and available in the dropdown below.</p>
+<p><img src="images/save-load2.png" /></p>
+<p>The dropdown “Saved settings” is where you access all your previously saved search settings.</p>
+<blockquote>
+<p><strong>Hint:</strong> If you make a new search, the “Currently loaded settings” box may no longer reflect the content of the search result list below. To be sure that the list matches the settings you want to load, first select “Choose” in the dropdown menu and then reselect the settings you want.</p>
+</blockquote>
+<div id="add-new-participant-to-group-and-change-group" class="section level3 hasAnchor" number="9.5.1">
+<h3><span class="header-section-number">9.5.1</span> ADD NEW PARTICIPANT TO GROUP AND CHANGE GROUP<a href="search.html#add-new-participant-to-group-and-change-group" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>It is possible to directly create a new participant within a specific project. This function is found below the table of participants. Just choose which project you want to add the new participant to, and you will be redirected to the “New participant”-view with this project pre-filled.</p>
+<p><img src="images/add-new-participants.png" /></p>
+<p>It is also easy to change which group a participant belongs to. For each participant in the table, you can choose a project in the dropdown in the Group column. Don’t forget to save all changes by pressing the “Save” button below the table afterwards.</p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="settingssecurity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="registration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="registration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="participants.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -316,7 +509,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/BASS-manual/manual/tree/master/05-External-messages.Rmd",
+"link": "https://github.com/BASS-manual/manual/tree/master/07-Search-participants.Rmd",
 "text": "Edit"
 },
 "history": {

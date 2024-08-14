@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 6 Settings and security | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator’s manual for BASS4." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 6 Settings and security | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Adminstrator’s manual for BASS4." />
   <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 6 Settings and security | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="settingssecurity.html"/>
-<link rel="next" href="registration.html"/>
+<link rel="prev" href="navigating.html"/>
+<link rel="next" href="extmess.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -257,26 +257,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="extmess" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> External messages<a href="extmess.html#extmess" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.</p>
-<p><strong>SMS settings</strong>
-The first box is labeled <em>SMS sender name</em>, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
-The box below, labeled <em>Standard SMS with quick login code</em>, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.</p>
-<p>Below that is the dropdown menu <em>Delivery method for new message notifications to therapists</em>. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly “Unhandled participant tasks” email.</p>
-<p><strong>New treatment message notification settings</strong>
-Here you specify how notifications about new messages will be delivered to participants, and what the notification message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
-Below that, there is a box for <em>New message email subject</em>. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
-The box labeled <em>New message notification</em> is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.</p>
-<p><strong>SMS count per month</strong>
-This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.</p>
-<p><strong>Email settings</strong>
-Under this headline are the settings for e-mail addresses connected to your database. The first one, <em>Sender automatic messages</em>, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply[at]ki.se by default.
-Below that is the <em>General mailbox for database</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.</p>
-<p><strong>Assessment reminder settings</strong>
-Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
-You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
-Below these settings are two textboxes, <em>Standard SMS assessments reminder</em> and <em>Standard email assessment reminder</em>. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.</p>
+<div id="settingssecurity" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Settings and security<a href="settingssecurity.html#settingssecurity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The security settings are split up between two menu options: The <strong>Project security</strong> and <strong>Security settings</strong> options, respectively. <strong>Project security</strong> deals with two-factor authentication for your participants in a specific project. You are given the options to provide 2FA via SMS or e-mail, or both. You can also opt to use 2FA via one of two authenticator mobile apps: Microsoft Authenticator or Google Authenticator. This option is called TOTP.
+<strong>Security settings</strong> handles global security settings for your database.</p>
+<p><strong>Security settings (therapists)</strong>
+Here you can choose by which mean (SMS and/or e-mail) you want 2FA for therapists. Check the box or boxes for the options you want to use.
+Below the 2FA options are <em>password requirements</em>. Here you can specify rules for the passwords of therapist logins. You can also specify if you want mandatory password changes by typing in a number in the box labeled <em>Monthly interval</em> for mandatory password change.</p>
+<p><strong>Security settings (participants)</strong>
+In this table you can decide whether you want to use the quick login feature or not, as well as specify the settings for it. To allow the use of it, simply check the box labeled <em>Allow quick login</em>.
+In the box below, you can specify what number of days the quick login codes are valid after they’ve been generated (default 14 days). Be wary of allowing too long periods of time, since quick login codes does not require user names, passwords or 2FA. Before you consider using quick login codes, make sure your participants does not share e-mail accounts for cell phones with anyone else. <strong><em>If another person gets hold of an active quick login code link, they will have access to that participant login as long as that code stays active.</em></strong> Note however that the quick login only gives access to assessments, access to treatment always require a password.</p>
+<p>Below the duration setting, an example URL for quick login codes is shown.</p>
+<blockquote>
+<p><strong><em>Wait! What are quick login codes?</em></strong>
+Quick login codes are sequences of numbers and letters that are assigned to &gt;participants. Each participant is assigned their own unique code. BASS can &gt;use these unique codes to identify the participant and log them in to their &gt;account automatically, without requiring user name, password or 2FA. This &gt;is useful if you wish to streamline the login process and lower the &gt;barriers for your participants. As mentioned above, it does pose some vital &gt;security questions however and should not be used unless you feel &gt;comfortable in that the security of your participants isn’t jeopardized.</p>
+</blockquote>
+<p><strong>Lost password method</strong>
+The options here allow you to specify how participants who report lost passwords are handled. You can choose whether to require participants to confirm their e-mail or not before they’re flagged as having reported a lost password.</p>
+<p><strong>Participant files</strong>
+This option governs whether the uploading of participant specific files is allowed. This options is provided to allow different therapists to upload for example offline paperwork as a scanned file, or a complex figure drawing. This is a solely administrative side feature, and does not allow uploading and sharing of files with the participant in question.</p>
+<p><strong>OAuth TOTP app links (participants)</strong>
+The OAuth feature allows you to use authenticator apps (for example, Google Authenticator or Microsoft Authenticator) for two-factor authentication. This is a more secure way to use 2FA than SMS or e-mail, but requires a few more steps for the participant to activate. For participants who are less accustomed to modern technology, 2FA via SMS or e-mail may be preferrable.</p>
+<p>The selection here determines what apps are suggested when participants install TOTP on their smartphone. We can add links to other apps on your request.</p>
 
 </div>
             </section>
@@ -284,8 +286,8 @@ Below these settings are two textboxes, <em>Standard SMS assessments reminder</e
           </div>
         </div>
       </div>
-<a href="settingssecurity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="registration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="navigating.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="extmess.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -316,7 +318,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/BASS-manual/manual/tree/master/05-External-messages.Rmd",
+"link": "https://github.com/BASS-manual/manual/tree/master/04-Settings-and-security.Rmd",
 "text": "Edit"
 },
 "history": {

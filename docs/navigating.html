@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 5 Getting your bearings: Navigating the administrator’s interface | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator’s manual for BASS4." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 5 Getting your bearings: Navigating the administrator’s interface | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Adminstrator’s manual for BASS4." />
   <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 External messages | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 5 Getting your bearings: Navigating the administrator’s interface | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="settingssecurity.html"/>
-<link rel="next" href="registration.html"/>
+<link rel="prev" href="login.html"/>
+<link rel="next" href="settingssecurity.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -257,35 +257,85 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="extmess" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> External messages<a href="extmess.html#extmess" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Under this menu option, you can adjust the settings for external messages sent from BASS (SMS and e-mail), as well as type standard messages to be used for assessments and treatments.</p>
-<p><strong>SMS settings</strong>
-The first box is labeled <em>SMS sender name</em>, and is the name shown as the sender when a participant or therapist receives an SMS from your database.
-The box below, labeled <em>Standard SMS with quick login code</em>, is only relevant if you’ve elected to use quick login codes (see the previous chapter: Settings and Security). The message you type here will be the standard message that participants receive when their quick login codes are updated.</p>
-<p>Below that is the dropdown menu <em>Delivery method for new message notifications to therapists</em>. Currently, this setting has no effect and BASS does not give immediate information about new messages.Therapists are instead informed about new messages through the nightly “Unhandled participant tasks” email.</p>
-<p><strong>New treatment message notification settings</strong>
-Here you specify how notifications about new messages will be delivered to participants, and what the notification message is. You can have them delivered by SMS or e-mail, by checking the relevant radio button.
-Below that, there is a box for <em>New message email subject</em>. This is only relevant if you’ve selected the e-mail radio button above. This is the subject header for the e-mail that is sent to the participant as a notification of new treatment content.
-The box labeled <em>New message notification</em> is where you type the message that will be sent as an SMS or e-mail according to the settings you’ve specified above.</p>
-<p><strong>SMS count per month</strong>
-This table shows you how many SMS messages have been sent from your database on a monthly basis, with a total summary at the bottom.</p>
-<p><strong>Email settings</strong>
-Under this headline are the settings for e-mail addresses connected to your database. The first one, <em>Sender automatic messages</em>, is the e-mail address that is shown when automatic e-mails are sent to participants or therapists. These are by far and large notification messages. It is set to webcbt-noreply[at]ki.se by default.
-Below that is the <em>General mailbox for database</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues. It is also used as a fallback address in case a participant does not have a therapist assigned to them, so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention.</p>
-<p><strong>Assessment reminder settings</strong>
-Here you specify the settings for automatic reminders connected to assessments. You can specify at what hour you want reminders to be sent (default is 12, at noon). This works on a 24-hour basis, so you can set any whole number between 0-24.
-You can also specify a time after which no reminders will be sent. This is useful if you want to spare your participant the annoyance of being reminded to complete their assessments at 23:00/11 pm.
-Below these settings are two textboxes, <em>Standard SMS assessments reminder</em> and <em>Standard email assessment reminder</em>. In these boxes you can type standard messages for reminder notifications. If you want custom reminder messages for assessments, you can type them in the corresponding text box in the assessment editor.</p>
+<div id="navigating" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Getting your bearings: Navigating the administrator’s interface<a href="navigating.html#navigating" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Now, let’s turn to the administrative interface. You access this through either <a href="https://YourDataBase-admin.webcbt.se/" class="uri">https://YourDataBase-admin.webcbt.se/</a> or <a href="https://YourDataBase-admin.bassdb.se/" class="uri">https://YourDataBase-admin.bassdb.se/</a>.</p>
+<p>All functionality in the BASS administration interface can be accessed from the main menu to the left of your screen.</p>
+<p>What options are visible in the main menu depends on what privileges have been assigned to your profile. A common setup is that one administrator manages the available instruments and assessments, while several therapists manage their own participants and individual treatments. This manual is written to cover BASS in its entirety. The image below shows all available menu options, as presented to database administrators.</p>
+<p><img src="images/main-menu.png" /></p>
+<p>Now, let’s examine what substitutes the main menu:</p>
+<p><strong>Participant Search</strong> lets you search specific data points relevant to the participants registered in the active project. The <em>Search</em> tab will show what information is searchable. See <strong><em>Chapter <a href="search.html#search">9</a></em></strong> for further details.</p>
+<p>The <strong>Project</strong> dropdown menu lets you choose what project to view. This governs which participants and what assessments you can access. Instruments and treatments are shared between projects. To switch projects, simply use the dropdown menu. To create a new project see <strong><em>Section <a href="navigating.html#setupproject">5.1.1</a></em></strong></p>
+<p><strong>Participants</strong> lets you see an overview over all the participants registered in the active project. In this overview you can see if a participant is flagged, has sent messages or reported an error, among other information. See <strong><em>Chapter <a href="participants.html#participants">10</a></em></strong> for further details.</p>
+<p><strong>Assessments</strong> is only shown if you have selected a project from the <strong>Project</strong> dropdown menu. Here, you can view, create and edit assessments. See <strong><em>Chapter <a href="assessments.html#assessments">12</a></em></strong> for further details.</p>
+<p><strong>Registration options</strong> is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See <strong><em>Chapter <a href="registration.html#registration">8</a></em></strong> for further details.</p>
+<p><strong>Project security</strong> lets you define what security measures your project will use, such as two-factor authentication. These settings pertain to <em>participants’</em> use of the system. See <strong><em>Chapter <a href="settingssecurity.html#settingssecurity">6</a></em></strong> for a more in-depth look at security settings.</p>
+<p>The <strong>Treatment containers</strong> view lets you view, create and edit treatments to be used within BASS. See <strong><em>Chapter <a href="treatment.html#treatment">13</a></em></strong> for more on how to build treatment content in BASS.</p>
+<p>The <strong>Instruments</strong> view lets you view, create, edit and delete instruments to be used within BASS. See <strong><em>Chapter <a href="instruments.html#instruments">11</a></em></strong> for further details.</p>
+<p><strong>Note categories</strong> lets you define custom note categories to be used to sort information on participants.</p>
+<p><strong>Answers flagging</strong> lets you set and define rules to flag specific answers or answer ranges in instruments that you want to quickly be notified about, should a participant give those answers.</p>
+<p>The <strong>Projects</strong> lets your view and create projects within the database.</p>
+<p><strong>Privacy notice</strong> lets you view and edit the privacy notice(s) for the database and its projects. This is mandatory information in the EU that needs to be made available to all potential participants. If you use the built in registration procedure in BASS, this privacy notice is presented there.</p>
+<p><strong>My settings</strong> lets you view the settings of your therapist login.</p>
+<p><strong>Security settings</strong> lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See <strong><em>Chapter <a href="settingssecurity.html#settingssecurity">6</a></em></strong> for further details.</p>
+<p><strong>External messages</strong> lets you manage default settings for outgoing communication to participants and therapists. This is, for example, notifications and reminders about active assessments, notifications on treatment chat messages, and definition of sms-sender. See <strong><em>Chapter <a href="extmess.html#extmess">7</a></em></strong> for further details.</p>
+<p><strong>Reports</strong> lets you extract reports on data collected through instruments and assessments in BASS. This part of BASS in undergoing a major update, and the manual will be updated to reflect the new Reports feature once it goes live.</p>
+<p><strong>Therapists</strong> lets you view, create and edit therapist logins in the database. See <strong><em>Chapter <a href="therapists.html#therapists">15</a></em></strong> for further details.</p>
+<p><strong>Log out</strong> simply logs you out of the database and ends your current session.</p>
+<div id="the-intended-structure-of-a-bass-project" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> The intended structure of a BASS project<a href="navigating.html#the-intended-structure-of-a-bass-project" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now that we’ve familiarized ourselves with the main menu and its options, let’s take a moment and look at the internal structure of BASS, and how it’s set up.
+As you’ve surely gathered by now, the foundation of BASS is the <strong>database</strong>. This is the foundational level upon with all other layers are applied. The next level is the <strong>project</strong>. You can have just one project in your database, or you can have several. Participants are placed in to projects, but may be moved from one project to another if necessary. Each project in your database has its own</p>
+<ul>
+<li>Participants and groups</li>
+<li>Assessments</li>
+<li>Registration (and unique URL to that registration)</li>
+<li>Settings for answers flagging (all projects can also share global flagging settings)</li>
+<li>Privacy notice</li>
+</ul>
+<p>The next level in this structure is <strong>groups</strong>. They can be used to group participants <em>within</em> a project. This enables you do administer different sets of assessments to different groups of participants, for example. It also lets you use groups as a sorting tool in your reports.
+An important note is that instruments and treatments are stored at the database level, meaning they are accessible from all projects within the database. Assessments, however, are stored at the project level and are as such not shared between projects.
+And to clarify: participants and groups are also not shared between projects.</p>
+<div id="setupproject" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Setting up projects<a href="navigating.html#setupproject" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+Now, how do I set up my project? And what do I need to get started?
+You can get started without setting up a project, and start by building instruments and treatments. However, it is recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented.
+<br>
+To set up your project, simply navigate to <strong>Projects</strong> and click <em>Create new project</em>, type a name into the box and click Save. Your new project will then be shown in a table just above the name box.
+<hr>
+<blockquote>
+<p><strong>Note:</strong> It is not possible to remove a project. So if you accidentally create one, just give it a name to indicate that it is not in use.</p>
+</blockquote>
+<p><br>
+For each project one can specify an <em>email recipient</em>. This e-mail address is shown to participant as the contact e-mail in case they’re experiencing issues related to the specific project. It is also used as a fallback address for unhandled participant task emails in case a participant does not have a therapist assigned to them (so that they won’t go unnoticed if they report a lost password or score an instrument in a manner that requires immediate attention). If there is no email address specified for the project the <em>General mailbox for database</em> specified under <strong>External messages</strong> is used (see <strong>Chapter <a href="extmess.html#extmess">7</a></strong>).
+<br><br>
+One can also specify <em>HTML title for database</em> in order to give both the administrator and participant interface a title. In the image below you see that the HTML title shows up as the tab name for the interface.
+<br><br>
+If you want therapists to be able to log time on their communication with participants, you need to check <em>Timing</em> on the project to activate that feature. See more on this in <strong>Chapter <a href="participants.html#parttreat">10.2.2</a> Participant Treatments</strong>.
+<br><br>
+Last but not least you can see how many participants are included in each project in the column <em>#Participants</em>.
+<br><br>
+<img src="images/projects.png" /></p>
+</div>
+<div id="setting-up-groups" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Setting up groups<a href="navigating.html#setting-up-groups" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you want to use groups in your project for example to administer different cohorts, navigate to <strong>Participants</strong>, and to the tab labeled <strong>Groups</strong>. To create a group, simply type the name into the text box and click <em>Create</em>. If you want to edit this name later on, you can easily do so by editing the name directly in its box and click <em>Save</em>.
+<img src="images/groups.png" /></p>
+<blockquote>
+<p><strong>Hint:</strong>If you haven’t decided whether you need groups or not, you can hold off on creating groups for now. If you know you won’t need groups, you can simply forgo creating any groups.</p>
+</blockquote>
+<p>For more information on groups see <strong>Chapter <a href="groups.html#groups">14</a></strong></p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="settingssecurity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="registration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="login.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="settingssecurity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -316,7 +366,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/BASS-manual/manual/tree/master/05-External-messages.Rmd",
+"link": "https://github.com/BASS-manual/manual/tree/master/03-Navigating-in-BASS.Rmd",
 "text": "Edit"
 },
 "history": {
