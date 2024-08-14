@@ -40,7 +40,7 @@ The **Projects** lets your view and create projects within the database.
 
 **External messages** lets you manage default settings for outgoing communication to participants and therapists. This is, for example, notifications and reminders about active assessments, notifications on treatment chat messages, and definition of sms-sender. See ***Chapter \@ref(extmess)*** for further details.
 
-**Reports** lets you extract reports on data collected through instruments and assessments in BASS. This part of BASS in undergoing a major update, and the manual will be updated to reflect the new Reports feature once it goes live.
+**Reports** lets you extract reports on data collected through instruments and assessments in BASS. See ***Chapter \@ref(reports)*** for further details. 
 
 **Therapists** lets you view, create and edit therapist logins in the database. See ***Chapter \@ref(therapists)*** for further details. 
 
