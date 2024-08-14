@@ -63,5 +63,15 @@ the-manage-therapists-view
 creating-a-new-therapist-account
 the-information-tab
 the-privileges-tab
+reports
+database-selection
+viewing-options
+participant-information
+treatment-information
+sort-priority
+answers-hiding-and-date-showing
+show-sumsitems-per-instrument
+generating-options
+show-report
 references
 tools-and-resources-for-working-with-treatments

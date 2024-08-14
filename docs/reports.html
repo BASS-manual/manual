@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL</title>
+  <title>Chapter 16 Reports | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator’s manual for BASS4." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta property="og:title" content="Chapter 16 Reports | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Adminstrator’s manual for BASS4." />
   <meta name="github-repo" content="brjann/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 The Basics | BASS4 - ADMINISTRATOR’S MANUAL" />
+  <meta name="twitter:title" content="Chapter 16 Reports | BASS4 - ADMINISTRATOR’S MANUAL" />
   
   <meta name="twitter:description" content="Adminstrator’s manual for BASS4." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="dictonary.html"/>
+<link rel="prev" href="therapists.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -271,36 +271,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="basics" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> The Basics<a href="basics.html#basics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Let’s begin with the basics, and start with a quick overview of the participant’s view. It is a good idea to familiarize yourself with this view, as most of what you do in the administrative view will have one or more effects in this view. As such, before we begin tweaking things we ought to know what we are tweaking.</p>
-<ol style="list-style-type: decimal">
-<li>The login screen for participants is accessed by either <code>https://YourDataBase.webcbt.se</code> or <code>https://YourDataBase.bassdb.se</code>, as noted earlier. This is where your participants will login to their personal account and access assessment and/or treatments. To create an account, a participant can either register one themselves through BASS’ built-in registration feature or have their account set up by you, the administrator. We will touch on both of these subjects later on in the manual as they both require detailed explanations.</li>
-<li>When your participants have logged in, there are three possible screens they may encounter depending on whether they have an active assessment and/or treatment or not.
-<ul>
-<li>If your participant has an active assessment, they will be presented with it as soon as they log in. This is true even if they also have an active treatment. When they’ve completed the assessment, they will be taken to the home page if they have an active treatment. If they do not have an active treatment, they will be automatically logged out since there is nothing else for them to do in BASS at that point.</li>
-<li>If your participant does not have an active assessment, they will be presented with their home page.</li>
-<li>If your participant has neither an active assessment nor an active treatment, they will be automatically logged out since there is nothing for them to do in BASS.</li>
-</ul></li>
-<li>When your participants have active treatments and no active/pending assessments, they will land at their treatment’s home page. Here are the most common menu options in a treatment:
-<ul>
-<li>Start Page – their treatments’ welcome page</li>
-<li>Modules – Treatment modules. Clicking here shows treatment modules you’ve marked as ”accessible”.</li>
-<li>Messages – BASS’ built in messaging feature which enables secure messaging between a participant and their assigned therapist.</li>
-<li>Privacy notice – A legal document which is required by EU law (GDPR) and explains what personal data is collected by the project, who stores it and who has access to it.</li>
-<li>Log out – Logs the participant out of BASS and ends their session.</li>
-</ul></li>
-<li>We will touch upon all these and other treatment menu options later on in the manual. For now, we’re just getting acquainted with the user interface. You may have noticed that there are no menu option for assessments. This is because they are handled differently than treatments. We will return to this topic later on.</li>
-</ol>
+<div id="reports" class="section level1 hasAnchor" number="16">
+<h1><span class="header-section-number">Chapter 16</span> Reports<a href="reports.html#reports" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Reports lets you extract reports on data collected through instruments and assessments in BASS. You can create as many reports as you want by clicking <em>Create new report</em>. It is not possible to delete a report. So if you accidentally create one, just give it a name to indicate that it is not in use, and reuse it the next time you wan to create a report.</p>
+<p><img src="images/reports.png" /></p>
+<blockquote>
+<p><strong>IMPORTANT NOTE:</strong> To see the correct data in your report you need to make sure that you load the latest data to the report tool. You do this by clicking <em>Update answers table</em>. Make a habit out of always doing this before you create a new report or use a previously defined one.
+<img src="images/updatereports2.png" /></p>
+</blockquote>
+<p>Click <em>Show</em> on one of the reports to view or edit the report. You will no be able to specify your data in two tabs; <em>Database selection</em> and <em>Viewing options</em>, and view the result in the third tab; <em>Show report</em>.</p>
+<div id="database-selection" class="section level2 hasAnchor" number="16.1">
+<h2><span class="header-section-number">16.1</span> Database selection<a href="reports.html#database-selection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="images/reportdbselection.png" /></p>
+<p>This tab lets you specify a name fot your report and filter your data. This is especially helpful if you have several projects in your database and only want to see data from a specific project. You can also filter your participant on groups. When it comes to the answers your participants have provided, you can filter on assessment labels and instruments.</p>
+<p>You can use filters in one or several categories. If you don’t select any specific projects, groups, assessment labels or instruments all data in your database is included.</p>
+<p>You can also select if you want to include participants that do not have any answered instruments or not. If you are interested in exporting participant data only, without any instrument answers, there is an option for that too.</p>
+<p>Remember to save your filters at the bottom of the page.</p>
+</div>
+<div id="viewing-options" class="section level2 hasAnchor" number="16.2">
+<h2><span class="header-section-number">16.2</span> Viewing options<a href="reports.html#viewing-options" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This tab lets you specify the details of how you want to see your data.</p>
+<div id="participant-information" class="section level3 hasAnchor" number="16.2.1">
+<h3><span class="header-section-number">16.2.1</span> Participant information<a href="reports.html#participant-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/reportparticipantdata.png" /></p>
+<p>If you are generating a report with answers you might want to export only participant ID or internal id inorder to get pseudonymised data. If you have selected the option <em>Only participant info</em> on the previous tab you might however want to include more data on the participant.</p>
+<blockquote>
+<p><strong>Note:</strong> Internal ID is the participant database record ID while the Participant Id can be manually defined in BASS</p>
+</blockquote>
+</div>
+<div id="treatment-information" class="section level3 hasAnchor" number="16.2.2">
+<h3><span class="header-section-number">16.2.2</span> Treatment information<a href="reports.html#treatment-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/reporttreatmentdata.png" /></p>
+<p>It is possible to include some information related to the participant’s treatment.</p>
+<p><em>Therapist time</em> refers to the time spent by therapists on interacting with the participant in a treatment, if this has been recorded. It is shown in the report in seconds, per therapist and in total.</p>
+<p><em>Message count</em> refers to messages sent between the participant and the therapist. In the report it is shown from the participant’s perspective, i.e. <em>Sent</em> represents number of messages sent by the participant, and <em>Received</em> the number of messages received from therapists.</p>
+<p><em>Message count</em> refers to the number of modules the participant has/had access to. It does not include informmation on whether the participant has finished or even opened the modules.</p>
+<blockquote>
+<p><strong>Note:</strong> See <strong><em>Chapter <a href="participants.html#parttreat">10.2.2</a></em></strong> for more information on tracking therapists’ time spent on treatments.</p>
+</blockquote>
+</div>
+<div id="sort-priority" class="section level3 hasAnchor" number="16.2.3">
+<h3><span class="header-section-number">16.2.3</span> Sort priority<a href="reports.html#sort-priority" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/reportsort.png" />
+If you want you can define the sort order of your output data here. The picture above represents the output being sorted first on Project, then Group and lastly Participant Id.</p>
+</div>
+<div id="answers-hiding-and-date-showing" class="section level3 hasAnchor" number="16.2.4">
+<h3><span class="header-section-number">16.2.4</span> Answers hiding and date showing<a href="reports.html#answers-hiding-and-date-showing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/reportanswerhidedate.png" /></p>
+<p>This table lets you select individual instruments that you want to exclude from the results by checking the <em>Hide</em> field. If the instrument is not excluded you can choose to check the <em>Show date</em> field instead to include information on the date when the participant answered the instrument.</p>
+</div>
+<div id="show-sumsitems-per-instrument" class="section level3 hasAnchor" number="16.2.5">
+<h3><span class="header-section-number">16.2.5</span> Show sums/items per instrument<a href="reports.html#show-sumsitems-per-instrument" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/reportsumsitems.png" /></p>
+<p>Select for each instruments whether you want to show only sums (the scoring that has been defined for the instrument) or answers to all the individual items in the instrument, or both sums and items.</p>
+</div>
+<div id="generating-options" class="section level3 hasAnchor" number="16.2.6">
+<h3><span class="header-section-number">16.2.6</span> Generating options<a href="reports.html#generating-options" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/reportgenopt.png" /></p>
+<p>If you want to get an output file rather than seeing the results in the application, check the first option <em>Generate comma separated file</em>. If you have checked <em>Show date</em> for any of the instruments in the previous section, make sure to leave <em>Show dates before (to the left)</em> checked, and if you want even more details for the time stamps check <em>Show dates with time</em></p>
+</div>
+</div>
+<div id="show-report" class="section level2 hasAnchor" number="16.3">
+<h2><span class="header-section-number">16.3</span> Show report<a href="reports.html#show-report" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When you have selected all your viewing options, go to the tab <em>Show report</em>. Your data will be displayed in a table or as a link to a downloadable file depending on you generating options.</p>
+<p><img src="images/reportshowtable.png" /></p>
+<p><img src="images/reportshowdownload.png" /></p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="dictonary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="therapists.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -331,7 +376,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/BASS-manual/manual/tree/master/00-Basics.Rmd",
+"link": "https://github.com/BASS-manual/manual/tree/master/17-Reports.Rmd",
 "text": "Edit"
 },
 "history": {
