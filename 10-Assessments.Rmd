@@ -1,4 +1,4 @@
-# Assessments
+# Assessments {#assessments}
 Assessments are accessed from the “Assessments” option in the main menu. Note that you first have to choose a project in the dropdown in the main menu to make the Assessments option for that project visible. When you press “Assessments” you will see a view showing the existing assessments of the chosen project. All assessments that are listed in this view can be manually sorted with the upwards pointing arrow symbols to the right of each assessment name. 
 
 ![](images/assessement.png)

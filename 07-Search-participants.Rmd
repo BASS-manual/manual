@@ -1,4 +1,4 @@
-# Search participants: Finding what you need
+# Search participants: Finding what you need {#search}
 The “Participant search” is located at the top of the main menu. This is where you can search for and list participants by specific variables such as groups or projects.
 
 ![](images/search-participants-menu.png)

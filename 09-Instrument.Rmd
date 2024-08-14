@@ -5,7 +5,7 @@
 output: html_document
 ---
 
-# Instruments
+# Instruments {#instruments}
 
 In BASS, instruments are the building blocks of assessments. Under this menu option, you can view a list of all the instruments currently set up in your database, as well as Create new instrument by using the built-in editor and Import instrument from XML to import an already built instrument from another BASS database by copying its XML code. You can also edit instruments, as well as delete them.
 

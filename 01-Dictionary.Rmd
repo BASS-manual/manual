@@ -1,4 +1,4 @@
-# Dictionary
+# Dictionary {#dictonary}
 These are recurrent concepts in the manual:
 
 **Instrument** <br>

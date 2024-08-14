@@ -1,4 +1,4 @@
-# The Basics
+# The Basics {#basics}
 
 Let’s begin with the basics, and start with a quick overview of the participant’s view. It is a good idea to familiarize yourself with this view, as most of what you do in the administrative view will have one or more effects in this view. As such, before we begin tweaking things we ought to know what we are tweaking.
 

@@ -1,4 +1,4 @@
-# Login
+# Login {#login}
 
 As soon as your database setup is ready, you can login to the administrator’s interface. The interface is found at an URL of the format `https://NameOfYourDatabase-admin.webcbt.se/` or `https://NameOfYourDatabase-admin.bassdb.se/`. 
 <br>

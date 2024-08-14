@@ -1,4 +1,4 @@
-# Settings and security
+# Settings and security {#settingssecurity}
 The security settings are split up between two menu options: The **Project security** and **Security settings** options, respectively. **Project security** deals with two-factor authentication for your participants in a specific project. You are given the options to provide 2FA via SMS or e-mail, or both. You can also opt to use 2FA via one of two authenticator mobile apps: Microsoft Authenticator or Google Authenticator. This option is called TOTP.
 **Security settings** handles global security settings for your database.
 

@@ -3,7 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
-# References
+# References {#references}
 
 In this chapter we list some helpful references and tools that might aid you when working with BASS.
 

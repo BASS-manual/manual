@@ -1,4 +1,4 @@
-# Getting your bearings: Navigating the administrator's interface
+# Getting your bearings: Navigating the administrator's interface {#navigating}
 
 Now, let’s turn to the administrative interface. You access this through either https://YourDataBase-admin.webcbt.se/ or https://YourDataBase-admin.bassdb.se/. 
 
@@ -10,21 +10,21 @@ What options are visible in the main menu depends on what privileges have been a
 
 Now, let’s examine what substitutes the main menu:
 
-**Participant Search** lets you search specific data points relevant to the participants registered in the active project. The *Search* tab will show what information is searchable. See ***Chapter 9*** for further details.
+**Participant Search** lets you search specific data points relevant to the participants registered in the active project. The *Search* tab will show what information is searchable. See ***Chapter \@ref(search)*** for further details.
 
-The **Project** dropdown menu lets you choose what project to view. This governs which participants and what assessments you can access. Instruments and treatments are shared between projects. To switch projects, simply use the dropdown menu.
+The **Project** dropdown menu lets you choose what project to view. This governs which participants and what assessments you can access. Instruments and treatments are shared between projects. To switch projects, simply use the dropdown menu. To create a new project see ***Section \@ref(setupproject)***
 
-**Participants** lets you see an overview over all the participants registered in the active project. In this overview you can see if a participant is flagged, has sent messages or reported an error, among other information. See ***Chapter 10*** for further details.
+**Participants** lets you see an overview over all the participants registered in the active project. In this overview you can see if a participant is flagged, has sent messages or reported an error, among other information. See ***Chapter \@ref(participants)*** for further details.
 
-**Assessments** is only shown if you have selected a project from the **Project** dropdown menu. Here, you can view, create and edit assessments. See ***Chapter 12*** for further details.
+**Assessments** is only shown if you have selected a project from the **Project** dropdown menu. Here, you can view, create and edit assessments. See ***Chapter \@ref(assessments)*** for further details.
 
-**Registration options** is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See ***Chapter 8*** for further details.
+**Registration options** is only shown if you have selected a project. This view lets you define the parameters of the registration procedure built into BASS, should you elect to use it. You can define what information you want participants to submit, and write detailed information about your study or treatment to be presented. You can also opt to present consent forms during the registration process. See ***Chapter \@ref(registration)*** for further details.
 
-**Project security** lets you define what security measures your project will use, such as two-factor authentication. These settings pertain to *participants'* use of the system. See ***Chapter 6*** for a more in-depth look at security settings.
+**Project security** lets you define what security measures your project will use, such as two-factor authentication. These settings pertain to *participants'* use of the system. See ***Chapter \@ref(settingssecurity)*** for a more in-depth look at security settings.
 
-The **Treatment containers** view lets you view, create and edit treatments to be used within BASS. See ***Chapter 13*** for more on how to build treatment content in BASS.
+The **Treatment containers** view lets you view, create and edit treatments to be used within BASS. See ***Chapter \@ref(treatment)*** for more on how to build treatment content in BASS.
 
-The **Instruments** view lets you view, create, edit and delete instruments to be used within BASS. See ***Chapter 11*** for further details.
+The **Instruments** view lets you view, create, edit and delete instruments to be used within BASS. See ***Chapter \@ref(instruments)*** for further details.
 
 **Note categories** lets you define custom note categories to be used to sort information on participants.
 
@@ -36,13 +36,13 @@ The **Projects** lets your view and create projects within the database.
 
 **My settings** lets you view the settings of your therapist login.
 
-**Security settings** lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See ***Chapter 6*** for further details.
+**Security settings** lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See ***Chapter \@ref(settingssecurity)*** for further details.
 
-**External messages** lets you manage default settings for outgoing communication to participants and therapists. This is, for example, notifications and reminders about active assessments, notifications on treatment chat messages, and definition of sms-sender. See ***Chapter 7*** for further details.
+**External messages** lets you manage default settings for outgoing communication to participants and therapists. This is, for example, notifications and reminders about active assessments, notifications on treatment chat messages, and definition of sms-sender. See ***Chapter \@ref(extmess)*** for further details.
 
 **Reports** lets you extract reports on data collected through instruments and assessments in BASS. This part of BASS in undergoing a major update, and the manual will be updated to reflect the new Reports feature once it goes live.
 
-**Therapists** lets you view, create and edit therapist logins in the database. See ***Chapter \@ref(therapists)*** for further details.
+**Therapists** lets you view, create and edit therapist logins in the database. See ***Chapter \@ref(therapists)*** for further details. 
 
 **Log out** simply logs you out of the database and ends your current session.
 
@@ -62,7 +62,7 @@ The next level in this structure is **groups**. They can be used to group partic
 An important note is that instruments and treatments are stored at the database level, meaning they are accessible from all projects within the database. Assessments, however, are stored at the project level and are as such not shared between projects.
 And to clarify: participants and groups are also not shared between projects.
 
-### Setting up projects
+### Setting up projects {#setupproject}
 Now, how do I set up my project? And what do I need to get started? 
 You can get started without setting up a project, and start by building instruments and treatments. However, it is recommended that you get into the habit of setting up your project prior to doing much else within your database. Doing so helps you stay oriented.
 <br>

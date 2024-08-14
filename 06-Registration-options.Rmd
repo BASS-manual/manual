@@ -1,4 +1,4 @@
-# Registration options
+# Registration options {#registration}
 Under this menu option, you edit all settings related to the registration procedure. The URL for the registration is shown at the very top of the page. Underneath it is a checkbox labeled *Registration possible (if closed, edit Registration closed text below)*. Check/uncheck this to enable/disable the registration.
 The first table, labeled *Check participant field that should be entered when registering* allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN, or Swedish "personnummer").
 In the larger table below that, you can edit the following:
