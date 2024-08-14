@@ -63,6 +63,7 @@ the-manage-therapists-view
 creating-a-new-therapist-account
 the-information-tab
 the-privileges-tab
+communicate-the-login-details
 reports
 database-selection
 viewing-options
