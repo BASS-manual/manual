@@ -79,7 +79,7 @@ The ***Merge assessment…*** box sets if an assessment is to be integrated as a
 
 The ***If merged*** – Show… box sets if Welcome/Thank you-messages are to be shown even on coincidence as per the Merge assessment setting above. Note that it can be tricky to write messages that work both standalone and together with/as part of other assessment messages.
 
-### Automatic reminders 
+### Automatic reminders {#automaticreminders}
 This option sets notes or reminders to automatically be sent to participants on certain events. The basic functionality is that a note is sent the same day as an assessment becomes available. With the check boxes you can choose which media to use, mobile text messages (SMS) and/or email. 
 
 *Create new quick login* needs to be checked if quick logins are to be sent with the reminders. 

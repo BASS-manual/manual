@@ -20,22 +20,25 @@ To create a new participant, click *Create participant within project [Project N
 To delete at participant, click the trash bin icon to the far right of the corresponding participant's row.
 
 To edit a participant, click the pencil icon in the table, on the corresponding participant's row. This will take you to the "Participant stats" view.<br>
+
 If you only wish to change, or add, what group a participant belongs to, you can do so directly in the *Group* column of the participant table by using the dropdown. When you've assigned a participant to a group this way, don't forget to click the "Save" button at the bottom of the table.
 
 ## The participant view {#partview}
-When you create or edit a participant, the participant view is shown. To exit this view, and return to the participants table, click the "close" text to the right of the participant's name. If you made any changes to the participant, don't forget to save them by clicking the "Save" button at the bottom of the page.
+When you create or edit a participant, the participant view is shown. If you made any changes to the participant, don't forget to save them by clicking the "Save" button at the bottom of the page. To exit this view, and return to the participants table, click the "close" text to the right of the participant's name.
+
+![](images/closeparticipant.png)
 
 There are seven tabs in this view:
 
 - *Participants stats*, where you can view all fundamental information on the participant
 - *Treatments*, where you can view and manage any treatments connected to the participant
 - *Files*, where you can upload files relevant to the participant. These files cannot be viewed by the participant, but only by therapist who have access to the participant.
-- *External messages*, where you can manually send SMS or e-mail messages to the participant, and review the status on any previously sent external messages.
-- *Flags*, where you can view any flags the participant might have.
+- *External messages*, where you can manually send SMS or e-mail messages to the participant, and review the status on any previously sent, manual or automatic, external messages.
+- *Flags*, where you can view and manage any flags the participant might have.
 - *Assessments*, where you can view and manage assessments for the participant. You can also activate or deactivate individually managed assessment through this view.
-- *Graphs*, where you can see graphs on the answers the participant has given on recurring assessments. The graphs do not show individual items but only scoring.
+- *Graphs*, where you can see graphs on the answers the participant has given on recurring assessments. The graphs do not show individual items but only sums and sub-scales defined in the instrument scoring.
 
-### Participant stats
+### Participant stats {#participantstats}
 This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.<vbr>
 
 ![](images/new-images/participantStatsLogNotes.png)
@@ -55,32 +58,61 @@ Notes on a participant can be added by clicking the *Create new note* link.
 ![](images/participantnote-type.png)
 
 <hr>
+**Stats**
+
 The *Stats* box shows data such as how many times the participant has logged in and which privacy consent was approved and when. *Internal ID* is the identification number of the participant used by the database.
 
 ![](images/participantstatsconsent.png)
 
 Click the document symbol next to the consent date to see exactly what text the participant consented to.
 
-![](images/participantconsent.png)
+![](images/participantconsent2.png)
 
 >**Important note:** It might look like the participant has not given their consent as the checkboxes are not marked. The reason for this is that this view only renders **what** was defined in the study consent field (in Registration options) at the time of the consent. The study consent step can however only be completed by checking ***all*** checkboxes presented, and only then is a date for the consent saved on the participant.
-See more information on how to set up the consent in chapter \@ref(registration).
-
+See more information on how to set up the consent in **Chapter \@ref(registration)**.
 
 
 <hr>
+**User information**
+
 User information can be edited in the *User information* box.
 
 ![](images/new-images/participantInfo.png)
+<hr>
 
-Existing passwords *__cannot be retrieved__*, only cleared or changed. If a participant reports a lost or forgotten password, you can provide them with a link to reset and change their password by clicking the *Send password link* button.<br>
+**Password**
+
+Existing passwords ***cannot be retrieved***, only cleared or changed. If a participant reports a lost or forgotten password, you can provide them with a link to reset and change their password by clicking the *Send password link* button. You can send it by email or SMS, and add a personalized message as long as you don't remove the {LINK} from the Message box. 
+<br>
 It is also possible to generate new quick login codes, and to send them by SMS, from this view.
 
->**Important note:** Quick login settings are managed under **Security settings** in the main menu.
+![](images/password.png)
+![](images/passwordlink.png)
+<hr>
+
+**Two-factor authentication method**
+
+The avalable choices are determined by the settings in the main menu *Project Security*, see **Chapter \@ref(projectsecurity)**.
+
+![](images/participanttwofactor.png)
 
 >**Important note:** *Exempt from two-factor authentication* must be enabled under **Project security** in the main menu. Only participants can be exempt from two-factor authentication. It is mandatory for therapists.
 
 <hr>
+
+**Quick login**
+
+Here you can see if a participant has an active Quick login code and when it will expire. They should be renewed automatically when assessments are activated. See ***Chapter \@ref(automaticreminders)*** for information on how to ensure this. However, it is also possible to generate a new quick login code manually if needed. Do so by clicking *Generate new code*  which generates code but do not send any notification to the participant, or by clicking *New code by SMS* which generates a new code and sends it to the participant in one go.
+
+>**Hint**: For easy use of the *New code by SMS* functionality, make sure to first define a standard message for this in the main menu *External Messages* > field *Standard SMS with quick login code*. Also make sure that this standard message includes the tag {QUICKURL}. See ***Chapter \@ref(extmess)***.
+
+>**Important note:** Quick login settings are enabled and managed under **Security settings** in the main menu. See ***Chapter \@ref(securityparticipants)*** for more information on what it is and how to use it securely.
+
+
+<hr>
+
+**Temporary fields**
+
 The *Temporary flag text* box provides you with the possibility to flag a participant with a star icon, that will display next to their name in the participants table. You can add a comment on why you flagged the participant.
 
 The *Temporary notes* box provides you with the possibility to add a temporary note on the participant - this note is also saved in the participant log if your click the "Save" button.
@@ -88,12 +120,18 @@ The *Temporary notes* box provides you with the possibility to add a temporary n
 ![](images/new-images/participantTempFlagNote.png)
 
 <hr>
-*Assign participant to therapists* allows you to assign the participant to another, or several other, therapist(s). The number shown in brackets to the right of each therapist's name displays how many participants are already assigned to that therapist. This is useful for when you want to assign participants equally to the available therapists.<br>
+
+**Assign participant to therapists** 
+
+This table allows you to assign the participant to another, or several other, therapist(s). The number shown in brackets to the right of each therapist's name displays how many participants are already assigned to that therapist. This is useful for when you want to assign participants equally to the available therapists.<br>
 Remember to click "Save" to save your changes.
 
 ![](images/new-images/participantTherapists.png)
 
 <hr>
+
+**Move participant to another project**
+
 You can use the dropdown menu on the bottom of the page to move the participant to another project. This will move the participant to the project of your choosing, and close the tab. If you want top view the participant again, you will need to navigate to the destination project before being able to do so.
 
 ![](images/new-images/participantMoveProject.png)

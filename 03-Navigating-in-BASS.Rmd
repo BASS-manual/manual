@@ -26,7 +26,7 @@ The **Treatment containers** view lets you view, create and edit treatments to b
 
 The **Instruments** view lets you view, create, edit and delete instruments to be used within BASS. See ***Chapter \@ref(instruments)*** for further details.
 
-**Note categories** lets you define custom note categories to be used to sort information on participants.
+**Note categories** lets you define custom note categories to be used to sort information on participants. See ***Section \@ref(participantstats)*** for more information on how to use and define these.
 
 **Answers flagging** lets you set and define rules to flag specific answers or answer ranges in instruments that you want to quickly be notified about, should a participant give those answers.
 

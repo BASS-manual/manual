@@ -1,19 +1,45 @@
 # Settings and security {#settingssecurity}
-The security settings are split up between two menu options: The **Project security** and **Security settings** options, respectively. **Project security** deals with two-factor authentication for your participants in a specific project. You are given the options to provide 2FA via SMS or e-mail, or both. You can also opt to use 2FA via one of two authenticator mobile apps: Microsoft Authenticator or Google Authenticator. This option is called TOTP.
-**Security settings** handles global security settings for your database.
+The security settings are split up between two menu options: The **Project security** and **Security settings** options, respectively. 
 
-**Security settings (therapists)**
+<hr>
+
+## Project security {#projectsecurity}
+
+Project security deals with two-factor authentication (2FA) for your participants in a specific project. You are given the options to provide 2FA via SMS or e-mail, or both. 
+
+You can also opt to use 2FA via one of two authenticator mobile apps: Microsoft Authenticator or Google Authenticator. This option is called TOTP.
+
+Lastly you can  enable the functionality to exempt specific users from 2FA altogether.
+
+![](images/projectsecurity.png)
+
+<hr>
+
+## Security settings {#securitysettings}
+
+Security settings handles global security settings for your database.
+
+<hr>
+
+### Security settings (therapists) {#securitytherapists}
+
 Here you can choose by which mean (SMS and/or e-mail) you want 2FA for therapists. Check the box or boxes for the options you want to use.
 Below the 2FA options are *password requirements*. Here you can specify rules for the passwords of therapist logins. You can also specify if you want mandatory password changes by typing in a number in the box labeled *Monthly interval* for mandatory password change.
 
-**Security settings (participants)**
-In this table you can decide whether you want to use the quick login feature or not, as well as specify the settings for it. To allow the use of it, simply check the box labeled *Allow quick login*.
-In the box below, you can specify what number of days the quick login codes are valid after they’ve been generated (default 14 days). Be wary of allowing too long periods of time, since quick login codes does not require user names, passwords or 2FA. Before you consider using quick login codes, make sure your participants does not share e-mail accounts for cell phones with anyone else. ***If another person gets hold of an active quick login code link, they will have access to that participant login as long as that code stays active.*** Note however that the quick login only gives access to assessments, access to treatment always require a password.
+<hr>
+
+### Security settings (participants) {#securityparticipants}
+
+In this table you can decide whether you want to use the **quick login** feature or not, as well as specify the settings for it. To allow the use of it, simply check the box labeled *Allow quick login*.
+
+In the box below, you can specify what number of days the quick login codes are valid after they’ve been generated (default 14 days). Be wary of allowing too long periods of time, since quick login codes does not require user names, passwords or 2FA. 
+
+Before you consider using quick login codes, make sure your participants does not share e-mail accounts for cell phones with anyone else. ***If another person gets hold of an active quick login code link, they will have access to that participant login as long as that code stays active.*** Note however that the quick login only gives access to submitting assessments. Access to treatment always require a password!
 
 Below the duration setting, an example URL for quick login codes is shown.
 
 >***Wait! What are quick login codes?***
->Quick login codes are sequences of numbers and letters that are assigned to >participants. Each participant is assigned their own unique code. BASS can >use these unique codes to identify the participant and log them in to their >account automatically, without requiring user name, password or 2FA. This >is useful if you wish to streamline the login process and lower the >barriers for your participants. As mentioned above, it does pose some vital >security questions however and should not be used unless you feel >comfortable in that the security of your participants isn’t jeopardized.
+>Quick login codes are sequences of numbers and letters that are assigned to participants. Each participant is assigned their own unique code. BASS can use these unique codes to identify the participant and log them in to their account automatically, without requiring user name, password or 2FA. This is useful if you wish to streamline the login process and lower the barriers for your participants to respond to assessments. As mentioned above, it does pose some vital security questions however and should not be used unless you feel comfortable in that the security of your participants isn’t jeopardized.
 
 **Lost password method**
 The options here allow you to specify how participants who report lost passwords are handled. You can choose whether to require participants to confirm their e-mail or not before they’re flagged as having reported a lost password.
