@@ -7,6 +7,10 @@ the-intended-structure-of-a-bass-project
 setupproject
 setting-up-groups
 settingssecurity
+projectsecurity
+securitysettings
+securitytherapists
+securityparticipants
 extmess
 registration
 search
@@ -19,7 +23,7 @@ add-new-participant-to-group-and-change-group
 participants
 creating-deleting-and-editing-participants
 partview
-participant-stats
+participantstats
 parttreat
 instruments
 copy-an-instrument
@@ -43,7 +47,7 @@ clinician-rated
 randomize-instrument-order
 welcomethank-you-text
 concurrent-and-merged-assessments
-automatic-reminders
+automaticreminders
 participant-flagging
 copy-assessment
 dummy-assessments---some-scheduling-tricks

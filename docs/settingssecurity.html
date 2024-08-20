@@ -151,7 +151,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.1.2" data-path="navigating.html"><a href="navigating.html#setting-up-groups"><i class="fa fa-check"></i><b>5.1.2</b> Setting up groups</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="settingssecurity.html"><a href="settingssecurity.html"><i class="fa fa-check"></i><b>6</b> Settings and security</a></li>
+<li class="chapter" data-level="6" data-path="settingssecurity.html"><a href="settingssecurity.html"><i class="fa fa-check"></i><b>6</b> Settings and security</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="settingssecurity.html"><a href="settingssecurity.html#projectsecurity"><i class="fa fa-check"></i><b>6.1</b> Project security</a></li>
+<li class="chapter" data-level="6.2" data-path="settingssecurity.html"><a href="settingssecurity.html#securitysettings"><i class="fa fa-check"></i><b>6.2</b> Security settings</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="settingssecurity.html"><a href="settingssecurity.html#securitytherapists"><i class="fa fa-check"></i><b>6.2.1</b> Security settings (therapists)</a></li>
+<li class="chapter" data-level="6.2.2" data-path="settingssecurity.html"><a href="settingssecurity.html#securityparticipants"><i class="fa fa-check"></i><b>6.2.2</b> Security settings (participants)</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="extmess.html"><a href="extmess.html"><i class="fa fa-check"></i><b>7</b> External messages</a></li>
 <li class="chapter" data-level="8" data-path="registration.html"><a href="registration.html"><i class="fa fa-check"></i><b>8</b> Registration options</a></li>
 <li class="chapter" data-level="9" data-path="search.html"><a href="search.html"><i class="fa fa-check"></i><b>9</b> Search participants: Finding what you need</a>
@@ -170,7 +178,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.1" data-path="participants.html"><a href="participants.html#creating-deleting-and-editing-participants"><i class="fa fa-check"></i><b>10.1</b> Creating, deleting and editing participants</a></li>
 <li class="chapter" data-level="10.2" data-path="participants.html"><a href="participants.html#partview"><i class="fa fa-check"></i><b>10.2</b> The participant view</a>
 <ul>
-<li class="chapter" data-level="10.2.1" data-path="participants.html"><a href="participants.html#participant-stats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
+<li class="chapter" data-level="10.2.1" data-path="participants.html"><a href="participants.html#participantstats"><i class="fa fa-check"></i><b>10.2.1</b> Participant stats</a></li>
 <li class="chapter" data-level="10.2.2" data-path="participants.html"><a href="participants.html#parttreat"><i class="fa fa-check"></i><b>10.2.2</b> Participant treatments</a></li>
 </ul></li>
 </ul></li>
@@ -201,7 +209,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.1.8" data-path="assessments.html"><a href="assessments.html#randomize-instrument-order"><i class="fa fa-check"></i><b>12.1.8</b> Randomize instrument order</a></li>
 <li class="chapter" data-level="12.1.9" data-path="assessments.html"><a href="assessments.html#welcomethank-you-text"><i class="fa fa-check"></i><b>12.1.9</b> Welcome/Thank you text</a></li>
 <li class="chapter" data-level="12.1.10" data-path="assessments.html"><a href="assessments.html#concurrent-and-merged-assessments"><i class="fa fa-check"></i><b>12.1.10</b> Concurrent and merged assessments</a></li>
-<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#automatic-reminders"><i class="fa fa-check"></i><b>12.1.11</b> Automatic reminders</a></li>
+<li class="chapter" data-level="12.1.11" data-path="assessments.html"><a href="assessments.html#automaticreminders"><i class="fa fa-check"></i><b>12.1.11</b> Automatic reminders</a></li>
 <li class="chapter" data-level="12.1.12" data-path="assessments.html"><a href="assessments.html#participant-flagging"><i class="fa fa-check"></i><b>12.1.12</b> Participant flagging</a></li>
 </ul></li>
 <li class="chapter" data-level="12.2" data-path="assessments.html"><a href="assessments.html#copy-assessment"><i class="fa fa-check"></i><b>12.2</b> Copy assessment</a></li>
@@ -274,18 +282,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="settingssecurity" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Settings and security<a href="settingssecurity.html#settingssecurity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>The security settings are split up between two menu options: The <strong>Project security</strong> and <strong>Security settings</strong> options, respectively. <strong>Project security</strong> deals with two-factor authentication for your participants in a specific project. You are given the options to provide 2FA via SMS or e-mail, or both. You can also opt to use 2FA via one of two authenticator mobile apps: Microsoft Authenticator or Google Authenticator. This option is called TOTP.
-<strong>Security settings</strong> handles global security settings for your database.</p>
-<p><strong>Security settings (therapists)</strong>
-Here you can choose by which mean (SMS and/or e-mail) you want 2FA for therapists. Check the box or boxes for the options you want to use.
+<p>The security settings are split up between two menu options: The <strong>Project security</strong> and <strong>Security settings</strong> options, respectively.</p>
+<hr>
+<div id="projectsecurity" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Project security<a href="settingssecurity.html#projectsecurity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Project security deals with two-factor authentication (2FA) for your participants in a specific project. You are given the options to provide 2FA via SMS or e-mail, or both.</p>
+<p>You can also opt to use 2FA via one of two authenticator mobile apps: Microsoft Authenticator or Google Authenticator. This option is called TOTP.</p>
+<p>Lastly you can enable the functionality to exempt specific users from 2FA altogether.</p>
+<p><img src="images/projectsecurity.png" /></p>
+<hr>
+</div>
+<div id="securitysettings" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Security settings<a href="settingssecurity.html#securitysettings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Security settings handles global security settings for your database.</p>
+<hr>
+<div id="securitytherapists" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Security settings (therapists)<a href="settingssecurity.html#securitytherapists" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Here you can choose by which mean (SMS and/or e-mail) you want 2FA for therapists. Check the box or boxes for the options you want to use.
 Below the 2FA options are <em>password requirements</em>. Here you can specify rules for the passwords of therapist logins. You can also specify if you want mandatory password changes by typing in a number in the box labeled <em>Monthly interval</em> for mandatory password change.</p>
-<p><strong>Security settings (participants)</strong>
-In this table you can decide whether you want to use the quick login feature or not, as well as specify the settings for it. To allow the use of it, simply check the box labeled <em>Allow quick login</em>.
-In the box below, you can specify what number of days the quick login codes are valid after they’ve been generated (default 14 days). Be wary of allowing too long periods of time, since quick login codes does not require user names, passwords or 2FA. Before you consider using quick login codes, make sure your participants does not share e-mail accounts for cell phones with anyone else. <strong><em>If another person gets hold of an active quick login code link, they will have access to that participant login as long as that code stays active.</em></strong> Note however that the quick login only gives access to assessments, access to treatment always require a password.</p>
+<hr>
+</div>
+<div id="securityparticipants" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Security settings (participants)<a href="settingssecurity.html#securityparticipants" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In this table you can decide whether you want to use the <strong>quick login</strong> feature or not, as well as specify the settings for it. To allow the use of it, simply check the box labeled <em>Allow quick login</em>.</p>
+<p>In the box below, you can specify what number of days the quick login codes are valid after they’ve been generated (default 14 days). Be wary of allowing too long periods of time, since quick login codes does not require user names, passwords or 2FA.</p>
+<p>Before you consider using quick login codes, make sure your participants does not share e-mail accounts for cell phones with anyone else. <strong><em>If another person gets hold of an active quick login code link, they will have access to that participant login as long as that code stays active.</em></strong> Note however that the quick login only gives access to submitting assessments. Access to treatment always require a password!</p>
 <p>Below the duration setting, an example URL for quick login codes is shown.</p>
 <blockquote>
 <p><strong><em>Wait! What are quick login codes?</em></strong>
-Quick login codes are sequences of numbers and letters that are assigned to &gt;participants. Each participant is assigned their own unique code. BASS can &gt;use these unique codes to identify the participant and log them in to their &gt;account automatically, without requiring user name, password or 2FA. This &gt;is useful if you wish to streamline the login process and lower the &gt;barriers for your participants. As mentioned above, it does pose some vital &gt;security questions however and should not be used unless you feel &gt;comfortable in that the security of your participants isn’t jeopardized.</p>
+Quick login codes are sequences of numbers and letters that are assigned to participants. Each participant is assigned their own unique code. BASS can use these unique codes to identify the participant and log them in to their account automatically, without requiring user name, password or 2FA. This is useful if you wish to streamline the login process and lower the barriers for your participants to respond to assessments. As mentioned above, it does pose some vital security questions however and should not be used unless you feel comfortable in that the security of your participants isn’t jeopardized.</p>
 </blockquote>
 <p><strong>Lost password method</strong>
 The options here allow you to specify how participants who report lost passwords are handled. You can choose whether to require participants to confirm their e-mail or not before they’re flagged as having reported a lost password.</p>
@@ -295,6 +320,8 @@ This option governs whether the uploading of participant specific files is allow
 The OAuth feature allows you to use authenticator apps (for example, Google Authenticator or Microsoft Authenticator) for two-factor authentication. This is a more secure way to use 2FA than SMS or e-mail, but requires a few more steps for the participant to activate. For participants who are less accustomed to modern technology, 2FA via SMS or e-mail may be preferrable.</p>
 <p>The selection here determines what apps are suggested when participants install TOTP on their smartphone. We can add links to other apps on your request.</p>
 
+</div>
+</div>
 </div>
             </section>
 
