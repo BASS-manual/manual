@@ -107,7 +107,7 @@ If you're working in a newly created databasa, leave the main text, worksheets, 
 If you’re working in a pre-existing treatment with completed *treatment content* ready for use, add them as appropriate.
 Click *Close* at the top of the Module settings page to close it and return to the treatment overview.
 
-## Treatment Content
+## Treatment Content {#treatmentcontent}
 So, let’s create some treatment content to add to our module. The treatment content is where most of the work goes into treatments. This is where you add text content, media content, forms and other input fields. You have a large degree of freedom to design your own treatment content and you can have it be as simple or as advanced you want or your knowledge of **HTML**, **CSS**, and if you’re an advanced user, **JavaScript** dictates. We will be including some templates of the most commonly used **HTML** in this manual that you can copy and paste into your treatment content. To build a “complete” module with main text, one worksheet, and a homework, we’ll need to create three separate treatment content units.
 
 We will start by creating the main text one and work onwards from there in a “bottom up” fashion where we lay the foundation first, and add the complementary content when that’s done.
