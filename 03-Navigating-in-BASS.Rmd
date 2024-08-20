@@ -32,9 +32,9 @@ The **Instruments** view lets you view, create, edit and delete instruments to b
 
 The **Projects** lets your view and create projects within the database.
 
-**Privacy notice** lets you view and edit the privacy notice(s) for the database and its projects. This is mandatory information in the EU that needs to be made available to all potential participants. If you use the built in registration procedure in BASS, this privacy notice is presented there.
+**Privacy notice** lets you view and edit the privacy notice(s) for the database and its projects. This is mandatory information in the EU that needs to be made available to all potential participants. If you use the built in registration procedure in BASS, this privacy notice is presented there. When a participant is logged into a treatment, the privacy notice is available there as well.
 
-**My settings** lets you view the settings of your therapist login.
+**My settings** lets you view the settings of your therapist login. If you get a notification that your account is about to expire, this is where you can update your own expiration date.
 
 **Security settings** lets you view and edit the security settings of the database, such as a general mailbox and expiry time for quick login codes. See ***Chapter \@ref(settingssecurity)*** for further details.
 
