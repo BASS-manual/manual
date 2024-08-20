@@ -33,21 +33,40 @@ There are seven tabs in this view:
 - *External messages*, where you can manually send SMS or e-mail messages to the participant, and review the status on any previously sent external messages.
 - *Flags*, where you can view any flags the participant might have.
 - *Assessments*, where you can view and manage assessments for the participant. You can also activate or deactivate individually managed assessment through this view.
-- *Graphs*, where you can see graphs on the answers the participant has given on recurring assessments.
+- *Graphs*, where you can see graphs on the answers the participant has given on recurring assessments. The graphs do not show individual items but only scoring.
 
 ### Participant stats
 This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.<vbr>
-The *Show participant log* button on the top of this view will show a log of all changes and updates done to the participant. The *Show notes* button will show a log of all notes written aout the participant.<br>
-Now notes on a participant can be added by clicking the *Create new note* link. 
-
->**Important note:**Prior to doing this for the first time, make sure to add at least one note category through the **Note categories**, accesssed from the main menu. Further details on this can be found in the Participant notes section in this manual.
 
 ![](images/new-images/participantStatsLogNotes.png)
+
+The *Show participant log* button on the top of this view will show a log of all changes and updates done to the participant.
+
+The *Show notes* button will show a log of all notes written aout the participant.<br>
+Notes on a participant can be added by clicking the *Create new note* link. 
+
+>**Important note:** Prior to doing this for the first time, make sure to add at least one note category through the **Note categories**, accesssed from the main menu. Example of note category definition is
+<br>
+`01:Telefonsamtal`
+<br>
+`02:Anteckning`
+
+
+![](images/participantnote-type.png)
 
 <hr>
 The *Stats* box shows data such as how many times the participant has logged in and which privacy consent was approved and when. *Internal ID* is the identification number of the participant used by the database.
 
-![](images/new-images/participantsStatsSmall.png)
+![](images/participantstatsconsent.png)
+
+Click the document symbol next to the consent date to see exactly what text the participant consented to.
+
+![](images/participantconsent.png)
+
+>**Important note:** It might look like the participant has not given their consent as the checkboxes are not marked. The reason for this is that this view only renders **what** was defined in the study consent field (in Registration options) at the time of the consent. The study consent step can however only be completed by checking ***all*** checkboxes presented, and only then is a date for the consent saved on the participant.
+See more information on how to set up the consent in chapter \@ref(registration).
+
+
 
 <hr>
 User information can be edited in the *User information* box.

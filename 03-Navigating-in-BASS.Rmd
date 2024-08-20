@@ -32,7 +32,7 @@ The **Instruments** view lets you view, create, edit and delete instruments to b
 
 The **Projects** lets your view and create projects within the database.
 
-**Privacy notice** lets you view and edit the privacy notice(s) for the database and its projects. This is mandatory information in the EU that needs to be made available to all potential participants. If you use the built in registration procedure in BASS, this privacy notice is presented there. When a participant is logged into a treatment, the privacy notice is available there as well.
+**Privacy notice** lets you view and edit the privacy notice(s) for the database and its projects. This is mandatory information in the EU that needs to be made available to all potential participants. If no privacy notice is specified for a project, the database privacy notice is used by default. If you use the built in registration procedure in BASS, the privacy notice is always presented there. If you manually create participant in the administrative view, privacy notice will be displayed the first time the user logs in, ***if*** you have specified that privacy consent is mandatory for your project. When a participant is logged into a treatment, the privacy notice is always available for the participant to view at any time.
 
 **My settings** lets you view the settings of your therapist login. If you get a notification that your account is about to expire, this is where you can update your own expiration date.
 

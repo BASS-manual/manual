@@ -25,11 +25,22 @@ This allows a participant to register multiple accounts using the same BankID. A
 This setting specifies which calling code countries are allowed by this project. If you have participant from multiple countries, you have to type each relevant country code here (such as ”se” for Sweden, ”no” for Norway, “dk” for Denmark, “fi” for Finland, ”de” for Germany, ”gb” for the United Kingdom, ”us” for the United States”, etc.) for the SMS features to function correctly.
 
 **Registration group**
-This lets you select a previously created group as the default group newly registered participant accounts are placed into. This is mandatory if you want participants to access and complete an assessment as part of their registration.
-To do this, set the group as the Registration group, and active an assessment for that group under Participants, the Groups tab, sub-tab Assessments, and set a start date for the relevant assessment in the Date column.
+This lets you select a previously created group as the default group newly registered participant accounts are placed into. This is mandatory if you want participants to access and complete an assessment as part of their registration. To do this, set the relevant group as the Registration group, and activate an assessment for that group
+
+>**Hint**: Activate the assessment under Participants > the Groups tab, show relevant group > sub-tab Assessments, and set a start date for the relevant assessment in the Date column. The date can be any date before the registration of the first participant.
+
+>**Hint**: The assesment used needs to be managed for *Group* and not *Individual* for this to work. See more information on assessments in ***Chapter \@ref(assessments)***
+
+>**Important Note**: When using group assessments like this, as part of the registration process, you can generally not rely on reminders as with other assessments. This is because the reminders are based on the activation date of the assessment. *Example: If you have three reminders going out every second day, these reminders will all have passed when a new participant registers six months after the registration was opened.* Hence it's good practice to manually check that all newly registered users finish their initial assessment within a reasonable time, and send manual reminders if not (Participant > External messages).
 
 **Automatic username**
-This allows you to set an automatic username to be assigned to participant accounts, if the specified conditions are met. This can be either an E-mail address or a custom Participant ID (see below). If you do not wish to have automatic usernames, set this to none.
+This allows you to set an automatic username to be assigned to participant accounts, if the specified conditions are met. This can be either an E-mail address or a custom Participant ID (see below). If you do not wish to have automatic usernames, set this to *none*.
+
+>**Note**: The participant will not be able to specify a username. If this is set to *none*, it will be blank, but can be updated later by an administrator. The updated username will need to be manually communicated to the participant.
+<br>
+However, if the study does not include any treatment in BASS and *quick login codes* are used for assessment notifications, no usernames are needed for the participants.
+<br>
+See ***Chapter \@ref(settingssecurity)*** for more information on quick login settings.
 
 **Automatic password**
 If you’ve elected to use automatic usernames, you can also use automatic passwords. Simply check the box to tell BASS to automatically generate secure passwords for participants when they register. Both usernames and passwords will be shown to the participant at the end of their registration process. If you have assigned assessments to be completed in conjunction with the registration, the username and password information will be presented to the participant before they start their assessment.
@@ -44,7 +55,9 @@ This lets you set a prefix for your participant IDs. This can be whatever you ch
 This allows you to specify the number of digits following the prefix, or simply the number of digits if you’ve elected not to use prefixes. For example, if you type ”3” into this box, the first participant to register will have the participant ID ”001” assigned to them, the next participant will have ”002”, the next ”003” and so on. If you use automatic prefixes, they will be added to this, such as ”Test001”.
 
 **Require study consent**
-Check this box if you wish participant to consent to being part of your study as a step of the registration process. You can edit the study consent further down on this page.
+Check this box if you wish participant to consent to being part of your study. For participant using the online self-registration the study consent will be a step in the registration process, and the registration process cannot be completed without giving consent.You can edit the content of the study consent further down on this page.
+
+>**Note**: For participants manually created in the administrative view consent will ***not*** be collected. If consent should be collected for these participants you need to create an instrument and administer it through an assessment. 
 
 **Render markdown**
 Check this box if you want BASS to render *Study Information*, *Captcha challenge text*, *Registration finished text*, and *Registration closed text* using markdown formatting (else only HTML). A guide on how to use Markdown can be found here: https://www.markdownguide.org
