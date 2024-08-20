@@ -214,7 +214,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.2" data-path="treatment.html"><a href="treatment.html#creating-a-treatment-container"><i class="fa fa-check"></i><b>13.2</b> Creating a treatment container</a></li>
 <li class="chapter" data-level="13.3" data-path="treatment.html"><a href="treatment.html#creating-a-treatment"><i class="fa fa-check"></i><b>13.3</b> Creating a treatment</a></li>
 <li class="chapter" data-level="13.4" data-path="treatment.html"><a href="treatment.html#treatment-modules"><i class="fa fa-check"></i><b>13.4</b> Treatment Modules</a></li>
-<li class="chapter" data-level="13.5" data-path="treatment.html"><a href="treatment.html#treatment-content"><i class="fa fa-check"></i><b>13.5</b> Treatment Content</a>
+<li class="chapter" data-level="13.5" data-path="treatment.html"><a href="treatment.html#treatmentcontent"><i class="fa fa-check"></i><b>13.5</b> Treatment Content</a>
 <ul>
 <li class="chapter" data-level="13.5.1" data-path="treatment.html"><a href="treatment.html#content-text"><i class="fa fa-check"></i><b>13.5.1</b> Content text</a></li>
 </ul></li>
@@ -274,9 +274,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="registration" class="section level1 hasAnchor" number="8">
 <h1><span class="header-section-number">Chapter 8</span> Registration options<a href="registration.html#registration" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Under this menu option, you edit all settings related to the registration procedure. The URL for the registration is shown at the very top of the page. Underneath it is a checkbox labeled <em>Registration possible (if closed, edit Registration closed text below)</em>. Check/uncheck this to enable/disable the registration.
-The first table, labeled <em>Check participant field that should be entered when registering</em> allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN, or Swedish “personnummer”).
-In the larger table below that, you can edit the following:</p>
+<p>Under this menu option, you edit all settings related to the online self-registration procedure.</p>
+<blockquote>
+<p><strong>Note</strong>: These settings do not affect the manual registration of participants which can be made by an administrator in the Participant view (Chapter <strong><em><a href="participants.html#participants">10</a></em></strong>).</p>
+</blockquote>
+<p>Each project has a unique registration URL, and this URL is shown at the very top of the page. Underneath it is a checkbox labeled <em>Registration possible</em>. Check/uncheck this to enable/disable the registration. A message can be displayed instead of the registration form when the registration is closed, see more information below for <em>Registration closed text</em>.</p>
+<blockquote>
+<p><strong>Hint</strong>: The registration link can be distributed to users in several ways, eg. by linking to the registration page from other websites, or by qreating a QR code using free online tools.</p>
+</blockquote>
+<p><strong>Check participant fields that should be entered when registering</strong>
+The first table, allows you to specify what information is required to be submitted by the participant when they register their account. These are quite self explanatory (PID number is analogous to Social Security Number, SSN, or Swedish “personnummer”). If Password is not selected as an input, you can choose to generate a password for the participant, see option below.</p>
+<p>In the larger table below that, you can edit the following:</p>
 <p><strong>PID name</strong>
 This lets you specify what the PID name is. In Sweden, this is called ”personnummer” whereas in the US it is called ”Social Security Number”, or SSN. Your country may have a different name for this, and this option lets you assign the appropriate name.</p>
 <p><strong>PID format example</strong>
@@ -285,14 +293,20 @@ By typing here, you can present an example of the format you want the PID to be 
 Checking this box allows participants to pick up the registration process from where they left off if they close the web browser, for example. The requirement for this to function are specified, and a participant will need to use the same e-mail address and/or SMS number when they resume.</p>
 <p><strong>Use BankID for identity verification</strong>
 This is a Sweden only option, that allows participants to use the e-ID solution BankID to verify their identity. This will only collect the personal information you’ve specified in the Check participant field that should be entered when registering.</p>
+<blockquote>
+<p><strong>Note</strong>: BankID is used for <em>collecting participant info</em> like name and personummer, and <em>not for signing</em> anything, like the study consent, even if these are handled in the same process flow. However, using BankID certifies that the user does not register someone else as a participant.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note</strong>: Using BankID for the registration process does not enable BankID login to the participant platform. If you are interested in BankID login contact the BASS support team for help with enabling that functionality.</p>
+</blockquote>
 <p><strong>Allow changing BankID first and last name</strong>
-Checking this option lets participant change the first and last name collected by BankID. This is a niche option, but may be useful if a participant has submitted a name change that has not yet been updated at Skatteverket. Do note however, that first and last names may be changed by you later. Doing so is a much safer route than allowing participants to change BankID first and last name. As with the option above, any BankID-specific option is Sweden only.</p>
+Checking this option lets participant change the first and last name collected by BankID. This is a niche option, but may be useful if a participant has submitted a name change that has not yet been updated at Skatteverket. Do note however, that first and last names may be changed by an administrator later. Doing so is a much safer route than allowing participants to change BankID first and last name. As with the option above, any BankID-specific options are relevant to Sweden only.</p>
 <p><strong>Allow duplicated BankID registrations</strong>
 This allows a participant to register multiple accounts using the same BankID. As with the options above, any BankID-specific options are Sweden only.</p>
 <p><strong>Allowed calling code countries</strong>
 This setting specifies which calling code countries are allowed by this project. If you have participant from multiple countries, you have to type each relevant country code here (such as ”se” for Sweden, ”no” for Norway, “dk” for Denmark, “fi” for Finland, ”de” for Germany, ”gb” for the United Kingdom, ”us” for the United States”, etc.) for the SMS features to function correctly.</p>
 <p><strong>Registration group</strong>
-This lets you select a previously created group as the default group newly registered participant accounts are placed into. This is mandatory if you want participants to access and complete an assessment as part of their registration. To do this, set the relevant group as the Registration group, and activate an assessment for that group</p>
+This lets you select a previously created group as the default group newly registered participants are placed into. This is mandatory if you want participants to access and complete an assessment as part of their registration. To do this, set the relevant group as the Registration group, and activate an assessment for that group</p>
 <blockquote>
 <p><strong>Hint</strong>: Activate the assessment under Participants &gt; the Groups tab, show relevant group &gt; sub-tab Assessments, and set a start date for the relevant assessment in the Date column. The date can be any date before the registration of the first participant.</p>
 </blockquote>
@@ -320,22 +334,24 @@ This lets you set a prefix for your participant IDs. This can be whatever you ch
 <p><strong>Automatic participant id length</strong>
 This allows you to specify the number of digits following the prefix, or simply the number of digits if you’ve elected not to use prefixes. For example, if you type ”3” into this box, the first participant to register will have the participant ID ”001” assigned to them, the next participant will have ”002”, the next ”003” and so on. If you use automatic prefixes, they will be added to this, such as ”Test001”.</p>
 <p><strong>Require study consent</strong>
-Check this box if you wish participant to consent to being part of your study. For participant using the online self-registration the study consent will be a step in the registration process, and the registration process cannot be completed without giving consent.You can edit the content of the study consent further down on this page.</p>
+Check this box if you wish participant to consent to being part of your study. For participant using the online self-registration the study consent will be a step in the registration process, and the registration process cannot be completed without giving consent. You can edit the content of the study consent further down on this page.</p>
 <blockquote>
-<p><strong>Note</strong>: For participants manually created in the administrative view consent will <strong><em>not</em></strong> be collected. If consent should be collected for these participants you need to create an instrument and administer it through an assessment.</p>
+<p><strong>Note</strong>: For participants manually created in the administrative view consent will <strong><em>not</em></strong> be collected. If consent should be collected for these participants as well you need to create an instrument and administer it through an assessment to the manually created participants.</p>
 </blockquote>
 <p><strong>Render markdown</strong>
 Check this box if you want BASS to render <em>Study Information</em>, <em>Captcha challenge text</em>, <em>Registration finished text</em>, and <em>Registration closed text</em> using markdown formatting (else only HTML). A guide on how to use Markdown can be found here: <a href="https://www.markdownguide.org" class="uri">https://www.markdownguide.org</a></p>
 <p><strong>Personal identification number validation function</strong>
 This lets you write a JavaScript function to check whether participants adhere to the PID format you’ve presented. If the PID number is incorrect, the function should return a non-empty string with an error message, otherwise it should return the empty string. Upon request, we can supply a function to verify Swedish “personnummer”.</p>
 <p><strong>Study information (Markdown/HTML)</strong>
-This text box lets you edit the first page shown when participant click on the registration link. The idea is that you present information on your study here, what it is about, who you are and why you are conducting the study.
-As implied by the heading, you can use Markdown and/or HTML to format your text. Markdown is enabled by checking the <em>Render markdown</em> checkbox above. Best practices is to choose either Markdown or HTML and stick with one of them. Markdown is simpler and quicker to learn and work with. HTML is more complex and requires more effort to learn, but in return gives greater control over how content is displayed.
+This text box lets you edit the first page shown when participant click on the registration link. The idea is that you present information on your study here, what it is about, who you are and why you are conducting the study.</p>
+<blockquote>
+<p><strong>Hint</strong>: As implied by the heading, you can use Markdown and/or HTML to format your text. Markdown is enabled by checking the <em>Render markdown</em> checkbox above. Best practices is to choose either Markdown or HTML and stick with one of them. Markdown is simpler and quicker to learn and work with. HTML is more complex and requires more effort to learn, but in return gives greater control over how content is displayed.
 It is very useful to learn at least some HTML if you intend to use BASS for treatments, as the treatment modules are built with Markdown and/or HTML.
-A good resource for referencing and learning HTML is found here: <a href="https://www.w3schools.com" class="uri">https://www.w3schools.com</a>.
-Below the text box is a button labeled Insert link. Clicking this box opens the file browser for your database in a separate browser tab. From here, you can set up a folder structure for document, images, sound files and videos as well as upload such files to BASS. By clicking an uploaded file, you can insert a file path into the textbox. To turn this file path into a viewable image/video or downloadable file, refer to either Markdown or HTML as appropriate. More information on this can be found under the Treatments section.</p>
+A good resource for referencing and learning HTML is found here: <a href="https://www.w3schools.com" class="uri">https://www.w3schools.com</a>.</p>
+</blockquote>
+<p>Below the text box is a button labeled Insert link. Clicking this box opens the file browser for your database in a separate browser tab. From here, you can set up a folder structure for document, images, sound files and videos as well as upload such files to BASS. By clicking an uploaded file, you can insert a file path into the textbox. To turn this file path into a viewable image/video or downloadable file, refer to either Markdown or HTML as appropriate. More information on this can be found under the Treatments section in <strong><em>Chapter <a href="treatment.html#treatmentcontent">13.5</a></em></strong>.</p>
 <p><strong>Captcha challenge text (Markdown/HTML)</strong>
-This text box lets you edit an optional text to be shown in conjunction with the captcha challenge. The captcha challenge already includes instructions by default, but if you want to add additional information the option to do so is here.</p>
+This text box lets you edit an optional text to be shown in conjunction with the captcha challenge. The captcha challenge already includes instructions by default, but if you want to add additional information you have the option to do so here.</p>
 <p><strong>Study consent (Markdown)</strong>
 If you’ve elected to use study consent (by checking the corresponding checkbox above), this text box is where you edit the consent form. As stated under the header, users will be required to check any checkboxes you put in here (using HTML). To set up a checkbox, use the <code>&lt;input type=”checkbox”&gt;</code> tag. For more information on checkboxes, see the following link: <a href="https://www.w3schools.com/tags/att_input_type_checkbox.asp" class="uri">https://www.w3schools.com/tags/att_input_type_checkbox.asp</a>.</p>
 <p><strong>Registration finished text (Markdown/HTML)</strong>

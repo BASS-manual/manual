@@ -53,7 +53,7 @@ a-typical-treatment-structure
 creating-a-treatment-container
 creating-a-treatment
 treatment-modules
-treatment-content
+treatmentcontent
 content-text
 groups
 groupassess
