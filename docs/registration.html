@@ -292,10 +292,25 @@ This allows a participant to register multiple accounts using the same BankID. A
 <p><strong>Allowed calling code countries</strong>
 This setting specifies which calling code countries are allowed by this project. If you have participant from multiple countries, you have to type each relevant country code here (such as ”se” for Sweden, ”no” for Norway, “dk” for Denmark, “fi” for Finland, ”de” for Germany, ”gb” for the United Kingdom, ”us” for the United States”, etc.) for the SMS features to function correctly.</p>
 <p><strong>Registration group</strong>
-This lets you select a previously created group as the default group newly registered participant accounts are placed into. This is mandatory if you want participants to access and complete an assessment as part of their registration.
-To do this, set the group as the Registration group, and active an assessment for that group under Participants, the Groups tab, sub-tab Assessments, and set a start date for the relevant assessment in the Date column.</p>
+This lets you select a previously created group as the default group newly registered participant accounts are placed into. This is mandatory if you want participants to access and complete an assessment as part of their registration. To do this, set the relevant group as the Registration group, and activate an assessment for that group</p>
+<blockquote>
+<p><strong>Hint</strong>: Activate the assessment under Participants &gt; the Groups tab, show relevant group &gt; sub-tab Assessments, and set a start date for the relevant assessment in the Date column. The date can be any date before the registration of the first participant.</p>
+</blockquote>
+<blockquote>
+<p><strong>Hint</strong>: The assesment used needs to be managed for <em>Group</em> and not <em>Individual</em> for this to work. See more information on assessments in <strong><em>Chapter <a href="assessments.html#assessments">12</a></em></strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Important Note</strong>: When using group assessments like this, as part of the registration process, you can generally not rely on reminders as with other assessments. This is because the reminders are based on the activation date of the assessment. <em>Example: If you have three reminders going out every second day, these reminders will all have passed when a new participant registers six months after the registration was opened.</em> Hence it’s good practice to manually check that all newly registered users finish their initial assessment within a reasonable time, and send manual reminders if not (Participant &gt; External messages).</p>
+</blockquote>
 <p><strong>Automatic username</strong>
-This allows you to set an automatic username to be assigned to participant accounts, if the specified conditions are met. This can be either an E-mail address or a custom Participant ID (see below). If you do not wish to have automatic usernames, set this to none.</p>
+This allows you to set an automatic username to be assigned to participant accounts, if the specified conditions are met. This can be either an E-mail address or a custom Participant ID (see below). If you do not wish to have automatic usernames, set this to <em>none</em>.</p>
+<blockquote>
+<p><strong>Note</strong>: The participant will not be able to specify a username. If this is set to <em>none</em>, it will be blank, but can be updated later by an administrator. The updated username will need to be manually communicated to the participant.
+<br>
+However, if the study does not include any treatment in BASS and <em>quick login codes</em> are used for assessment notifications, no usernames are needed for the participants.
+<br>
+See <strong><em>Chapter <a href="settingssecurity.html#settingssecurity">6</a></em></strong> for more information on quick login settings.</p>
+</blockquote>
 <p><strong>Automatic password</strong>
 If you’ve elected to use automatic usernames, you can also use automatic passwords. Simply check the box to tell BASS to automatically generate secure passwords for participants when they register. Both usernames and passwords will be shown to the participant at the end of their registration process. If you have assigned assessments to be completed in conjunction with the registration, the username and password information will be presented to the participant before they start their assessment.</p>
 <p><strong>Automatic participant id</strong>
@@ -305,7 +320,10 @@ This lets you set a prefix for your participant IDs. This can be whatever you ch
 <p><strong>Automatic participant id length</strong>
 This allows you to specify the number of digits following the prefix, or simply the number of digits if you’ve elected not to use prefixes. For example, if you type ”3” into this box, the first participant to register will have the participant ID ”001” assigned to them, the next participant will have ”002”, the next ”003” and so on. If you use automatic prefixes, they will be added to this, such as ”Test001”.</p>
 <p><strong>Require study consent</strong>
-Check this box if you wish participant to consent to being part of your study as a step of the registration process. You can edit the study consent further down on this page.</p>
+Check this box if you wish participant to consent to being part of your study. For participant using the online self-registration the study consent will be a step in the registration process, and the registration process cannot be completed without giving consent.You can edit the content of the study consent further down on this page.</p>
+<blockquote>
+<p><strong>Note</strong>: For participants manually created in the administrative view consent will <strong><em>not</em></strong> be collected. If consent should be collected for these participants you need to create an instrument and administer it through an assessment.</p>
+</blockquote>
 <p><strong>Render markdown</strong>
 Check this box if you want BASS to render <em>Study Information</em>, <em>Captcha challenge text</em>, <em>Registration finished text</em>, and <em>Registration closed text</em> using markdown formatting (else only HTML). A guide on how to use Markdown can be found here: <a href="https://www.markdownguide.org" class="uri">https://www.markdownguide.org</a></p>
 <p><strong>Personal identification number validation function</strong>

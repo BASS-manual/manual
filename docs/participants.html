@@ -303,20 +303,32 @@ If you only wish to change, or add, what group a participant belongs to, you can
 <li><em>External messages</em>, where you can manually send SMS or e-mail messages to the participant, and review the status on any previously sent external messages.</li>
 <li><em>Flags</em>, where you can view any flags the participant might have.</li>
 <li><em>Assessments</em>, where you can view and manage assessments for the participant. You can also activate or deactivate individually managed assessment through this view.</li>
-<li><em>Graphs</em>, where you can see graphs on the answers the participant has given on recurring assessments.</li>
+<li><em>Graphs</em>, where you can see graphs on the answers the participant has given on recurring assessments. The graphs do not show individual items but only scoring.</li>
 </ul>
 <div id="participant-stats" class="section level3 hasAnchor" number="10.2.1">
 <h3><span class="header-section-number">10.2.1</span> Participant stats<a href="participants.html#participant-stats" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.<vbr>
-The <em>Show participant log</em> button on the top of this view will show a log of all changes and updates done to the participant. The <em>Show notes</em> button will show a log of all notes written aout the participant.<br>
-Now notes on a participant can be added by clicking the <em>Create new note</em> link.</p>
-<blockquote>
-<p><strong>Important note:</strong>Prior to doing this for the first time, make sure to add at least one note category through the <strong>Note categories</strong>, accesssed from the main menu. Further details on this can be found in the Participant notes section in this manual.</p>
-</blockquote>
+<p>This view shows information about the participant, such as ID-numbers, name, the therapist assigned to the participant (if any), any notes on the participant and more.<vbr></p>
 <p><img src="images/new-images/participantStatsLogNotes.png" /></p>
+<p>The <em>Show participant log</em> button on the top of this view will show a log of all changes and updates done to the participant.</p>
+<p>The <em>Show notes</em> button will show a log of all notes written aout the participant.<br>
+Notes on a participant can be added by clicking the <em>Create new note</em> link.</p>
+<blockquote>
+<p><strong>Important note:</strong> Prior to doing this for the first time, make sure to add at least one note category through the <strong>Note categories</strong>, accesssed from the main menu. Example of note category definition is
+<br>
+<code>01:Telefonsamtal</code>
+<br>
+<code>02:Anteckning</code></p>
+</blockquote>
+<p><img src="images/participantnote-type.png" /></p>
 <hr>
 <p>The <em>Stats</em> box shows data such as how many times the participant has logged in and which privacy consent was approved and when. <em>Internal ID</em> is the identification number of the participant used by the database.</p>
-<p><img src="images/new-images/participantsStatsSmall.png" /></p>
+<p><img src="images/participantstatsconsent.png" /></p>
+<p>Click the document symbol next to the consent date to see exactly what text the participant consented to.</p>
+<p><img src="images/participantconsent.png" /></p>
+<blockquote>
+<p><strong>Important note:</strong> It might look like the participant has not given their consent as the checkboxes are not marked. The reason for this is that this view only renders <strong>what</strong> was defined in the study consent field (in Registration options) at the time of the consent. The study consent step can however only be completed by checking <strong><em>all</em></strong> checkboxes presented, and only then is a date for the consent saved on the participant.
+See more information on how to set up the consent in chapter <a href="registration.html#registration">8</a>.</p>
+</blockquote>
 <hr>
 <p>User information can be edited in the <em>User information</em> box.</p>
 <p><img src="images/new-images/participantInfo.png" /></p>
