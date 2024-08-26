@@ -104,7 +104,7 @@ The avalable choices are determined by the settings in the main menu *Project Se
 
 Here you can see if a participant has an active Quick login code and when it will expire. They should be renewed automatically when assessments are activated. See ***Chapter \@ref(automaticreminders)*** for information on how to ensure this. However, it is also possible to generate a new quick login code manually if needed. Do so by clicking *Generate new code*  which generates code but do not send any notification to the participant, or by clicking *New code by SMS* which generates a new code and sends it to the participant in one go.
 
->**Hint**: For easy use of the *New code by SMS* functionality, make sure to first define a standard message for this in the main menu *External Messages* > field *Standard SMS with quick login code*. Also make sure that this standard message includes the tag {QUICKURL}. See ***Chapter \@ref(extmess)***.
+>**Hint**: For easy use of the *New code by SMS* functionality, make sure to first define a standard message for this in the main menu **External Messages** > field **Standard SMS with quick login code**. Also make sure that this standard message includes the tag {QUICKURL}. See ***Chapter \@ref(extmess)***.
 
 >**Important note:** Quick login settings are enabled and managed under **Security settings** in the main menu. See ***Chapter \@ref(securityparticipants)*** for more information on what it is and how to use it securely.
 
