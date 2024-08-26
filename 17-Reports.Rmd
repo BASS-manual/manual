@@ -44,7 +44,7 @@ It is possible to include some information related to the participant's treatmen
 
 *Message count* refers to messages sent between the participant and the therapist. In the report it is shown from the participant's perspective, i.e. *Sent* represents number of messages sent by the participant, and *Received* the number of messages received from therapists.
 
-*Message count* refers to the number of modules the participant has/had access to. It does not include informmation on whether the participant has finished or even opened the modules.
+*Module count* refers to the number of modules the participant has/had access to. It does not include information on whether the participant has finished or even opened the modules.
 
 >**Note:** See ***Chapter \@ref(parttreat)*** for more information on tracking therapists' time spent on treatments.
 
