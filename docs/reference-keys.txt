@@ -39,7 +39,7 @@ assessments
 create-or-edit-assessments
 name
 labelcustom-label
-managed
+assessmentsmanaged
 repitition
 time-limit
 dependence
