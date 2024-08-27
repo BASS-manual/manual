@@ -59,6 +59,7 @@ creating-a-treatment
 treatment-modules
 treatmentcontent
 content-text
+adding-treatment-content-to-module
 groups
 groupassess
 therapists
