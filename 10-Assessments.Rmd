@@ -18,7 +18,7 @@ You can either select one of the predefined labels in the drop-down, or write yo
 
 >**Hint:** By selecting Weekly-assessment or Point-assessment some stats for Repetition (below) are preset. 
 
-### Managed 
+### Managed {#assessmentsmanaged}
 This option sets whether data-gathering is managed individually or in groups. 
 
 >**Hint:** If you have different cohorts, you may want to choose In group. Screening assessments are usually managed In group and these can be activated or deactivated for a certain group and date under Participants -> Groups -> screening group name -> Show -> Assessments. 
@@ -41,7 +41,7 @@ An assessment with the time limit of 7 days that starts on a Monday will be avai
 
 >**Hint:** Keeping the time limit short, or shorter than the repetition interval, has the effect that participants fill in correct data corresponding to the set time-frame, but sometimes will miss the window when they can report. This is useful in assessments where accurate and time-dependent data is more important than full attendance.
 
-###	Dependence
+###	Dependence {#dependence}
 The Dependence option sets when the assessment is to be activated, in relation to the date of a previous assessment. The relationship is kept even if you change the date of the previous assessment. 
 
 Date offset from is where you select the previous assessment from which the date/delay is to be calculated. 
