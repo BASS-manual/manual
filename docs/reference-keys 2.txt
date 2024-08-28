@@ -17,7 +17,7 @@ search
 selectionfilter
 search-1
 hide-show-and-sort-columns
-searchcolumns
+column-explanations
 saveload-search-settings
 add-new-participant-to-group-and-change-group
 participants
@@ -25,8 +25,6 @@ creating-deleting-and-editing-participants
 partview
 participantstats
 parttreat
-participantextmess
-participantassessments
 instruments
 copy-an-instrument
 creating-a-new-instrument
@@ -52,16 +50,15 @@ concurrent-and-merged-assessments
 automaticreminders
 participant-flagging
 copy-assessment
-dummyassessments
+dummy-assessments---some-scheduling-tricks
 assessment-instruments
 treatment
 a-typical-treatment-structure
 creating-a-treatment-container
-createtreatment
-treatmentmodules
+creating-a-treatment
+treatment-modules
 treatmentcontent
-treatmencontenttext
-treatmentcontentbass
+content-text
 adding-treatment-content-to-module
 groups
 groupassess
@@ -76,7 +73,7 @@ reports
 database-selection
 viewing-options
 participant-information
-reportstreatinfo
+treatment-information
 sort-priority
 answers-hiding-and-date-showing
 show-sumsitems-per-instrument
