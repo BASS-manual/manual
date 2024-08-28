@@ -19,7 +19,7 @@ To administer a group further click *Show* on the group you are interested in. T
 - Group participants
 - Group Assessments
 
-In *group participants* you can se a list of all the participants in the current group. From here you can administer the participants individually just like in the other participant list views. See more on this in **Chapter \@ref(participants)**
+In *group participants* you can se a list of all the participants in the current group. From here you can administer the participants individually just like in the other participant list views. See more on this in **Chapter \@ref(participants)**.
 
 ## Group Assessments {#groupassess}
 
@@ -27,7 +27,7 @@ Here you can aminister which assessments are available for the different groups 
 
 >**Hint:** This kind of setup is not necessary but will be limiting the accidental assignment of irrelevant assessments to a participant. It is helpful if you have a complicated assessment schedule where different groups of participants should be assigned different assessments. 
 
-We will show the possibilities with this functionality through a common project setup:
+We will show the possibilities with this functionality through a common assessment setup including screeening, pre- , weekly, post-, and follow-up assessments. Some of the assessments differ for the treatment group and the control group. There is also one assessment for excluded participants.
 
 ![](images/groupassessments.png)
 As seen in this example above, all assessments have been deselected for the *Online registration* group except for the screening assessment. This means that the other assessments are disabled for all participants in this group. 
@@ -36,7 +36,7 @@ Furthermore, the Screening assessment has been given a start date, meaning that 
 
 In order to assign the rest of the assessments to the participants in this setup, you need to move the participant to the next relevant group; Excluded, Treatment group, or Control group, depending on their answers in the screening assessment. This can be done in one of the Participant list views, or from the particiant's tab *Participant stats*.
 
-For the *Excluded* group we only want to be able to send out a predefined email notification (an assessment without instruments) informing the participant of the exclusion. No other assessments should be available, which can be achieved through the following setup:
+For the *Excluded* group we only want to be able to send out a predefined email notification (an assessment without instruments, see ***Chapter \@ref(dummyassessments)***) informing the participant of the exclusion. No other assessments should be available, which can be achieved through the following setup:
 
 ![](images/groupexcluded.png)
 

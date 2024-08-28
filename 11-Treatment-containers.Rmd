@@ -1,4 +1,4 @@
-# Create new treatment {#treatment}
+# Treatments {#treatment}
 
 BASS is designed to allow you to conduct mental healthcare and psychological studies through online channels. The main feature to achieve this in BASS, is the treatment.<br>
 A treatment is built by combining *treatment modules* into sections. A module is in essence a website, contained within the framework that BASS provides. This allows you the flexibility to build your treatment according to your organization's needs and wishes.
@@ -35,7 +35,7 @@ You can now add treatments, modules and specific contents such as texts, workshe
 
 > **Hint:** Are you creating several treatments in your study? It might be preferable to create them within the same treatment container if you are planning to reuse treatment content for both treatments. However, if the treatment content is completely different between the treatments, it might be easier to create them in separate treatment containers to avoid mixing content up.
 
-## Creating a treatment
+## Creating a treatment {#createtreatment}
 Regardless whether you just created a new treatment container or chose to edit an existing one, you can add a new treatment to it, by selecting *Create new... [Treatment]* in the dropdown menu ar the bottom of the view. This opens the editing view of the new treatment. You can close the treatment by clicking *Close* at the top of the view to return to the corresponding treatment container. Don't forget to save any changes before doing so, by clicking the *Save* button.
 
 Give your treatment a name, by typing it into the *Name* box and save it.
@@ -76,6 +76,8 @@ By checking this box, the treatment can be assigned to participants.
 
 **Participants can report errors** Enables a menu option in the participant interface where the participant can report any technical issues on the platform. The participant will be flagged in the participant list views and the problem description entered by the participant will visible in the participant's *Flags* tab. As with other flags notifications will also be sent to database administrator daily. See ***Chapter \@ref(extmess)*** for more information on notification emails.
 
+**Participants can upload reactions...** (Only available in *Experimental (version 5)*). These options need to enabled if you want to be able to use content reactions in your treatment. See more information on this in ***Chapter \@ref(treatmentcontentbass)***
+
 **Modules** This is where you connect modules to your treatment and define when they should be accessible. 
 
 If you have not yet created any modules this will be empty, without any modules to choose from.
@@ -107,7 +109,7 @@ Using `<limiteddaysleft>*YouContentHere*</limiteddaysleft>` you can set conditio
 Using `<limitedlastday>*YourContentHere*</limitedlastday>` you can set conditional content to be shown on the participant’s last day of limited acces, such as thanking them for their time and effort, and whishing them good luck.
 
 
-## Treatment Modules
+## Treatment Modules {#treatmentmodules}
 Now, let’s create modules for our treatment. To do this, click *Close* at the top of the page to exit the treatment settings and return to the Treatment view for your treatment. Here, click the dropdown menu at the bottom of the page and select Module. You will be taken to the settings page for the module. Here, you can give it a name, and tags if you wish. Below these two boxes, there are three dropdown menus:
 
 1. **Main text** is where you assign a treatment content to be the main text of the module. This is usually the instructions, a psycho-educational text and other information relevant to the module.
@@ -139,7 +141,7 @@ We will start by creating the main text one and work onwards from there in a “
 <br><br>
 *Show example content* lets you fill in a worksheet example to see how a worksheet is built in BASS. Click Fill in example in BASS4 below to view an example version of a worksheet from the participant point of view.
 
-### Content text
+### Content text {#treatmencontenttext}
 Content text is the main editing window where you add the text, media content, forms and input field etc. to your treatment content. This is all formatted and structured through **Markdown** and/or **HTML**.
 A few things are worth knowing when working with **HTML** in BASS:
 
@@ -312,6 +314,44 @@ BASS features *basic syntax highlighting*, and will color different parts of you
 If you’re working with a lot of **HTML** in your treatment contents, it may benefit you to check your code regularly in a dedicated coding program (known as an IDE), such as Atom [https://atom.io](https://atom.io) or Visual Studio Code [https://codde.visualstudio.com](https://code.visualstudio.com). These programs are specifically designed to write code, and will give you a good overview of your entire document.
 
 This covers the basic of building treatment content in BASS. We recommend you play around with it while referencing the resources linked above. If you run into issues, feel free to contact us.
+
+
+### BASS specific content {#treatmentcontentbass}
+
+There is some functionality especially developed for BASS. These are only available for treatment containers using the new UI *Experimental (version 5)*.
+
+**Content reactions** 
+
+This gives you the possibility for participants to record text, video or audio as a reaction to the content in the module. Depending on the type of content reaction set up the participant can share it with the therapist only (*content reactions*) or with other participants in the same group (*community content reactions*). 
+
+
+>**Note:** This functionality needs to be explicitly activated for a treatment, see ***section \@ref(createtreatment)***.
+
+>**Note:** see ***Chapter \@ref(groups)*** on information on how to set up groups and assign users to them.
+
+>**Note:** It's not possible for the participant to *upload* existing videos or sound clips, only to *record* new ones. Thus the user needs to give BASS access to their camera and microphone.
+
+![](images/contentreaction.png)
+
+
+Use **content reactions** `<div bass-content-reactions></div>` in treatment content to make it available for participants to share with their therapist only
+
+Use ***community* content reactions** `<div bass-community-content-reactions></div>` for the participant to be able to choose to share the reaction with the group.
+
+It is also possible to add a namespace in order to show the previously reactions in another module or similar: `<div bass-content-reactions bass-namespace="MyNamespace"></div>`
+
+**community content reactions** will not be visible to other group members until they have been approved by the therapist. Also, a participant will not be able to see other group members reactions until they have posted something themselves (this can however be a private reaction).
+
+It is not possible for a participant to remove a reaction or withdraw a community sharing after it has been posted. If needed, this needs to be done by an administrator.
+
+> **Hint:** See ***Chapter \@ref(parttreat)*** for viewing and approval process for participants' content reactions. 
+
+<br>
+**PDF-viewer**
+
+To be able to display a pdf in the module use `<Pdfviewer url="">`. The pdf will take up 80% of the available page height. It's not possible to download this pdf through the viewer, but a separate link can be added for this.
+
+
 
 ### Adding treatment content to Module
 

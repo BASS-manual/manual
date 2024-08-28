@@ -119,7 +119,7 @@ To copy assessments in the Assessment view, check the boxes of the assessments y
 
 ![](images/copy-assessment.png)
 
-## Dummy assessments - some scheduling tricks 
+## Dummy assessments - some scheduling tricks {#dummyassessments}
 
 Empty assessments that doesn’t contain any instruments can be used as timers to schedule administrative activities. 
 
@@ -127,7 +127,7 @@ Empty assessments that doesn’t contain any instruments can be used as timers t
 
 **Example 2, Scheduling manual actions:** An empty assessment can also be used together with flagging to prompt a certain action from the therapist. This is useful when something needs to be manually sent or done by the therapist a certain number of days into treatment while participants have individual treatment start dates. The trick is achieved by creating an empty assessment (i.e. FLAG FOR SENDING DEVICE) that is dependent on a previous assessment (i.e. FIRST ASSESSMENT) and activated with a chosen delay (i.e. 63 days after). By checking the box Flag participant when assessment becomes activated, the therapist will see individually occurring flags on participants whenever it is time for them to receive the attention/service from the therapist. Since the assessment doesn’t contain any instruments, only the therapist will get a notice (flag).
 
-**Example 3, Scheduling text messages (SMS):** An empty assessment that is managed In group and linked to a text message can be used to schedule an independent reminder to all participants (i.e. “Happy New Year! If you find it hard to keep to your new lifestyle during events like this, log in and re-read the advice in module 3”). An empty assessment can also be created to remind a single individual that hasn’t done so for a while to log in.
+**Example 3, Scheduling text messages (SMS) or emails:** An empty assessment that is managed In group and linked to a text message can be used to schedule an independent reminder to all participants (i.e. “Happy New Year! If you find it hard to keep to your new lifestyle during events like this, log in and re-read the advice in module 3”). An empty assessment can also be created to remind a single individual that hasn’t done so for a while to log in.
 
 ## Assessment instruments 
 All available instruments are listed in the right panel of the Assessment view. To include an instrument, check the box to the left of its name and then press the *Save* button. The number shown between the brackets to the right of each instrument name shows how many questions the instrument contains. The *Total number of items* top row shows the current total sum of questions in the assessment. 

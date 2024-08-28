@@ -84,7 +84,7 @@ User information can be edited in the *User information* box.
 
 Existing passwords ***cannot be retrieved***, only cleared or changed. If a participant reports a lost or forgotten password, you can provide them with a link to reset and change their password by clicking the *Send password link* button. You can send it by email or SMS, and add a personalized message as long as you don't remove the {LINK} from the Message box. 
 <br>
-It is also possible to generate new quick login codes, and to send them by SMS, from this view.
+If using quick login, it is also possible to generate new quick login codes, and to send them by SMS, from this view, see below.
 
 ![](images/password.png)
 ![](images/passwordlink.png)
@@ -143,8 +143,52 @@ If a treatment doesn't show up in the dropdown menu, you will have to make it av
 
 ![](images/new-images/participantTreatConnect.png)
 
->**Important note:** While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will only be able to access *__one__* of the treatments at a time.
+>**Important note:** While it technically is possible to assign several treatments to the same participant via the admin interface, the participate will only be able to access *__one__* of the treatments at a time. 
 
-![](images/new-images/participantTreatAccess.png)
+When the treatment is connected you can adjust the default treatment settings for a particular participant, and for example disable and enable modules.
 
-In some studies, you may want to record how much time is spent writing messages to participants by a therapist. *__More info to come__*
+![](images/participanttreataccess.png)
+This view also lets you see how the participant has interacted with the treatment modules. You can view any data that the participant has provided in the treatment modules by clicking *Show* in the different tables. 
+
+For homework content you can mark them as reviewed (*green checkmark*), or return the homework to the participant (*red circle with diagonal line*). 
+
+If you are using *community content reactions* in your treatment, you need to approve reactions (*green checkmark*) in this view before they get visible to other members of the participant's group. The participant will not be informed whether the reaction har been approved or not.
+
+>**Note:** Reviewing or returning homeworks do not notify the participant. Any comunication around homeworks or other treatment content need to be manually handled with chat messages in **Participant** > **Treatments** > **Participant messages**.
+
+>**Note:** Reactions that need to be approved will show up as homework in the Participant Search list. For more information on *Content reactions* see ***Chapter \@ref(treatmencontenttext)***
+
+<hr>
+
+**Participant chat messages**
+
+To write messages in the participant treatment chat go to **Participants**, **Treatments**, the **Participant messages** tab. Here you can send messages and also read answers from the participant. These chat messages will appear in the messages menu for the participant when logged into the treatment.
+
+![](images/chatmessages.png)
+
+>**Note:** Setup for how the participant is notified of these chat messages can be done in the main menu *External messages*, see ***Chapter \@ref(extmess)***.  
+
+>**Note:** When a participant has sent a message in the chat, this can be seen in the participant list views and is indicated by a letter icon.
+
+In some studies, you may want to record how much time is spent writing messages to participants by a therapist. This functionality needs to be activated for each project. Go to **Projects** in the main menu, and check the *Timing* column to do so.
+
+When this functionality is enabled you will be presented with e slightly different view when writing chat messages in the participant treatment. 
+
+![](images/messagetime.png)
+
+When you have written and sent your message you can choose to *close with time* (i.e. have the time you spent on the participant recorded) or *close without time* (not save any additional time for this interaction). If you close *with* time, you will also be able to adjust the time you spent.
+
+![](images/messageupdatetime.png)
+
+> **Hint:** For information on viewing data regarding time per therapist, See ***Chapter \@ref(reportstreatinfo)***.
+
+**Supervision messages**
+
+The tab **Supervision messages** can be used by a therapist and the therapist's supervisor to discuss the treatment for the patient. They can add notes and send messages to each other. These are only visible in the admin interface and not to the participant. This view also displays the chat messages with the participant for easy access.
+
+> **Hint:** For information on notifications for supervisors, See ***Chapter \@ref(searchcolumns)***.
+
+### Participant External messages {#participantextmess}
+
+### Participant Assessments {#participantassessments}
+

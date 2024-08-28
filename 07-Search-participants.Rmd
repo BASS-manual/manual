@@ -56,7 +56,7 @@ To show/unhide a column, press the “Hidden columns” tab.  This tab shows all
 
 Most columns can be sorted alphabetically or by number. To sort a column, press the small up/down arrows that show when you hover over the column header.
 
-## Column explanations
+## Column explanations {#searchcolumns}
 
 There are a number of columns showing information, status or possible actions for a participant. Some are explained in the table below.
 
@@ -184,7 +184,7 @@ The dropdown “Saved settings” is where you access all your previously saved 
 
 >**Hint:** If you make a new search, the “Currently loaded settings” box may no longer reflect the content of the search result list below. To be sure that the list matches the settings you want to load, first select “Choose” in the dropdown menu and then reselect the settings you want.
 
-###	Add new participant to group and change group
+##	Add new participant to group and change group
 
 It is possible to directly create a new participant within a specific project. This function is found below the table of participants. Just choose which project you want to add the new participant to, and you will be redirected to the “New participant”-view with this project pre-filled.
 

@@ -34,7 +34,7 @@ If you are generating a report with answers you might want to export only partic
 >**Note:** Internal ID is the participant database record ID while the Participant Id can be manually defined in BASS
 
 
-### Treatment information
+### Treatment information {#reportstreatinfo}
 
 ![](images/reporttreatmentdata.png)
 
