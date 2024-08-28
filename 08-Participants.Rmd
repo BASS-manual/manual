@@ -160,7 +160,7 @@ If you are using *community content reactions* in your treatment, you need to ap
 
 <hr>
 
-**Participant chat messages**
+**Participant treatment messages**
 
 To write messages in the participant treatment chat go to **Participants**, **Treatments**, the **Participant messages** tab. Here you can send messages and also read answers from the participant. These chat messages will appear in the messages menu for the participant when logged into the treatment.
 
@@ -190,5 +190,48 @@ The tab **Supervision messages** can be used by a therapist and the therapist's 
 
 ### Participant External messages {#participantextmess}
 
+To send external messages to a participant go to **Participants**, **External messages**, the **New message** tab. Depending on which data is available you can send text messages (SMS) or emails. Be aware that there is a limit of 160 characters for the text messages, but not for email messages. 
+
+>**Note:** This restriction of available characters applies also to the text messages sent out through the assessment notifications, so use your words wisely, or your outgoing messagees to participants might be truncated
+
+To view previously sent messages, or to troubleshoot why messages haven't been received by a participant, go to the tab **Sent messages**. Here you can see messages sent manually from the previous tab, or through automatic notifications from assessments. You will also see any update password links or quick login codes that have been sent out from the ***Participant stats* view. You can see the status of the message, if it's in the outgoing queue or already sent, or if there is an error.
+
+
 ### Participant Assessments {#participantassessments}
 
+This view lets you administer assessments for a particular participant and also view the completed assessments. Whether you have restricted the available assessments by groups or not, all or some of the assessments in the project might be available for the participant.
+
+>**Hint:** See ***Chapter \@ref(groupassess)***.for more info on assessment restrictions by groups
+
+![](images/participantassessments.png)
+You can hover your mouse over the magnifying glass to get a quick view of which instruments are included in each assessment.
+
+For *completed* assessments you can viw the answers in a number of ways. You can click the icon of stacked documents to see all the filled in instruments in one view. You can click the name (the blue link) to expand the assessment and see all sums and scoring available for the included instruments. You can click the document icon on each instrument to see all the answers for that particular instrument.
+
+![](images/participantassessmentsums.png)
+
+>**Hint:** If you for some reason want to discard a completed assessment you can do so by clicking the pen icon. You will have to give a reason, and the discarded assessment will show up in a separate list at the bottom of the participants assessment view. After that, the original assessment can be assigned agin if new answers should be collected.
+
+For assessments that have not yet been started or completed you can click the pen icon to add extra instruments that you want this particular participant to answer as part of the assessment. You can choose from all available instruments in your database.
+
+For assessments that are available but have not yet been assigned you can enter a start date in the date column and save at the bottom of the page. The participant will be notified of the assessment according to the assessments notification settings on the day the assessment becomes active, ie. status *ongoing*.
+
+>**Hint:** For more info on date and time settings for notifications see **Assessment reminder settings** in ***Chapter \@ref(extmess)***.
+
+If a dependency has been set up for your assessments, adding a start date for one assessment and saving, might trigger automatic scheduling for other assignments. (Se example below for assessment Start) These dates can all be adjusted after they have been automatically filled if needed. 
+
+>**Hint:** To go back to the default scheduling after having adjusted dates, clear the date that the other assessments depend on and save. Enter a date on the assessment again, save, and the dependent assessments will be defaulted again.
+
+![](images/participantassessmentdepend.png)
+
+
+You can also create a custom assessment for the participant if needed. Click *Create custom assessment* at the top of the view.
+
+>**Important note:** The custom assessments are not automatically notifified to the participant. It's recommended to send out a message from the participant's External messages tab inluding a login or quick login link for this.
+
+
+Last but not least, if you have *clinician* assessments, you can fill these in at any time by clicking the name (blue link), and then the icon with a document and a pen next to the instrument. Fill in the form and submit. The completed date is saved.
+
+![](images/clinicianassessment.png)
+
+If you need to update the *clinician* assessment you can click the icon with a document and a pen again, and you will have to give a reason for the update, and can update the previously saved answers (you do not have to fill it in again from scratch).
