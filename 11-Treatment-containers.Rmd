@@ -309,6 +309,16 @@ One last mention on tables: tables in BASS are by default scrollable horizontall
 </table>
 ```
 
+If you would want to link to one page from another, you do this with some html. Depending on what the first tag you use on that page in the treatment, most likely `<h1>`. That one will need to be given an id. You do that by adding `id=”idname”` inside that tag, though idname is just a placeholder and should be replaced by a more appropriate name.  At this point it should look something like this:
+```html
+<h1 id=”idname”>your headline here</h1>
+```
+Now that your first page has an id, we can use that to create the link for the second page to get back to this one. You do this by adding /#idname to the end. It should look something like this:
+```html
+<a href="/user/tx/page/3472/#idname”>Your text here</a>
+```
+Note that it is important to change the link to the correct one for your module. Once that is done, you should be able to move between different pages of your treatment, both within the same module and different ones in the same study.
+
 BASS features *basic syntax highlighting*, and will color different parts of your **HTML**, **CSS** and **JavaScript** code to make it easier to read and find elements of your code. In addition, if you’ve forgotten to close an HTML tag, it will be colored bright red to remind you and highlight potential problems within your code.
 
 If you’re working with a lot of **HTML** in your treatment contents, it may benefit you to check your code regularly in a dedicated coding program (known as an IDE), such as Atom [https://atom.io](https://atom.io) or Visual Studio Code [https://codde.visualstudio.com](https://code.visualstudio.com). These programs are specifically designed to write code, and will give you a good overview of your entire document.
