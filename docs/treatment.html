@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 13 Treatments | BASS4 - ADMINISTRATOR’S MANUAL</title>
   <meta name="description" content="Adminstrator’s manual for BASS4." />
-  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 13 Treatments | BASS4 - ADMINISTRATOR’S MANUAL" />
   <meta property="og:type" content="book" />
@@ -65,7 +65,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -539,6 +539,11 @@ One last mention on tables: tables in BASS are by default scrollable horizontall
 <span id="cb8-5"><a href="treatment.html#cb8-5" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
 <span id="cb8-6"><a href="treatment.html#cb8-6" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
 <span id="cb8-7"><a href="treatment.html#cb8-7" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>If you would want to link to one page from another, you do this with some html. Depending on what the first tag you use on that page in the treatment, most likely <code>&lt;h1&gt;</code>. That one will need to be given an id. You do that by adding <code>id=”idname”</code> inside that tag, though idname is just a placeholder and should be replaced by a more appropriate name. At this point it should look something like this:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb9-1"><a href="treatment.html#cb9-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h1</span><span class="ot"> id</span><span class="op">=</span><span class="st">”idname”</span><span class="dt">&gt;</span>your headline here<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>Now that your first page has an id, we can use that to create the link for the second page to get back to this one. You do this by adding /#idname to the end. It should look something like this:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb10-1"><a href="treatment.html#cb10-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;/user/tx/page/3472/#idname”&gt;Your text here</span><span class="er">&lt;</span><span class="st">/a&gt;</span></span></code></pre></div>
+<p>Note that it is important to change the link to the correct one for your module. Once that is done, you should be able to move between different pages of your treatment, both within the same module and different ones in the same study.</p>
 <p>BASS features <em>basic syntax highlighting</em>, and will color different parts of your <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> code to make it easier to read and find elements of your code. In addition, if you’ve forgotten to close an HTML tag, it will be colored bright red to remind you and highlight potential problems within your code.</p>
 <p>If you’re working with a lot of <strong>HTML</strong> in your treatment contents, it may benefit you to check your code regularly in a dedicated coding program (known as an IDE), such as Atom <a href="https://atom.io">https://atom.io</a> or Visual Studio Code <a href="https://code.visualstudio.com">https://codde.visualstudio.com</a>. These programs are specifically designed to write code, and will give you a good overview of your entire document.</p>
 <p>This covers the basic of building treatment content in BASS. We recommend you play around with it while referencing the resources linked above. If you run into issues, feel free to contact us.</p>
