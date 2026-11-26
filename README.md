@@ -31,7 +31,7 @@ Download RStudio IDE from [https://posit.co/products/open-source/rstudio/](https
 
 ### R (the language)
 
-Download the language R from the local CRAN mirror in Umeå (https://mirror.accum.se/mirror/CRAN/)[https://mirror.accum.se/mirror/CRAN/]
+Download the language R from the local CRAN mirror in Umeå [https://mirror.accum.se/mirror/CRAN/](https://mirror.accum.se/mirror/CRAN/)
 
 Currently (2024-06-09) installing R on MacOS with brew will give an old version (3.5 or so). Bookdown needs R version 4.4, so download R from the R-project website.
 
