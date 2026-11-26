@@ -57,6 +57,14 @@ If you are using the command line, you can just `cd` to where ever you prefer to
 
 Now git will download all the files and change history from GitHub. When done, all the files will be found in the folder `manual`. In this folder, there is a hidden folder, `.git` where all editing history of the repo is stored as different edits, patches, of all files in the repo.
 
+## In RStudio - install package
+
+File -> Open project -> choose the checked out manual folder.
+
+in R Console (down left) run
+
+`install.packages("bookdown")`
+
 ## Editing the manual
 
 If we leave Git and the versioning aside for a little while, how do we edit the manual?
